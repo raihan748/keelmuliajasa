@@ -1,102 +1,104 @@
 import React from "react";
-import { MessageCircle, Phone, Clock, Mail, MapPin, ShieldCheck } from "lucide-react";
+import { MessageCircle, Clock, Mail, MapPin, ShieldCheck } from "lucide-react";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-slate-950 text-slate-400 pt-16 pb-12 text-sm border-t border-slate-800">
+    <footer className="bg-neo-surface text-slate-400 pt-16 pb-12 text-sm border-t-2 border-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-14 border-b border-slate-800">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-14 border-b-2 border-black">
           
           {/* Col 1: Brand Info & Legalitas */}
           <div className="lg:col-span-4">
             <a href="#" className="flex items-center gap-3 mb-5 group">
-              <img
-                src="/images/logo-clean.png"
-                alt="Logo CV. Keel Mulia Jasa"
-                className="h-12 w-auto object-contain"
-              />
+              <div className="bg-neo-card p-2 rounded-xl border-2 border-black shadow-neo-sm">
+                <img
+                  src="/images/logo-clean.png"
+                  alt="Logo CV. Keel Mulia Jasa"
+                  className="h-11 w-auto object-contain"
+                />
+              </div>
             </a>
 
-            <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5">
+            <p className="text-slate-300 text-xs sm:text-sm font-medium leading-relaxed mb-5">
               Penyedia jasa angkutan sampah, puing bangunan, penebangan pohon, dan pembersihan lahan terpercaya dengan armada dump truck lengkap berizin resmi ke TPA.
             </p>
 
-            <div className="flex items-center gap-2 text-emerald-400 text-xs font-bold bg-emerald-950/60 p-2.5 rounded-xl border border-emerald-800/40">
-              <ShieldCheck className="w-4 h-4 shrink-0" />
+            <div className="flex items-center gap-2 text-black font-black text-xs bg-neo-yellow p-3 rounded-xl border-2 border-black shadow-neo-sm">
+              <ShieldCheck className="w-4.5 h-4.5 shrink-0 stroke-[2.5]" />
               <span>Badan Hukum CV Resmi & Terdaftar</span>
             </div>
           </div>
 
           {/* Col 2: Services Links */}
           <div className="lg:col-span-3">
-            <h4 className="text-white font-black text-sm uppercase tracking-wider mb-4">
+            <h4 className="text-white font-black text-sm uppercase tracking-wider mb-4 border-b-2 border-black pb-1 inline-block text-neo-yellow">
               Layanan Utama
             </h4>
-            <ul className="space-y-2 text-xs sm:text-sm">
-              <li><a href="#layanan" className="hover:text-emerald-400 transition-colors">Angkut Puing & Sisa Proyek</a></li>
-              <li><a href="#layanan" className="hover:text-emerald-400 transition-colors">Sampah Komersial Kantor & Resto</a></li>
-              <li><a href="#layanan" className="hover:text-emerald-400 transition-colors">Sampah Rumah Tangga & Perumahan</a></li>
-              <li><a href="#layanan" className="hover:text-emerald-400 transition-colors">Penebangan & Angkut Batang Pohon</a></li>
-              <li><a href="#layanan" className="hover:text-emerald-400 transition-colors">Pembersihan Lahan Kosong & Timbunan</a></li>
-              <li><a href="#layanan" className="hover:text-emerald-400 transition-colors">Sewa Dump Truck + Tim Loader</a></li>
-              <li><a href="#layanan" className="hover:text-emerald-400 transition-colors">Kontrak B2B Retribusi Sampah</a></li>
+            <ul className="space-y-2 text-xs sm:text-sm font-semibold">
+              <li><a href="#layanan" className="hover:text-neo-yellow transition-colors">Angkut Puing & Sisa Proyek</a></li>
+              <li><a href="#layanan" className="hover:text-neo-yellow transition-colors">Sampah Komersial Kantor & Resto</a></li>
+              <li><a href="#layanan" className="hover:text-neo-yellow transition-colors">Sampah Rumah Tangga & Perumahan</a></li>
+              <li><a href="#layanan" className="hover:text-neo-yellow transition-colors">Penebangan & Angkut Batang Pohon</a></li>
+              <li><a href="#layanan" className="hover:text-neo-yellow transition-colors">Pembersihan Lahan Kosong & Timbunan</a></li>
+              <li><a href="#layanan" className="hover:text-neo-yellow transition-colors">Sewa Dump Truck + Tim Loader</a></li>
+              <li><a href="#layanan" className="hover:text-neo-yellow transition-colors">Kontrak B2B Retribusi Sampah</a></li>
             </ul>
           </div>
 
           {/* Col 3: Areas */}
           <div className="lg:col-span-2">
-            <h4 className="text-white font-black text-sm uppercase tracking-wider mb-4">
+            <h4 className="text-white font-black text-sm uppercase tracking-wider mb-4 border-b-2 border-black pb-1 inline-block text-neo-cyan">
               Wilayah Operasional
             </h4>
-            <ul className="space-y-2 text-xs sm:text-sm">
-              <li><a href="#area-layanan" className="hover:text-emerald-400 transition-colors">Kota Makassar</a></li>
-              <li><a href="#area-layanan" className="hover:text-emerald-400 transition-colors">Kabupaten Gowa</a></li>
-              <li><a href="#area-layanan" className="hover:text-emerald-400 transition-colors">Kabupaten Maros</a></li>
-              <li><a href="#area-layanan" className="hover:text-emerald-400 transition-colors">Kawasan Industri KIMA</a></li>
-              <li><a href="#area-layanan" className="hover:text-emerald-400 transition-colors">Sulawesi Selatan</a></li>
+            <ul className="space-y-2 text-xs sm:text-sm font-semibold">
+              <li><a href="#area-layanan" className="hover:text-neo-cyan transition-colors">Kota Makassar</a></li>
+              <li><a href="#area-layanan" className="hover:text-neo-cyan transition-colors">Kabupaten Gowa</a></li>
+              <li><a href="#area-layanan" className="hover:text-neo-cyan transition-colors">Kabupaten Maros</a></li>
+              <li><a href="#area-layanan" className="hover:text-neo-cyan transition-colors">Kawasan Industri KIMA</a></li>
+              <li><a href="#area-layanan" className="hover:text-neo-cyan transition-colors">Sulawesi Selatan</a></li>
             </ul>
           </div>
 
           {/* Col 4: Contact & Operational Info */}
           <div className="lg:col-span-3">
-            <h4 className="text-white font-black text-sm uppercase tracking-wider mb-4">
+            <h4 className="text-white font-black text-sm uppercase tracking-wider mb-4 border-b-2 border-black pb-1 inline-block text-neo-emerald">
               Kontak & Operasional
             </h4>
             <div className="space-y-3 text-xs sm:text-sm">
               
               <div className="flex items-start gap-2.5">
-                <MessageCircle className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <MessageCircle className="w-4 h-4 text-neo-emerald shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-slate-200 font-bold">WhatsApp Hotline:</div>
-                  <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400">
+                  <div className="text-white font-black">WhatsApp Hotline:</div>
+                  <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="hover:text-neo-yellow font-bold text-slate-200">
                     +62 812-3456-7890
                   </a>
                 </div>
               </div>
 
               <div className="flex items-start gap-2.5">
-                <Clock className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <Clock className="w-4 h-4 text-neo-yellow shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-slate-200 font-bold">Jam Operasional:</div>
-                  <div>Senin – Minggu: 07.00 – 21.00 WITA</div>
-                  <div className="text-[11px] text-emerald-400 font-semibold">(Siaga Layanan Urgent 24 Jam)</div>
+                  <div className="text-white font-black">Jam Operasional:</div>
+                  <div className="text-slate-300 font-medium">Senin – Minggu: 07.00 – 21.00 WITA</div>
+                  <div className="text-[11px] text-neo-yellow font-bold">(Siaga Layanan Urgent 24 Jam)</div>
                 </div>
               </div>
 
               <div className="flex items-start gap-2.5">
-                <Mail className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <Mail className="w-4 h-4 text-neo-cyan shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-slate-200 font-bold">Email Kantor:</div>
-                  <div>kontak@keelmuliajasa.com</div>
+                  <div className="text-white font-black">Email Kantor:</div>
+                  <div className="text-slate-300 font-medium">kontak@keelmuliajasa.com</div>
                 </div>
               </div>
 
               <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-neo-red shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-slate-200 font-bold">Pool Armada & Kantor:</div>
-                  <div className="text-[11px] leading-relaxed">Makassar & Gowa, Sulawesi Selatan</div>
+                  <div className="text-white font-black">Pool Armada & Kantor:</div>
+                  <div className="text-[11px] text-slate-300 font-medium leading-relaxed">Makassar & Gowa, Sulawesi Selatan</div>
                 </div>
               </div>
 
@@ -105,9 +107,9 @@ export const Footer: React.FC = () => {
 
         </div>
 
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400 font-bold">
           <p>&copy; 2026 CV. Keel Mulia Jasa. Hak Cipta Dilindungi Undang-Undang.</p>
-          <p>Solusi Pengangkutan Sampah & Kebersihan Terpadu.</p>
+          <p className="text-neo-yellow font-black">Solusi Pengangkutan Sampah & Kebersihan Terpadu.</p>
         </div>
 
       </div>

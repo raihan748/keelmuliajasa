@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, HelpCircle } from "lucide-react";
 
 export const FaqSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -17,7 +17,7 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: "Apakah tarif sewa armada sudah termasuk supir dan tenaga kuli angkut (loader)?",
-      a: "Ya! Kami menyediakan opsi paket lengkap 'All-In' yang sudah mencakup unit dump truck, BBM, supir berpengalaman, serta tenaga loader yang bertugas menaikkan sampah ke bak truk dan menyapu bersih area pemuatan.",
+      a: "Ya! Kami menyediakan opsi paket lengkap 'All-In' yang sudah mencakup unit dump truck/pick-up, BBM, supir berpengalaman, serta tenaga loader yang bertugas menaikkan sampah ke bak dan menyapu bersih area pemuatan.",
     },
     {
       q: "Berapa lama armada bisa tiba di lokasi setelah pemesanan dikonfirmasi?",
@@ -29,7 +29,7 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: "Bagaimana cara perhitungan biaya pengangkutan?",
-      a: "Tarif dihitung berdasarkan jenis muatan, volume/ritase armada (Pick Up, Dump Truck 4 Roda, atau Dump Truck 6 Roda), jarak tempuh ke lokasi dan TPA, serta tingkat kesulitan pemuatan. Anda cukup mengirimkan foto tumpukan sampah via WhatsApp untuk mendapatkan estimasi harga pasti tanpa biaya tersembunyi.",
+      a: "Tarif dihitung berdasarkan jenis muatan, volume/ritase armada (Pick Up L300 atau Dump Truck Merah), jarak tempuh ke lokasi dan TPA, serta tingkat kesulitan pemuatan. Anda cukup mengirimkan foto tumpukan sampah via WhatsApp untuk mendapatkan estimasi harga pasti tanpa biaya tersembunyi.",
     },
   ];
 
@@ -38,29 +38,30 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-white border-b border-slate-200" id="faq">
+    <section className="py-24 bg-neo-bg bg-neo-grid border-b-2 border-black" id="faq">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center mb-14">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-3">
+        <div className="text-center mb-16">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-cyan text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
+            <HelpCircle className="w-3.5 h-3.5 stroke-[2.5]" />
             Tanya Jawab (FAQ)
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">
             Pertanyaan yang Sering Diajukan
           </h2>
-          <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-300 font-medium leading-relaxed">
             Informasi lengkap seputar mekanisme layanan pengangkutan dan pengelolaan sampah kami.
           </p>
         </div>
 
-        <div className="space-y-3.5">
+        <div className="space-y-4">
           {faqs.map((item, idx) => {
             const isOpen = openIndex === idx;
             return (
               <div
                 key={idx}
-                className={`border rounded-2xl transition-all duration-200 overflow-hidden ${
-                  isOpen ? "border-emerald-500 shadow-sm bg-emerald-50/30" : "border-slate-200 bg-white"
+                className={`border-2 border-black rounded-2xl transition-all duration-200 overflow-hidden shadow-neo ${
+                  isOpen ? "bg-neo-surface ring-2 ring-neo-yellow" : "bg-neo-surface hover:bg-neo-card"
                 }`}
               >
                 <button
@@ -68,18 +69,18 @@ export const FaqSection: React.FC = () => {
                   onClick={() => toggleFaq(idx)}
                   className="w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer focus:outline-none"
                 >
-                  <span className="font-extrabold text-base sm:text-lg text-slate-900">{item.q}</span>
+                  <span className="font-black text-base sm:text-lg text-white">{item.q}</span>
                   <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${
-                      isOpen ? "rotate-180 bg-emerald-100 text-emerald-800" : "bg-slate-100 text-slate-700"
+                    className={`w-9 h-9 rounded-xl border-2 border-black flex items-center justify-center shrink-0 shadow-neo-sm transition-transform duration-200 ${
+                      isOpen ? "rotate-180 bg-neo-yellow text-black" : "bg-neo-card text-slate-200"
                     }`}
                   >
-                    <ChevronDown className="w-4 h-4" />
+                    <ChevronDown className="w-5 h-5 stroke-[2.5]" />
                   </div>
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-5 pt-1 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
+                  <div className="px-6 pb-5 pt-1 text-sm text-slate-300 font-medium leading-relaxed border-t-2 border-black">
                     {item.a}
                   </div>
                 )}

@@ -1,4 +1,6 @@
 import React from "react";
+import { ScrollProgress } from "@/components/ScrollProgress";
+import { StickyBottomAction } from "@/components/StickyBottomAction";
 import { TopBanner } from "@/components/TopBanner";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
@@ -18,7 +20,8 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col bg-slate-50">
+    <main className="min-h-screen flex flex-col bg-neo-bg text-white">
+      <ScrollProgress />
       <TopBanner />
       <Navbar />
       <Hero />
@@ -34,6 +37,7 @@ export default function HomePage() {
       <FaqSection />
       <CtaBanner />
       <Footer />
+      <StickyBottomAction />
       <FloatingWhatsApp />
     </main>
   );

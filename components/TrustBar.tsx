@@ -5,28 +5,36 @@ export const TrustBar: React.FC = () => {
   const trustPillars = [
     {
       icon: ShieldCheck,
-      title: "Legalitas & Izin TPA Resmi",
-      desc: "Pembuangan sampah dan puing langsung ke TPA resmi pemerintah, aman dari sanksi lingkungan.",
+      title: "Legalitas Izin TPA",
+      desc: "Pembuangan langsung ke Tempat Pembuangan Akhir resmi pemerintah tanpa risiko sanksi.",
+      tag: "100% Legal",
+      color: "bg-neo-emerald text-black",
     },
     {
       icon: Truck,
-      title: "Armada Dump Truck Siaga",
-      desc: "Kesiapan armada dump truck 4 & 6 roda serta pick-up dalam kondisi prima siap jalan setiap hari.",
+      title: "Armada Milik Sendiri",
+      desc: "Kesiapan armada dump truck dan pick up bak tralis tinggi dalam kondisi prima siap jalan.",
+      tag: "Siap Setiap Hari",
+      color: "bg-neo-yellow text-black",
     },
     {
       icon: Users,
       title: "Tim Loader Cekatan",
-      desc: "Tenaga bongkar muat berpengalaman, terbiasa menangani material berat, puing, dan sampah padat.",
+      desc: "Tenaga bongkar muat berpengalaman, terlatih menangani puing berat, dan menyapu bersih.",
+      tag: "Terima Beres",
+      color: "bg-neo-blue text-white",
     },
     {
       icon: Receipt,
-      title: "Invoice & Pembukuan Resmi",
-      desc: "Tersedia kwitansi, invoice resmi, dan dokumen pendukung untuk keperluan pembukuan kantor/proyek.",
+      title: "Dokumen B2B Resmi",
+      desc: "Tersedia kwitansi, invoice resmi, SPH, dan surat jalan untuk pembukuan kantor/perusahaan.",
+      tag: "Invoice Ready",
+      color: "bg-neo-purple text-white",
     },
   ];
 
   return (
-    <section className="bg-white border-b border-slate-200 py-10">
+    <section className="bg-neo-bg py-10 border-b-2 border-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {trustPillars.map((item, index) => {
@@ -34,14 +42,19 @@ export const TrustBar: React.FC = () => {
             return (
               <div
                 key={index}
-                className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 hover:bg-emerald-50/50 border border-slate-100 hover:border-emerald-200 transition-colors"
+                className="p-5 rounded-2xl bg-neo-surface border-2 border-black shadow-neo hover:shadow-neo-lg hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
               >
-                <div className="w-12 h-12 min-w-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center">
-                  <Icon className="w-6 h-6" />
-                </div>
                 <div>
-                  <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">{item.title}</h4>
-                  <p className="text-xs text-slate-600 leading-relaxed">{item.desc}</p>
+                  <div className="flex items-center justify-between mb-3.5">
+                    <div className="w-11 h-11 rounded-xl bg-neo-card border-2 border-black flex items-center justify-center text-neo-yellow shadow-neo-sm">
+                      <Icon className="w-5 h-5 stroke-[2.5]" />
+                    </div>
+                    <span className={`text-[10px] font-black uppercase px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm ${item.color}`}>
+                      {item.tag}
+                    </span>
+                  </div>
+                  <h4 className="font-black text-base text-white mb-1.5">{item.title}</h4>
+                  <p className="text-xs text-slate-300 font-medium leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             );

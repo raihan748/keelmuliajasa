@@ -7,21 +7,25 @@ export const WhyChooseUs: React.FC = () => {
       icon: ShieldCheck,
       title: "100% Legal & Buang ke TPA Resmi",
       desc: "Kami memiliki jalur izin resmi ke Tempat Pembuangan Akhir (TPA). Menjamin sampah dan puing Anda tidak dibuang sembarangan di tepi jalan atau lahan liar.",
+      color: "bg-neo-emerald text-black",
     },
     {
       icon: Zap,
       title: "Respon Cepat & Siaga 24/7",
       desc: "Admin responsif dalam hitungan menit. Layanan siap berangkat di hari yang sama untuk kebutuhan pengangkutan mendesak (urgent call).",
+      color: "bg-neo-yellow text-black",
     },
     {
       icon: UserCheck,
       title: "Paket Lengkap Termasuk Kuli Angkut",
       desc: "Anda terima beres. Tim loader kami yang akan menyekop, mengangkut, menaikkan ke bak truk, dan menyapu bersih area pemuatan.",
+      color: "bg-neo-blue text-white",
     },
     {
       icon: FileCheck,
       title: "Transparansi Biaya & Dokumen Resmi",
       desc: "Tidak ada biaya tersembunyi. Tersedia invoice, kwitansi bertanda tangan, stempel perusahaan, dan surat jalan untuk keperluan kantor.",
+      color: "bg-neo-purple text-white",
     },
   ];
 
@@ -31,24 +35,24 @@ export const WhyChooseUs: React.FC = () => {
     { name: "Restoran, Cafe & Rumah Makan", desc: "Penanganan limbah organik & sisa kemasan higienis" },
     { name: "Gedung Perkantoran & Ruko", desc: "Pembersihan rutin dokumen afkir, sampah kardus & arsip" },
     { name: "Pemilik Lahan & Properti", desc: "Pembersihan timbunan sampah liar & ilalang" },
-    { name: "Event Organizer & Pengelola Venue", desc: "Kebersihan massal pra dan pasca acara festival" },
+    { name: "Event Organizer & Venue", desc: "Kebersihan massal pra dan pasca acara festival" },
   ];
 
   return (
-    <section className="py-20 bg-slate-50 border-b border-slate-200" id="keunggulan">
+    <section className="py-24 bg-neo-bg border-b-2 border-black" id="keunggulan">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center mb-16">
           
           {/* Left Column */}
           <div className="lg:col-span-6">
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-3">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-emerald text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
               Keunggulan CV. Keel Mulia Jasa
             </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-5 leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-5 leading-tight">
               Mengapa Ratusan Klien Mempercayakan Pengangkutan Sampah Kepada Kami?
             </h2>
-            <p className="text-base text-slate-600 leading-relaxed mb-8">
+            <p className="text-base text-slate-300 font-medium leading-relaxed mb-8">
               Pengelolaan sampah dan puing membutuhkan legalitas, kecepatan, dan tenaga kerja yang terbiasa menangani muatan berat. Kami hadir memberikan solusi tuntas tanpa membuat Anda pusing.
             </p>
 
@@ -56,27 +60,27 @@ export const WhyChooseUs: React.FC = () => {
               href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20tanya%20prosedur%20dan%20jadwal%20pengangkutan"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm sm:text-base shadow-lg shadow-emerald-600/30 transition-all hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-neo-yellow hover:bg-neo-yellow-hover text-black font-black text-sm sm:text-base border-2 border-black shadow-neo hover:shadow-neo-lg transition-all"
             >
               <MessageCircle className="w-5 h-5 fill-current" />
               <span>Konsultasi & Jadwalkan Pengangkutan</span>
             </a>
           </div>
 
-          {/* Right Column: 4 Cards Grid */}
+          {/* Right Column: 4 Neobrutalist Cards */}
           <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
             {points.map((pt, idx) => {
               const Icon = pt.icon;
               return (
                 <div
                   key={idx}
-                  className="bg-white border border-slate-200 rounded-3xl p-6 shadow-sm hover:border-emerald-500 hover:shadow-md transition-all duration-300"
+                  className="bg-neo-surface border-2 border-black rounded-3xl p-6 shadow-neo hover:shadow-neo-lg hover:-translate-y-1 transition-all duration-200"
                 >
-                  <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4 border border-emerald-100">
-                    <Icon className="w-6 h-6" />
+                  <div className="w-12 h-12 rounded-xl bg-neo-card border-2 border-black flex items-center justify-center mb-4 shadow-neo-sm">
+                    <Icon className="w-6 h-6 text-neo-yellow stroke-[2.5]" />
                   </div>
-                  <h3 className="text-base font-black text-slate-900 mb-2 leading-snug">{pt.title}</h3>
-                  <p className="text-xs text-slate-600 leading-relaxed">{pt.desc}</p>
+                  <h3 className="text-base font-black text-white mb-2 leading-snug">{pt.title}</h3>
+                  <p className="text-xs text-slate-300 font-medium leading-relaxed">{pt.desc}</p>
                 </div>
               );
             })}
@@ -85,17 +89,17 @@ export const WhyChooseUs: React.FC = () => {
         </div>
 
         {/* Client Categories Matrix */}
-        <div className="bg-white border border-slate-200 rounded-3xl p-8 sm:p-10 shadow-sm">
-          <h3 className="text-xl font-black text-slate-900 mb-6 text-center">
+        <div className="bg-neo-surface border-2 border-black rounded-3xl p-8 sm:p-10 shadow-neo-lg">
+          <h3 className="text-xl font-black text-white mb-6 text-center uppercase tracking-wide">
             Sektor & Klien yang Rutin Kami Layani
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {clientCategories.map((cat, cIdx) => (
-              <div key={cIdx} className="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+              <div key={cIdx} className="p-4 rounded-2xl bg-neo-card border-2 border-black shadow-neo-sm flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-neo-emerald shrink-0 mt-0.5 stroke-[2.5]" />
                 <div>
-                  <h4 className="text-xs sm:text-sm font-extrabold text-slate-900 mb-0.5">{cat.name}</h4>
-                  <p className="text-[11px] text-slate-500">{cat.desc}</p>
+                  <h4 className="text-xs sm:text-sm font-black text-white mb-0.5">{cat.name}</h4>
+                  <p className="text-[11px] text-slate-400 font-medium">{cat.desc}</p>
                 </div>
               </div>
             ))}

@@ -3,31 +3,31 @@ import { Truck, PhoneCall, ShieldCheck } from "lucide-react";
 
 export const TopBanner: React.FC = () => {
   return (
-    <div className="bg-slate-900 text-white text-xs sm:text-sm py-2.5 px-4 font-medium border-b border-slate-800">
+    <div className="bg-neo-surface text-slate-200 text-xs sm:text-sm py-2.5 px-4 font-bold border-b-2 border-black">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 flex-wrap">
-        <div className="flex items-center gap-2 flex-wrap">
-          <span className="inline-flex items-center gap-1.5 bg-emerald-500/20 text-emerald-400 px-2 py-0.5 rounded text-[11px] font-bold border border-emerald-500/30">
-            <ShieldCheck className="w-3.5 h-3.5" />
-            Berizin Resmi & Legal TPA
+        <div className="flex items-center gap-2.5 flex-wrap">
+          <span className="inline-flex items-center gap-1.5 bg-neo-yellow text-black px-2.5 py-0.5 rounded-md text-[11px] font-black border-2 border-black shadow-neo-sm uppercase tracking-wide">
+            <ShieldCheck className="w-3.5 h-3.5 stroke-[2.5]" />
+            Berizin Resmi TPA
           </span>
-          <span className="text-slate-300">
-            CV. Keel Mulia Jasa — Jasa Angkutan Sampah, Puing Bangunan & Kebersihan Terpadu
+          <span className="text-slate-300 font-semibold">
+            CV. Keel Mulia Jasa — Pengangkutan Sampah, Puing & Kebersihan Terpadu
           </span>
         </div>
 
         <div className="flex items-center gap-4 text-xs">
-          <span className="text-slate-400 hidden md:inline-flex items-center gap-1">
-            <Truck className="w-3.5 h-3.5 text-emerald-400" />
+          <span className="text-slate-400 hidden md:inline-flex items-center gap-1.5">
+            <Truck className="w-4 h-4 text-neo-emerald" />
             Armada Siaga Setiap Hari
           </span>
           <a
             href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20konsultasi%20layanan%20angkutan%20sampah%2Fpuing"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-amber-400 hover:text-amber-300 font-bold inline-flex items-center gap-1.5 transition-colors"
+            className="bg-neo-card hover:bg-neo-card2 text-neo-yellow px-3 py-1 rounded-md border-2 border-black shadow-neo-sm font-black inline-flex items-center gap-1.5 transition-transform hover:-translate-y-0.5 active:translate-y-0"
           >
             <PhoneCall className="w-3.5 h-3.5" />
-            <span>Hotline / WA: +62 812-3456-7890</span>
+            <span>WA: +62 812-3456-7890</span>
           </a>
         </div>
       </div>
