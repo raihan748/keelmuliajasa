@@ -15,9 +15,7 @@ import {
 
 export const ScrollHUD: React.FC = () => {
   const [activeSection, setActiveSection] = useState("hero");
-  const [hudExpanded, setHudExpanded] = useState(false);
   const [scrollPercentage, setScrollPercentage] = useState(0);
-  const { scrollYProgress } = useScroll();
 
   const sections = [
     { id: "hero", label: "Utama", icon: Layers },
@@ -58,7 +56,6 @@ export const ScrollHUD: React.FC = () => {
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: "smooth" });
-      setHudExpanded(false);
     }
   };
 
@@ -66,10 +63,10 @@ export const ScrollHUD: React.FC = () => {
     <>
       {/* Right-Side Scroll Navigator HUD (Desktop) */}
       <div className="fixed right-5 top-1/2 -translate-y-1/2 z-40 hidden xl:flex flex-col gap-2 pointer-events-auto">
-        <div className="bg-neo-surface/90 backdrop-blur-md p-2 rounded-2xl border-2 border-black shadow-neo-lg flex flex-col gap-1.5 items-center">
+        <div className="bg-white/95 backdrop-blur-md p-2 rounded-2xl border-2 border-black shadow-neo-lg flex flex-col gap-1.5 items-center">
           
           {/* Scroll % Badge */}
-          <div className="bg-neo-card px-2 py-1 rounded-lg border border-slate-700 text-[10px] font-black text-neo-yellow mb-1 font-mono">
+          <div className="bg-slate-100 px-2 py-1 rounded-lg border-2 border-black text-[10px] font-black text-slate-900 mb-1 font-mono shadow-neo-sm">
             {scrollPercentage}%
           </div>
 
@@ -85,10 +82,10 @@ export const ScrollHUD: React.FC = () => {
               >
                 {/* Active indicator dot/icon */}
                 <div
-                  className={`w-3.5 h-3.5 rounded-md border border-black transition-all ${
+                  className={`w-3.5 h-3.5 rounded-md border-2 border-black transition-all ${
                     isActive
                       ? "bg-neo-yellow scale-125 shadow-neo-sm"
-                      : "bg-slate-700 hover:bg-slate-500"
+                      : "bg-slate-200 hover:bg-slate-400"
                   }`}
                 />
 

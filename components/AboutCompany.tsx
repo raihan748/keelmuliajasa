@@ -1,149 +1,124 @@
-"use client";
-
 import React from "react";
-import { motion } from "framer-motion";
-import { ShieldCheck, Target, Award, Users, CheckCircle } from "lucide-react";
+import { Award, CheckCircle2, ShieldCheck, MapPin, Building, Sparkles } from "lucide-react";
 
 export const AboutCompany: React.FC = () => {
-  const highlights = [
-    "Perusahaan berbadan hukum resmi (CV. Keel Mulia Jasa)",
-    "Memiliki izin resmi pembuangan langsung ke Tempat Pembuangan Akhir (TPA)",
-    "Dukungan armada dump truck berbagai ukuran dalam kondisi prima",
-    "Didukung tenaga kerja loader berpengalaman dengan perlengkapan keselamatan kerja (K3)",
-    "Sistem kerja fleksibel: panggilan insidentil maupun kontrak kerja sama jangka panjang",
-    "Faktur resmi, NPWP, dan invoice lengkap untuk pertanggungjawaban instansi/perusahaan",
-  ];
-
   return (
-    <section className="py-24 bg-neo-bg bg-neo-grid border-b-2 border-black overflow-hidden" id="tentang-kami">
+    <section className="py-24 bg-neo-bg bg-neo-grid border-b-2 border-black" id="tentang-kami">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Left Column: Official Logo Card & Brand Card */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="lg:col-span-5"
-          >
-            <div className="relative">
-              
-              {/* Neobrutalist Main Card */}
-              <div className="bg-neo-surface border-2 border-black rounded-3xl p-7 sm:p-9 text-white shadow-neo-xl relative">
-                
-                {/* Official Logo Display Container */}
-                <motion.div
-                  whileHover={{ scale: 1.02 }}
-                  className="bg-neo-card p-4 rounded-2xl border-2 border-black mb-6 flex items-center justify-center shadow-neo-sm"
-                >
-                  <img
-                    src="/images/logo-clean.png"
-                    alt="Logo CV. Keel Mulia Jasa"
-                    className="max-h-24 w-auto object-contain"
-                  />
-                </motion.div>
-
-                <div className="inline-block bg-neo-yellow text-black font-black text-xs px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm uppercase mb-2">
-                  Company Profile
-                </div>
-                <h3 className="text-2xl font-black mb-2 text-white">CV. Keel Mulia Jasa</h3>
-                <p className="text-xs sm:text-sm text-slate-300 font-medium leading-relaxed mb-6">
-                  Perusahaan spesialis logistik kebersihan, pengangkutan sampah residensial/komersial, dan pengelolaan sisa material konstruksi terpercaya yang berkomitmen menjaga lingkungan tetap bersih, higienis, dan tertata rapi.
-                </p>
-
-                <div className="grid grid-cols-2 gap-3.5 pt-5 border-t-2 border-black">
-                  <div className="bg-neo-card rounded-xl p-3.5 border-2 border-black shadow-neo-sm">
-                    <div className="text-[11px] text-slate-400 font-bold mb-0.5">Spesialisasi</div>
-                    <div className="text-xs font-black text-neo-yellow">Waste Logistics</div>
-                  </div>
-                  <div className="bg-neo-card rounded-xl p-3.5 border-2 border-black shadow-neo-sm">
-                    <div className="text-[11px] text-slate-400 font-bold mb-0.5">Legalitas</div>
-                    <div className="text-xs font-black text-neo-emerald">Resmi & Legal TPA</div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Floating Neo Award Sticker */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2, duration: 0.4 }}
-                className="absolute -bottom-5 -right-3 sm:-right-5 bg-neo-yellow text-black border-2 border-black rounded-2xl p-4 shadow-neo flex items-center gap-3 max-w-xs"
-              >
-                <div className="w-10 h-10 rounded-xl bg-black text-neo-yellow flex items-center justify-center shrink-0 border border-black">
-                  <Award className="w-5 h-5 stroke-[2.5]" />
-                </div>
-                <div>
-                  <div className="text-xs font-black uppercase">Partner Terpercaya</div>
-                  <div className="text-[11px] font-bold text-slate-900">Ratusan Klien B2B & Rumah Tangga</div>
-                </div>
-              </motion.div>
-
+          {/* Left Column: Story & Official Company Profile */}
+          <div className="lg:col-span-7 space-y-6">
+            
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-neo-yellow text-black border-2 border-black shadow-neo-sm text-xs font-black uppercase tracking-wider">
+              <Building className="w-4 h-4 stroke-[2.5]" />
+              <span>Profil Resmi Perusahaan</span>
             </div>
-          </motion.div>
 
-          {/* Right Column: Company Story, Vision, Mission */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.5, ease: "easeOut" }}
-            className="lg:col-span-7"
-          >
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-emerald text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
-              Profil & Legalitas Perusahaan
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-5 leading-tight">
-              Solusi Pengelolaan & Pengangkutan Sampah yang Profesional dan Bertanggung Jawab
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+              CV. Keel Mulia Jasa — Solusi Pengangkutan Sampah & Puing Terpercaya
             </h2>
-            <p className="text-base text-slate-300 font-medium leading-relaxed mb-6">
-              <strong className="text-white font-black">CV. Keel Mulia Jasa</strong> hadir untuk menjawab kebutuhan masyarakat, kontraktor proyek, dan pelaku usaha akan jasa pengangkutan sampah yang cepat, transparan, dan taat regulasi. Kami mengoperasikan armada dump truck terawat dengan akses pembuangan langsung ke TPA resmi pemerintah.
+
+            <p className="text-base sm:text-lg text-slate-700 font-medium leading-relaxed">
+              <strong className="text-slate-900 font-black">CV. Keel Mulia Jasa</strong> adalah badan usaha resmi berbadan hukum yang bergerak di bidang layanan kebersihan, pengelolaan, dan pengangkutan berbagai jenis muatan sampah serta material sisa konstruksi di kawasan metropolitan Sulawesi Selatan.
             </p>
 
-            {/* Checklist Highlights */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-8">
-              {highlights.map((item, idx) => (
-                <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: idx * 0.05, duration: 0.3 }}
-                  className="flex items-start gap-2.5 bg-neo-surface p-3 rounded-xl border-2 border-black shadow-neo-sm"
-                >
-                  <CheckCircle className="w-5 h-5 text-neo-emerald shrink-0 mt-0.5 stroke-[2.5]" />
-                  <span className="text-xs sm:text-sm font-bold text-slate-200 leading-snug">{item}</span>
-                </motion.div>
-              ))}
-            </div>
+            <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
+              Didukung oleh armada dump truck dan pick up mandiri, tenaga loader terlatih dengan standar keselamatan K3, serta perjanjian resmi dengan Tempat Pembuangan Akhir (TPA) pemerintah, kami memastikan seluruh material diangkut secara bertanggung jawab, bersih, dan sesuai regulasi lingkungan hidup.
+            </p>
 
-            {/* Vision & Mission Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-neo-surface border-2 border-black rounded-2xl p-5 shadow-neo">
-                <div className="flex items-center gap-2 text-neo-yellow font-black text-sm mb-2">
-                  <Target className="w-4 h-4 stroke-[2.5]" />
-                  <span className="uppercase">Visi Kami</span>
+            {/* Core Pillars */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
+              <div className="flex items-start gap-3 bg-white p-3.5 rounded-2xl border-2 border-black shadow-neo-sm">
+                <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5 stroke-[2.5]" />
+                <div>
+                  <h4 className="font-black text-sm text-slate-900">Legalitas & Izin Lengkap</h4>
+                  <p className="text-xs text-slate-600 font-medium">Memiliki NIB, NPWP, dan izin operasional resmi</p>
                 </div>
-                <p className="text-xs text-slate-300 font-medium leading-relaxed">
-                  Menjadi perusahaan jasa angkutan sampah dan kebersihan lingkungan terdepan yang andal, inovatif, dan berkontribusi nyata pada kelestarian lingkungan.
-                </p>
               </div>
 
-              <div className="bg-neo-surface border-2 border-black rounded-2xl p-5 shadow-neo">
-                <div className="flex items-center gap-2 text-neo-cyan font-black text-sm mb-2">
-                  <Users className="w-4 h-4 stroke-[2.5]" />
-                  <span className="uppercase">Misi Kami</span>
+              <div className="flex items-start gap-3 bg-white p-3.5 rounded-2xl border-2 border-black shadow-neo-sm">
+                <CheckCircle2 className="w-5 h-5 text-amber-500 shrink-0 mt-0.5 stroke-[2.5]" />
+                <div>
+                  <h4 className="font-black text-sm text-slate-900">Garansi Bebas Ceceran</h4>
+                  <p className="text-xs text-slate-600 font-medium">Bak tertutup terpal & area loading disapu bersih</p>
                 </div>
-                <p className="text-xs text-slate-300 font-medium leading-relaxed">
-                  Memberikan pelayanan pengangkutan sampah tepat waktu, memprioritaskan keselamatan kerja, serta memberikan kemudahan birokrasi & penawaran terbaik bagi setiap klien.
-                </p>
+              </div>
+
+              <div className="flex items-start gap-3 bg-white p-3.5 rounded-2xl border-2 border-black shadow-neo-sm">
+                <CheckCircle2 className="w-5 h-5 text-blue-600 shrink-0 mt-0.5 stroke-[2.5]" />
+                <div>
+                  <h4 className="font-black text-sm text-slate-900">Kerja Sama Residensial & B2B</h4>
+                  <p className="text-xs text-slate-600 font-medium">Siap kontrak rutin perumahan, ruko, kantor & proyek</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3 bg-white p-3.5 rounded-2xl border-2 border-black shadow-neo-sm">
+                <CheckCircle2 className="w-5 h-5 text-purple-600 shrink-0 mt-0.5 stroke-[2.5]" />
+                <div>
+                  <h4 className="font-black text-sm text-slate-900">Layanan Darurat / Same Day</h4>
+                  <p className="text-xs text-slate-600 font-medium">Armada siaga cepat tiba dalam hitungan jam</p>
+                </div>
               </div>
             </div>
 
-          </motion.div>
+          </div>
+
+          {/* Right Column: Visual Badges & Fleet Feature Card */}
+          <div className="lg:col-span-5">
+            <div className="bg-white border-2 border-black rounded-3xl p-7 sm:p-9 shadow-neo-xl relative">
+              
+              <div className="flex items-center justify-between pb-5 mb-6 border-b-2 border-black">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-xl bg-slate-50 border-2 border-black p-1.5 flex items-center justify-center shadow-neo-sm">
+                    <img
+                      src="/images/logo-emblem-clean.png"
+                      alt="Logo Emblem CV. Keel Mulia Jasa"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-black text-slate-900">CV. Keel Mulia Jasa</h3>
+                    <p className="text-xs text-amber-600 font-black">Makassar • Gowa • Maros</p>
+                  </div>
+                </div>
+
+                <span className="bg-neo-yellow text-black text-[10px] font-black uppercase px-2.5 py-1 rounded-md border-2 border-black shadow-neo-sm">
+                  Badan Usaha Resmi
+                </span>
+              </div>
+
+              {/* Photo of Operation */}
+              <div className="rounded-2xl overflow-hidden border-2 border-black mb-6 shadow-neo">
+                <img
+                  src="/images/fleet/operasional-loading-sampah.jpg"
+                  alt="Operasional Pengangkutan Sampah CV Keel Mulia Jasa"
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+
+              <div className="space-y-3 text-xs text-slate-700 font-medium">
+                <div className="flex items-center justify-between py-2 border-b border-slate-200">
+                  <span className="font-bold text-slate-500">Nama Usaha:</span>
+                  <span className="font-black text-slate-900">CV. KEEL MULIA JASA</span>
+                </div>
+                <div className="flex items-center justify-between py-2 border-b border-slate-200">
+                  <span className="font-bold text-slate-500">Bidang Jasa:</span>
+                  <span className="font-black text-slate-900">Pengangkutan Sampah & Puing</span>
+                </div>
+                <div className="flex items-center justify-between py-2 border-b border-slate-200">
+                  <span className="font-bold text-slate-500">Izin Pembuangan:</span>
+                  <span className="font-black text-emerald-600">TPA Resmi Pemerintah</span>
+                </div>
+                <div className="flex items-center justify-between py-2">
+                  <span className="font-bold text-slate-500">Cakupan Wilayah:</span>
+                  <span className="font-black text-blue-600">Makassar, Gowa, Maros & Sulsel</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
 
         </div>
 

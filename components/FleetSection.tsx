@@ -1,126 +1,134 @@
 import React from "react";
-import { Truck, ShieldCheck, CheckCircle2, MessageCircle, FileCheck, Scale, Award } from "lucide-react";
+import { Truck, ShieldCheck, CheckCircle2, MessageCircle, Scale } from "lucide-react";
 
 export const FleetSection: React.FC = () => {
-  const fleets = [
+  const fleetData = [
     {
       name: "Dump Truck Merah (Heavy Duty)",
+      specs: "Kapasitas 4 - 6 m³ (1 Ritase Penuh)",
+      loadType: "Puing Sisa Bangunan, Beton, Semen, Tanah & Batang Pohon",
       image: "/images/fleet/dump-truck-merah.jpg",
-      capacity: "Kapasitas 4 – 6 m³ (Muatan Berat)",
-      usage: "Armada utama untuk angkutan puing cor, sisa bongkaran semen/tembok, tanah, dan sampah padat proyek.",
-      specs: [
-        "Bak hidrolik jungkit otomatis",
-        "Dinding bak baja tebal & kokoh",
-        "Siap untuk material berat & puing konstruksi",
-      ],
-      badge: "Armada Proyek & Puing",
+      tag: "Proyek & Puing",
       badgeColor: "bg-neo-red text-white",
+      features: [
+        "Sistem dump hidrolik bongkar muatan cepat",
+        "Kapasitas beban berat s/d 5-7 ton",
+        "Dilengkapi terpal pengaman anti-ceceran",
+        "Cocok untuk proyek renovasi & konstruksi besar",
+      ],
     },
     {
       name: "Pick Up L300 Bak Rangka Tinggi",
+      specs: "Kapasitas 3 - 4 m³ (Rangka Besi Pengaman)",
+      loadType: "Sampah Komersial Ruko, Restoran, Dahan Pohon & Pemukiman",
       image: "/images/fleet/pickup-l300-bak-tinggi.jpg",
-      capacity: "Kapasitas 3 – 4 m³ (Rangka Khusus Sampah)",
-      usage: "Didesain dengan pengaman tralis tinggi, optimal untuk sampah kemasan resto, ruko, kardus kantor, dan dahan kayu.",
-      specs: [
-        "Rangka tralis tinggi anti tercecer",
-        "Akses cepat ke pusat kota & pertokoan",
-        "Sangat lincah untuk jadwal rutin harian",
+      tag: "Ruko & Residensial",
+      badgeColor: "bg-neo-emerald text-black",
+      features: [
+        "Rangka besi tinggi memuat sampah volume besar",
+        "Akses mudah ke jalan lingkungan & gang sempit",
+        "Waktu respon cepat untuk pesanan mendesak",
+        "Ideal untuk sampah harian cafe & perumahan",
       ],
-      badge: "Limbah Komersial & Resto",
-      badgeColor: "bg-neo-yellow text-black",
     },
     {
-      name: "Armada Angkut Pemukiman & Residensial",
+      name: "Armada Operasional & Tim Loader",
+      specs: "Paket Lengkap Unit + BBM + Tim Bongkar Muat",
+      loadType: "Penanganan Seluruh Jenis Sampah di Lokasi",
       image: "/images/fleet/operasional-loading-sampah.jpg",
-      capacity: "Kapasitas 2 – 3 m³ (Akses Kompleks)",
-      usage: "Melayani pengangkutan sampah perumahan, gang perumahan, kluster, serta pembersihan massal lingkungan.",
-      specs: [
-        "Akses fleksibel ke gang & jalan sempit",
-        "Didukung tim loader cekatan",
-        "Pengangkutan bersih tuntas sampai disapu",
-      ],
-      badge: "Residensial & Perumahan",
+      tag: "Layanan All-In",
       badgeColor: "bg-neo-blue text-white",
+      features: [
+        "Tim loader sigap menaikkan karung sampah",
+        "Dilengkapi sekop, cangkul, sapu, & karung goni",
+        "Standar keselamatan kerja & APD lengkap (K3)",
+        "Garansi area pemuatan ditinggalkan bersih tuntas",
+      ],
     },
   ];
 
-  const profileCommitments = [
+  const commitments = [
     {
-      title: "Izin Resmi & Legalitas Pembuangan TPA",
-      desc: "Seluruh muatan sampah dan puing dibuang ke TPA resmi berizin pemerintah, menjamin kepatuhan AMDAL dan bebas sanksi lingkungan.",
+      title: "Izin Resmi TPA Pemerintah",
+      desc: "100% pembuangan legal berizin ke TPA resmi pemerintah daerah, bukan lahan liar.",
       icon: ShieldCheck,
-      color: "text-neo-emerald",
+      color: "bg-neo-emerald text-black",
     },
     {
-      title: "Garansi Area Bersih & Disapu Tuntas",
-      desc: "Tim kami tidak hanya mengangkut sampah, tapi juga membersihkan dan menyapu sisa kotoran di area titik muat sampai rapi.",
-      icon: Award,
-      color: "text-neo-yellow",
+      title: "Garansi Area Bersih Tuntas",
+      desc: "Tim kami menyapu dan membersihkan sisa debu/ceceran di titik muat sebelum meninggalkan lokasi.",
+      icon: CheckCircle2,
+      color: "bg-neo-yellow text-black",
     },
     {
-      title: "Transparansi Ritase & Bukti Timbangan",
-      desc: "Penghitungan volume muatan yang jujur dengan bukti jalan resmi serta struk timbangan TPA untuk akurasi pelaporan.",
+      title: "Transparansi Ritase & Timbangan",
+      desc: "Perhitungan kapasitas akurat tanpa manipulasi, siap sertakan bukti struk timbangan resmi TPA.",
       icon: Scale,
-      color: "text-neo-cyan",
+      color: "bg-neo-cyan text-black",
     },
     {
-      title: "Layanan Dokumen & Faktur Resmi B2B",
-      desc: "Penerbitan Surat Penawaran Harga (SPH), Surat Perjanjian Kerja Sama (MoU), Kwitansi stempel resmi, dan Invoice perusahaan.",
-      icon: FileCheck,
-      color: "text-neo-purple",
+      title: "Dokumen & Faktur B2B Resmi",
+      desc: "Kelengkapan invoice resmi CV, kwitansi, SPH, dan surat jalan bermaterai untuk instansi/perusahaan.",
+      icon: ShieldCheck,
+      color: "bg-neo-purple text-white",
     },
   ];
 
   return (
-    <section className="py-24 bg-neo-bg bg-neo-grid border-b-2 border-black" id="armada">
+    <section className="py-24 bg-white border-b-2 border-black" id="armada">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Section Header */}
+        {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-cyan text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-yellow text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
             <Truck className="w-3.5 h-3.5 stroke-[2.5]" />
-            Dokumentasi & Spesifikasi Armada
+            Kesiapan Logistik & Armada
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">
-            Armada Tangguh Asli CV. Keel Mulia Jasa
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
+            Armada Milik Sendiri Siap Operasional 24 Jam
           </h2>
-          <p className="text-base sm:text-lg text-slate-300 font-medium leading-relaxed">
-            Didukung armada operasional milik sendiri dengan modifikasi khusus bak sampah dan dump truck hidrolik untuk memastikan muatan aman dan cepat sampai di TPA.
+          <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
+            Didukung unit dump truck dan pick up dalam kondisi prima serta tim loader berpengalaman untuk menjamin kebersihan maksimal di lokasi Anda.
           </p>
         </div>
 
-        {/* Real Fleet Cards Grid with Photos */}
+        {/* Fleet Cards Grid with Real Photos */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {fleets.map((fleet, idx) => (
+          {fleetData.map((fleet, idx) => (
             <div
               key={idx}
-              className="bg-neo-surface border-2 border-black rounded-3xl overflow-hidden shadow-neo-lg hover:shadow-neo-xl hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between group"
+              className="bg-slate-50 border-2 border-black rounded-3xl overflow-hidden shadow-neo hover:shadow-neo-xl hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between group"
             >
               <div>
-                {/* Photo container */}
-                <div className="relative h-60 w-full overflow-hidden bg-black border-b-2 border-black">
+                {/* Photo Frame */}
+                <div className="relative h-60 w-full overflow-hidden bg-slate-200 border-b-2 border-black">
                   <img
                     src={fleet.image}
                     alt={fleet.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  <span className={`absolute top-3.5 right-3.5 text-[10px] font-black uppercase px-3 py-1 rounded-md border-2 border-black shadow-neo-sm ${fleet.badgeColor}`}>
-                    {fleet.badge}
+                  <span className={`absolute top-3.5 right-3.5 text-[10px] font-black uppercase px-2.5 py-1 rounded-md border-2 border-black shadow-neo-sm ${fleet.badgeColor}`}>
+                    {fleet.tag}
                   </span>
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-black text-white mb-1.5 leading-tight">{fleet.name}</h3>
-                  <div className="text-xs font-black text-neo-yellow mb-3.5 bg-neo-card px-2.5 py-1 rounded-md inline-block border border-slate-700">
-                    {fleet.capacity}
+                  <h3 className="text-lg font-black text-slate-900 mb-1 leading-snug">
+                    {fleet.name}
+                  </h3>
+                  <div className="text-xs font-black text-amber-600 mb-3 font-mono">
+                    {fleet.specs}
                   </div>
-                  <p className="text-xs text-slate-300 font-medium leading-relaxed mb-5">{fleet.usage}</p>
 
-                  <div className="pt-4 border-t-2 border-black space-y-2">
-                    {fleet.specs.map((spec, sIdx) => (
-                      <div key={sIdx} className="flex items-start gap-2 text-xs font-bold text-slate-200">
-                        <CheckCircle2 className="w-4 h-4 text-neo-emerald shrink-0 mt-0.5 stroke-[2.5]" />
-                        <span>{spec}</span>
+                  <p className="text-xs text-slate-600 font-semibold mb-4 leading-relaxed bg-white p-2.5 rounded-xl border border-slate-200">
+                    <strong className="text-slate-800">Muatan:</strong> {fleet.loadType}
+                  </p>
+
+                  <div className="space-y-2 pt-2 border-t-2 border-black">
+                    {fleet.features.map((feat, fIdx) => (
+                      <div key={fIdx} className="flex items-start gap-2 text-xs font-medium text-slate-700">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5 stroke-[2.5]" />
+                        <span>{feat}</span>
                       </div>
                     ))}
                   </div>
@@ -135,44 +143,46 @@ export const FleetSection: React.FC = () => {
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-neo-yellow group-hover:bg-neo-emerald text-black font-black text-xs border-2 border-black shadow-neo transition-all"
                 >
                   <MessageCircle className="w-4 h-4 fill-current" />
-                  <span>Pesan Unit Armada Ini</span>
+                  <span>Booking Unit Ini</span>
                 </a>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Company Profile Commitment & Standards Banner */}
-        <div className="bg-neo-surface rounded-3xl p-8 sm:p-10 text-white border-2 border-black shadow-neo-xl">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div className="lg:col-span-4">
-              <div className="w-12 h-12 rounded-xl bg-neo-yellow text-black flex items-center justify-center mb-4 border-2 border-black shadow-neo-sm">
-                <ShieldCheck className="w-6 h-6 stroke-[2.5]" />
-              </div>
-              <h4 className="text-2xl font-black mb-2 text-white">Standar & Komitmen Pelayanan</h4>
-              <p className="text-xs sm:text-sm text-slate-300 font-medium leading-relaxed">
-                CV. Keel Mulia Jasa memegang teguh standar operasional kebersihan, kepatuhan regulasi lingkungan, dan kepuasan penuh bagi setiap mitra kerja.
-              </p>
-            </div>
+        {/* Official Company Profile Commitments Showcase */}
+        <div className="bg-slate-50 border-2 border-black rounded-3xl p-8 sm:p-10 shadow-neo-xl">
+          <div className="max-w-3xl mb-8">
+            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-neo-emerald text-black text-[11px] font-black uppercase tracking-wider mb-2.5 border-2 border-black shadow-neo-sm">
+              <ShieldCheck className="w-3.5 h-3.5 stroke-[2.5]" />
+              Komitmen Standar Pelayanan Resmi
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight">
+              4 Pilar Jaminan Kualitas CV. Keel Mulia Jasa
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-600 font-medium mt-1">
+              Sesuai dengan standar operasional company profile kami dalam melayani setiap klien perumahan, komersial, maupun industri.
+            </p>
+          </div>
 
-            <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {profileCommitments.map((item, tIdx) => {
-                const Icon = item.icon;
-                return (
-                  <div key={tIdx} className="bg-neo-card p-4 rounded-2xl border-2 border-black shadow-neo-sm flex items-start gap-3.5 hover:-translate-y-0.5 transition-transform">
-                    <div className="w-10 h-10 rounded-xl bg-neo-surface border-2 border-black text-neo-yellow flex items-center justify-center shrink-0 mt-0.5 shadow-neo-sm">
-                      <Icon className={`w-5 h-5 ${item.color} stroke-[2.5]`} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {commitments.map((com, cIdx) => {
+              const Icon = com.icon;
+              return (
+                <div
+                  key={cIdx}
+                  className="bg-white border-2 border-black rounded-2xl p-5 shadow-neo hover:shadow-neo-lg transition-all flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="w-11 h-11 rounded-xl bg-slate-50 border-2 border-black flex items-center justify-center mb-4 text-slate-900 shadow-neo-sm">
+                      <Icon className="w-5 h-5 stroke-[2.5]" />
                     </div>
-                    <div>
-                      <div className="text-xs font-black text-white mb-1 uppercase tracking-wide">{item.title}</div>
-                      <div className="text-[11px] text-slate-300 font-medium leading-snug">{item.desc}</div>
-                    </div>
+                    <h4 className="font-black text-slate-900 text-sm mb-2">{com.title}</h4>
+                    <p className="text-xs text-slate-600 font-medium leading-relaxed">{com.desc}</p>
                   </div>
-                );
-              })}
-            </div>
-
+                </div>
+              );
+            })}
           </div>
         </div>
 

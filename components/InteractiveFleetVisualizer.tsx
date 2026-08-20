@@ -49,27 +49,27 @@ export const InteractiveFleetVisualizer: React.FC = () => {
   const rec = getFleetRecommendation(volume);
 
   return (
-    <div className="bg-neo-surface border-2 border-black rounded-3xl p-6 sm:p-9 shadow-neo-xl">
+    <div className="bg-white border-2 border-black rounded-3xl p-6 sm:p-9 shadow-neo-xl">
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-6 mb-6 border-b-2 border-black">
         <div>
           <div className="inline-flex items-center gap-1.5 bg-neo-emerald text-black text-[10px] font-black uppercase px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm mb-1.5">
             <Sparkles className="w-3.5 h-3.5 stroke-[2.5]" />
             Simulator Kebutuhan Armada
           </div>
-          <h3 className="text-xl sm:text-2xl font-black text-white">
+          <h3 className="text-xl sm:text-2xl font-black text-slate-900">
             Pilih Estimasi Volume Sampah / Puing Anda
           </h3>
         </div>
 
-        <div className="bg-neo-card px-4 py-2 rounded-2xl border-2 border-black shadow-neo-sm flex items-center gap-3">
-          <span className="text-xs text-slate-400 font-bold">Volume Terpilih:</span>
-          <span className="text-xl font-black text-neo-yellow font-mono">{volume} m³</span>
+        <div className="bg-slate-50 px-4 py-2 rounded-2xl border-2 border-black shadow-neo-sm flex items-center gap-3">
+          <span className="text-xs text-slate-500 font-bold">Volume Terpilih:</span>
+          <span className="text-xl font-black text-amber-600 font-mono">{volume} m³</span>
         </div>
       </div>
 
       {/* Interactive Volume Slider */}
       <div className="mb-8">
-        <div className="flex justify-between text-xs font-black text-slate-300 mb-2">
+        <div className="flex justify-between text-xs font-black text-slate-700 mb-2">
           <span>1 m³ (Sedikit / Karungan)</span>
           <span>5 m³ (1 Truk Standar)</span>
           <span>10 m³ (Besar)</span>
@@ -83,15 +83,15 @@ export const InteractiveFleetVisualizer: React.FC = () => {
           step="1"
           value={volume}
           onChange={(e) => setVolume(parseInt(e.target.value))}
-          className="w-full h-4 bg-neo-bg rounded-lg appearance-none cursor-pointer accent-neo-yellow border-2 border-black"
+          className="w-full h-4 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-amber-500 border-2 border-black"
         />
       </div>
 
       {/* Dynamic Recommendation Card */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center bg-neo-card p-6 rounded-2xl border-2 border-black shadow-neo">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center bg-slate-50 p-6 rounded-2xl border-2 border-black shadow-neo">
         
         {/* Fleet Image Preview */}
-        <div className="md:col-span-5 relative h-48 rounded-xl overflow-hidden border-2 border-black bg-black">
+        <div className="md:col-span-5 relative h-48 rounded-xl overflow-hidden border-2 border-black bg-slate-200">
           <img
             src={rec.image}
             alt={rec.fleet}
@@ -105,18 +105,18 @@ export const InteractiveFleetVisualizer: React.FC = () => {
         {/* Details & Live Specs */}
         <div className="md:col-span-7 flex flex-col justify-between">
           <div>
-            <div className="text-xs font-black text-neo-yellow uppercase mb-1">Rekomendasi Armada Terbaik:</div>
-            <h4 className="text-xl font-black text-white mb-2 leading-tight">{rec.fleet}</h4>
-            <p className="text-xs text-slate-300 font-medium leading-relaxed mb-4">{rec.desc}</p>
+            <div className="text-xs font-black text-amber-600 uppercase mb-1">Rekomendasi Armada Terbaik:</div>
+            <h4 className="text-xl font-black text-slate-900 mb-2 leading-tight">{rec.fleet}</h4>
+            <p className="text-xs text-slate-600 font-medium leading-relaxed mb-4">{rec.desc}</p>
             
-            <div className="grid grid-cols-2 gap-3 mb-4 text-xs font-bold text-slate-200">
-              <div className="bg-neo-surface p-2.5 rounded-xl border border-slate-700">
-                <span className="text-[10px] text-slate-400 block">Kebutuhan Unit:</span>
-                <span className="font-black text-neo-emerald">{rec.unitCount}</span>
+            <div className="grid grid-cols-2 gap-3 mb-4 text-xs font-bold text-slate-800">
+              <div className="bg-white p-2.5 rounded-xl border border-slate-300 shadow-neo-sm">
+                <span className="text-[10px] text-slate-500 block">Kebutuhan Unit:</span>
+                <span className="font-black text-emerald-700">{rec.unitCount}</span>
               </div>
-              <div className="bg-neo-surface p-2.5 rounded-xl border border-slate-700">
-                <span className="text-[10px] text-slate-400 block">Estimasi Tarif:</span>
-                <span className="font-black text-neo-yellow">{rec.estPrice}</span>
+              <div className="bg-white p-2.5 rounded-xl border border-slate-300 shadow-neo-sm">
+                <span className="text-[10px] text-slate-500 block">Estimasi Tarif:</span>
+                <span className="font-black text-amber-600">{rec.estPrice}</span>
               </div>
             </div>
           </div>

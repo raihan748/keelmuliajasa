@@ -46,10 +46,10 @@ export const FaqSection: React.FC = () => {
             <HelpCircle className="w-3.5 h-3.5 stroke-[2.5]" />
             Tanya Jawab (FAQ)
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
             Pertanyaan yang Sering Diajukan
           </h2>
-          <p className="text-base sm:text-lg text-slate-300 font-medium leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
             Informasi lengkap seputar mekanisme layanan pengangkutan dan pengelolaan sampah kami.
           </p>
         </div>
@@ -61,7 +61,7 @@ export const FaqSection: React.FC = () => {
               <div
                 key={idx}
                 className={`border-2 border-black rounded-2xl transition-all duration-200 overflow-hidden shadow-neo ${
-                  isOpen ? "bg-neo-surface ring-2 ring-neo-yellow" : "bg-neo-surface hover:bg-neo-card"
+                  isOpen ? "bg-white ring-2 ring-neo-yellow" : "bg-white hover:bg-slate-50"
                 }`}
               >
                 <button
@@ -69,10 +69,10 @@ export const FaqSection: React.FC = () => {
                   onClick={() => toggleFaq(idx)}
                   className="w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer focus:outline-none"
                 >
-                  <span className="font-black text-base sm:text-lg text-white">{item.q}</span>
+                  <span className="font-black text-base sm:text-lg text-slate-900">{item.q}</span>
                   <div
                     className={`w-9 h-9 rounded-xl border-2 border-black flex items-center justify-center shrink-0 shadow-neo-sm transition-transform duration-200 ${
-                      isOpen ? "rotate-180 bg-neo-yellow text-black" : "bg-neo-card text-slate-200"
+                      isOpen ? "rotate-180 bg-neo-yellow text-black" : "bg-slate-100 text-slate-800"
                     }`}
                   >
                     <ChevronDown className="w-5 h-5 stroke-[2.5]" />
@@ -80,7 +80,7 @@ export const FaqSection: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-5 pt-1 text-sm text-slate-300 font-medium leading-relaxed border-t-2 border-black">
+                  <div className="px-6 pb-5 pt-1 text-sm text-slate-700 font-medium leading-relaxed border-t-2 border-black">
                     {item.a}
                   </div>
                 )}

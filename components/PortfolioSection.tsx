@@ -54,7 +54,7 @@ export const PortfolioSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-neo-bg border-b-2 border-black relative overflow-hidden" id="portofolio">
+    <section className="py-24 bg-neo-bg bg-neo-grid border-b-2 border-black relative overflow-hidden" id="portofolio">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
@@ -63,10 +63,10 @@ export const PortfolioSection: React.FC = () => {
             <Camera className="w-3.5 h-3.5 stroke-[2.5]" />
             Dokumentasi & Portofolio Lapangan
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
             Bukti Nyata Kinerja Tim di Lapangan
           </h2>
-          <p className="text-base sm:text-lg text-slate-300 font-medium leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
             Geser slider interaktif di bawah untuk membandingkan area sebelum dan sesudah (Before & After) dibersihkan oleh tim CV. Keel Mulia Jasa.
           </p>
         </div>
@@ -77,7 +77,7 @@ export const PortfolioSection: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-14 bg-neo-surface border-2 border-black rounded-3xl p-6 sm:p-9 shadow-neo-xl"
+          className="mb-14 bg-white border-2 border-black rounded-3xl p-6 sm:p-9 shadow-neo-xl"
         >
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 pb-6 mb-6 border-b-2 border-black">
             <div>
@@ -85,19 +85,19 @@ export const PortfolioSection: React.FC = () => {
                 <span className="bg-neo-yellow text-black text-[10px] font-black uppercase px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm">
                   Interactive Before & After
                 </span>
-                <span className="text-xs text-neo-emerald font-black flex items-center gap-1">
+                <span className="text-xs text-emerald-700 font-black flex items-center gap-1">
                   <Sparkles className="w-3.5 h-3.5" />
                   Pattallassang, Gowa Regency (17 Jan 2026)
                 </span>
               </div>
-              <h3 className="text-xl sm:text-2xl font-black text-white">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-900">
                 Evakuasi Sampah Karung & Pembersihan Area Loading
               </h3>
             </div>
 
             <div className="flex items-center gap-2">
-              <span className="text-xs font-bold text-slate-300 flex items-center gap-1.5 bg-neo-card px-3 py-1.5 rounded-xl border-2 border-black shadow-neo-sm">
-                <MoveHorizontal className="w-4 h-4 text-neo-yellow animate-pulse" />
+              <span className="text-xs font-bold text-slate-800 flex items-center gap-1.5 bg-slate-100 px-3 py-1.5 rounded-xl border-2 border-black shadow-neo-sm">
+                <MoveHorizontal className="w-4 h-4 text-amber-500 animate-pulse" />
                 <span>Geser Garis Tengah</span>
               </span>
             </div>
@@ -111,17 +111,17 @@ export const PortfolioSection: React.FC = () => {
             afterLabel="SESUDAH DIBERSIHKAN"
           />
 
-          <div className="mt-6 pt-5 border-t-2 border-black grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-bold text-slate-200">
+          <div className="mt-6 pt-5 border-t-2 border-black grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-bold text-slate-800">
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-neo-emerald shrink-0 stroke-[2.5]" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 stroke-[2.5]" />
               <span>Evakuasi Sampah Karung & Puing Selesai</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-neo-emerald shrink-0 stroke-[2.5]" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 stroke-[2.5]" />
               <span>Area Loading Bay Disapu & Bersih Rapi</span>
             </div>
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-neo-emerald shrink-0 stroke-[2.5]" />
+              <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 stroke-[2.5]" />
               <span>Muatan Langsung Dibawa ke TPA Resmi</span>
             </div>
           </div>
@@ -136,11 +136,11 @@ export const PortfolioSection: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1, duration: 0.4 }}
-              className="bg-neo-surface border-2 border-black rounded-3xl overflow-hidden shadow-neo-lg hover:shadow-neo-xl hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between group"
+              className="bg-white border-2 border-black rounded-3xl overflow-hidden shadow-neo hover:shadow-neo-lg hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between group"
             >
               <div>
                 <div
-                  className="relative h-60 w-full overflow-hidden bg-black border-b-2 border-black cursor-pointer"
+                  className="relative h-60 w-full overflow-hidden bg-slate-100 border-b-2 border-black cursor-pointer"
                   onClick={() => setActivePhoto(act.image)}
                 >
                   <img
@@ -154,24 +154,24 @@ export const PortfolioSection: React.FC = () => {
                 </div>
 
                 <div className="p-6">
-                  <div className="flex items-center gap-2 text-[11px] font-bold text-neo-yellow mb-2">
+                  <div className="flex items-center gap-2 text-[11px] font-bold text-amber-600 mb-2">
                     <MapPin className="w-3.5 h-3.5" />
                     <span>{act.location}</span>
                   </div>
 
-                  <h4 className="text-lg font-black text-white mb-2.5 leading-snug">
+                  <h4 className="text-lg font-black text-slate-900 mb-2.5 leading-snug">
                     {act.title}
                   </h4>
 
-                  <p className="text-xs text-slate-300 font-medium leading-relaxed mb-4">
+                  <p className="text-xs text-slate-600 font-medium leading-relaxed mb-4">
                     {act.desc}
                   </p>
                 </div>
               </div>
 
               <div className="p-6 pt-0">
-                <div className="pt-3 border-t-2 border-black flex items-center justify-between text-[11px] text-slate-400 font-bold">
-                  <span className="flex items-center gap-1 text-neo-emerald font-black">
+                <div className="pt-3 border-t-2 border-black flex items-center justify-between text-[11px] text-slate-500 font-bold">
+                  <span className="flex items-center gap-1 text-emerald-700 font-black">
                     <ShieldCheck className="w-3.5 h-3.5 stroke-[2.5]" />
                     Standar SOP & K3
                   </span>
@@ -191,10 +191,10 @@ export const PortfolioSection: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md p-4 flex items-center justify-center"
+            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md p-4 flex items-center justify-center"
             onClick={() => setActivePhoto(null)}
           >
-            <div className="relative max-w-2xl w-full bg-neo-card p-3 rounded-3xl border-2 border-black shadow-2xl" onClick={(e) => e.stopPropagation()}>
+            <div className="relative max-w-2xl w-full bg-white p-3 rounded-3xl border-2 border-black shadow-2xl" onClick={(e) => e.stopPropagation()}>
               <button
                 onClick={() => setActivePhoto(null)}
                 className="absolute -top-4 -right-4 w-10 h-10 rounded-full bg-neo-yellow text-black font-black border-2 border-black shadow-neo flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"

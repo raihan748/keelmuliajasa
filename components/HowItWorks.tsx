@@ -38,17 +38,17 @@ export const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-neo-bg border-b-2 border-black" id="alur-kerja">
+    <section className="py-24 bg-white border-b-2 border-black" id="alur-kerja">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-emerald text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
             SOP & Alur Pelayanan
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
             4 Langkah Mudah Menggunakan Jasa Kami
           </h2>
-          <p className="text-base sm:text-lg text-slate-300 font-medium leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
             Proses cepat, praktis, dan Anda tidak perlu repot mengangkat material berat sendiri.
           </p>
         </div>
@@ -59,26 +59,26 @@ export const HowItWorks: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="bg-neo-surface border-2 border-black rounded-3xl p-6 text-center relative hover:shadow-neo-lg hover:-translate-y-1 transition-all duration-200 flex flex-col items-center justify-between shadow-neo"
+                className="bg-slate-50 border-2 border-black rounded-3xl p-6 text-center relative hover:shadow-neo-lg hover:-translate-y-1 transition-all duration-200 flex flex-col items-center justify-between shadow-neo"
               >
                 <div>
                   <div className="flex items-center justify-between w-full mb-4">
                     <span className={`text-[10px] font-black uppercase px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm ${step.color}`}>
                       {step.tag}
                     </span>
-                    <span className="text-2xl font-black text-slate-500 font-mono">
+                    <span className="text-2xl font-black text-slate-400 font-mono">
                       #{step.num}
                     </span>
                   </div>
 
-                  <div className="w-14 h-14 rounded-2xl bg-neo-card border-2 border-black text-neo-yellow flex items-center justify-center mb-4 shadow-neo-sm mx-auto">
+                  <div className="w-14 h-14 rounded-2xl bg-white border-2 border-black text-slate-900 flex items-center justify-center mb-4 shadow-neo-sm mx-auto">
                     <Icon className="w-7 h-7 stroke-[2.5]" />
                   </div>
 
-                  <h3 className="text-base sm:text-lg font-black text-white mb-2.5 leading-snug">
+                  <h3 className="text-base sm:text-lg font-black text-slate-900 mb-2.5 leading-snug">
                     {step.title}
                   </h3>
-                  <p className="text-xs text-slate-300 font-medium leading-relaxed">
+                  <p className="text-xs text-slate-600 font-medium leading-relaxed">
                     {step.desc}
                   </p>
                 </div>

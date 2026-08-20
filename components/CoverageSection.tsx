@@ -49,10 +49,10 @@ export const CoverageSection: React.FC = () => {
             <MapPin className="w-3.5 h-3.5 stroke-[2.5]" />
             Jangkauan Operasional
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
             Wilayah Jangkauan Armada CV. Keel Mulia Jasa
           </h2>
-          <p className="text-base sm:text-lg text-slate-300 font-medium leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
             Armada kami tersebar strategis di titik-titik utama untuk memastikan waktu tempuh tercepat menuju lokasi Anda.
           </p>
         </div>
@@ -63,7 +63,7 @@ export const CoverageSection: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="bg-neo-surface border-2 border-black rounded-2xl p-5 text-center shadow-neo hover:shadow-neo-lg hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
+                className="bg-white border-2 border-black rounded-2xl p-5 text-center shadow-neo hover:shadow-neo-lg hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex justify-center mb-3">
@@ -72,11 +72,11 @@ export const CoverageSection: React.FC = () => {
                     </span>
                   </div>
 
-                  <div className="w-12 h-12 rounded-xl bg-neo-card border-2 border-black text-neo-yellow flex items-center justify-center mx-auto mb-3.5 shadow-neo-sm">
+                  <div className="w-12 h-12 rounded-xl bg-slate-50 border-2 border-black text-slate-900 flex items-center justify-center mx-auto mb-3.5 shadow-neo-sm">
                     <Icon className="w-6 h-6 stroke-[2.5]" />
                   </div>
-                  <h3 className="font-black text-base text-white mb-2">{area.name}</h3>
-                  <p className="text-xs text-slate-300 font-medium leading-relaxed">{area.coverage}</p>
+                  <h3 className="font-black text-base text-slate-900 mb-2">{area.name}</h3>
+                  <p className="text-xs text-slate-600 font-medium leading-relaxed">{area.coverage}</p>
                 </div>
               </div>
             );

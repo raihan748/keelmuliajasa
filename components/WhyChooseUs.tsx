@@ -1,61 +1,141 @@
 import React from "react";
-import { Zap, ShieldCheck, UserCheck, FileCheck, CheckCircle2, MessageCircle } from "lucide-react";
+import {
+  ShieldCheck,
+  Clock,
+  Coins,
+  Smile,
+  Truck,
+  Sparkles,
+  FileCheck,
+  Layers,
+  MessageCircle,
+} from "lucide-react";
 
 export const WhyChooseUs: React.FC = () => {
-  const points = [
+  const reasons = [
     {
       icon: ShieldCheck,
-      title: "100% Legal & Buang ke TPA Resmi",
-      desc: "Kami memiliki jalur izin resmi ke Tempat Pembuangan Akhir (TPA). Menjamin sampah dan puing Anda tidak dibuang sembarangan di tepi jalan atau lahan liar.",
+      title: "100% Pembuangan Legal ke TPA",
+      desc: "Tidak pernah membuang sampah di pinggir jalan atau lahan liar. Semua dibuang ke TPA resmi pemerintah.",
       color: "bg-neo-emerald text-black",
     },
     {
-      icon: Zap,
-      title: "Respon Cepat & Siaga 24/7",
-      desc: "Admin responsif dalam hitungan menit. Layanan siap berangkat di hari yang sama untuk kebutuhan pengangkutan mendesak (urgent call).",
+      icon: Clock,
+      title: "Respon Kilat & Siaga 24 Jam",
+      desc: "Armada kami siap meluncur dalam waktu 1-3 jam untuk panggilan urgent di Makassar, Gowa, dan Maros.",
       color: "bg-neo-yellow text-black",
     },
     {
-      icon: UserCheck,
-      title: "Paket Lengkap Termasuk Kuli Angkut",
-      desc: "Anda terima beres. Tim loader kami yang akan menyekop, mengangkut, menaikkan ke bak truk, dan menyapu bersih area pemuatan.",
-      color: "bg-neo-blue text-white",
+      icon: Coins,
+      title: "Tarif Transparan Tanpa Biaya Tersembunyi",
+      desc: "Harga sudah mencakup unit armada, bahan bakar (BBM), supir, tenaga loader, dan retribusi resmi TPA.",
+      color: "bg-neo-cyan text-black",
+    },
+    {
+      icon: Sparkles,
+      title: "Garansi Area Ditinggalkan Bersih",
+      desc: "Tim kami menyapu dan membersihkan sisa debu/ceceran di titik muat sebelum meninggalkan lokasi Anda.",
+      color: "bg-neo-purple text-white",
     },
     {
       icon: FileCheck,
-      title: "Transparansi Biaya & Dokumen Resmi",
-      desc: "Tidak ada biaya tersembunyi. Tersedia invoice, kwitansi bertanda tangan, stempel perusahaan, dan surat jalan untuk keperluan kantor.",
-      color: "bg-neo-purple text-white",
+      title: "Invoice & Dokumen B2B Lengkap",
+      desc: "Memiliki legalitas badan hukum CV resmi, NPWP, NIB, siap menerbitkan kwitansi, SPH, dan faktur resmi.",
+      color: "bg-neo-blue text-white",
+    },
+    {
+      icon: Truck,
+      title: "Armada Milik Sendiri & Terawat",
+      desc: "Dump truck dan pick up rutin diservis dan dibersihkan, bak terpasang terpal rapat anti-bau & anti-ceceran.",
+      color: "bg-neo-red text-white",
     },
   ];
 
-  const clientCategories = [
-    { name: "Kompleks Perumahan & Cluster", desc: "Pengangkutan sampah residensial harian/mingguan" },
-    { name: "Kontraktor & Renovasi Gedung", desc: "Evakuasi puing tembok, cor semen & material sisa" },
-    { name: "Restoran, Cafe & Rumah Makan", desc: "Penanganan limbah organik & sisa kemasan higienis" },
-    { name: "Gedung Perkantoran & Ruko", desc: "Pembersihan rutin dokumen afkir, sampah kardus & arsip" },
-    { name: "Pemilik Lahan & Properti", desc: "Pembersihan timbunan sampah liar & ilalang" },
-    { name: "Event Organizer & Venue", desc: "Kebersihan massal pra dan pasca acara festival" },
+  const clientSegments = [
+    { name: "Pemilik Rumah & Perumahan", desc: "Sampah bulanan, puing renovasi kamar/pagar, pembersihan gudang & dahan pohon." },
+    { name: "Kontraktor & Mandor Proyek", desc: "Evakuasi sisa cor beton, galian tanah, bongkaran dinding, keramik & puing skala ritase besar." },
+    { name: "Restoran, Cafe & Ruko", desc: "Pengangkutan sampah basah/kering harian, kardus, plastik, dan sisa bahan baku." },
+    { name: "Sekolah, Kampus & Yayasan", desc: "Retribusi sampah terpadu lingkungan institusi pendidikan terjadwal dan rapi." },
+    { name: "Pabrik, Gudang & Industri", desc: "Limbah non-B3, kayu palet, sisa kemasan, dan pembersihan area pergudangan." },
+    { name: "Pengelola Event & EO", desc: "Pembersihan cepat pasca festival, pameran, konser musik, dan acara pernikahan." },
   ];
 
   return (
-    <section className="py-24 bg-neo-bg border-b-2 border-black" id="keunggulan">
+    <section className="py-24 bg-neo-bg bg-neo-grid border-b-2 border-black" id="keunggulan">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center mb-16">
-          
-          {/* Left Column */}
-          <div className="lg:col-span-6">
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-emerald text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
-              Keunggulan CV. Keel Mulia Jasa
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-5 leading-tight">
-              Mengapa Ratusan Klien Mempercayakan Pengangkutan Sampah Kepada Kami?
-            </h2>
-            <p className="text-base text-slate-300 font-medium leading-relaxed mb-8">
-              Pengelolaan sampah dan puing membutuhkan legalitas, kecepatan, dan tenaga kerja yang terbiasa menangani muatan berat. Kami hadir memberikan solusi tuntas tanpa membuat Anda pusing.
-            </p>
+        {/* Header */}
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-yellow text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
+            <Sparkles className="w-3.5 h-3.5 stroke-[2.5]" />
+            Nilai Tambah & Kepercayaan
+          </span>
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
+            Mengapa Memilih CV. Keel Mulia Jasa?
+          </h2>
+          <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
+            Standar profesionalisme tinggi untuk menjamin kepuasan dan kenyamanan setiap pelanggan kami.
+          </p>
+        </div>
 
+        {/* 6 Advantage Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+          {reasons.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div
+                key={idx}
+                className="bg-white border-2 border-black rounded-3xl p-7 shadow-neo hover:shadow-neo-lg hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-slate-50 border-2 border-black flex items-center justify-center mb-5 text-slate-900 shadow-neo-sm">
+                    <Icon className="w-6 h-6 stroke-[2.5]" />
+                  </div>
+                  <h3 className="text-lg font-black text-slate-900 mb-2 leading-snug">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-slate-600 font-medium leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Client Segments Matrix */}
+        <div className="bg-white border-2 border-black rounded-3xl p-8 sm:p-12 shadow-neo-xl">
+          <div className="text-center max-w-2xl mx-auto mb-10">
+            <span className="text-xs font-black text-amber-600 uppercase tracking-wider">
+              Segmentasi Pelanggan
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-black text-slate-900 mt-1 mb-2">
+              Kami Melayani Berbagai Sektor Klien
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-600 font-medium">
+              Fleksibilitas sistem sewa ritase, harian, atau kontrak bulanan sesuai kebutuhan operasional Anda.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {clientSegments.map((seg, sIdx) => (
+              <div
+                key={sIdx}
+                className="bg-slate-50 p-5 rounded-2xl border-2 border-black shadow-neo-sm hover:shadow-neo hover:-translate-y-0.5 transition-all"
+              >
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-neo-yellow border border-black" />
+                  <h4 className="font-black text-slate-900 text-sm">{seg.name}</h4>
+                </div>
+                <p className="text-xs text-slate-600 font-medium leading-relaxed">{seg.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 pt-8 border-t-2 border-black text-center">
+            <p className="text-xs sm:text-sm text-slate-700 font-bold mb-4">
+              Punya kebutuhan khusus atau volume muatan skala besar?
+            </p>
             <a
               href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20tanya%20prosedur%20dan%20jadwal%20pengangkutan"
               target="_blank"
@@ -63,46 +143,8 @@ export const WhyChooseUs: React.FC = () => {
               className="inline-flex items-center gap-2.5 px-7 py-4 rounded-xl bg-neo-yellow hover:bg-neo-yellow-hover text-black font-black text-sm sm:text-base border-2 border-black shadow-neo hover:shadow-neo-lg transition-all"
             >
               <MessageCircle className="w-5 h-5 fill-current" />
-              <span>Konsultasi & Jadwalkan Pengangkutan</span>
+              <span>Konsultasikan Kebutuhan Anda Sekarang</span>
             </a>
-          </div>
-
-          {/* Right Column: 4 Neobrutalist Cards */}
-          <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
-            {points.map((pt, idx) => {
-              const Icon = pt.icon;
-              return (
-                <div
-                  key={idx}
-                  className="bg-neo-surface border-2 border-black rounded-3xl p-6 shadow-neo hover:shadow-neo-lg hover:-translate-y-1 transition-all duration-200"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-neo-card border-2 border-black flex items-center justify-center mb-4 shadow-neo-sm">
-                    <Icon className="w-6 h-6 text-neo-yellow stroke-[2.5]" />
-                  </div>
-                  <h3 className="text-base font-black text-white mb-2 leading-snug">{pt.title}</h3>
-                  <p className="text-xs text-slate-300 font-medium leading-relaxed">{pt.desc}</p>
-                </div>
-              );
-            })}
-          </div>
-
-        </div>
-
-        {/* Client Categories Matrix */}
-        <div className="bg-neo-surface border-2 border-black rounded-3xl p-8 sm:p-10 shadow-neo-lg">
-          <h3 className="text-xl font-black text-white mb-6 text-center uppercase tracking-wide">
-            Sektor & Klien yang Rutin Kami Layani
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {clientCategories.map((cat, cIdx) => (
-              <div key={cIdx} className="p-4 rounded-2xl bg-neo-card border-2 border-black shadow-neo-sm flex items-start gap-3">
-                <CheckCircle2 className="w-5 h-5 text-neo-emerald shrink-0 mt-0.5 stroke-[2.5]" />
-                <div>
-                  <h4 className="text-xs sm:text-sm font-black text-white mb-0.5">{cat.name}</h4>
-                  <p className="text-[11px] text-slate-400 font-medium">{cat.desc}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 

@@ -32,7 +32,7 @@ export const PosterSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-neo-surface border-b-2 border-black relative overflow-hidden" id="poster-resmi">
+    <section className="py-24 bg-white border-b-2 border-black relative overflow-hidden" id="poster-resmi">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="max-w-3xl mx-auto text-center mb-16">
@@ -40,10 +40,10 @@ export const PosterSection: React.FC = () => {
             <FileImage className="w-3.5 h-3.5 stroke-[2.5]" />
             Brosur & Publikasi Resmi
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
             Poster Layanan Resmi CV. Keel Mulia Jasa
           </h2>
-          <p className="text-base sm:text-lg text-slate-300 font-medium leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
             Solusi praktis dan profesional untuk masalah sampah di rumah, kantor, sekolah, dan pabrik di area Makassar, Gowa, dan Maros.
           </p>
         </div>
@@ -60,7 +60,7 @@ export const PosterSection: React.FC = () => {
           >
             <div className="relative group cursor-pointer" onClick={() => setModalOpen(true)}>
               
-              <div className="bg-neo-card p-3 rounded-3xl border-2 border-black shadow-neo-xl group-hover:shadow-neo-yellow group-hover:-translate-y-1 transition-all duration-300">
+              <div className="bg-slate-50 p-3 rounded-3xl border-2 border-black shadow-neo-xl group-hover:shadow-neo-yellow group-hover:-translate-y-1 transition-all duration-300">
                 <img
                   src="/images/poster-keelmuliajasa.png"
                   alt="Poster Resmi CV. Keel Mulia Jasa"
@@ -88,32 +88,32 @@ export const PosterSection: React.FC = () => {
             className="lg:col-span-7"
           >
             
-            <div className="bg-neo-card border-2 border-black rounded-3xl p-7 sm:p-9 shadow-neo-lg text-white">
+            <div className="bg-slate-50 border-2 border-black rounded-3xl p-7 sm:p-9 shadow-neo-lg text-slate-900">
               
               <div className="flex items-center gap-2 mb-3">
                 <span className="bg-neo-emerald text-black font-black text-xs px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm uppercase">
                   Tentang Kami
                 </span>
-                <span className="text-xs text-slate-400 font-bold">Makassar • Gowa • Maros</span>
+                <span className="text-xs text-slate-500 font-bold">Makassar • Gowa • Maros</span>
               </div>
 
-              <h3 className="text-2xl font-black mb-3 text-white">
+              <h3 className="text-2xl font-black mb-3 text-slate-900">
                 Solusi Praktis Masalah Sampah Anda
               </h3>
 
-              <p className="text-xs sm:text-sm text-slate-300 font-medium leading-relaxed mb-6">
+              <p className="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed mb-6">
                 <strong>Keel MuliaJasa</strong> adalah solusi praktis untuk masalah sampah di rumah Anda. Kami adalah perusahaan jasa pengangkutan sampah profesional yang melayani area <strong>Makassar, Gowa, dan Maros</strong>.
               </p>
 
               {/* Services List from Poster */}
               <div className="mb-6">
-                <div className="text-xs font-black uppercase text-neo-yellow mb-2.5 tracking-wider">
+                <div className="text-xs font-black uppercase text-amber-600 mb-2.5 tracking-wider">
                   Layanan Kami Meliputi:
                 </div>
                 <div className="space-y-2">
                   {posterServices.map((srv, idx) => (
-                    <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm font-bold text-slate-200">
-                      <CheckCircle2 className="w-4 h-4 text-neo-emerald shrink-0 stroke-[2.5]" />
+                    <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm font-bold text-slate-800">
+                      <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 stroke-[2.5]" />
                       <span>{srv}</span>
                     </div>
                   ))}
@@ -122,14 +122,14 @@ export const PosterSection: React.FC = () => {
 
               {/* Target Clients from Poster */}
               <div className="mb-8 pt-5 border-t-2 border-black">
-                <div className="text-xs font-black uppercase text-neo-cyan mb-3 tracking-wider">
+                <div className="text-xs font-black uppercase text-blue-600 mb-3 tracking-wider">
                   Kami Melayani:
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {posterTargets.map((tgt, tIdx) => (
                     <span
                       key={tIdx}
-                      className="bg-neo-surface text-slate-200 text-xs font-black px-3 py-1.5 rounded-lg border-2 border-black shadow-neo-sm"
+                      className="bg-white text-slate-900 text-xs font-black px-3 py-1.5 rounded-lg border-2 border-black shadow-neo-sm"
                     >
                       ☑ {tgt}
                     </span>
@@ -153,17 +153,17 @@ export const PosterSection: React.FC = () => {
                   href="https://instagram.com/cv.keelmuliajasa"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-neo-surface hover:bg-neo-card2 text-slate-200 p-3 rounded-xl border-2 border-black shadow-neo-sm font-black text-xs flex items-center justify-center gap-2 transition-transform hover:-translate-y-0.5"
+                  className="bg-white hover:bg-slate-100 text-slate-900 p-3 rounded-xl border-2 border-black shadow-neo-sm font-black text-xs flex items-center justify-center gap-2 transition-transform hover:-translate-y-0.5"
                 >
-                  <Instagram className="w-4 h-4 text-neo-yellow" />
+                  <Instagram className="w-4 h-4 text-pink-600" />
                   <span>@cv.keelmuliajasa</span>
                 </a>
 
                 <a
                   href="mailto:cvkeel.muliajasa@gmail.com"
-                  className="bg-neo-surface hover:bg-neo-card2 text-slate-200 p-3 rounded-xl border-2 border-black shadow-neo-sm font-black text-xs flex items-center justify-center gap-2 transition-transform hover:-translate-y-0.5 truncate"
+                  className="bg-white hover:bg-slate-100 text-slate-900 p-3 rounded-xl border-2 border-black shadow-neo-sm font-black text-xs flex items-center justify-center gap-2 transition-transform hover:-translate-y-0.5 truncate"
                 >
-                  <Mail className="w-4 h-4 text-neo-emerald shrink-0" />
+                  <Mail className="w-4 h-4 text-emerald-600 shrink-0" />
                   <span className="truncate">Email Resmi</span>
                 </a>
               </div>
@@ -183,10 +183,10 @@ export const PosterSection: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md p-4 flex items-center justify-center"
+            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md p-4 flex items-center justify-center"
             onClick={() => setModalOpen(false)}
           >
-            <div className="relative max-w-lg w-full bg-neo-card p-3 rounded-3xl border-2 border-black shadow-2xl" onClick={(e) => e.stopPropagation()}>
+            <div className="relative max-w-lg w-full bg-white p-3 rounded-3xl border-2 border-black shadow-2xl" onClick={(e) => e.stopPropagation()}>
               <button
                 onClick={() => setModalOpen(false)}
                 className="absolute -top-4 -right-4 w-10 h-10 rounded-full bg-neo-yellow text-black font-black border-2 border-black shadow-neo flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
@@ -205,7 +205,7 @@ export const PosterSection: React.FC = () => {
                 <a
                   href="/images/poster-keelmuliajasa.png"
                   download="Poster-CV-Keel-Mulia-Jasa.png"
-                  className="flex-1 text-center bg-neo-card2 text-white font-black text-xs py-2.5 rounded-xl border-2 border-black shadow-neo-sm hover:bg-slate-700"
+                  className="flex-1 text-center bg-slate-100 text-slate-900 font-black text-xs py-2.5 rounded-xl border-2 border-black shadow-neo-sm hover:bg-slate-200"
                 >
                   Unduh Gambar Poster
                 </a>

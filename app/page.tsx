@@ -25,7 +25,7 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col bg-neo-bg text-white selection:bg-neo-yellow selection:text-black">
+    <main className="min-h-screen flex flex-col bg-neo-bg text-slate-900 selection:bg-neo-yellow selection:text-black">
       {/* Scroll Progress Bar at very top */}
       <ScrollProgress />
       

@@ -34,11 +34,11 @@ export const StickyBottomAction: React.FC = () => {
           transition={{ duration: 0.25, ease: "easeOut" }}
           className="fixed bottom-5 left-0 right-0 z-40 px-4 pointer-events-none"
         >
-          <div className="max-w-xl mx-auto bg-neo-surface border-2 border-black rounded-2xl p-2.5 sm:p-3 shadow-neo-lg pointer-events-auto flex items-center justify-between gap-2.5">
+          <div className="max-w-xl mx-auto bg-white border-2 border-black rounded-2xl p-2.5 sm:p-3 shadow-neo-lg pointer-events-auto flex items-center justify-between gap-2.5">
             
             {/* Brand Logo / Info */}
             <div className="flex items-center gap-2.5 pl-1 hidden sm:flex">
-              <div className="bg-neo-card p-1 rounded-lg border-2 border-black shadow-neo-sm">
+              <div className="bg-slate-50 p-1 rounded-lg border-2 border-black shadow-neo-sm">
                 <img
                   src="/images/logo-emblem-clean.png"
                   alt="Keel Mulia Jasa"
@@ -46,8 +46,8 @@ export const StickyBottomAction: React.FC = () => {
                 />
               </div>
               <div className="text-left">
-                <div className="text-[11px] font-black text-white leading-tight">CV. Keel Mulia Jasa</div>
-                <div className="text-[10px] text-neo-yellow font-black">Siaga Armada 24/7</div>
+                <div className="text-[11px] font-black text-slate-900 leading-tight">CV. Keel Mulia Jasa</div>
+                <div className="text-[10px] text-amber-600 font-black">Siaga Armada 24/7</div>
               </div>
             </div>
 
@@ -56,18 +56,18 @@ export const StickyBottomAction: React.FC = () => {
               
               <a
                 href="#kalkulator"
-                className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-neo-card hover:bg-neo-card2 text-slate-200 text-xs font-black border-2 border-black shadow-neo-sm hover:-translate-y-0.5 transition-all"
+                className="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-900 text-xs font-black border-2 border-black shadow-neo-sm hover:-translate-y-0.5 transition-all"
               >
-                <Calculator className="w-3.5 h-3.5 text-neo-yellow" />
+                <Calculator className="w-3.5 h-3.5 text-blue-600" />
                 <span className="hidden xs:inline">Hitung</span> Tarif
               </a>
 
               <a
                 href="tel:+6282396193473"
-                className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-neo-card hover:bg-neo-card2 text-slate-200 border-2 border-black shadow-neo-sm hover:-translate-y-0.5 transition-all"
+                className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-900 border-2 border-black shadow-neo-sm hover:-translate-y-0.5 transition-all"
                 title="Telepon Hotline"
               >
-                <PhoneCall className="w-4 h-4 text-neo-emerald" />
+                <PhoneCall className="w-4 h-4 text-emerald-600" />
               </a>
 
               <a
@@ -82,7 +82,7 @@ export const StickyBottomAction: React.FC = () => {
 
               <button
                 onClick={scrollToTop}
-                className="hidden md:inline-flex items-center justify-center w-9 h-9 rounded-xl bg-neo-card hover:bg-neo-card2 text-slate-300 border-2 border-black shadow-neo-sm transition-all cursor-pointer"
+                className="hidden md:inline-flex items-center justify-center w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 border-2 border-black shadow-neo-sm transition-all cursor-pointer"
                 title="Kembali ke Atas"
                 aria-label="Scroll to top"
               >

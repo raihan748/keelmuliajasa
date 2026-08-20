@@ -10,11 +10,12 @@ const config: Config = {
     extend: {
       colors: {
         neo: {
-          bg: "#0B0F17",
-          surface: "#131B2A",
-          card: "#182338",
-          card2: "#1E2C45",
-          border: "#2A3B5C",
+          bg: "#F8FAFC",
+          surface: "#FFFFFF",
+          card: "#FFFFFF",
+          card2: "#F1F5F9",
+          cardLight: "#F8FAFC",
+          border: "#000000",
           borderDark: "#000000",
           yellow: "#FACC15",
           "yellow-hover": "#EAB308",
@@ -24,8 +25,9 @@ const config: Config = {
           blue: "#3B82F6",
           cyan: "#06B6D4",
           purple: "#8B5CF6",
-          gray: "#94A3B8",
-          light: "#F8FAFC",
+          gray: "#64748B",
+          dark: "#0F172A",
+          light: "#FFFFFF",
         },
       },
       fontFamily: {
@@ -47,7 +49,6 @@ const config: Config = {
         "neo-yellow": "4px 4px 0px 0px #FACC15",
         "neo-emerald": "4px 4px 0px 0px #10B981",
         "neo-cyan": "4px 4px 0px 0px #06B6D4",
-        "neo-white": "4px 4px 0px 0px #FFFFFF",
       },
     },
   },

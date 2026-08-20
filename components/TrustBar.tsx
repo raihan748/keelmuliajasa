@@ -1,60 +1,64 @@
 import React from "react";
-import { ShieldCheck, Truck, Users, Receipt } from "lucide-react";
+import { ShieldCheck, Truck, Scale, FileText } from "lucide-react";
 
 export const TrustBar: React.FC = () => {
-  const trustPillars = [
+  const stats = [
     {
       icon: ShieldCheck,
-      title: "Legalitas Izin TPA",
-      desc: "Pembuangan langsung ke Tempat Pembuangan Akhir resmi pemerintah tanpa risiko sanksi.",
+      title: "Badan Usaha CV Resmi",
+      desc: "Legalitas lengkap (NIB & NPWP) siap menerbitkan invoice dan SPH",
       tag: "100% Legal",
       color: "bg-neo-emerald text-black",
     },
     {
       icon: Truck,
-      title: "Armada Milik Sendiri",
-      desc: "Kesiapan armada dump truck dan pick up bak tralis tinggi dalam kondisi prima siap jalan.",
-      tag: "Siap Setiap Hari",
+      title: "Izin Resmi Pembuangan TPA",
+      desc: "100% sampah dibuang langsung ke TPA resmi pemerintah berizin",
+      tag: "TPA Resmi",
       color: "bg-neo-yellow text-black",
     },
     {
-      icon: Users,
-      title: "Tim Loader Cekatan",
-      desc: "Tenaga bongkar muat berpengalaman, terlatih menangani puing berat, dan menyapu bersih.",
-      tag: "Terima Beres",
-      color: "bg-neo-blue text-white",
+      icon: Scale,
+      title: "Transparansi Ritase & Timbangan",
+      desc: "Kapasitas muatan akurat dengan bukti timbangan TPA bila dibutuhkan",
+      tag: "Akurat",
+      color: "bg-neo-cyan text-black",
     },
     {
-      icon: Receipt,
-      title: "Dokumen B2B Resmi",
-      desc: "Tersedia kwitansi, invoice resmi, SPH, dan surat jalan untuk pembukuan kantor/perusahaan.",
-      tag: "Invoice Ready",
-      color: "bg-neo-purple text-white",
+      icon: FileText,
+      title: "Faktur & Kwitansi Resmi",
+      desc: "Mendukung pembayaran termin untuk instansi, kantor, dan proyek",
+      tag: "B2B Ready",
+      color: "bg-neo-blue text-white",
     },
   ];
 
   return (
-    <section className="bg-neo-bg py-10 border-b-2 border-black">
+    <section className="py-14 bg-white border-b-2 border-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {trustPillars.map((item, index) => {
+          {stats.map((item, idx) => {
             const Icon = item.icon;
             return (
               <div
-                key={index}
-                className="p-5 rounded-2xl bg-neo-surface border-2 border-black shadow-neo hover:shadow-neo-lg hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
+                key={idx}
+                className="bg-slate-50 border-2 border-black rounded-2xl p-5 shadow-neo hover:shadow-neo-lg hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
               >
                 <div>
                   <div className="flex items-center justify-between mb-3.5">
-                    <div className="w-11 h-11 rounded-xl bg-neo-card border-2 border-black flex items-center justify-center text-neo-yellow shadow-neo-sm">
-                      <Icon className="w-5 h-5 stroke-[2.5]" />
+                    <div className="w-12 h-12 rounded-xl bg-white border-2 border-black flex items-center justify-center text-slate-900 shadow-neo-sm">
+                      <Icon className="w-6 h-6 stroke-[2.5]" />
                     </div>
                     <span className={`text-[10px] font-black uppercase px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm ${item.color}`}>
                       {item.tag}
                     </span>
                   </div>
-                  <h4 className="font-black text-base text-white mb-1.5">{item.title}</h4>
-                  <p className="text-xs text-slate-300 font-medium leading-relaxed">{item.desc}</p>
+                  <h3 className="font-black text-slate-900 text-base mb-1.5 leading-snug">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-slate-600 font-medium leading-relaxed">
+                    {item.desc}
+                  </p>
                 </div>
               </div>
             );
