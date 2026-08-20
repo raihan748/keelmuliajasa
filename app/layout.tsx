@@ -2,38 +2,41 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CV Keel Mulia Jasa - Jasa Angkutan Sampah, Puing & Kebersihan Lingkungan Profesional",
+  metadataBase: new URL("https://keelmuliajasa.com"),
+  title: "CV. Keel Mulia Jasa - Jasa Angkutan Sampah, Puing & Kebersihan Lingkungan",
   description:
-    "CV Keel Mulia Jasa adalah penyedia jasa angkutan sampah rumah tangga, komersial, puing bangunan, penebangan pohon, dan pembersihan lahan. Armada dump truck lengkap, berizin resmi, tim profesional, dan siap melayani kontrak B2B maupun insidentil.",
+    "CV. Keel Mulia Jasa adalah penyedia resmi jasa angkutan sampah rumah tangga, komersial, puing proyek konstruksi, penebangan pohon, dan pembersihan lahan dengan armada dump truck lengkap berizin resmi ke TPA.",
   keywords: [
-    "jasa angkutan sampah",
     "keel mulia jasa",
     "cv keel mulia jasa",
+    "jasa angkutan sampah",
     "jasa buang puing bangunan",
-    "angkut sampah kantor",
     "sewa dump truck sampah",
-    "jasa tebang pohon dan angkut",
-    "pembersihan lahan timbunan sampah",
-    "waste management makassar",
-    "jasa kebersihan lingkungan",
+    "jasa tebang pohon makassar",
+    "pembersihan lahan sampah",
+    "waste management sulawesi",
   ],
-  authors: [{ name: "CV Keel Mulia Jasa" }],
+  authors: [{ name: "CV. Keel Mulia Jasa" }],
+  icons: {
+    icon: "/images/favicon.png",
+    shortcut: "/favicon.ico",
+    apple: "/images/favicon.png",
+  },
   openGraph: {
-    title: "CV Keel Mulia Jasa - Jasa Angkutan Sampah & Kebersihan Terpadu",
+    title: "CV. Keel Mulia Jasa - Jasa Angkutan Sampah & Kebersihan Terpadu",
     description: "Solusi terpercaya pengangkutan sampah, puing proyek, dan pembersihan area dengan armada dump truck lengkap berizin resmi.",
     url: "https://keelmuliajasa.com",
-    siteName: "CV Keel Mulia Jasa",
+    siteName: "CV. Keel Mulia Jasa",
+    images: [
+      {
+        url: "/images/logo-original.jpg",
+        width: 1080,
+        height: 1080,
+        alt: "Logo CV. Keel Mulia Jasa",
+      },
+    ],
     locale: "id_ID",
     type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "CV Keel Mulia Jasa - Jasa Angkutan Sampah & Puing",
-    description: "Layanan pengangkutan sampah profesional, cepat, aman, dan berizin resmi.",
-  },
-  robots: {
-    index: true,
-    follow: true,
   },
 };
 
@@ -45,10 +48,12 @@ export default function RootLayout({
   return (
     <html lang="id" className="scroll-smooth">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/images/favicon.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Nunito:wght@400;500;600;700;800;900&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
       </head>

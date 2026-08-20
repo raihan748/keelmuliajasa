@@ -17,31 +17,36 @@ export const AboutCompany: React.FC = () => {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
           
-          {/* Left Column: Visual Badge & Values Card */}
+          {/* Left Column: Official Logo Card & Brand Card */}
           <div className="lg:col-span-5">
             <div className="relative">
               
               {/* Background gradient card */}
-              <div className="bg-gradient-to-br from-emerald-700 via-teal-800 to-slate-900 rounded-3xl p-8 sm:p-10 text-white shadow-2xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-48 h-48 bg-emerald-500/10 rounded-full blur-2xl" />
+              <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-8 sm:p-10 text-white shadow-2xl relative overflow-hidden border border-slate-700">
+                <div className="absolute top-0 right-0 w-48 h-48 bg-amber-500/10 rounded-full blur-2xl" />
                 
-                <div className="w-14 h-14 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center text-emerald-300 mb-6">
-                  <ShieldCheck className="w-8 h-8" />
+                {/* Official Logo Banner */}
+                <div className="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20 mb-6 flex items-center justify-center">
+                  <img
+                    src="/images/logo-clean.png"
+                    alt="Logo CV. Keel Mulia Jasa"
+                    className="max-h-24 w-auto object-contain"
+                  />
                 </div>
 
-                <h3 className="text-2xl font-black mb-3">CV. Keel Mulia Jasa</h3>
-                <p className="text-sm text-slate-200 leading-relaxed mb-6">
-                  Perusahaan spesialis logistik kebersihan, pengangkutan sampah, dan pengelolaan sisa material konstruksi terpercaya yang berkomitmen menjaga lingkungan tetap bersih, higienis, dan tertata rapi.
+                <h3 className="text-xl font-black mb-2 text-white">CV. Keel Mulia Jasa</h3>
+                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+                  Perusahaan spesialis logistik kebersihan, pengangkutan sampah residensial/komersial, dan pengelolaan sisa material konstruksi terpercaya yang berkomitmen menjaga lingkungan tetap bersih, higienis, dan tertata rapi.
                 </p>
 
-                <div className="grid grid-cols-2 gap-4 pt-6 border-t border-white/15">
+                <div className="grid grid-cols-2 gap-3.5 pt-5 border-t border-white/15">
                   <div className="bg-white/5 rounded-xl p-3 border border-white/10">
-                    <div className="text-xs text-slate-300 mb-1">Fokus Layanan</div>
-                    <div className="text-sm font-bold text-emerald-300">Waste Logistics</div>
+                    <div className="text-[11px] text-slate-400 mb-0.5">Spesialisasi</div>
+                    <div className="text-xs font-bold text-amber-400">Waste Logistics</div>
                   </div>
                   <div className="bg-white/5 rounded-xl p-3 border border-white/10">
-                    <div className="text-xs text-slate-300 mb-1">Standardisasi</div>
-                    <div className="text-sm font-bold text-emerald-300">Resmi & Legal TPA</div>
+                    <div className="text-[11px] text-slate-400 mb-0.5">Legalitas</div>
+                    <div className="text-xs font-bold text-emerald-400">Resmi & Legal TPA</div>
                   </div>
                 </div>
               </div>

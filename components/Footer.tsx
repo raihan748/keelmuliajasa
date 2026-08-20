@@ -1,5 +1,5 @@
 import React from "react";
-import { Truck, MessageCircle, Phone, Clock, Mail, MapPin, ShieldCheck } from "lucide-react";
+import { MessageCircle, Phone, Clock, Mail, MapPin, ShieldCheck } from "lucide-react";
 
 export const Footer: React.FC = () => {
   return (
@@ -10,18 +10,12 @@ export const Footer: React.FC = () => {
           
           {/* Col 1: Brand Info & Legalitas */}
           <div className="lg:col-span-4">
-            <a href="#" className="flex items-center gap-3 mb-4 group">
-              <div className="w-10 h-10 rounded-xl bg-emerald-600 flex items-center justify-center text-white shadow-md">
-                <Truck className="w-5 h-5" />
-              </div>
-              <div className="flex flex-col">
-                <span className="text-lg font-black tracking-tight text-white leading-tight">
-                  CV. KEEL MULIA JASA
-                </span>
-                <span className="text-[10px] font-bold text-emerald-400 tracking-wider uppercase">
-                  Waste Logistics & Cleaning Services
-                </span>
-              </div>
+            <a href="#" className="flex items-center gap-3 mb-5 group">
+              <img
+                src="/images/logo-clean.png"
+                alt="Logo CV. Keel Mulia Jasa"
+                className="h-12 w-auto object-contain"
+              />
             </a>
 
             <p className="text-slate-400 text-xs sm:text-sm leading-relaxed mb-5">
