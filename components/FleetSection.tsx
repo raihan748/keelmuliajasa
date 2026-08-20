@@ -1,5 +1,5 @@
 import React from "react";
-import { Truck, Shield, Wrench, CheckCircle2, MessageCircle } from "lucide-react";
+import { Truck, ShieldCheck, CheckCircle2, MessageCircle, FileCheck, Scale, Award } from "lucide-react";
 
 export const FleetSection: React.FC = () => {
   const fleets = [
@@ -44,11 +44,27 @@ export const FleetSection: React.FC = () => {
     },
   ];
 
-  const tools = [
-    "Terpal penutup muatan tebal standar keselamatan (anti sampah berterbangan)",
-    "Gergaji Mesin (Chain Saw) untuk pemotongan pohon & batang kayu besar",
-    "Peralatan kerja lapangan lengkap: Sekop baja, cangkul, garpu sampah, dan sapu lidi industri",
-    "Alat Pelindung Diri (APD) K3: Sarung tangan pelindung, rompi safety, dan sepatu safety boots",
+  const profileCommitments = [
+    {
+      title: "Izin Resmi & Legalitas Pembuangan TPA",
+      desc: "Seluruh muatan sampah dan puing dibuang ke TPA resmi berizin pemerintah, menjamin kepatuhan AMDAL dan bebas sanksi lingkungan.",
+      icon: ShieldCheck,
+    },
+    {
+      title: "Garansi Area Bersih & Disapu Tuntas",
+      desc: "Tim kami tidak hanya mengangkut sampah, tapi juga membersihkan dan menyapu sisa kotoran di area titik muat sampai rapi.",
+      icon: Award,
+    },
+    {
+      title: "Transparansi Ritase & Bukti Timbangan",
+      desc: "Penghitungan volume muatan yang jujur dengan bukti jalan resmi serta struk timbangan TPA untuk akurasi pelaporan.",
+      icon: Scale,
+    },
+    {
+      title: "Layanan Dokumen & Faktur Resmi B2B",
+      desc: "Penerbitan Surat Penawaran Harga (SPH), Surat Perjanjian Kerja Sama (MoU), Kwitansi stempel resmi, dan Invoice perusahaan.",
+      icon: FileCheck,
+    },
   ];
 
   return (
@@ -121,27 +137,35 @@ export const FleetSection: React.FC = () => {
           ))}
         </div>
 
-        {/* Safety & Tools Equipment Banner */}
+        {/* Company Profile Commitment & Standards Banner */}
         <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-8 sm:p-10 text-white border border-slate-700 shadow-xl">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
             <div className="lg:col-span-4">
               <div className="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center mb-4">
-                <Shield className="w-6 h-6" />
+                <ShieldCheck className="w-6 h-6" />
               </div>
-              <h4 className="text-xl font-black mb-2">Standar K3 & Peralatan Lengkap</h4>
+              <h4 className="text-xl font-black mb-2">Standar & Komitmen Pelayanan</h4>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Setiap armada dilengkapi peralatan bongkar muat lengkap dan terpal penutup khusus agar proses pengangkutan berlangsung tertib dan higienis.
+                CV. Keel Mulia Jasa memegang teguh standar operasional kebersihan, kepatuhan regulasi lingkungan, dan kepuasan penuh bagi setiap mitra kerja.
               </p>
             </div>
 
             <div className="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {tools.map((tool, tIdx) => (
-                <div key={tIdx} className="flex items-start gap-3 bg-white/5 p-3.5 rounded-xl border border-white/10">
-                  <Wrench className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span className="text-xs text-slate-200 leading-snug">{tool}</span>
-                </div>
-              ))}
+              {profileCommitments.map((item, tIdx) => {
+                const Icon = item.icon;
+                return (
+                  <div key={tIdx} className="bg-white/5 p-4 rounded-2xl border border-white/10 flex items-start gap-3.5 hover:bg-white/10 transition-colors">
+                    <div className="w-9 h-9 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+                      <Icon className="w-4.5 h-4.5" />
+                    </div>
+                    <div>
+                      <div className="text-xs font-black text-white mb-1">{item.title}</div>
+                      <div className="text-[11px] text-slate-300 leading-snug">{item.desc}</div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
 
           </div>
