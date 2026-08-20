@@ -8,11 +8,11 @@ export const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: "Tentang Kami", href: "#tentang-kami" },
+    { name: "Poster & Profil", href: "#poster-resmi" },
     { name: "Layanan", href: "#layanan" },
     { name: "Armada", href: "#armada" },
     { name: "Keunggulan", href: "#keunggulan" },
     { name: "Hitung Biaya", href: "#kalkulator" },
-    { name: "Alur Kerja", href: "#alur-kerja" },
     { name: "FAQ", href: "#faq" },
   ];
 
@@ -34,7 +34,7 @@ export const Navbar: React.FC = () => {
             </a>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-2 xl:gap-4">
+            <nav className="hidden lg:flex items-center gap-2 xl:gap-3">
               {navLinks.map((link) => (
                 <a
                   key={link.name}
@@ -57,7 +57,7 @@ export const Navbar: React.FC = () => {
               </a>
 
               <a
-                href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20booking%20armada%20angkutan%20sampah"
+                href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20booking%20armada%20angkutan%20sampah"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4.5 py-2.5 rounded-xl bg-neo-emerald hover:bg-neo-emerald-dark text-black text-xs sm:text-sm font-black border-2 border-black shadow-neo hover:-translate-y-0.5 hover:shadow-neo-lg active:translate-x-0.5 active:translate-y-0.5 active:shadow-neo-sm transition-all"
@@ -128,19 +128,19 @@ export const Navbar: React.FC = () => {
 
         <div className="pt-6 border-t-2 border-black space-y-3">
           <a
-            href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20booking%20armada%20angkutan%20sampah"
+            href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20booking%20armada%20angkutan%20sampah"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-neo-emerald hover:bg-neo-emerald-dark text-black font-black text-sm border-2 border-black shadow-neo"
           >
             <MessageCircle className="w-4 h-4 fill-current" />
-            <span>Chat WhatsApp Sekarang</span>
+            <span>Chat WA: 0823-9619-3473</span>
           </a>
           <a
-            href="tel:+6281234567890"
+            href="tel:+6282396193473"
             className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-neo-card hover:bg-neo-card2 text-slate-200 font-black text-xs border-2 border-black shadow-neo-sm"
           >
-            <span>Hotline: +62 812-3456-7890</span>
+            <span>Hotline: 0823-9619-3473</span>
           </a>
         </div>
       </div>

@@ -5,6 +5,7 @@ import { TopBanner } from "@/components/TopBanner";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { AboutCompany } from "@/components/AboutCompany";
+import { PosterSection } from "@/components/PosterSection";
 import { TrustBar } from "@/components/TrustBar";
 import { ServicesSection } from "@/components/ServicesSection";
 import { FleetSection } from "@/components/FleetSection";
@@ -27,6 +28,7 @@ export default function HomePage() {
       <Hero />
       <TrustBar />
       <AboutCompany />
+      <PosterSection />
       <ServicesSection />
       <FleetSection />
       <WhyChooseUs />

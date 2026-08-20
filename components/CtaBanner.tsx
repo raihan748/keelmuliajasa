@@ -23,7 +23,7 @@ export const CtaBanner: React.FC = () => {
 
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20butuh%20pengangkutan%20sampah%2Fpuing%20segera"
+              href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20butuh%20pengangkutan%20sampah%2Fpuing%20segera"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl bg-neo-emerald hover:bg-neo-emerald-dark text-black font-black text-base border-2 border-black shadow-neo hover:shadow-neo-lg hover:-translate-y-0.5 active:translate-y-0 transition-all"
@@ -33,11 +33,11 @@ export const CtaBanner: React.FC = () => {
             </a>
 
             <a
-              href="tel:+6281234567890"
+              href="tel:+6282396193473"
               className="inline-flex items-center gap-2 px-7 py-4 rounded-xl bg-neo-card hover:bg-neo-card2 text-white font-black text-base border-2 border-black shadow-neo hover:shadow-neo-lg hover:-translate-y-0.5 transition-all"
             >
               <PhoneCall className="w-5 h-5 text-neo-yellow" />
-              <span>Hotline: 0812-3456-7890</span>
+              <span>Hotline: 0823-9619-3473</span>
             </a>
           </div>
 

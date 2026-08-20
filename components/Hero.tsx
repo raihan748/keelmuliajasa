@@ -21,7 +21,7 @@ export const Hero: React.FC = () => {
       `📍 *Lokasi Pengangkutan:* ${loc}\n\n` +
       `Mohon info estimasi biaya, ketersediaan jadwal, dan prosedur pengangkutannya. Terima kasih!`;
 
-    const url = `https://wa.me/6281234567890?text=${encodeURIComponent(msg)}`;
+    const url = `https://wa.me/6282396193473?text=${encodeURIComponent(msg)}`;
     window.open(url, "_blank");
   };
 
@@ -71,7 +71,7 @@ export const Hero: React.FC = () => {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20mau%20konsultasi%20pengangkutan%20sampah%20dan%20pembersihan"
+                href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20mau%20konsultasi%20pengangkutan%20sampah%20dan%20pembersihan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-neo-emerald hover:bg-neo-emerald-dark text-black font-black text-base border-2 border-black shadow-neo hover:shadow-neo-lg transition-all"

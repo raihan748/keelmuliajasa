@@ -19,7 +19,7 @@ export const FloatingWhatsApp: React.FC = () => {
 
       {/* Floating Action Button */}
       <a
-        href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20tanya%20layanan%20angkutan%20sampah%2Fpuing"
+        href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20tanya%20layanan%20angkutan%20sampah%2Fpuing"
         target="_blank"
         rel="noopener noreferrer"
         onMouseEnter={() => setHovered(true)}

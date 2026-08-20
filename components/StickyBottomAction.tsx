@@ -63,7 +63,7 @@ export const StickyBottomAction: React.FC = () => {
               </a>
 
               <a
-                href="tel:+6281234567890"
+                href="tel:+6282396193473"
                 className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-neo-card hover:bg-neo-card2 text-slate-200 border-2 border-black shadow-neo-sm hover:-translate-y-0.5 transition-all"
                 title="Telepon Hotline"
               >
@@ -71,7 +71,7 @@ export const StickyBottomAction: React.FC = () => {
               </a>
 
               <a
-                href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20booking%20armada%20pengangkutan"
+                href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20booking%20armada%20pengangkutan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-neo-emerald hover:bg-neo-emerald-dark text-black text-xs sm:text-sm font-black border-2 border-black shadow-neo hover:-translate-y-0.5 active:translate-y-0 transition-all"

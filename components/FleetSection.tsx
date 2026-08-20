@@ -129,7 +129,7 @@ export const FleetSection: React.FC = () => {
 
               <div className="p-6 pt-0">
                 <a
-                  href={`https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20booking%20unit%20${encodeURIComponent(fleet.name)}`}
+                  href={`https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20booking%20unit%20${encodeURIComponent(fleet.name)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-neo-yellow group-hover:bg-neo-emerald text-black font-black text-xs border-2 border-black shadow-neo transition-all"

@@ -33,7 +33,7 @@ export const CalculatorSection: React.FC = () => {
 
     message += `\nMohon info ketersediaan jadwal armada, estimasi tarif, dan dokumen penawaran resminya. Terima kasih!`;
 
-    const url = `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/6282396193473?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
   };
 

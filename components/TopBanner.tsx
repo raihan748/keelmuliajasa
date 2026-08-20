@@ -1,5 +1,5 @@
 import React from "react";
-import { Truck, PhoneCall, ShieldCheck } from "lucide-react";
+import { Truck, PhoneCall, ShieldCheck, Instagram, Mail } from "lucide-react";
 
 export const TopBanner: React.FC = () => {
   return (
@@ -11,23 +11,29 @@ export const TopBanner: React.FC = () => {
             Berizin Resmi TPA
           </span>
           <span className="text-slate-300 font-semibold">
-            CV. Keel Mulia Jasa — Pengangkutan Sampah, Puing & Kebersihan Terpadu
+            CV. Keel Mulia Jasa — Melayani Area Makassar, Gowa & Maros
           </span>
         </div>
 
-        <div className="flex items-center gap-4 text-xs">
-          <span className="text-slate-400 hidden md:inline-flex items-center gap-1.5">
-            <Truck className="w-4 h-4 text-neo-emerald" />
-            Armada Siaga Setiap Hari
-          </span>
+        <div className="flex items-center gap-3 text-xs">
           <a
-            href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20konsultasi%20layanan%20angkutan%20sampah%2Fpuing"
+            href="https://instagram.com/cv.keelmuliajasa"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex items-center gap-1 text-slate-300 hover:text-neo-yellow transition-colors"
+          >
+            <Instagram className="w-3.5 h-3.5 text-neo-yellow" />
+            <span>@cv.keelmuliajasa</span>
+          </a>
+
+          <a
+            href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20konsultasi%20layanan%20angkutan%20sampah"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-neo-card hover:bg-neo-card2 text-neo-yellow px-3 py-1 rounded-md border-2 border-black shadow-neo-sm font-black inline-flex items-center gap-1.5 transition-transform hover:-translate-y-0.5 active:translate-y-0"
           >
-            <PhoneCall className="w-3.5 h-3.5" />
-            <span>WA: +62 812-3456-7890</span>
+            <PhoneCall className="w-3.5 h-3.5 text-neo-emerald" />
+            <span>WA: 0823-9619-3473</span>
           </a>
         </div>
       </div>
