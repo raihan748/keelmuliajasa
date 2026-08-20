@@ -8,24 +8,28 @@ export const FaqSection: React.FC = () => {
 
   const faqs = [
     {
-      q: "Apakah tim CleanUp IND membawa peralatan dan chemical sendiri?",
-      a: "Ya, tim kami selalu datang dengan membawa peralatan pembersihan lengkap (mesin vakum, hydrovacuum, steam cleaner, tangga, ember, lap microfiber khusus) dan chemical pembersih profesional. Anda tidak perlu repot menyediakan alat apa pun.",
+      q: "Jenis sampah dan muatan apa saja yang dapat diangkut oleh CV. Keel Mulia Jasa?",
+      a: "Kami melayani pengangkutan sampah rumah tangga/pemukiman, sampah komersial kantor/ruko/restoran, puing sisa bongkaran bangunan/proyek (batu, semen, keramik, kayu), dahan dan batang pohon hasil penebangan, hingga sampah timbunan lahan kosong.",
     },
     {
-      q: "Apakah chemical yang digunakan aman untuk anak kecil dan hewan peliharaan?",
-      a: "Tentu saja! Kami hanya menggunakan chemical ramah lingkungan (eco-friendly) yang tersertifikasi non-toksik, bebas bau menyengat berbahaya, sehingga 100% aman untuk bayi, ibu hamil, lansia, dan anabul peliharaan Anda.",
+      q: "Ke mana sampah dan puing tersebut akan dibuang?",
+      a: "Seluruh muatan sampah dan puing dibuang langsung ke Tempat Pembuangan Akhir (TPA) resmi yang telah berizin dari dinas kebersihan dan lingkungan hidup terkait. Kami tidak pernah membuang sampah sembarangan di pinggir jalan atau lahan liar.",
     },
     {
-      q: "Bagaimana jika saya merasa hasil pembersihan kurang memuaskan?",
-      a: "CleanUp IND memberikan Garansi Kepuasan (Re-Clean Guarantee). Jika ada bagian yang terlewat atau kurang bersih, Anda bisa langsung memberitahukan tim di lokasi atau melapor ke admin dalam 24 jam untuk dilakukan pembersihan ulang tanpa biaya tambahan.",
+      q: "Apakah tarif sewa armada sudah termasuk supir dan tenaga kuli angkut (loader)?",
+      a: "Ya! Kami menyediakan opsi paket lengkap 'All-In' yang sudah mencakup unit dump truck, BBM, supir berpengalaman, serta tenaga loader yang bertugas menaikkan sampah ke bak truk dan menyapu bersih area pemuatan.",
     },
     {
-      q: "Berapa lama estimasi durasi pengerjaan per sesi?",
-      a: "Durasi tergantung jenis layanan dan luas area. General cleaning biasanya memakan waktu 2–4 jam, sedangkan Deep Cleaning rumah pasca renovasi dapat memakan waktu 4–8 jam dengan jumlah tim cleaner yang disesuaikan.",
+      q: "Berapa lama armada bisa tiba di lokasi setelah pemesanan dikonfirmasi?",
+      a: "Untuk pemesanan mendesak (same day service), armada kami dapat tiba di lokasi dalam waktu 1–3 jam tergantung jarak dan kondisi lalu lintas. Kami juga melayani penjadwalan H-1 untuk kepastian waktu yang lebih presisi.",
     },
     {
-      q: "Apakah melayani pembersihan di hari Minggu atau libur nasional?",
-      a: "Ya! Kami beroperasi setiap hari dari Senin hingga Minggu, termasuk hari libur nasional mulai pukul 07.00 s/d 21.00 WIB. Sebaiknya lakukan booking H-1 via WhatsApp untuk memastikan ketersediaan slot cleaner favorit Anda.",
+      q: "Apakah CV. Keel Mulia Jasa dapat menerbitkan invoice dan faktur resmi untuk perusahaan?",
+      a: "Tentu saja. Sebagai badan usaha resmi berbentuk CV, kami memiliki legalitas lengkap (NIB, NPWP) dan siap menerbitkan Surat Penawaran Harga (SPH), Surat Jalan, Kwitansi resmi berstempel, dan Invoice untuk keperluan pembukuan kantor atau instansi Anda.",
+    },
+    {
+      q: "Bagaimana cara perhitungan biaya pengangkutan?",
+      a: "Tarif dihitung berdasarkan jenis muatan, volume/ritase armada (Pick Up, Dump Truck 4 Roda, atau Dump Truck 6 Roda), jarak tempuh ke lokasi dan TPA, serta tingkat kesulitan pemuatan. Anda cukup mengirimkan foto tumpukan sampah via WhatsApp untuk mendapatkan estimasi harga pasti tanpa biaya tersembunyi.",
     },
   ];
 
@@ -34,18 +38,18 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-white" id="faq">
+    <section className="py-20 bg-white border-b border-slate-200" id="faq">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-14">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-brand-green-light text-brand-green-darker border border-brand-green/30 text-xs font-bold uppercase tracking-wider mb-3">
-            Tanya Jawab
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider mb-3">
+            Tanya Jawab (FAQ)
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-brand-dark tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
             Pertanyaan yang Sering Diajukan
           </h2>
-          <p className="text-base sm:text-lg text-brand-gray leading-relaxed">
-            Punya pertanyaan seputar layanan kami? Temukan jawabannya di bawah ini.
+          <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
+            Informasi lengkap seputar mekanisme layanan pengangkutan dan pengelolaan sampah kami.
           </p>
         </div>
 
@@ -56,7 +60,7 @@ export const FaqSection: React.FC = () => {
               <div
                 key={idx}
                 className={`border rounded-2xl transition-all duration-200 overflow-hidden ${
-                  isOpen ? "border-brand-green shadow-subtle bg-brand-green-soft/30" : "border-brand-border bg-white"
+                  isOpen ? "border-emerald-500 shadow-sm bg-emerald-50/30" : "border-slate-200 bg-white"
                 }`}
               >
                 <button
@@ -64,10 +68,10 @@ export const FaqSection: React.FC = () => {
                   onClick={() => toggleFaq(idx)}
                   className="w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer focus:outline-none"
                 >
-                  <span className="font-extrabold text-base sm:text-lg text-brand-dark">{item.q}</span>
+                  <span className="font-extrabold text-base sm:text-lg text-slate-900">{item.q}</span>
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${
-                      isOpen ? "rotate-180 bg-brand-green-light text-brand-green-darker" : "bg-gray-100 text-brand-dark"
+                      isOpen ? "rotate-180 bg-emerald-100 text-emerald-800" : "bg-slate-100 text-slate-700"
                     }`}
                   >
                     <ChevronDown className="w-4 h-4" />
@@ -75,7 +79,7 @@ export const FaqSection: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-5 pt-1 text-sm sm:text-base text-brand-gray leading-relaxed border-t border-brand-border-light/60">
+                  <div className="px-6 pb-5 pt-1 text-sm text-slate-600 leading-relaxed border-t border-slate-100">
                     {item.a}
                   </div>
                 )}

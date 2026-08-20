@@ -3,55 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CleanUp IND - Jasa Home Cleaning Profesional Jabodetabek | Bersih, Rapi & Bergaransi</title>
-  <meta name="description" content="Jasa home cleaning, deep cleaning, sedot tungau, cuci kamar mandi & toren profesional untuk wilayah Jabodetabek. Tenaga terlatih, chemical ramah anak, bergaransi & booking cepat via WhatsApp." />
-  
-  <!-- Google Fonts: Nunito -->
+  <title>CV Keel Mulia Jasa - Jasa Angkutan Sampah, Puing & Kebersihan Lingkungan</title>
+  <meta name="description" content="CV Keel Mulia Jasa adalah penyedia jasa angkutan sampah rumah tangga, komersial, puing proyek bangunan, penebangan pohon, dan pembersihan lahan dengan armada dump truck lengkap berizin resmi." />
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
   <style>
-    /* ==========================================================================
-       DESIGN TOKENS & RESET (CleanUp IND Design System)
-       ========================================================================== */
     :root {
-      --color-primary: #61CE70;
-      --color-primary-dark: #4aba59;
-      --color-primary-darker: #389e46;
-      --color-primary-light: #eaf8ec;
-      --color-primary-soft: #f4fbf5;
-      
-      --color-accent: #61E8FF;
-      --color-accent-dark: #0eb5d6;
-      
-      --color-dark: #111827;
-      --color-dark-muted: #374151;
-      --color-gray: #69727D;
-      --color-gray-light: #9CA3AF;
-      --color-border: #E5E7EB;
-      --color-border-light: #F3F4F6;
-      
+      --color-emerald: #059669;
+      --color-emerald-dark: #047857;
+      --color-emerald-light: #ECFDF5;
+      --color-teal: #0D9488;
+      --color-dark: #0F172A;
+      --color-slate-800: #1E293B;
+      --color-slate-700: #334155;
+      --color-gray: #64748B;
+      --color-gray-light: #94A3B8;
+      --color-border: #E2E8F0;
+      --color-bg-subtle: #F8FAFC;
       --color-white: #FFFFFF;
-      --color-bg-subtle: #F8FAF9;
-      --color-bg-card: #FFFFFF;
-      
       --color-wa: #25D366;
       --color-wa-dark: #1EBE5D;
-
-      --font-main: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      
-      --radius-sm: 6px;
-      --radius-md: 10px;
-      --radius-lg: 16px;
-      --radius-xl: 24px;
+      --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
       --radius-full: 9999px;
-      
-      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
-      --shadow-md: 0 4px 12px -2px rgba(0, 0, 0, 0.06), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
-      --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.08), 0 4px 10px -2px rgba(0, 0, 0, 0.04);
-      --shadow-primary: 0 8px 20px -4px rgba(97, 206, 112, 0.35);
-      
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 14px -2px rgba(0,0,0,0.08);
+      --shadow-lg: 0 12px 30px -4px rgba(0,0,0,0.12);
       --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -68,2687 +51,455 @@
 
     body {
       font-family: var(--font-main);
-      background-color: var(--color-white);
+      background-color: #F8FAFC;
       color: var(--color-dark);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
-      transition: var(--transition);
-    }
+    a { text-decoration: none; color: inherit; transition: var(--transition); }
+    img { max-width: 100%; height: auto; display: block; }
+    button, input, select, textarea { font-family: inherit; font-size: inherit; border: none; outline: none; }
 
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    button, input, select, textarea {
-      font-family: inherit;
-      font-size: inherit;
-      border: none;
-      outline: none;
-    }
-
-    /* ==========================================================================
-       CONTAINER & UTILITIES
-       ========================================================================== */
     .container {
       width: 100%;
       max-width: 1200px;
-      margin-left: auto;
-      margin-right: auto;
-      padding-left: 20px;
-      padding-right: 20px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
 
-    .section-py {
-      padding-top: 80px;
-      padding-bottom: 80px;
-    }
-
-    @media (max-width: 768px) {
-      .section-py {
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
-    }
+    .section-py { padding: 80px 0; }
+    @media (max-width: 768px) { .section-py { padding: 50px 0; } }
 
     .text-center { text-align: center; }
-    .text-left { text-align: left; }
-    
+
     .badge {
       display: inline-flex;
       align-items: center;
       gap: 6px;
       padding: 6px 14px;
       border-radius: var(--radius-full);
-      font-size: 0.875rem;
-      font-weight: 700;
-      letter-spacing: 0.02em;
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
 
-    .badge-primary {
-      background-color: var(--color-primary-light);
-      color: var(--color-primary-darker);
-      border: 1px solid rgba(97, 206, 112, 0.3);
-    }
-
-    .badge-cyan {
-      background-color: #e0f7fc;
-      color: #0284c7;
+    .badge-emerald {
+      background-color: var(--color-emerald-light);
+      color: var(--color-emerald-dark);
+      border: 1px solid rgba(5, 150, 105, 0.25);
     }
 
     .section-header {
-      max-width: 680px;
+      max-width: 700px;
       margin: 0 auto 50px;
     }
 
     .section-title {
       font-size: 2.25rem;
-      font-weight: 800;
+      font-weight: 900;
       line-height: 1.25;
       color: var(--color-dark);
       margin-top: 12px;
-      margin-bottom: 16px;
+      margin-bottom: 14px;
       letter-spacing: -0.02em;
     }
 
     .section-desc {
       font-size: 1.05rem;
       color: var(--color-gray);
-      line-height: 1.6;
     }
 
-    @media (max-width: 768px) {
-      .section-title {
-        font-size: 1.75rem;
-      }
-      .section-desc {
-        font-size: 0.95rem;
-      }
-    }
-
-    /* ==========================================================================
-       BUTTONS
-       ========================================================================== */
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
-      padding: 13px 24px;
-      font-size: 1rem;
-      font-weight: 700;
+      padding: 14px 26px;
+      font-size: 0.95rem;
+      font-weight: 800;
       border-radius: var(--radius-md);
       cursor: pointer;
       transition: var(--transition);
-      text-align: center;
-      white-space: nowrap;
     }
 
-    .btn-primary {
-      background-color: var(--color-primary);
+    .btn-emerald {
+      background-color: var(--color-emerald);
       color: var(--color-white);
-      box-shadow: var(--shadow-sm);
+      box-shadow: 0 6px 20px rgba(5, 150, 105, 0.35);
     }
 
-    .btn-primary:hover {
-      background-color: var(--color-primary-dark);
+    .btn-emerald:hover {
+      background-color: var(--color-emerald-dark);
       transform: translateY(-2px);
-      box-shadow: var(--shadow-primary);
+      box-shadow: 0 8px 25px rgba(5, 150, 105, 0.45);
     }
 
-    .btn-secondary {
-      background-color: #414141;
-      color: var(--color-white);
-      border-radius: var(--radius-full);
-    }
-
-    .btn-secondary:hover {
-      background-color: #222222;
-      transform: translateY(-2px);
-    }
-
-    .btn-outline {
-      background-color: transparent;
-      color: var(--color-dark);
-      border: 1.5px solid var(--color-border);
-    }
-
-    .btn-outline:hover {
-      background-color: var(--color-bg-subtle);
-      border-color: var(--color-gray);
-    }
-
-    .btn-whatsapp {
+    .btn-wa {
       background-color: var(--color-wa);
       color: var(--color-white);
-      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
     }
 
-    .btn-whatsapp:hover {
+    .btn-wa:hover {
       background-color: var(--color-wa-dark);
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
     }
 
-    .btn-sm {
-      padding: 9px 16px;
-      font-size: 0.875rem;
-      border-radius: var(--radius-sm);
-    }
-
-    .btn-lg {
-      padding: 16px 32px;
-      font-size: 1.1rem;
-      border-radius: var(--radius-md);
-    }
-
-    .btn-full {
-      width: 100%;
-    }
-
-    /* ==========================================================================
-       TOP ANNOUNCEMENT BAR
-       ========================================================================== */
+    /* Top Bar */
     .top-bar {
       background-color: var(--color-dark);
-      color: var(--color-white);
+      color: #CBD5E1;
       font-size: 0.85rem;
-      padding: 8px 0;
-      text-align: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #1E293B;
+    }
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
-    .top-bar strong {
-      color: var(--color-primary);
-    }
-
-    .top-bar a {
-      color: var(--color-accent);
-      text-decoration: underline;
-      margin-left: 6px;
-      font-weight: 700;
-    }
-
-    .top-bar a:hover {
-      color: var(--color-white);
-    }
-
-    /* ==========================================================================
-       HEADER & NAVIGATION
-       ========================================================================== */
+    /* Header */
     .site-header {
-      background-color: var(--color-white);
-      border-bottom: 1px solid var(--color-border-light);
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
       position: sticky;
       top: 0;
       z-index: 990;
-      box-shadow: var(--shadow-sm);
+      border-bottom: 1px solid var(--color-border);
     }
-
     .navbar {
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      height: 74px;
+      align-items: center;
+      height: 80px;
     }
-
     .brand-logo {
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-size: 1.45rem;
-      font-weight: 900;
-      color: var(--color-dark);
-      letter-spacing: -0.03em;
-    }
-
-    .brand-logo-icon {
-      width: 38px;
-      height: 38px;
-      background: linear-gradient(135deg, var(--color-primary) 0%, #3bb64c 100%);
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-white);
-      box-shadow: 0 4px 10px rgba(97, 206, 112, 0.3);
-    }
-
-    .brand-logo span.highlight {
-      color: var(--color-primary-dark);
-      font-weight: 800;
-      font-size: 1.1rem;
-      background: var(--color-primary-light);
-      padding: 2px 6px;
-      border-radius: 4px;
-      margin-left: 4px;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--color-dark-muted);
-    }
-
-    .nav-links a:hover {
-      color: var(--color-primary-darker);
-    }
-
-    .nav-cta {
-      display: flex;
-      align-items: center;
       gap: 12px;
     }
-
-    .mobile-menu-btn {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: var(--color-dark);
-      padding: 6px;
-    }
-
-    /* Mobile Drawer */
-    .mobile-drawer {
-      display: none;
-      position: fixed;
-      top: 0;
-      right: -100%;
-      width: 82%;
-      max-width: 320px;
-      height: 100%;
-      background: var(--color-white);
-      z-index: 1000;
-      padding: 24px;
-      box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
-      transition: right 0.3s ease;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .mobile-drawer.open {
-      right: 0;
-    }
-
-    .drawer-overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.4);
-      z-index: 999;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .drawer-overlay.open {
-      display: block;
-      opacity: 1;
-    }
-
-    @media (max-width: 992px) {
-      .nav-links, .nav-cta .hide-mobile {
-        display: none;
-      }
-      .mobile-menu-btn {
-        display: block;
-      }
-      .mobile-drawer {
-        display: flex;
-      }
-    }
-
-    /* ==========================================================================
-       HERO SECTION
-       ========================================================================== */
-    .hero-section {
-      background: linear-gradient(180deg, #FFFFFF 0%, #F5FAF6 100%);
-      padding-top: 60px;
-      padding-bottom: 70px;
-      position: relative;
-      overflow: hidden;
-      border-bottom: 1px solid var(--color-border-light);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 48px;
-      align-items: center;
-    }
-
-    .hero-content {
-      text-align: left;
-    }
-
-    .hero-eyebrow {
-      margin-bottom: 16px;
-    }
-
-    .hero-headline {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.03em;
-      color: var(--color-dark);
-      margin-bottom: 20px;
-    }
-
-    .hero-headline .text-green {
-      color: var(--color-primary-dark);
-      position: relative;
-      display: inline-block;
-    }
-
-    .hero-headline .text-green::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 4px;
-      width: 100%;
-      height: 8px;
-      background-color: var(--color-primary-light);
-      z-index: -1;
-      border-radius: 4px;
-    }
-
-    .hero-subheadline {
-      font-size: 1.15rem;
-      color: var(--color-dark-muted);
-      line-height: 1.6;
-      margin-bottom: 32px;
-      max-width: 580px;
-    }
-
-    .hero-actions {
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-bottom: 36px;
-    }
-
-    .hero-stats {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      padding-top: 24px;
-      border-top: 1px solid rgba(0, 0, 0, 0.08);
-    }
-
-    .stat-item {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .stat-number {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--color-dark);
-      line-height: 1.2;
-    }
-
-    .stat-label {
-      font-size: 0.825rem;
-      color: var(--color-gray);
-      font-weight: 600;
-    }
-
-    /* Hero Right Card / Quick Quote Box */
-    .hero-visual {
-      position: relative;
-    }
-
-    .hero-quote-card {
-      background: var(--color-white);
-      border-radius: var(--radius-xl);
-      padding: 30px;
-      box-shadow: var(--shadow-lg);
-      border: 1px solid var(--color-border);
-      position: relative;
-      z-index: 2;
-    }
-
-    .quote-card-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 20px;
-      padding-bottom: 16px;
-      border-bottom: 1px solid var(--color-border-light);
-    }
-
-    .quote-card-header h3 {
-      font-size: 1.2rem;
-      font-weight: 800;
-      color: var(--color-dark);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .form-group {
-      margin-bottom: 16px;
-      text-align: left;
-    }
-
-    .form-group label {
-      display: block;
-      font-size: 0.85rem;
-      font-weight: 700;
-      color: var(--color-dark-muted);
-      margin-bottom: 6px;
-    }
-
-    .form-control {
-      width: 100%;
-      padding: 11px 14px;
-      border: 1.5px solid var(--color-border);
-      border-radius: var(--radius-sm);
-      font-size: 0.95rem;
-      background-color: #FAFAFA;
-      color: var(--color-dark);
-      transition: var(--transition);
-    }
-
-    .form-control:focus {
-      border-color: var(--color-primary);
-      background-color: var(--color-white);
-      box-shadow: 0 0 0 3px rgba(97, 206, 112, 0.2);
-    }
-
-    .floating-badge {
-      position: absolute;
-      background: var(--color-white);
-      padding: 10px 16px;
-      border-radius: var(--radius-full);
-      box-shadow: var(--shadow-md);
-      border: 1px solid var(--color-border);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      z-index: 3;
-      animation: float 3.5s ease-in-out infinite;
-    }
-
-    .floating-badge-1 {
-      top: -15px;
-      right: -15px;
-    }
-
-    .floating-badge-2 {
-      bottom: -15px;
-      left: -15px;
-      animation-delay: 1.5s;
-    }
-
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-
-    @media (max-width: 992px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-      .hero-headline {
-        font-size: 2.3rem;
-      }
-    }
-
-    /* ==========================================================================
-       TRUST SECTION (Key Highlights)
-       ========================================================================== */
-    .trust-section {
-      background-color: var(--color-white);
-      border-bottom: 1px solid var(--color-border-light);
-      padding: 40px 0;
-    }
-
-    .trust-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-    }
-
-    .trust-card {
-      display: flex;
-      align-items: flex-start;
-      gap: 16px;
-      padding: 16px;
-      border-radius: var(--radius-md);
-      transition: var(--transition);
-    }
-
-    .trust-card:hover {
-      background-color: var(--color-bg-subtle);
-    }
-
-    .trust-icon-box {
-      width: 48px;
-      height: 48px;
-      min-width: 48px;
-      border-radius: var(--radius-md);
-      background-color: var(--color-primary-light);
-      color: var(--color-primary-darker);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .trust-content h4 {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: var(--color-dark);
-      margin-bottom: 4px;
-    }
-
-    .trust-content p {
-      font-size: 0.875rem;
-      color: var(--color-gray);
-      line-height: 1.45;
-    }
-
-    @media (max-width: 992px) {
-      .trust-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .trust-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* ==========================================================================
-       SERVICES SECTION (9 Cards)
-       ========================================================================== */
-    .services-section {
-      background-color: var(--color-bg-subtle);
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-    }
-
-    .service-card {
-      background-color: var(--color-white);
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--color-border);
-      padding: 28px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: var(--transition);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: var(--shadow-lg);
-      border-color: rgba(97, 206, 112, 0.4);
-    }
-
-    .service-card.featured {
-      border-color: var(--color-primary);
-      box-shadow: var(--shadow-md);
-    }
-
-    .service-card.featured::before {
-      content: 'POPULER';
-      position: absolute;
-      top: 14px;
-      right: 14px;
-      background-color: var(--color-primary);
-      color: var(--color-white);
-      font-size: 0.7rem;
-      font-weight: 800;
-      padding: 3px 8px;
-      border-radius: var(--radius-sm);
-      letter-spacing: 0.05em;
-    }
-
-    .service-top {
-      margin-bottom: 20px;
-    }
-
-    .service-icon-wrap {
-      width: 56px;
-      height: 56px;
-      border-radius: var(--radius-md);
-      background: linear-gradient(135deg, var(--color-primary-light) 0%, #d8f5dc 100%);
-      color: var(--color-primary-darker);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 18px;
-    }
-
-    .service-title {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: var(--color-dark);
-      margin-bottom: 10px;
-      line-height: 1.3;
-    }
-
-    .service-desc {
-      font-size: 0.925rem;
-      color: var(--color-gray);
-      line-height: 1.55;
-      margin-bottom: 18px;
-    }
-
-    .service-features {
-      list-style: none;
-      margin-bottom: 24px;
-      padding-top: 14px;
-      border-top: 1px dashed var(--color-border);
-    }
-
-    .service-features li {
-      font-size: 0.85rem;
-      color: var(--color-dark-muted);
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .service-features li svg {
-      color: var(--color-primary-dark);
-      flex-shrink: 0;
-    }
-
-    .service-bottom {
-      margin-top: auto;
-      padding-top: 16px;
-      border-top: 1px solid var(--color-border-light);
-    }
-
-    .service-price-hint {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 14px;
-    }
-
-    .service-price-hint .label {
-      font-size: 0.8rem;
-      color: var(--color-gray);
-      font-weight: 600;
-    }
-
-    .service-price-hint .price {
-      font-size: 1.15rem;
-      font-weight: 800;
-      color: var(--color-primary-darker);
-    }
-
-    @media (max-width: 1024px) {
-      .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 640px) {
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* ==========================================================================
-       WHY CHOOSE US SECTION
-       ========================================================================== */
-    .why-section {
-      background-color: var(--color-white);
-    }
-
-    .why-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 48px;
-      align-items: center;
-    }
-
-    .why-cards-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .why-card {
-      background-color: var(--color-bg-subtle);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: 24px;
-      transition: var(--transition);
-    }
-
-    .why-card:hover {
-      background-color: var(--color-white);
-      border-color: var(--color-primary);
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .why-card-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: var(--radius-md);
-      background-color: var(--color-primary-light);
-      color: var(--color-primary-darker);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 16px;
-    }
-
-    .why-card h4 {
-      font-size: 1.15rem;
-      font-weight: 800;
-      color: var(--color-dark);
-      margin-bottom: 8px;
-    }
-
-    .why-card p {
-      font-size: 0.9rem;
-      color: var(--color-gray);
-      line-height: 1.5;
-    }
-
-    .coverage-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 24px;
-      margin-bottom: 30px;
-    }
-
-    .coverage-pill {
-      background: var(--color-primary-light);
-      color: var(--color-primary-darker);
-      padding: 8px 16px;
-      border-radius: var(--radius-full);
-      font-size: 0.9rem;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    @media (max-width: 992px) {
-      .why-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 576px) {
-      .why-cards-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* ==========================================================================
-       HOW IT WORKS SECTION (Booking Process)
-       ========================================================================== */
-    .steps-section {
-      background-color: var(--color-bg-subtle);
-    }
-
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-      position: relative;
-    }
-
-    .step-card {
-      background-color: var(--color-white);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: 30px 20px;
-      text-align: center;
-      position: relative;
-      transition: var(--transition);
-    }
-
-    .step-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--color-primary);
-    }
-
-    .step-number {
-      width: 42px;
-      height: 42px;
-      background-color: var(--color-primary);
-      color: var(--color-white);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 900;
-      font-size: 1.2rem;
-      margin: 0 auto 18px;
-      box-shadow: 0 4px 10px rgba(97, 206, 112, 0.35);
-    }
-
-    .step-title {
-      font-size: 1.1rem;
-      font-weight: 800;
-      color: var(--color-dark);
-      margin-bottom: 8px;
-    }
-
-    .step-desc {
-      font-size: 0.875rem;
-      color: var(--color-gray);
-      line-height: 1.5;
-    }
-
-    @media (max-width: 992px) {
-      .steps-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 576px) {
-      .steps-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* ==========================================================================
-       INTERACTIVE BOOKING CALCULATOR SECTION
-       ========================================================================== */
-    .calculator-section {
-      background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
-      color: var(--color-white);
-      position: relative;
-    }
-
-    .calculator-box {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: var(--radius-xl);
-      padding: 40px;
-      backdrop-filter: blur(8px);
-      max-width: 860px;
-      margin: 0 auto;
-    }
-
-    .calc-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-bottom: 24px;
-    }
-
-    .calc-form-group {
-      text-align: left;
-    }
-
-    .calc-form-group label {
-      display: block;
-      font-size: 0.875rem;
-      font-weight: 700;
-      color: #E5E7EB;
-      margin-bottom: 8px;
-    }
-
-    .calc-select, .calc-input {
-      width: 100%;
-      padding: 13px 16px;
-      border-radius: var(--radius-md);
-      background-color: rgba(255, 255, 255, 0.08);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      color: var(--color-white);
-      font-size: 0.95rem;
-      transition: var(--transition);
-    }
-
-    .calc-select option {
-      background-color: #1F2937;
-      color: var(--color-white);
-    }
-
-    .calc-select:focus, .calc-input:focus {
-      border-color: var(--color-primary);
-      background-color: rgba(255, 255, 255, 0.12);
-      box-shadow: 0 0 0 3px rgba(97, 206, 112, 0.3);
-    }
-
-    @media (max-width: 768px) {
-      .calculator-box {
-        padding: 24px 16px;
-      }
-      .calc-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* ==========================================================================
-       COVERAGE AREA SECTION (JABODETABEK)
-       ========================================================================== */
-    .coverage-section {
-      background-color: var(--color-white);
-    }
-
-    .coverage-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
-    }
-
-    .coverage-card {
-      background-color: var(--color-bg-subtle);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: 20px 16px;
-      text-align: center;
-      transition: var(--transition);
-    }
-
-    .coverage-card:hover {
-      border-color: var(--color-primary);
-      background-color: var(--color-white);
-      box-shadow: var(--shadow-md);
-      transform: translateY(-3px);
-    }
-
-    .coverage-card .city-icon {
-      font-size: 1.8rem;
-      margin-bottom: 8px;
-    }
-
-    .coverage-card h4 {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: var(--color-dark);
-      margin-bottom: 4px;
-    }
-
-    .coverage-card p {
-      font-size: 0.8rem;
-      color: var(--color-gray);
-    }
-
-    @media (max-width: 992px) {
-      .coverage-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    @media (max-width: 576px) {
-      .coverage-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    /* ==========================================================================
-       TESTIMONIALS SECTION
-       ========================================================================== */
-    .testimonials-section {
-      background-color: var(--color-bg-subtle);
-    }
-
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-    }
-
-    .testi-card {
-      background-color: var(--color-white);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: 28px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: var(--shadow-sm);
-      transition: var(--transition);
-    }
-
-    .testi-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .testi-stars {
-      color: #F59E0B;
-      display: flex;
-      gap: 3px;
-      margin-bottom: 14px;
-    }
-
-    .testi-text {
-      font-size: 0.95rem;
-      color: var(--color-dark-muted);
-      line-height: 1.6;
-      font-style: italic;
-      margin-bottom: 20px;
-    }
-
-    .testi-author {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding-top: 14px;
-      border-top: 1px solid var(--color-border-light);
-    }
-
-    .testi-avatar {
+    .brand-icon {
       width: 44px;
       height: 44px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--color-primary-light) 0%, #c8f2ce 100%);
-      color: var(--color-primary-darker);
+      background: linear-gradient(135deg, var(--color-emerald) 0%, var(--color-teal) 100%);
+      border-radius: var(--radius-sm);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
-      font-size: 1.1rem;
-    }
-
-    .testi-info h5 {
-      font-size: 0.95rem;
-      font-weight: 800;
-      color: var(--color-dark);
-    }
-
-    .testi-info span {
-      font-size: 0.8rem;
-      color: var(--color-gray);
-    }
-
-    @media (max-width: 992px) {
-      .testimonials-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* ==========================================================================
-       FAQ SECTION
-       ========================================================================== */
-    .faq-section {
-      background-color: var(--color-white);
-    }
-
-    .faq-container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-
-    .faq-item {
-      background-color: var(--color-white);
-      border: 1.5px solid var(--color-border);
-      border-radius: var(--radius-md);
-      margin-bottom: 14px;
-      overflow: hidden;
-      transition: var(--transition);
-    }
-
-    .faq-item.active {
-      border-color: var(--color-primary);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .faq-question {
-      width: 100%;
-      padding: 18px 24px;
-      background: none;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      text-align: left;
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: var(--color-dark);
-      cursor: pointer;
-    }
-
-    .faq-icon {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background-color: var(--color-bg-subtle);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: transform 0.3s ease;
-      color: var(--color-dark);
-      flex-shrink: 0;
-    }
-
-    .faq-item.active .faq-icon {
-      transform: rotate(180deg);
-      background-color: var(--color-primary-light);
-      color: var(--color-primary-darker);
-    }
-
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s ease, padding 0.35s ease;
-      padding: 0 24px;
-      color: var(--color-gray);
-      font-size: 0.95rem;
-      line-height: 1.6;
-    }
-
-    .faq-item.active .faq-answer {
-      padding-bottom: 20px;
-      max-height: 300px;
-    }
-
-    /* ==========================================================================
-       CTA BANNER SECTION
-       ========================================================================== */
-    .cta-section {
-      background: linear-gradient(135deg, var(--color-primary) 0%, #40ba50 100%);
-      color: var(--color-white);
-      text-align: center;
-      padding: 70px 0;
-      position: relative;
-    }
-
-    .cta-card {
-      max-width: 780px;
-      margin: 0 auto;
-    }
-
-    .cta-title {
-      font-size: 2.5rem;
-      font-weight: 900;
-      line-height: 1.2;
-      margin-bottom: 16px;
-    }
-
-    .cta-desc {
-      font-size: 1.15rem;
-      margin-bottom: 32px;
-      opacity: 0.95;
-    }
-
-    .cta-actions {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .cta-card .btn-white {
-      background-color: var(--color-white);
-      color: var(--color-primary-darker);
-      font-weight: 800;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .cta-card .btn-white:hover {
-      background-color: #f8fafc;
-      transform: translateY(-2px);
-    }
-
-    .cta-card .btn-dark-wa {
-      background-color: #111827;
-      color: var(--color-white);
-    }
-
-    .cta-card .btn-dark-wa:hover {
-      background-color: #000000;
-      transform: translateY(-2px);
-    }
-
-    @media (max-width: 768px) {
-      .cta-title {
-        font-size: 1.9rem;
-      }
-      .cta-desc {
-        font-size: 1rem;
-      }
-    }
-
-    /* ==========================================================================
-       FOOTER
-       ========================================================================== */
-    .site-footer {
-      background-color: #0F172A;
-      color: #94A3B8;
-      padding-top: 60px;
-      padding-bottom: 30px;
-      font-size: 0.9rem;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
-      gap: 40px;
-      margin-bottom: 50px;
-    }
-
-    .footer-brand h3 {
-      color: var(--color-white);
+      color: white;
       font-size: 1.4rem;
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
+    }
+    .brand-name {
+      font-size: 1.25rem;
       font-weight: 900;
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      color: var(--color-dark);
+      line-height: 1.1;
     }
-
-    .footer-brand p {
-      line-height: 1.6;
-      margin-bottom: 20px;
-    }
-
-    .footer-col h4 {
-      color: var(--color-white);
-      font-size: 1.05rem;
+    .brand-tag {
+      font-size: 0.7rem;
       font-weight: 800;
-      margin-bottom: 18px;
+      color: var(--color-emerald-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
     }
-
-    .footer-links {
+    .nav-links {
+      display: flex;
+      gap: 28px;
       list-style: none;
     }
-
-    .footer-links li {
-      margin-bottom: 10px;
+    .nav-links a {
+      font-size: 0.925rem;
+      font-weight: 700;
+      color: var(--color-slate-700);
     }
+    .nav-links a:hover { color: var(--color-emerald); }
 
-    .footer-links a {
-      color: #94A3B8;
+    /* Hero */
+    .hero-section {
+      background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%);
+      color: white;
+      padding: 80px 0 100px;
+      position: relative;
     }
-
-    .footer-links a:hover {
-      color: var(--color-primary);
-      padding-left: 4px;
-    }
-
-    .footer-contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      margin-bottom: 14px;
-      color: #CBD5E1;
-    }
-
-    .footer-contact-item svg {
-      color: var(--color-primary);
-      flex-shrink: 0;
-      margin-top: 2px;
-    }
-
-    .footer-bottom {
-      padding-top: 24px;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-      display: flex;
-      justify-content: space-between;
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
       align-items: center;
-      flex-wrap: wrap;
-      gap: 16px;
-      font-size: 0.85rem;
+    }
+    .hero-title {
+      font-size: 3.2rem;
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      letter-spacing: -0.02em;
+    }
+    .hero-title span {
+      background: linear-gradient(to right, #34D399, #2DD4BF, #38BDF8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-desc {
+      font-size: 1.1rem;
+      color: #94A3B8;
+      line-height: 1.6;
+      margin-bottom: 32px;
+    }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 36px;
+    }
+    .stat-num { font-size: 2rem; font-weight: 900; color: #34D399; }
+    .stat-lbl { font-size: 0.8rem; color: #94A3B8; }
+
+    .hero-box {
+      background: rgba(30, 41, 59, 0.95);
+      border: 1px solid #334155;
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--shadow-lg);
     }
 
-    @media (max-width: 992px) {
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 0.8rem; font-weight: 700; color: #CBD5E1; margin-bottom: 6px; }
+    .form-control {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      background: #0F172A;
+      border: 1px solid #475569;
+      color: white;
+      font-size: 0.9rem;
     }
+    .form-control:focus { border-color: var(--color-emerald); }
 
-    @media (max-width: 576px) {
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-      .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-      }
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
     }
+    .service-card {
+      background: white;
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--color-emerald);
+    }
+    .service-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-md);
+      background: var(--color-emerald-light);
+      color: var(--color-emerald-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+    .service-title { font-size: 1.15rem; font-weight: 900; margin-bottom: 8px; }
+    .service-desc { font-size: 0.85rem; color: var(--color-gray); margin-bottom: 16px; line-height: 1.5; }
 
-    /* ==========================================================================
-       FLOATING WHATSAPP BUTTON
-       ========================================================================== */
-    .floating-wa-btn {
+    /* Floating WhatsApp */
+    .floating-wa {
       position: fixed;
       bottom: 24px;
       right: 24px;
-      background-color: var(--color-wa);
-      color: var(--color-white);
+      background: var(--color-wa);
+      color: white;
       width: 62px;
       height: 62px;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
+      font-size: 1.8rem;
       box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
       z-index: 998;
-      transition: var(--transition);
       cursor: pointer;
     }
 
-    .floating-wa-btn:hover {
-      background-color: var(--color-wa-dark);
-      transform: scale(1.08) translateY(-3px);
-      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.55);
+    @media (max-width: 992px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .nav-links { display: none; }
+      .hero-title { font-size: 2.3rem; }
     }
-
-    .floating-wa-badge {
-      position: absolute;
-      top: -4px;
-      right: -4px;
-      background-color: #EF4444;
-      color: var(--color-white);
-      font-size: 0.7rem;
-      font-weight: 800;
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 2px solid var(--color-white);
-      animation: pulse-badge 2s infinite;
-    }
-
-    @keyframes pulse-badge {
-      0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.15); }
-    }
-
-    .floating-wa-tooltip {
-      position: absolute;
-      right: 74px;
-      background-color: var(--color-white);
-      color: var(--color-dark);
-      padding: 8px 14px;
-      border-radius: var(--radius-md);
-      font-size: 0.825rem;
-      font-weight: 700;
-      white-space: nowrap;
-      box-shadow: var(--shadow-md);
-      border: 1px solid var(--color-border);
-      pointer-events: none;
-      opacity: 0;
-      transform: translateX(10px);
-      transition: var(--transition);
-    }
-
-    .floating-wa-btn:hover .floating-wa-tooltip {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
-    @media (max-width: 768px) {
-      .floating-wa-btn {
-        bottom: 18px;
-        right: 18px;
-        width: 54px;
-        height: 54px;
-      }
+    @media (max-width: 600px) {
+      .services-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
-
 <body>
 
-  <!-- ==========================================================================
-       TOP ANNOUNCEMENT BAR
-       ========================================================================== -->
   <div class="top-bar">
-    <div class="container">
-      <span>✨ <strong>Promo Spesial Jabodetabek:</strong> Dapatkan Diskon s/d <strong>20%</strong> untuk Pemesanan Pertama!</span>
-      <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20mau%20klaim%20promo%20diskon%20pembersihan%20pertama%20untuk%20area%20Jabodetabek" target="_blank" rel="noopener">Klaim Promo via WhatsApp &rarr;</a>
+    <div class="container top-bar-inner">
+      <div>🚚 <strong>CV. Keel Mulia Jasa</strong> — Jasa Angkutan Sampah, Puing & Kebersihan Resmi ke TPA</div>
+      <div>Hotline / WhatsApp: <a href="https://wa.me/6281234567890" style="color: #FBBF24; font-weight: 800;">+62 812-3456-7890</a></div>
     </div>
   </div>
 
-  <!-- ==========================================================================
-       SITE HEADER & NAVIGATION
-       ========================================================================== -->
   <header class="site-header">
-    <div class="container">
-      <nav class="navbar">
-        <a href="#" class="brand-logo">
-          <div class="brand-logo-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
-              <path d="M5 3v4"/>
-              <path d="M19 17v4"/>
-              <path d="M3 5h4"/>
-              <path d="M17 19h4"/>
-            </svg>
-          </div>
-          CleanUp <span class="highlight">IND</span>
-        </a>
-
-        <ul class="nav-links">
-          <li><a href="#layanan">Layanan</a></li>
-          <li><a href="#keunggulan">Keunggulan</a></li>
-          <li><a href="#cara-pesan">Cara Pesan</a></li>
-          <li><a href="#kalkulator">Hitung Biaya</a></li>
-          <li><a href="#area-layanan">Area Jabodetabek</a></li>
-          <li><a href="#faq">FAQ</a></li>
-        </ul>
-
-        <div class="nav-cta">
-          <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20ingin%20konsultasi%20layanan%20home%20cleaning" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.222-.553-1.688-.698-2.771-2.417-2.856-2.53-.085-.113-.687-.912-.687-1.739 0-.827.434-1.234.588-1.393.155-.16.339-.199.452-.199.113 0 .226.002.325.008.104.005.244-.04.382.291.144.348.49 1.196.533 1.284.043.088.072.19.014.304-.058.113-.087.184-.173.284-.086.1-.181.223-.258.3-.086.086-.176.18-.076.353.1.173.444.733.953 1.186.656.584 1.209.765 1.382.852.173.086.275.072.377-.044.103-.116.439-.512.556-.687.117-.174.234-.145.394-.087.16.058 1.017.479 1.19.566.173.087.288.13.331.203.043.072.043.418-.101.823z"/>
-              <path d="M12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.957-1.398A9.956 9.956 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.666 0-3.22-.497-4.524-1.353l-.324-.213-3.14.885.885-3.064-.233-.34A8.134 8.134 0 0 1 3.833 12C3.833 7.497 7.497 3.833 12 3.833S20.167 7.497 20.167 12 16.503 20.167 12 20.167z"/>
-            </svg>
-            <span>WhatsApp Kami</span>
-          </a>
-
-          <button class="mobile-menu-btn" id="openMenuBtn" aria-label="Buka Menu">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
-          </button>
+    <div class="container navbar">
+      <a href="#" class="brand-logo">
+        <div class="brand-icon">🚛</div>
+        <div>
+          <div class="brand-name">CV. KEEL MULIA JASA</div>
+          <div class="brand-tag">Jasa Angkutan Sampah & Puing</div>
         </div>
-      </nav>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#armada">Armada</a></li>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#kalkulator">Hitung Biaya</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <a href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20pesan%20armada%20angkutan%20sampah" target="_blank" class="btn btn-emerald">
+        Pesan Armada Sekarang
+      </a>
     </div>
   </header>
 
-  <!-- Mobile Drawer Menu -->
-  <div class="drawer-overlay" id="drawerOverlay"></div>
-  <aside class="mobile-drawer" id="mobileDrawer">
-    <div>
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px;">
-        <div class="brand-logo">
-          <div class="brand-logo-icon">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
-            </svg>
-          </div>
-          CleanUp <span class="highlight">IND</span>
-        </div>
-        <button id="closeMenuBtn" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--color-dark);">&times;</button>
-      </div>
-      <ul style="list-style: none; display: flex; flex-direction: column; gap: 18px;">
-        <li><a href="#layanan" class="mobile-nav-link" style="font-weight: 700; font-size: 1.1rem;">Layanan Kami</a></li>
-        <li><a href="#keunggulan" class="mobile-nav-link" style="font-weight: 700; font-size: 1.1rem;">Keunggulan</a></li>
-        <li><a href="#cara-pesan" class="mobile-nav-link" style="font-weight: 700; font-size: 1.1rem;">Cara Pesan</a></li>
-        <li><a href="#kalkulator" class="mobile-nav-link" style="font-weight: 700; font-size: 1.1rem;">Hitung Biaya</a></li>
-        <li><a href="#area-layanan" class="mobile-nav-link" style="font-weight: 700; font-size: 1.1rem;">Area Jabodetabek</a></li>
-        <li><a href="#faq" class="mobile-nav-link" style="font-weight: 700; font-size: 1.1rem;">FAQ</a></li>
-      </ul>
-    </div>
-    <div style="padding-top: 20px; border-top: 1px solid var(--color-border);">
-      <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20ingin%20booking%20layanan%20home%20cleaning" target="_blank" rel="noopener" class="btn btn-whatsapp btn-full">
-        <span>📲 Pesan via WhatsApp</span>
-      </a>
-    </div>
-  </aside>
-
-  <!-- ==========================================================================
-       HERO SECTION
-       ========================================================================== -->
   <section class="hero-section">
-    <div class="container">
-      <div class="hero-grid">
-        <div class="hero-content">
-          <div class="hero-eyebrow">
-            <span class="badge badge-primary">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-              </svg>
-              Jasa Home Cleaning No. 1 di Jabodetabek
-            </span>
-          </div>
-
-          <h1 class="hero-headline">
-            Bersih-bersih Rumah Lebih <span class="text-green">Mudah & Praktis</span> bersama CleanUp IND
-          </h1>
-
-          <p class="hero-subheadline">
-            Solusi pembersihan menyeluruh untuk rumah, apartemen, kantor, dan ruko di seluruh Jabodetabek. Dikerjakan oleh cleaner terlatih dengan chemical ramah anak dan bergaransi bersih maksimal.
-          </p>
-
-          <div class="hero-actions">
-            <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20ingin%20pesan%20layanan%20home%20cleaning%20sekarang" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.222-.553-1.688-.698-2.771-2.417-2.856-2.53-.085-.113-.687-.912-.687-1.739 0-.827.434-1.234.588-1.393.155-.16.339-.199.452-.199.113 0 .226.002.325.008.104.005.244-.04.382.291.144.348.49 1.196.533 1.284.043.088.072.19.014.304-.058.113-.087.184-.173.284-.086.1-.181.223-.258.3-.086.086-.176.18-.076.353.1.173.444.733.953 1.186.656.584 1.209.765 1.382.852.173.086.275.072.377-.044.103-.116.439-.512.556-.687.117-.174.234-.145.394-.087.16.058 1.017.479 1.19.566.173.087.288.13.331.203.043.072.043.418-.101.823z"/>
-              </svg>
-              <span>Pesan Sekarang via WhatsApp</span>
-            </a>
-            <a href="#layanan" class="btn btn-outline btn-lg">Lihat Semua Layanan</a>
-          </div>
-
-          <div class="hero-stats">
-            <div class="stat-item">
-              <span class="stat-number">10.000+</span>
-              <span class="stat-label">Rumah & Unit Dibersihkan</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">4.9 / 5.0</span>
-              <span class="stat-label">Tingkat Kepuasan Klien</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">100%</span>
-              <span class="stat-label">Cleaner Terverifikasi & Terlatih</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hero Right: Quick WhatsApp Consultation Card -->
-        <div class="hero-visual">
-          <div class="floating-badge floating-badge-1">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#61CE70" stroke-width="2.5">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-            <span>100% Bergaransi Bersih</span>
-          </div>
-
-          <div class="hero-quote-card">
-            <div class="quote-card-header">
-              <h3>
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#61CE70" stroke-width="2.5">
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                  <line x1="16" y1="2" x2="16" y2="6"></line>
-                  <line x1="8" y1="2" x2="8" y2="6"></line>
-                  <line x1="3" y1="10" x2="21" y2="10"></line>
-                </svg>
-                Booking Cepat via WhatsApp
-              </h3>
-              <span class="badge badge-cyan">Respon &lt; 5 Mnt</span>
-            </div>
-
-            <form id="heroQuickForm" onsubmit="event.preventDefault(); sendHeroBooking();">
-              <div class="form-group">
-                <label for="heroNama">Nama Anda</label>
-                <input type="text" id="heroNama" class="form-control" placeholder="Contoh: Ibu Rina / Bpk. Budi" required />
-              </div>
-
-              <div class="form-group">
-                <label for="heroService">Pilih Layanan Utama</label>
-                <select id="heroService" class="form-control">
-                  <option value="Deep Cleaning">Deep Cleaning (Detail Menyeluruh)</option>
-                  <option value="General Cleaning">General Cleaning (Harian/Rutin)</option>
-                  <option value="Exclusive Cleaning">Exclusive Cleaning (VIP Premium)</option>
-                  <option value="Hydrovacuum Tungau">Hydrovacuum Tungau (Kasur/Sofa)</option>
-                  <option value="Bathroom Cleaning">Bathroom Cleaning (Kerak Kamar Mandi)</option>
-                  <option value="Subscription Packages">Paket Berlangganan Hemat</option>
-                  <option value="Water Tank Cleaning">Cuci Toren & Tangki Air</option>
-                  <option value="Grease Trap Cleaning">Grease Trap Cleaning</option>
-                  <option value="Event Support Cleaning">Event Support Cleaning</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="heroArea">Wilayah Jabodetabek</label>
-                <select id="heroArea" class="form-control">
-                  <option value="Jakarta Selatan">Jakarta Selatan</option>
-                  <option value="Jakarta Pusat">Jakarta Pusat</option>
-                  <option value="Jakarta Barat">Jakarta Barat</option>
-                  <option value="Jakarta Timur">Jakarta Timur</option>
-                  <option value="Jakarta Utara">Jakarta Utara</option>
-                  <option value="Tangerang Selatan (BSD/Bintaro/Serpong)">Tangerang Selatan (BSD/Bintaro/Serpong)</option>
-                  <option value="Kota Tangerang / Kab. Tangerang">Kota / Kab. Tangerang</option>
-                  <option value="Depok">Depok</option>
-                  <option value="Bekasi">Bekasi</option>
-                  <option value="Bogor">Bogor</option>
-                </select>
-              </div>
-
-              <button type="submit" class="btn btn-whatsapp btn-full" style="margin-top: 8px;">
-                <span>📲 Hubungkan ke Admin WhatsApp</span>
-              </button>
-            </form>
-          </div>
-
-          <div class="floating-badge floating-badge-2">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2.5">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-            <span>Chemical Ramah Anak & Pet</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       TRUST SECTION (Key Highlights)
-       ========================================================================== -->
-  <section class="trust-section">
-    <div class="container">
-      <div class="trust-grid">
-        <div class="trust-card">
-          <div class="trust-icon-box">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-          </div>
-          <div class="trust-content">
-            <h4>Terpercaya</h4>
-            <p>Cleaner beridentitas resmi, lolos verifikasi ketat & berseragam rapi.</p>
-          </div>
-        </div>
-
-        <div class="trust-card">
-          <div class="trust-icon-box">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <circle cx="12" cy="8" r="7"></circle>
-              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-            </svg>
-          </div>
-          <div class="trust-content">
-            <h4>Berpengalaman</h4>
-            <p>Mengikuti SOP hotel berbintang dan terlatih menangani berbagai noda.</p>
-          </div>
-        </div>
-
-        <div class="trust-card">
-          <div class="trust-icon-box">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-          </div>
-          <div class="trust-content">
-            <h4>Hasil Maksimal</h4>
-            <p>Pembersihan detail hingga sela terdalam dengan garansi re-clean jika kurang puas.</p>
-          </div>
-        </div>
-
-        <div class="trust-card">
-          <div class="trust-icon-box">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
-            </svg>
-          </div>
-          <div class="trust-content">
-            <h4>Chemical Aman</h4>
-            <p>Bahan pembersih ramah lingkungan, non-toksik untuk anak, bumil & hewan peliharaan.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       SERVICES SECTION (9 Dedicated Cards)
-       ========================================================================== -->
-  <section class="section-py services-section" id="layanan">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="badge badge-primary">Pilihan Layanan Kebersihan</span>
-        <h2 class="section-title">Layanan Lengkap untuk Segala Kebutuhan Hunian & Bisnis</h2>
-        <p class="section-desc">
-          Dari pembersihan rutin harian hingga pembersihan menyeluruh pasca renovasi, CleanUp IND siap memberikan hasil higienis terbaik di seluruh Jabodetabek.
+    <div class="container hero-grid">
+      <div>
+        <span class="badge badge-emerald" style="background: rgba(16,185,129,0.2); color: #34D399; margin-bottom: 16px;">
+          ✓ Berizin Resmi Pembuangan ke TPA
+        </span>
+        <h1 class="hero-title">
+          Mitra Terpercaya <span>Pengangkutan Sampah</span> & Puing Bangunan
+        </h1>
+        <p class="hero-desc">
+          Solusi cepat dan bersih pengangkutan sampah residensial, limbah komersial kantor/ruko, puing proyek renovasi, penebangan pohon, hingga pembersihan lahan kosong dengan armada dump truck lengkap.
         </p>
-      </div>
-
-      <div class="services-grid">
-        <!-- 1. Deep Cleaning -->
-        <div class="service-card featured">
-          <div class="service-top">
-            <div class="service-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-              </svg>
-            </div>
-            <h3 class="service-title">Deep Cleaning</h3>
-            <p class="service-desc">
-              Pembersihan intensif dan menyeluruh hingga ke sudut-sudut tersempit, sangat ideal untuk rumah baru, pasca renovasi, maupun pindahan rumah/apartemen.
-            </p>
-            <ul class="service-features">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Pembersihan debu sisa semen & cat
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Detail sela jendela, kusen, & plafon
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Sanitasi lantai & disinfeksi ruangan
-              </li>
-            </ul>
-          </div>
-          <div class="service-bottom">
-            <div class="service-price-hint">
-              <span class="label">Mulai dari</span>
-              <span class="price">Rp 25.000 / m²</span>
-            </div>
-            <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20ingin%20pesan%20layanan%20Deep%20Cleaning" target="_blank" rel="noopener" class="btn btn-primary btn-full">
-              Pesan Sekarang
-            </a>
-          </div>
-        </div>
-
-        <!-- 2. General Cleaning -->
-        <div class="service-card">
-          <div class="service-top">
-            <div class="service-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-              </svg>
-            </div>
-            <h3 class="service-title">General Cleaning</h3>
-            <p class="service-desc">
-              Pembersihan standar harian atau berkala untuk menjaga kebersihan rumah, apartemen, atau kantor agar tetap rapi, wangi, dan nyaman ditinggali.
-            </p>
-            <ul class="service-features">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Sapu, pel lantai & lap permukaan debu
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Merapikan tempat tidur & ruang tamu
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Pengosongan & penggantian tempat sampah
-              </li>
-            </ul>
-          </div>
-          <div class="service-bottom">
-            <div class="service-price-hint">
-              <span class="label">Mulai dari</span>
-              <span class="price">Rp 65.000 / jam</span>
-            </div>
-            <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20ingin%20pesan%20layanan%20General%20Cleaning" target="_blank" rel="noopener" class="btn btn-primary btn-full">
-              Pesan Sekarang
-            </a>
-          </div>
-        </div>
-
-        <!-- 3. Exclusive Cleaning -->
-        <div class="service-card">
-          <div class="service-top">
-            <div class="service-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-              </svg>
-            </div>
-            <h3 class="service-title">Exclusive Cleaning</h3>
-            <p class="service-desc">
-              Layanan VIP premium dengan tim senior bersertifikat, peralatan modern lengkap, chemical spesialis impor, dan supervisi langsung berstandar hotel bintang lima.
-            </p>
-            <ul class="service-features">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Disinfeksi uap panas (Steam Sanitizing)
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Perawatan khusus marmer & granit
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Quality Control langsung di tempat
-              </li>
-            </ul>
-          </div>
-          <div class="service-bottom">
-            <div class="service-price-hint">
-              <span class="label">Mulai dari</span>
-              <span class="price">Rp 450.000 / paket</span>
-            </div>
-            <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20ingin%20pesan%20layanan%20Exclusive%20Cleaning" target="_blank" rel="noopener" class="btn btn-primary btn-full">
-              Pesan Sekarang
-            </a>
-          </div>
-        </div>
-
-        <!-- 4. Hydrovacuum Tungau -->
-        <div class="service-card featured">
-          <div class="service-top">
-            <div class="service-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M8 12a4 4 0 0 0 8 0"></path>
-                <line x1="12" y1="2" x2="12" y2="4"></line>
-                <line x1="12" y1="20" x2="12" y2="22"></line>
-              </svg>
-            </div>
-            <h3 class="service-title">Hydrovacuum Tungau</h3>
-            <p class="service-desc">
-              Sedot tungau, debu mikro, dan alergen pada kasur/springbed, sofa kain, gorden, dan karpet menggunakan teknologi mesin filter air tanpa bahan kimia beracun.
-            </p>
-            <ul class="service-features">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Sedot debu & tungau hingga kedalaman 20cm
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Mengurangi gejala alergi, asma & gatal
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Pengerjaan kering, kasur langsung bisa dipakai
-              </li>
-            </ul>
-          </div>
-          <div class="service-bottom">
-            <div class="service-price-hint">
-              <span class="label">Mulai dari</span>
-              <span class="price">Rp 150.000 / item</span>
-            </div>
-            <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20ingin%20pesan%20layanan%20Hydrovacuum%20Tungau" target="_blank" rel="noopener" class="btn btn-primary btn-full">
-              Pesan Sekarang
-            </a>
-          </div>
-        </div>
-
-        <!-- 5. Bathroom Cleaning -->
-        <div class="service-card">
-          <div class="service-top">
-            <div class="service-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <path d="M4 12h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1Z"></path>
-                <path d="M6 12V5a2 2 0 0 1 2-2h3v9"></path>
-              </svg>
-            </div>
-            <h3 class="service-title">Bathroom Cleaning</h3>
-            <p class="service-desc">
-              Pembersihan kerak membandel, jamur dinding, noda kuning pada kloset, wastafel, keramik, dan kaca shower hingga kinclong tanpa merusak lapisan glasur & nat keramik.
-            </p>
-            <ul class="service-features">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Pembersihan kerak air & sabun di kaca shower
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Restorasi kilau keramik & sanitair
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Bebas bau & anti jamur lumut
-              </li>
-            </ul>
-          </div>
-          <div class="service-bottom">
-            <div class="service-price-hint">
-              <span class="label">Mulai dari</span>
-              <span class="price">Rp 180.000 / toilet</span>
-            </div>
-            <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20ingin%20pesan%20layanan%20Bathroom%20Cleaning" target="_blank" rel="noopener" class="btn btn-primary btn-full">
-              Pesan Sekarang
-            </a>
-          </div>
-        </div>
-
-        <!-- 6. Subscription Packages -->
-        <div class="service-card">
-          <div class="service-top">
-            <div class="service-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="16" y1="2" x2="16" y2="6"></line>
-                <line x1="8" y1="2" x2="8" y2="6"></line>
-                <line x1="3" y1="10" x2="21" y2="10"></line>
-              </svg>
-            </div>
-            <h3 class="service-title">Subscription Packages</h3>
-            <p class="service-desc">
-              Paket langganan pembersihan hemat mingguan atau bulanan untuk hunian, apartemen, atau tempat usaha Anda dengan harga jauh lebih hemat dan prioritas jadwal.
-            </p>
-            <ul class="service-features">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Diskon khusus hingga 25% dari tarif normal
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Cleaner tetap yang sudah terbiasa dengan hunian
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Jadwal fleksibel & jaminan kehadiran tepat waktu
-              </li>
-            </ul>
-          </div>
-          <div class="service-bottom">
-            <div class="service-price-hint">
-              <span class="label">Mulai dari</span>
-              <span class="price">Rp 600.000 / bln</span>
-            </div>
-            <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20ingin%20info%20Paket%20Berlangganan%20Subscription" target="_blank" rel="noopener" class="btn btn-primary btn-full">
-              Pesan Sekarang
-            </a>
-          </div>
-        </div>
-
-        <!-- 7. Water Tank Cleaning -->
-        <div class="service-card">
-          <div class="service-top">
-            <div class="service-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
-              </svg>
-            </div>
-            <h3 class="service-title">Water Tank Cleaning</h3>
-            <p class="service-desc">
-              Kuras dan sikat toren serta tangki air dari endapan lumpur, lumut tebal, dan karat pipa. Menjamin pasokan air keluarga Anda selalu jernih, higienis, dan sehat.
-            </p>
-            <ul class="service-features">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Pengurasan & penyikatan lumut sampai tuntas
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Disinfeksi aman standar kesehatan air
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Kapasitas toren 250L hingga 5.000L+
-              </li>
-            </ul>
-          </div>
-          <div class="service-bottom">
-            <div class="service-price-hint">
-              <span class="label">Mulai dari</span>
-              <span class="price">Rp 200.000 / unit</span>
-            </div>
-            <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20ingin%20pesan%20layanan%20Cuci%20Toren%20Water%20Tank" target="_blank" rel="noopener" class="btn btn-primary btn-full">
-              Pesan Sekarang
-            </a>
-          </div>
-        </div>
-
-        <!-- 8. Grease Trap Cleaning -->
-        <div class="service-card">
-          <div class="service-top">
-            <div class="service-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <path d="M16 10a4 4 0 0 1-8 0"></path>
-              </svg>
-            </div>
-            <h3 class="service-title">Grease Trap Cleaning</h3>
-            <p class="service-desc">
-              Pembersihan dan pengurasan perangkap lemak pada wastafel dapur rumah tangga maupun restoran untuk mencegah saluran pipa tersumbat dan timbulnya bau tidak sedap.
-            </p>
-            <ul class="service-features">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Pengangkatan kerak lemak & sisa makanan beku
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Pembersihan saluran & de-odorizing
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Cocok untuk dapur rumah, resto & coffee shop
-              </li>
-            </ul>
-          </div>
-          <div class="service-bottom">
-            <div class="service-price-hint">
-              <span class="label">Mulai dari</span>
-              <span class="price">Rp 250.000 / unit</span>
-            </div>
-            <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20ingin%20pesan%20layanan%20Grease%20Trap%20Cleaning" target="_blank" rel="noopener" class="btn btn-primary btn-full">
-              Pesan Sekarang
-            </a>
-          </div>
-        </div>
-
-        <!-- 9. Event Support Cleaning -->
-        <div class="service-card">
-          <div class="service-top">
-            <div class="service-icon-wrap">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                <circle cx="9" cy="7" r="4"></circle>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-              </svg>
-            </div>
-            <h3 class="service-title">Event Support Cleaning</h3>
-            <p class="service-desc">
-              Layanan kebersihan standby sebelum, saat, dan sesudah acara (pre-event & post-event) untuk pesta ulang tahun, syukuran, pernikahan, bazaar, atau gathering kantor.
-            </p>
-            <ul class="service-features">
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Tim standby berseragam rapi & cekatan
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Pembersihan sampah & piring kotor selama acara
-              </li>
-              <li>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-                Pemulihan lokasi pasca acara seperti semula
-              </li>
-            </ul>
-          </div>
-          <div class="service-bottom">
-            <div class="service-price-hint">
-              <span class="label">Mulai dari</span>
-              <span class="price">Rp 350.000 / crew</span>
-            </div>
-            <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20ingin%20pesan%20layanan%20Event%20Support%20Cleaning" target="_blank" rel="noopener" class="btn btn-primary btn-full">
-              Pesan Sekarang
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       WHY CHOOSE US SECTION
-       ========================================================================== -->
-  <section class="section-py why-section" id="keunggulan">
-    <div class="container">
-      <div class="why-grid">
-        <div>
-          <span class="badge badge-primary">Kenapa Harus CleanUp IND?</span>
-          <h2 class="section-title">Standar Kebersihan Tinggi, Praktis & Tanpa Repot</h2>
-          <p class="section-desc" style="margin-bottom: 20px;">
-            Kami memahami betapa berharganya waktu dan kenyamanan keluarga Anda. CleanUp IND hadir sebagai mitra kebersihan profesional terpercaya di Jabodetabek dengan jaminan kepuasan pelanggan penuh.
-          </p>
-
-          <p style="font-weight: 700; color: var(--color-dark); margin-bottom: 8px;">Jangkauan Layanan Properti Kami:</p>
-          <div class="coverage-pills">
-            <span class="coverage-pill">🏡 Rumah Tinggal</span>
-            <span class="coverage-pill">🏢 Apartemen</span>
-            <span class="coverage-pill">🏬 Ruko & Toko</span>
-            <span class="coverage-pill">💼 Kantor / Co-Working</span>
-            <span class="coverage-pill">🍽️ Restoran & Kafe</span>
-          </div>
-
-          <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20mau%20tanya%20jadwal%20dan%20biaya%20layanan" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
-            <span>📲 Konsultasi Gratis Sekarang</span>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20mau%20booking%20armada" target="_blank" class="btn btn-wa">
+            📲 Pesan via WhatsApp
+          </a>
+          <a href="#layanan" class="btn" style="background: rgba(255,255,255,0.1); color: white;">
+            Lihat Semua Layanan
           </a>
         </div>
 
-        <div class="why-cards-grid">
-          <!-- Why 1: Fast Response -->
-          <div class="why-card">
-            <div class="why-card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-              </svg>
-            </div>
-            <h4>Fast Response</h4>
-            <p>Admin sigap melayani konsultasi dan estimasi jadwal dalam hitungan menit via WhatsApp, 7 hari seminggu.</p>
-          </div>
-
-          <!-- Why 2: Safe Cleaning Products -->
-          <div class="why-card">
-            <div class="why-card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
-            <h4>Safe Cleaning Products</h4>
-            <p>Chemical ramah lingkungan, terstandarisasi bebas zat kimia berbahaya, aman untuk anak-anak & hewan peliharaan.</p>
-          </div>
-
-          <!-- Why 3: Flexible Scheduling -->
-          <div class="why-card">
-            <div class="why-card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <circle cx="12" cy="12" r="10"></circle>
-                <polyline points="12 6 12 12 16 14"></polyline>
-              </svg>
-            </div>
-            <h4>Flexible Scheduling</h4>
-            <p>Bebas tentukan waktu pengerjaan: pagi, siang, atau sore, termasuk di hari Sabtu, Minggu & libur nasional.</p>
-          </div>
-
-          <!-- Why 4: Complete Service Coverage -->
-          <div class="why-card">
-            <div class="why-card-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-            </div>
-            <h4>Complete Coverage</h4>
-            <p>Cakupan armada siap jalan untuk seluruh wilayah Jakarta, Bogor, Depok, Tangerang, Tangsel, dan Bekasi.</p>
-          </div>
+        <div class="hero-stats">
+          <div><div class="stat-num">5.000+</div><div class="stat-lbl">Ritase Terangkut</div></div>
+          <div><div class="stat-num">100%</div><div class="stat-lbl">Legalitas TPA Resmi</div></div>
+          <div><div class="stat-num">24/7</div><div class="stat-lbl">Armada Siap Jalan</div></div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ==========================================================================
-       HOW IT WORKS SECTION
-       ========================================================================== -->
-  <section class="section-py steps-section" id="cara-pesan">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="badge badge-primary">Proses Pemesanan Praktis</span>
-        <h2 class="section-title">4 Langkah Mudah Menikmati Hunian Bersih</h2>
-        <p class="section-desc">Pesan dalam hitungan detik, tim kami akan datang tepat waktu membawa peralatan lengkap.</p>
-      </div>
+      <div class="hero-box">
+        <h3 style="font-size: 1.2rem; font-weight: 800; margin-bottom: 6px;">Booking Armada Cepat</h3>
+        <p style="font-size: 0.8rem; color: #94A3B8; margin-bottom: 20px;">Respon instan dari tim operasional</p>
 
-      <div class="steps-grid">
-        <div class="step-card">
-          <div class="step-number">1</div>
-          <h3 class="step-title">Pilih Layanan & Waktu</h3>
-          <p class="step-desc">Tentukan jenis pembersihan yang Anda butuhkan serta waktu yang paling nyaman untuk Anda.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-number">2</div>
-          <h3 class="step-title">Konfirmasi via WhatsApp</h3>
-          <p class="step-desc">Admin kami segera mengonfirmasi ketersediaan cleaner dan rincian pemesanan Anda secara instan.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-number">3</div>
-          <h3 class="step-title">Tim Datang & Bekerja</h3>
-          <p class="step-desc">Cleaner profesional tiba tepat waktu membawa peralatan lengkap dan chemical higienis terstandar.</p>
-        </div>
-
-        <div class="step-card">
-          <div class="step-number">4</div>
-          <h3 class="step-title">Inspeksi & Puas</h3>
-          <p class="step-desc">Periksa hasil kerja bersama tim. Nikmati rumah yang bersih, segar, wangi dan bergaransi.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       INTERACTIVE BOOKING / ESTIMATOR CALCULATOR
-       ========================================================================== -->
-  <section class="section-py calculator-section" id="kalkulator">
-    <div class="container text-center">
-      <div class="section-header" style="margin-bottom: 36px;">
-        <span class="badge" style="background: rgba(97, 206, 112, 0.2); color: #61CE70; border: 1px solid rgba(97, 206, 112, 0.4);">
-          ⚡ Estimasi & Booking Otomatis
-        </span>
-        <h2 class="section-title" style="color: #FFFFFF;">Hitung & Pesan Langsung ke WhatsApp</h2>
-        <p class="section-desc" style="color: #9CA3AF;">
-          Pilih kebutuhan Anda di bawah ini dan klik tombol untuk mengirimkan format pesanan rapi secara otomatis ke WhatsApp admin kami.
-        </p>
-      </div>
-
-      <div class="calculator-box">
-        <form id="calcForm" onsubmit="event.preventDefault(); sendCustomBooking();">
-          <div class="calc-grid">
-            <div class="calc-form-group">
-              <label for="calcName">Nama Pemesan</label>
-              <input type="text" id="calcName" class="calc-input" placeholder="Masukkan nama Anda..." required />
-            </div>
-
-            <div class="calc-form-group">
-              <label for="calcProp">Jenis Properti</label>
-              <select id="calcProp" class="calc-select">
-                <option value="Rumah Tinggal">Rumah Tinggal</option>
-                <option value="Apartemen / Studio">Apartemen / Studio</option>
-                <option value="Ruko / Toko">Ruko / Toko</option>
-                <option value="Kantor / Workspace">Kantor / Workspace</option>
-                <option value="Restoran / Kafe">Restoran / Kafe</option>
-              </select>
-            </div>
-
-            <div class="calc-form-group">
-              <label for="calcService">Layanan Yang Dibutuhkan</label>
-              <select id="calcService" class="calc-select">
-                <option value="Deep Cleaning (Pembersihan Menyeluruh)">Deep Cleaning (Pembersihan Menyeluruh)</option>
-                <option value="General Cleaning (Harian/Rutin)">General Cleaning (Harian/Rutin)</option>
-                <option value="Exclusive Cleaning VIP">Exclusive Cleaning VIP</option>
-                <option value="Hydrovacuum Sedot Tungau Kasur/Sofa">Hydrovacuum Sedot Tungau Kasur/Sofa</option>
-                <option value="Bathroom Cleaning (Kerak Kamar Mandi)">Bathroom Cleaning (Kerak Kamar Mandi)</option>
-                <option value="Paket Berlangganan (Subscription)">Paket Berlangganan (Subscription)</option>
-                <option value="Water Tank Cleaning (Cuci Toren)">Water Tank Cleaning (Cuci Toren)</option>
-                <option value="Grease Trap Cleaning">Grease Trap Cleaning</option>
-                <option value="Event Support Cleaning">Event Support Cleaning</option>
-              </select>
-            </div>
-
-            <div class="calc-form-group">
-              <label for="calcCity">Kota / Wilayah di Jabodetabek</label>
-              <select id="calcCity" class="calc-select">
-                <option value="Jakarta Selatan">Jakarta Selatan</option>
-                <option value="Jakarta Pusat">Jakarta Pusat</option>
-                <option value="Jakarta Barat">Jakarta Barat</option>
-                <option value="Jakarta Timur">Jakarta Timur</option>
-                <option value="Jakarta Utara">Jakarta Utara</option>
-                <option value="Tangerang Selatan (BSD, Bintaro, Alam Sutera, Serpong)">Tangerang Selatan (BSD, Bintaro, Serpong, dll)</option>
-                <option value="Kota Tangerang / Kab. Tangerang">Kota / Kab. Tangerang</option>
-                <option value="Depok (Margonda, Cinere, Sawangan, dll)">Depok</option>
-                <option value="Bekasi (Kota & Kabupaten)">Bekasi (Kota & Kabupaten)</option>
-                <option value="Bogor (Kota & Kabupaten)">Bogor (Kota & Kabupaten)</option>
-              </select>
-            </div>
+        <form onsubmit="event.preventDefault(); sendBooking();">
+          <div class="form-group">
+            <label>Nama Pemesan / Instansi</label>
+            <input type="text" id="hName" class="form-control" placeholder="Contoh: Bpk. Hendra / PT. Sejahtera" required />
           </div>
-
-          <div class="calc-form-group" style="margin-bottom: 24px;">
-            <label for="calcNote">Catatan Khusus / Jadwal yang Diinginkan (Opsional)</label>
-            <input type="text" id="calcNote" class="calc-input" placeholder="Contoh: Rencana besok Sabtu jam 09:00 pagi, ada 2 kamar tidur & 1 kamar mandi" />
+          <div class="form-group">
+            <label>Jenis Sampah / Muatan</label>
+            <select id="hWaste" class="form-control">
+              <option>Puing Sisa Bangunan & Proyek Renovasi</option>
+              <option>Sampah Komersial Kantor / Ruko / Restoran</option>
+              <option>Sampah Rumah Tangga & Perumahan</option>
+              <option>Penebangan Pohon & Ranting Kayu</option>
+              <option>Pembersihan Lahan Kosong & Timbunan Liar</option>
+            </select>
           </div>
-
-          <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%; max-width: 480px; margin: 0 auto;">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.222-.553-1.688-.698-2.771-2.417-2.856-2.53-.085-.113-.687-.912-.687-1.739 0-.827.434-1.234.588-1.393.155-.16.339-.199.452-.199.113 0 .226.002.325.008.104.005.244-.04.382.291.144.348.49 1.196.533 1.284.043.088.072.19.014.304-.058.113-.087.184-.173.284-.086.1-.181.223-.258.3-.086.086-.176.18-.076.353.1.173.444.733.953 1.186.656.584 1.209.765 1.382.852.173.086.275.072.377-.044.103-.116.439-.512.556-.687.117-.174.234-.145.394-.087.16.058 1.017.479 1.19.566.173.087.288.13.331.203.043.072.043.418-.101.823z"/>
-            </svg>
-            <span>Kirim Pesanan ke WhatsApp Sekarang</span>
+          <div class="form-group">
+            <label>Lokasi Pengangkutan</label>
+            <input type="text" id="hLoc" class="form-control" placeholder="Contoh: Jl. Sultan Alauddin, Makassar" required />
+          </div>
+          <button type="submit" class="btn btn-emerald" style="width: 100%; margin-top: 10px;">
+            Kirim Permintaan ke WhatsApp
           </button>
         </form>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================================================
-       COVERAGE AREA SECTION (JABODETABEK)
-       ========================================================================== -->
-  <section class="section-py coverage-section" id="area-layanan">
+  <section class="section-py" id="layanan">
     <div class="container">
       <div class="section-header text-center">
-        <span class="badge badge-primary">Wilayah Operasional</span>
-        <h2 class="section-title">Melayani Seluruh Penjuru Jabodetabek</h2>
-        <p class="section-desc">Armada cleaner CleanUp IND tersebar strategis sehingga dapat tiba cepat di lokasi Anda.</p>
+        <span class="badge badge-emerald">Layanan Terpadu</span>
+        <h2 class="section-title">Layanan Pengangkutan & Kebersihan CV. Keel Mulia Jasa</h2>
+        <p class="section-desc">Dikerjakan oleh tim loader berpengalaman dan armada dump truck terawat.</p>
       </div>
 
-      <div class="coverage-grid">
-        <div class="coverage-card">
-          <div class="city-icon">🏙️</div>
-          <h4>Jakarta Selatan</h4>
-          <p>Kebayoran, Pondok Indah, Cilandak, Kemang, Tebet, Kuningan, Jagakarsa</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🧱</div>
+          <h3 class="service-title">Puing Sisa Bangunan</h3>
+          <p class="service-desc">Evakuasi puing tembok, semen, batu bata, keramik, dan kayu sisa renovasi atau pembongkaran gedung.</p>
+          <a href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20butuh%20jasa%20angkut%20puing" target="_blank" class="btn btn-emerald" style="width: 100%; font-size: 0.85rem; padding: 10px;">Pesan Layanan</a>
         </div>
 
-        <div class="coverage-card">
-          <div class="city-icon">🏢</div>
-          <h4>Jakarta Pusat & Barat</h4>
-          <p>Menteng, Sudirman, Tanah Abang, Puri Indah, Kebon Jeruk, Tomang, Pluit</p>
+        <div class="service-card">
+          <div class="service-icon">🏢</div>
+          <h3 class="service-title">Sampah Komersial & Kantor</h3>
+          <p class="service-desc">Pengangkutan sampah rutin untuk perkantoran, ruko, restoran, cafe, supermarket, dan mall.</p>
+          <a href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20butuh%20angkut%20sampah%20kantor" target="_blank" class="btn btn-emerald" style="width: 100%; font-size: 0.85rem; padding: 10px;">Pesan Layanan</a>
         </div>
 
-        <div class="coverage-card">
-          <div class="city-icon">🌳</div>
-          <h4>Tangerang & Tangsel</h4>
-          <p>BSD City, Bintaro, Alam Sutera, Gading Serpong, Ciputat, Pamulang, Karawaci</p>
+        <div class="service-card">
+          <div class="service-icon">🏡</div>
+          <h3 class="service-title">Sampah Perumahan</h3>
+          <p class="service-desc">Layanan angkut sampah residensial untuk kompleks perumahan, cluster, dan perorangan.</p>
+          <a href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20mau%20angkut%20sampah%20perumahan" target="_blank" class="btn btn-emerald" style="width: 100%; font-size: 0.85rem; padding: 10px;">Pesan Layanan</a>
         </div>
 
-        <div class="coverage-card">
-          <div class="city-icon">🏘️</div>
-          <h4>Depok & Bogor</h4>
-          <p>Margonda, Cinere, Sawangan, Cibubur, Sentul, Bogor Kota, Cibinong</p>
-        </div>
-
-        <div class="coverage-card">
-          <div class="city-icon">🏭</div>
-          <h4>Bekasi & Jaktim</h4>
-          <p>Summarecon Bekasi, Harapan Indah, Rawamangun, Duren Sawit, Galaxy</p>
+        <div class="service-card">
+          <div class="service-icon">🌳</div>
+          <h3 class="service-title">Tebang & Angkut Pohon</h3>
+          <p class="service-desc">Pemotongan pohon berisiko, pemangkasan dahan ranting rimbun, dan evakuasi kayu sampai tuntas.</p>
+          <a href="https://wa.me/6281234567890?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20butuh%20jasa%20tebang%20pohon" target="_blank" class="btn btn-emerald" style="width: 100%; font-size: 0.85rem; padding: 10px;">Pesan Layanan</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==========================================================================
-       CUSTOMER TESTIMONIALS
-       ========================================================================== -->
-  <section class="section-py testimonials-section">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="badge badge-primary">Testimoni Klien</span>
-        <h2 class="section-title">Apa Kata Mereka Tentang CleanUp IND?</h2>
-        <p class="section-desc">Kepuasan dan kenyamanan hunian bersih Anda adalah prioritas nomor satu kami.</p>
-      </div>
-
-      <div class="testimonials-grid">
-        <div class="testi-card">
-          <div>
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">
-              "Pesan deep cleaning setelah renovasi rumah di BSD. Hasilnya luar biasa bersih, sisa debu semen dan cat di keramik hilang total. Tim datang tepat waktu dan kerjanya sangat teliti."
-            </p>
-          </div>
-          <div class="testi-author">
-            <div class="testi-avatar">R</div>
-            <div class="testi-info">
-              <h5>Rina Saraswati</h5>
-              <span>Ibu Rumah Tangga - BSD City, Tangerang</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testi-card">
-          <div>
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">
-              "Hydrovacuum kasur dan sofanya juara banget! Anak saya yang tadinya sering bersin karena alergi debu sekarang tidurnya jauh lebih nyenyak. Chemical-nya juga wangi segar dan gak bikin perih."
-            </p>
-          </div>
-          <div class="testi-author">
-            <div class="testi-avatar">D</div>
-            <div class="testi-info">
-              <h5>Dimas Pratama</h5>
-              <span>Apartemen Sudirman Park, Jakarta</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="testi-card">
-          <div>
-            <div class="testi-stars">★★★★★</div>
-            <p class="testi-text">
-              "Kamar mandi yang keramiknya berkerak kuning bertahun-tahun bisa kembali kinclong seperti baru lagi. Admin WhatsApp-nya juga responsif banget saat saya booking mendadak. Sangat direkomendasikan!"
-            </p>
-          </div>
-          <div class="testi-author">
-            <div class="testi-avatar">M</div>
-            <div class="testi-info">
-              <h5>Melinda Kusuma</h5>
-              <span>Owner Kafe - Senopati, Jaksel</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       FAQ SECTION (Accordion)
-       ========================================================================== -->
-  <section class="section-py faq-section" id="faq">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="badge badge-primary">Tanya Jawab</span>
-        <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
-        <p class="section-desc">Punya pertanyaan seputar layanan kami? Temukan jawabannya di sini.</p>
-      </div>
-
-      <div class="faq-container">
-        <!-- FAQ 1 -->
-        <div class="faq-item active">
-          <button class="faq-question">
-            <span>Apakah tim CleanUp IND membawa peralatan dan chemical sendiri?</span>
-            <div class="faq-icon">▼</div>
-          </button>
-          <div class="faq-answer">
-            <p>Ya, tim kami selalu datang dengan membawa peralatan pembersihan lengkap (mesin vakum, hydrovacuum, steam cleaner, tangga, ember, lap microfiber khusus) dan chemical pembersih profesional. Anda tidak perlu repot menyediakan alat apa pun.</p>
-          </div>
-        </div>
-
-        <!-- FAQ 2 -->
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Apakah chemical yang digunakan aman untuk anak kecil dan hewan peliharaan?</span>
-            <div class="faq-icon">▼</div>
-          </button>
-          <div class="faq-answer">
-            <p>Tentu saja! Kami hanya menggunakan chemical ramah lingkungan (eco-friendly) yang tersertifikasi non-toksik, bebas bau menyengat berbahaya, sehingga 100% aman untuk bayi, ibu hamil, lansia, dan anabul peliharaan Anda.</p>
-          </div>
-        </div>
-
-        <!-- FAQ 3 -->
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Bagaimana jika saya merasa hasil pembersihan kurang memuaskan?</span>
-            <div class="faq-icon">▼</div>
-          </button>
-          <div class="faq-answer">
-            <p>CleanUp IND memberikan Garansi Kepuasan (Re-Clean Guarantee). Jika ada bagian yang terlewat atau kurang bersih, Anda bisa langsung memberitahukan tim di lokasi atau melapor ke admin dalam 24 jam untuk dilakukan pembersihan ulang tanpa biaya tambahan.</p>
-          </div>
-        </div>
-
-        <!-- FAQ 4 -->
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Berapa lama estimasi durasi pengerjaan per sesi?</span>
-            <div class="faq-icon">▼</div>
-          </button>
-          <div class="faq-answer">
-            <p>Durasi tergantung jenis layanan dan luas area. General cleaning biasanya memakan waktu 2–4 jam, sedangkan Deep Cleaning rumah pasca renovasi dapat memakan waktu 4–8 jam dengan jumlah tim cleaner yang disesuaikan.</p>
-          </div>
-        </div>
-
-        <!-- FAQ 5 -->
-        <div class="faq-item">
-          <button class="faq-question">
-            <span>Apakah melayani pembersihan di hari Minggu atau libur nasional?</span>
-            <div class="faq-icon">▼</div>
-          </button>
-          <div class="faq-answer">
-            <p>Ya! Kami beroperasi setiap hari dari Senin hingga Minggu, termasuk hari libur nasional mulai pukul 07.00 s/d 21.00 WIB. Sebaiknya lakukan booking H-1 via WhatsApp untuk memastikan ketersediaan slot cleaner favorit Anda.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       FINAL CTA BANNER
-       ========================================================================== -->
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-card">
-        <h2 class="cta-title">Siap Nikmati Rumah Bersih, Rapi & Higienis Tanpa Repot?</h2>
-        <p class="cta-desc">
-          Hubungi admin CleanUp IND sekarang juga untuk konsultasi gratis dan klaim promo diskon pembersihan rumah khusus wilayah Jabodetabek!
-        </p>
-        <div class="cta-actions">
-          <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20mau%20booking%20jadwal%20pembersihan%20sekarang" target="_blank" rel="noopener" class="btn btn-white btn-lg">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.222-.553-1.688-.698-2.771-2.417-2.856-2.53-.085-.113-.687-.912-.687-1.739 0-.827.434-1.234.588-1.393.155-.16.339-.199.452-.199.113 0 .226.002.325.008.104.005.244-.04.382.291.144.348.49 1.196.533 1.284.043.088.072.19.014.304-.058.113-.087.184-.173.284-.086.1-.181.223-.258.3-.086.086-.176.18-.076.353.1.173.444.733.953 1.186.656.584 1.209.765 1.382.852.173.086.275.072.377-.044.103-.116.439-.512.556-.687.117-.174.234-.145.394-.087.16.058 1.017.479 1.19.566.173.087.288.13.331.203.043.072.043.418-.101.823z"/>
-            </svg>
-            <span>Pesan via WhatsApp Sekarang</span>
-          </a>
-          <a href="tel:+6281234567890" class="btn btn-dark-wa btn-lg">
-            <span>📞 Hubungi Telepon</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       FOOTER
-       ========================================================================== -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#61CE70" stroke-width="2.5">
-              <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
-            </svg>
-            CleanUp IND
-          </h3>
-          <p>
-            Penyedia jasa home cleaning, deep cleaning, sedot tungau, cuci toren, dan toilet cleaning profesional terpercaya nomor 1 di seluruh wilayah Jabodetabek.
-          </p>
-          <p style="color: #61CE70; font-weight: 700;">
-            ✓ Terdaftar & Terverifikasi Resmi
-          </p>
-        </div>
-
-        <div class="footer-col">
-          <h4>Layanan Utama</h4>
-          <ul class="footer-links">
-            <li><a href="#layanan">Deep Cleaning</a></li>
-            <li><a href="#layanan">General Cleaning</a></li>
-            <li><a href="#layanan">Hydrovacuum Tungau</a></li>
-            <li><a href="#layanan">Bathroom Cleaning</a></li>
-            <li><a href="#layanan">Cuci Toren & Tangki Air</a></li>
-            <li><a href="#layanan">Paket Berlangganan</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Wilayah Layanan</h4>
-          <ul class="footer-links">
-            <li><a href="#area-layanan">Jakarta Selatan & Pusat</a></li>
-            <li><a href="#area-layanan">Jakarta Barat, Timur & Utara</a></li>
-            <li><a href="#area-layanan">Tangerang & Tangsel (BSD)</a></li>
-            <li><a href="#area-layanan">Kota & Kab. Bogor</a></li>
-            <li><a href="#area-layanan">Depok & Cibubur</a></li>
-            <li><a href="#area-layanan">Kota & Kab. Bekasi</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Kontak & Jam Kerja</h4>
-          <div class="footer-contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/>
-            </svg>
-            <div>
-              <strong>WhatsApp:</strong><br />
-              +62 812-3456-7890
-            </div>
-          </div>
-          <div class="footer-contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
-            <div>
-              <strong>Jam Operasional:</strong><br />
-              Senin – Minggu: 07.00 – 21.00 WIB
-            </div>
-          </div>
-          <div class="footer-contact-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-              <polyline points="22,6 12,13 2,6"></polyline>
-            </svg>
-            <div>
-              <strong>Email:</strong><br />
-              halo@cleanupindonesia.id
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 CleanUp IND (CleanUp Indonesia). Hak Cipta Dilindungi Undang-Undang.</p>
-        <p>Dirancang untuk Kebersihan Terbaik Jabodetabek.</p>
-      </div>
+  <footer style="background: #0F172A; color: #94A3B8; padding: 50px 0 20px; font-size: 0.9rem;">
+    <div class="container text-center">
+      <h3 style="color: white; font-size: 1.4rem; font-weight: 900; margin-bottom: 8px;">CV. KEEL MULIA JASA</h3>
+      <p style="margin-bottom: 20px;">Solusi Pengangkutan Sampah, Puing Bangunan & Kebersihan Terpadu Berizin Resmi.</p>
+      <p style="color: #64748B; font-size: 0.8rem;">&copy; 2026 CV. Keel Mulia Jasa. Hak Cipta Dilindungi.</p>
     </div>
   </footer>
 
-  <!-- ==========================================================================
-       FLOATING WHATSAPP BUTTON
-       ========================================================================== -->
-  <a href="https://wa.me/6281234567890?text=Halo%20CleanUp%20IND%2C%20saya%20ingin%20tanya%20layanan%20home%20cleaning%20untuk%20area%20Jabodetabek" target="_blank" rel="noopener" class="floating-wa-btn" aria-label="Chat WhatsApp Admin">
-    <div class="floating-wa-badge">1</div>
-    <div class="floating-wa-tooltip">Chat Admin CleanUp (Fast Respon)</div>
-    <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.698.077-2.222-.553-1.688-.698-2.771-2.417-2.856-2.53-.085-.113-.687-.912-.687-1.739 0-.827.434-1.234.588-1.393.155-.16.339-.199.452-.199.113 0 .226.002.325.008.104.005.244-.04.382.291.144.348.49 1.196.533 1.284.043.088.072.19.014.304-.058.113-.087.184-.173.284-.086.1-.181.223-.258.3-.086.086-.176.18-.076.353.1.173.444.733.953 1.186.656.584 1.209.765 1.382.852.173.086.275.072.377-.044.103-.116.439-.512.556-.687.117-.174.234-.145.394-.087.16.058 1.017.479 1.19.566.173.087.288.13.331.203.043.072.043.418-.101.823z"/>
-      <path d="M12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.66 1.434 5.176L2 22l4.957-1.398A9.956 9.956 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.666 0-3.22-.497-4.524-1.353l-.324-.213-3.14.885.885-3.064-.233-.34A8.134 8.134 0 0 1 3.833 12C3.833 7.497 7.497 3.833 12 3.833S20.167 7.497 20.167 12 16.503 20.167 12 20.167z"/>
-    </svg>
+  <a href="https://wa.me/6281234567890" target="_blank" class="floating-wa" aria-label="WhatsApp">
+    💬
   </a>
 
-  <!-- ==========================================================================
-       JAVASCRIPT INTERACTIVITY
-       ========================================================================== -->
   <script>
-    const WA_PHONE = "6281234567890"; // Target WhatsApp Business Number
-
-    // 1. Mobile Menu Toggle
-    const openMenuBtn = document.getElementById('openMenuBtn');
-    const closeMenuBtn = document.getElementById('closeMenuBtn');
-    const mobileDrawer = document.getElementById('mobileDrawer');
-    const drawerOverlay = document.getElementById('drawerOverlay');
-    const mobileLinks = document.querySelectorAll('.mobile-nav-link');
-
-    function toggleMenu(open) {
-      if (open) {
-        mobileDrawer.classList.add('open');
-        drawerOverlay.classList.add('open');
-        document.body.style.overflow = 'hidden';
-      } else {
-        mobileDrawer.classList.remove('open');
-        drawerOverlay.classList.remove('open');
-        document.body.style.overflow = '';
-      }
-    }
-
-    openMenuBtn.addEventListener('click', () => toggleMenu(true));
-    closeMenuBtn.addEventListener('click', () => toggleMenu(false));
-    drawerOverlay.addEventListener('click', () => toggleMenu(false));
-    mobileLinks.forEach(link => {
-      link.addEventListener('click', () => toggleMenu(false));
-    });
-
-    // 2. FAQ Accordion Functionality
-    const faqItems = document.querySelectorAll('.faq-item');
-    faqItems.forEach(item => {
-      const questionBtn = item.querySelector('.faq-question');
-      questionBtn.addEventListener('click', () => {
-        const isActive = item.classList.contains('active');
-        // Close others
-        faqItems.forEach(other => other.classList.remove('active'));
-        if (!isActive) {
-          item.classList.add('active');
-        }
-      });
-    });
-
-    // 3. Hero Quick Booking to WhatsApp
-    function sendHeroBooking() {
-      const name = document.getElementById('heroNama').value.trim() || 'Pelanggan';
-      const service = document.getElementById('heroService').value;
-      const area = document.getElementById('heroArea').value;
-
-      const message = `Halo CleanUp IND, saya *${name}* ingin memesan layanan home cleaning:\n\n` +
-                      `🧹 *Layanan:* ${service}\n` +
-                      `📍 *Wilayah:* ${area}\n\n` +
-                      `Mohon info ketersediaan jadwal dan estimasi biayanya. Terima kasih!`;
-
-      const encodedUrl = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(message)}`;
-      window.open(encodedUrl, '_blank');
-    }
-
-    // 4. Interactive Calculator Booking to WhatsApp
-    function sendCustomBooking() {
-      const name = document.getElementById('calcName').value.trim() || 'Pelanggan';
-      const prop = document.getElementById('calcProp').value;
-      const service = document.getElementById('calcService').value;
-      const city = document.getElementById('calcCity').value;
-      const note = document.getElementById('calcNote').value.trim();
-
-      let message = `Halo CleanUp IND, saya *${name}* ingin booking layanan kebersihan:\n\n` +
-                    `🏢 *Jenis Properti:* ${prop}\n` +
-                    `🧹 *Layanan:* ${service}\n` +
-                    `📍 *Wilayah:* ${city}\n`;
-
-      if (note) {
-        message += `📝 *Catatan Tambahan:* ${note}\n`;
-      }
-
-      message += `\nMohon konfirmasi jadwal dan total biaya. Terima kasih!`;
-
-      const encodedUrl = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(message)}`;
-      window.open(encodedUrl, '_blank');
+    function sendBooking() {
+      const name = document.getElementById('hName').value || 'Pelanggan';
+      const waste = document.getElementById('hWaste').value;
+      const loc = document.getElementById('hLoc').value;
+      const msg = `Halo *CV. Keel Mulia Jasa*, saya *${name}* ingin booking armada:\n\n📦 *Muatan:* ${waste}\n📍 *Lokasi:* ${loc}\n\nMohon info estimasi biaya dan jadwalnya. Terima kasih!`;
+      window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(msg)}`, '_blank');
     }
   </script>
 </body>
