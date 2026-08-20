@@ -4,10 +4,12 @@ import { StickyBottomAction } from "@/components/StickyBottomAction";
 import { TopBanner } from "@/components/TopBanner";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { TrustBar } from "@/components/TrustBar";
 import { AboutCompany } from "@/components/AboutCompany";
 import { PosterSection } from "@/components/PosterSection";
-import { TrustBar } from "@/components/TrustBar";
+import { ClientsSection } from "@/components/ClientsSection";
 import { ServicesSection } from "@/components/ServicesSection";
+import { PortfolioSection } from "@/components/PortfolioSection";
 import { FleetSection } from "@/components/FleetSection";
 import { WhyChooseUs } from "@/components/WhyChooseUs";
 import { CalculatorSection } from "@/components/CalculatorSection";
@@ -29,7 +31,9 @@ export default function HomePage() {
       <TrustBar />
       <AboutCompany />
       <PosterSection />
+      <ClientsSection />
       <ServicesSection />
+      <PortfolioSection />
       <FleetSection />
       <WhyChooseUs />
       <CalculatorSection />
