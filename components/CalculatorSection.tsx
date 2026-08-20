@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { Calculator, MessageCircle, Send } from "lucide-react";
+import { Calculator, MessageCircle, Send, Sparkles } from "lucide-react";
+import { InteractiveFleetVisualizer } from "@/components/InteractiveFleetVisualizer";
 
 export const CalculatorSection: React.FC = () => {
   const [clientName, setClientName] = useState("");
@@ -39,29 +40,43 @@ export const CalculatorSection: React.FC = () => {
 
   return (
     <section className="py-24 bg-neo-bg bg-neo-grid text-white relative border-b-2 border-black" id="kalkulator">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
-        <div className="max-w-3xl mx-auto text-center mb-12">
+        {/* Header */}
+        <div className="max-w-3xl mx-auto text-center">
           <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-yellow text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
             <Calculator className="w-3.5 h-3.5 stroke-[2.5]" />
-            Estimator & Permintaan Penawaran
+            Estimator & Simulasi Cepat
           </span>
           <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">
-            Hitung Kebutuhan Armada & Minta Penawaran
+            Simulasi Kebutuhan Unit & Permintaan Penawaran
           </h2>
           <p className="text-sm sm:text-base text-slate-300 font-medium leading-relaxed">
-            Isi formulir singkat di bawah ini untuk menghitung estimasi unit yang dibutuhkan dan mengirimkan format pesanan resmi langsung ke WhatsApp tim operasional kami.
+            Gunakan simulator visual di bawah untuk menentukan jenis armada yang cocok, lalu kirimkan detail pesanan Anda langsung ke WhatsApp tim operasional.
           </p>
         </div>
 
+        {/* Feature 1: Interactive Volume & Fleet Simulator */}
+        <div className="max-w-4xl mx-auto">
+          <InteractiveFleetVisualizer />
+        </div>
+
+        {/* Feature 2: Official Form */}
         <div className="max-w-3xl mx-auto bg-neo-surface border-2 border-black rounded-3xl p-6 sm:p-10 shadow-neo-xl">
+          <div className="flex items-center gap-2 mb-6 pb-4 border-b-2 border-black">
+            <span className="bg-neo-cyan text-black text-[10px] font-black uppercase px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm">
+              Formulir Pemesanan Resmi
+            </span>
+            <span className="text-xs text-slate-400 font-bold">Respon Kilat 24/7</span>
+          </div>
+
           <form onSubmit={handleSubmit} className="space-y-5">
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               
               <div>
                 <label className="block text-xs font-black text-slate-200 mb-2 uppercase tracking-wide">
-                  Nama Pemesan / Penanggung Jawab *
+                  Nama Pemesan / PIC *
                 </label>
                 <input
                   type="text"

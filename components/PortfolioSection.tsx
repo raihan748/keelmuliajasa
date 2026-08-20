@@ -13,34 +13,26 @@ import {
   X,
   ArrowRight,
   ShieldCheck,
+  MoveHorizontal,
 } from "lucide-react";
+import { InteractiveBeforeAfter } from "@/components/InteractiveBeforeAfter";
 
 export const PortfolioSection: React.FC = () => {
   const [activePhoto, setActivePhoto] = useState<string | null>(null);
 
   const activities = [
     {
-      title: "Pembersihan Area & Evakuasi Karung Sampah",
-      location: "Pattallassang, Kabupaten Gowa",
-      date: "17 Jan 2026",
-      desc: "Evakuasi tumpukan sampah karung sisa produksi & pembersihan total area loading bay hingga bersih dan bebas kotoran.",
-      type: "Before & After",
-      image: "/images/portofolio-before-after.png",
-      tag: "Hasil Kerja Nyata",
-      tagColor: "bg-neo-yellow text-black",
-    },
-    {
-      title: "Standar K3 & Operasional Residensial",
+      title: "Standar Keselamatan Kerja (K3) Tim Loader",
       location: "Kompleks Perumahan Pattallassang, Gowa",
       date: "10 Jan 2026",
-      desc: "Tim loader CV. Keel Mulia Jasa bekerja dengan APD lengkap: Helm safety kuning, rompi reflektif biru, sarung tangan, dan safety boots.",
+      desc: "Tim loader CV. Keel Mulia Jasa bekerja dengan APD resmi: Helm safety kuning, rompi reflektif biru, sarung tangan, dan safety boots.",
       type: "Kepatuhan K3",
       image: "/images/tim-lapangan-k3.png",
-      tag: "Keselamatan Kerja (K3)",
+      tag: "Standar K3 Resmi",
       tagColor: "bg-neo-emerald text-black",
     },
     {
-      title: "Pemuatan Sampah Rumah Tangga Perumahan",
+      title: "Pemuatan Sampah Rumah Tangga & Lingkungan",
       location: "Makassar & Gowa Regency",
       date: "Operasional Harian",
       desc: "Pengangkutan kantong sampah residensial terjadwal dengan armada pick-up bak tinggi tanpa ceceran di jalan.",
@@ -48,6 +40,16 @@ export const PortfolioSection: React.FC = () => {
       image: "/images/fleet/operasional-loading-sampah.jpg",
       tag: "Residensial Rutin",
       tagColor: "bg-neo-blue text-white",
+    },
+    {
+      title: "Pengangkutan Puing Dump Truck Proyek",
+      location: "Makassar & Maros",
+      date: "Operasional Proyek",
+      desc: "Armada Dump Truck Merah siaga mengangkut sisa beton bongkaran, keramik, semen, dan tanah uruk.",
+      type: "Puing Konstruksi",
+      image: "/images/fleet/dump-truck-merah.jpg",
+      tag: "Proyek & Puing",
+      tagColor: "bg-neo-yellow text-black",
     },
   ];
 
@@ -59,17 +61,17 @@ export const PortfolioSection: React.FC = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-emerald text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
             <Camera className="w-3.5 h-3.5 stroke-[2.5]" />
-            Dokumentasi & Portofolio Kerja
+            Dokumentasi & Portofolio Lapangan
           </span>
           <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight mb-4">
             Bukti Nyata Kinerja Tim di Lapangan
           </h2>
           <p className="text-base sm:text-lg text-slate-300 font-medium leading-relaxed">
-            Lihat hasil pengerjaan sebelum dan sesudah (Before & After) serta standar keselamatan kerja (K3) tim loader CV. Keel Mulia Jasa.
+            Geser slider interaktif di bawah untuk membandingkan area sebelum dan sesudah (Before & After) dibersihkan oleh tim CV. Keel Mulia Jasa.
           </p>
         </div>
 
-        {/* Featured 1: Interactive Before & After Spotlight Card */}
+        {/* Featured 1: LIVE INTERACTIVE BEFORE & AFTER SLIDER */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -81,42 +83,33 @@ export const PortfolioSection: React.FC = () => {
             <div>
               <div className="flex items-center gap-2 mb-1.5">
                 <span className="bg-neo-yellow text-black text-[10px] font-black uppercase px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm">
-                  Proyek Pembersihan Area
+                  Interactive Before & After
                 </span>
                 <span className="text-xs text-neo-emerald font-black flex items-center gap-1">
                   <Sparkles className="w-3.5 h-3.5" />
-                  Pattallassang, Gowa Regency
+                  Pattallassang, Gowa Regency (17 Jan 2026)
                 </span>
               </div>
               <h3 className="text-xl sm:text-2xl font-black text-white">
-                Hasil Kerja Sebelum & Sesudah (Before & After)
+                Evakuasi Sampah Karung & Pembersihan Area Loading
               </h3>
             </div>
 
             <div className="flex items-center gap-2">
-              <span className="text-xs font-bold text-slate-300 flex items-center gap-1 bg-neo-card px-3 py-1.5 rounded-xl border-2 border-black shadow-neo-sm">
-                <Calendar className="w-3.5 h-3.5 text-neo-yellow" />
-                Dokumentasi: 17 Jan 2026
+              <span className="text-xs font-bold text-slate-300 flex items-center gap-1.5 bg-neo-card px-3 py-1.5 rounded-xl border-2 border-black shadow-neo-sm">
+                <MoveHorizontal className="w-4 h-4 text-neo-yellow animate-pulse" />
+                <span>Geser Garis Tengah</span>
               </span>
             </div>
           </div>
 
-          <div
-            className="cursor-pointer group relative overflow-hidden rounded-2xl border-2 border-black bg-black shadow-neo"
-            onClick={() => setActivePhoto("/images/portofolio-before-after.png")}
-          >
-            <img
-              src="/images/portofolio-before-after.png"
-              alt="Dokumentasi Before After CV Keel Mulia Jasa"
-              className="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-              <div className="bg-neo-yellow text-black px-4 py-2 rounded-xl font-black text-xs border-2 border-black shadow-neo flex items-center gap-2">
-                <Maximize2 className="w-4 h-4" />
-                <span>Klik untuk Zoom Foto Before-After</span>
-              </div>
-            </div>
-          </div>
+          {/* Draggable Interactive Before & After Component */}
+          <InteractiveBeforeAfter
+            beforeImage="/images/portofolio-before.jpg"
+            afterImage="/images/portofolio-after.jpg"
+            beforeLabel="SEBELUM DIBERSIHKAN"
+            afterLabel="SESUDAH DIBERSIHKAN"
+          />
 
           <div className="mt-6 pt-5 border-t-2 border-black grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-bold text-slate-200">
             <div className="flex items-center gap-2">
@@ -134,7 +127,7 @@ export const PortfolioSection: React.FC = () => {
           </div>
         </motion.div>
 
-        {/* Featured 2: 3 Cards Grid of Field Activities */}
+        {/* Featured 2: 3 Cards Grid of Real Field Activities */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {activities.map((act, idx) => (
             <motion.div
@@ -180,7 +173,7 @@ export const PortfolioSection: React.FC = () => {
                 <div className="pt-3 border-t-2 border-black flex items-center justify-between text-[11px] text-slate-400 font-bold">
                   <span className="flex items-center gap-1 text-neo-emerald font-black">
                     <ShieldCheck className="w-3.5 h-3.5 stroke-[2.5]" />
-                    Standar SOP
+                    Standar SOP & K3
                   </span>
                   <span>{act.date}</span>
                 </div>

@@ -1,6 +1,8 @@
 import React from "react";
 import { ScrollProgress } from "@/components/ScrollProgress";
+import { ScrollHUD } from "@/components/ScrollHUD";
 import { StickyBottomAction } from "@/components/StickyBottomAction";
+import { NeoMarquee } from "@/components/NeoMarquee";
 import { TopBanner } from "@/components/TopBanner";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
@@ -23,27 +25,75 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col bg-neo-bg text-white">
+    <main className="min-h-screen flex flex-col bg-neo-bg text-white selection:bg-neo-yellow selection:text-black">
+      {/* Scroll Progress Bar at very top */}
       <ScrollProgress />
+      
+      {/* Right Floating Scroll-Spy Navigator HUD */}
+      <ScrollHUD />
+
+      {/* Top Banner & Navigation */}
       <TopBanner />
       <Navbar />
+
+      {/* Hero with Animated Counters & 3D Cards */}
       <Hero />
+
+      {/* Running Marquee Ticker 1 */}
+      <NeoMarquee />
+
+      {/* Stats & Trust Bar */}
       <TrustBar />
+
+      {/* Company Profile & Mission */}
       <AboutCompany />
+
+      {/* Official Poster with Lightbox */}
       <PosterSection />
+
+      {/* Real Customer Logos & B2B Partners */}
       <ClientsSection />
+
+      {/* 8 Core Services Grid */}
       <ServicesSection />
+
+      {/* Interactive Draggable Before & After + K3 Field Portfolio */}
       <PortfolioSection />
+
+      {/* Real Fleet Photos & 4 Company Profile Commitments */}
       <FleetSection />
+
+      {/* Advantages & Client Matrix */}
       <WhyChooseUs />
+
+      {/* Interactive Volume Simulator & Booking Form */}
       <CalculatorSection />
+
+      {/* SOP 4 Steps */}
       <HowItWorks />
+
+      {/* Operational Coverage */}
       <CoverageSection />
+
+      {/* Testimonials */}
       <Testimonials />
+
+      {/* Running Marquee Ticker 2 */}
+      <NeoMarquee />
+
+      {/* FAQ */}
       <FaqSection />
+
+      {/* High Impact Final CTA Banner */}
       <CtaBanner />
+
+      {/* Footer */}
       <Footer />
+
+      {/* Scroll-Triggered Sticky Action Bottom Bar */}
       <StickyBottomAction />
+
+      {/* Floating WhatsApp Action Button */}
       <FloatingWhatsApp />
     </main>
   );
