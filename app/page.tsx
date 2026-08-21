@@ -1,8 +1,6 @@
 import React from "react";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { ScrollHUD } from "@/components/ScrollHUD";
-import { SideActionDock } from "@/components/SideActionDock";
-import { LiveActivityToast } from "@/components/LiveActivityToast";
 import { StickyBottomAction } from "@/components/StickyBottomAction";
 import { NeoMarquee } from "@/components/NeoMarquee";
 import { TopBanner } from "@/components/TopBanner";
@@ -34,17 +32,11 @@ export default function HomePage() {
       {/* Right Floating Scroll-Spy Navigator HUD */}
       <ScrollHUD />
 
-      {/* Floating Side Action Dock (Slide in from Right) */}
-      <SideActionDock />
-
-      {/* Live Activity Social Proof Toast (Slide in from Left) */}
-      <LiveActivityToast />
-
       {/* Top Banner & Navigation */}
       <TopBanner />
       <Navbar />
 
-      {/* Hero with Animated Counters & 3D Cards */}
+      {/* Hero with Animated Counters & Quick Calculator */}
       <Hero />
 
       {/* Running Marquee Ticker 1 */}
