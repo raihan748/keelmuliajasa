@@ -1,6 +1,8 @@
 import React from "react";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { ScrollHUD } from "@/components/ScrollHUD";
+import { SideActionDock } from "@/components/SideActionDock";
+import { LiveActivityToast } from "@/components/LiveActivityToast";
 import { StickyBottomAction } from "@/components/StickyBottomAction";
 import { NeoMarquee } from "@/components/NeoMarquee";
 import { TopBanner } from "@/components/TopBanner";
@@ -25,12 +27,18 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col bg-neo-bg text-slate-900 selection:bg-neo-yellow selection:text-black">
+    <main className="min-h-screen flex flex-col bg-neo-bg text-slate-900 selection:bg-neo-yellow selection:text-black relative overflow-x-hidden">
       {/* Scroll Progress Bar at very top */}
       <ScrollProgress />
       
       {/* Right Floating Scroll-Spy Navigator HUD */}
       <ScrollHUD />
+
+      {/* Floating Side Action Dock (Slide in from Right) */}
+      <SideActionDock />
+
+      {/* Live Activity Social Proof Toast (Slide in from Left) */}
+      <LiveActivityToast />
 
       {/* Top Banner & Navigation */}
       <TopBanner />

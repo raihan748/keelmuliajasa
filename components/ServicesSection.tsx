@@ -14,6 +14,7 @@ import {
   CalendarCheck,
   MessageCircle,
 } from "lucide-react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const ServicesSection: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>("all");
@@ -119,110 +120,119 @@ export const ServicesSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-yellow text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
-            <Sparkles className="w-3.5 h-3.5 stroke-[2.5]" />
-            Layanan Komprehensif
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-4">
-            Solusi Pengangkutan Sampah & Kebersihan Terpadu
-          </h2>
-          <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
-            Pilihan layanan lengkap dengan armada mandiri, tenaga loader berpengalaman, dan pembuangan langsung ke TPA.
-          </p>
-        </div>
+        <ScrollReveal direction="down">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-yellow text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
+              <Sparkles className="w-3.5 h-3.5 stroke-[2.5]" />
+              Layanan Komprehensif
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-4">
+              Solusi Pengangkutan Sampah & Kebersihan Terpadu
+            </h2>
+            <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
+              Pilihan layanan lengkap dengan armada mandiri, tenaga loader berpengalaman, dan pembuangan langsung ke TPA.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Filter Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-2.5 mb-14">
-          {categories.map((cat) => (
-            <button
-              key={cat.id}
-              onClick={() => setActiveCategory(cat.id)}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black border-2 border-black transition-all cursor-pointer ${
-                activeCategory === cat.id
-                  ? "bg-neo-yellow text-black shadow-neo -translate-y-0.5"
-                  : "bg-slate-50 text-slate-700 hover:bg-slate-100 shadow-neo-sm"
-              }`}
-            >
-              {cat.label}
-            </button>
-          ))}
-        </div>
+        <ScrollReveal direction="zoom" delay={0.1}>
+          <div className="flex flex-wrap items-center justify-center gap-2.5 mb-14">
+            {categories.map((cat) => (
+              <button
+                key={cat.id}
+                onClick={() => setActiveCategory(cat.id)}
+                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-black border-2 border-black transition-all cursor-pointer ${
+                  activeCategory === cat.id
+                    ? "bg-neo-yellow text-black shadow-neo -translate-y-0.5"
+                    : "bg-slate-50 text-slate-700 hover:bg-slate-100 shadow-neo-sm"
+                }`}
+              >
+                {cat.label}
+              </button>
+            ))}
+          </div>
+        </ScrollReveal>
 
-        {/* Services Grid */}
+        {/* Services Grid with Alternating Left / Right Slide-Ins */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {filteredServices.map((item, idx) => {
             const Icon = item.icon;
+            // Alternating lateral direction
+            const direction = idx % 2 === 0 ? "left" : "right";
+            const delay = (idx % 4) * 0.1;
+
             return (
-              <div
-                key={idx}
-                className="bg-slate-50 border-2 border-black rounded-3xl p-6 shadow-neo hover:shadow-neo-lg hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between group"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="w-12 h-12 rounded-2xl bg-white border-2 border-black text-slate-900 flex items-center justify-center shadow-neo-sm group-hover:bg-neo-yellow transition-colors">
-                      <Icon className="w-6 h-6 stroke-[2.5]" />
-                    </div>
-                    <span className={`text-[10px] font-black uppercase px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm ${item.tagColor}`}>
-                      {item.tag}
-                    </span>
-                  </div>
-
-                  <h3 className="text-lg font-black text-slate-900 mb-2 leading-snug">
-                    {item.title}
-                  </h3>
-                  <p className="text-xs text-slate-600 font-medium leading-relaxed mb-4">
-                    {item.shortDesc}
-                  </p>
-
-                  <div className="space-y-1.5 mb-6 pt-3 border-t-2 border-black">
-                    {item.specs.map((spec, sIdx) => (
-                      <div key={sIdx} className="flex items-center gap-2 text-xs font-bold text-slate-700">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 stroke-[2.5]" />
-                        <span>{spec}</span>
+              <ScrollReveal key={idx} direction={direction} delay={delay} className="h-full">
+                <div className="h-full bg-slate-50 border-2 border-black rounded-3xl p-6 shadow-neo hover:shadow-neo-lg hover:-translate-y-1.5 transition-all duration-200 flex flex-col justify-between group">
+                  <div>
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="w-12 h-12 rounded-2xl bg-white border-2 border-black text-slate-900 flex items-center justify-center shadow-neo-sm group-hover:bg-neo-yellow transition-colors">
+                        <Icon className="w-6 h-6 stroke-[2.5]" />
                       </div>
-                    ))}
+                      <span className={`text-[10px] font-black uppercase px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm ${item.tagColor}`}>
+                        {item.tag}
+                      </span>
+                    </div>
+
+                    <h3 className="text-lg font-black text-slate-900 mb-2 leading-snug">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs text-slate-600 font-medium leading-relaxed mb-4">
+                      {item.shortDesc}
+                    </p>
+
+                    <div className="space-y-1.5 mb-6 pt-3 border-t-2 border-black">
+                      {item.specs.map((spec, sIdx) => (
+                        <div key={sIdx} className="flex items-center gap-2 text-xs font-bold text-slate-700">
+                          <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0 stroke-[2.5]" />
+                          <span>{spec}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div>
+                    <a
+                      href={`https://wa.me/6282396193473?text=${encodeURIComponent(item.waText)}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-neo-emerald hover:bg-neo-emerald-dark text-black font-black text-xs border-2 border-black shadow-neo-sm hover:shadow-neo transition-all"
+                    >
+                      <MessageCircle className="w-4 h-4 fill-current" />
+                      <span>Pesan Layanan</span>
+                    </a>
                   </div>
                 </div>
-
-                <div>
-                  <a
-                    href={`https://wa.me/6282396193473?text=${encodeURIComponent(item.waText)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl bg-neo-emerald hover:bg-neo-emerald-dark text-black font-black text-xs border-2 border-black shadow-neo-sm hover:shadow-neo transition-all"
-                  >
-                    <MessageCircle className="w-4 h-4 fill-current" />
-                    <span>Pesan Layanan</span>
-                  </a>
-                </div>
-              </div>
+              </ScrollReveal>
             );
           })}
         </div>
 
         {/* Bottom Banner Note */}
-        <div className="mt-14 p-6 rounded-2xl bg-white border-2 border-black shadow-neo flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-neo-yellow text-black border-2 border-black flex items-center justify-center shrink-0 shadow-neo-sm">
-              <Truck className="w-5 h-5" />
+        <ScrollReveal direction="diagonal-left" delay={0.2} className="mt-14">
+          <div className="p-6 rounded-2xl bg-white border-2 border-black shadow-neo flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-neo-yellow text-black border-2 border-black flex items-center justify-center shrink-0 shadow-neo-sm">
+                <Truck className="w-5 h-5" />
+              </div>
+              <div>
+                <h4 className="font-black text-sm text-slate-900">Butuh Paket Borongan Proyek atau Kontrak Retribusi Rutin?</h4>
+                <p className="text-xs text-slate-600 font-medium">Kami siap melakukan survei lokasi gratis dan menyusun Surat Penawaran Harga (SPH) resmi.</p>
+              </div>
             </div>
-            <div>
-              <h4 className="font-black text-sm text-slate-900">Butuh Paket Borongan Proyek atau Kontrak Retribusi Rutin?</h4>
-              <p className="text-xs text-slate-600 font-medium">Kami siap melakukan survei lokasi gratis dan menyusun Surat Penawaran Harga (SPH) resmi.</p>
-            </div>
-          </div>
 
-          <a
-            href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20kami%20ingin%20jadwalkan%20survei%20lokasi%20dan%20penawaran%20harga"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-black text-white font-black text-xs border-2 border-black shadow-neo-sm shrink-0 hover:-translate-y-0.5 transition-all"
-          >
-            <span>Jadwalkan Survei Gratis</span>
-            <ArrowRight className="w-4 h-4" />
-          </a>
-        </div>
+            <a
+              href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20kami%20ingin%20jadwalkan%20survei%20lokasi%20dan%20penawaran%20harga"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-black text-white font-black text-xs border-2 border-black shadow-neo-sm shrink-0 hover:-translate-y-0.5 transition-all"
+            >
+              <span>Jadwalkan Survei Gratis</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
+        </ScrollReveal>
 
       </div>
     </section>
