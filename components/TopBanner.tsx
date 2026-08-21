@@ -1,5 +1,5 @@
 import React from "react";
-import { PhoneCall, ShieldCheck, Instagram } from "lucide-react";
+import { PhoneCall, ShieldCheck, Instagram, Sparkles } from "lucide-react";
 
 export const TopBanner: React.FC = () => {
   return (
@@ -7,8 +7,8 @@ export const TopBanner: React.FC = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 flex-wrap">
         <div className="flex items-center gap-2.5 flex-wrap">
           <span className="inline-flex items-center gap-1.5 bg-black text-white px-2.5 py-0.5 rounded-md text-[11px] font-black border border-black shadow-neo-sm uppercase tracking-wide">
-            <ShieldCheck className="w-3.5 h-3.5 text-neo-emerald stroke-[2.5]" />
-            Berizin Resmi TPA
+            <Sparkles className="w-3.5 h-3.5 text-neo-yellow stroke-[2.5]" />
+            Layanan Cepat & Profesional
           </span>
           <span className="text-black font-extrabold">
             CV. Keel Mulia Jasa — Melayani Area Makassar, Gowa & Maros

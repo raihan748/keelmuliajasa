@@ -142,7 +142,7 @@ export const Navbar: React.FC = () => {
         <div className="pt-5 border-t-2 border-black space-y-2.5">
           <div className="flex items-center gap-2 text-black font-black text-[11px] bg-neo-yellow p-2.5 rounded-xl border-2 border-black shadow-neo-sm">
             <ShieldCheck className="w-4 h-4 text-emerald-700 shrink-0 stroke-[2.5]" />
-            <span>Izin Resmi TPA Makassar, Gowa, Maros</span>
+            <span>Melayani Makassar, Gowa & Maros</span>
           </div>
 
           <a

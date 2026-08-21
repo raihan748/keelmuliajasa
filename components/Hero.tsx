@@ -61,9 +61,9 @@ export const Hero: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-[1.15] sm:leading-[1.1]"
             >
-              Angkut Sampah & Puing Cepat, Bersih Tuntas ke{" "}
+              Angkut Sampah & Puing Cepat, Bersih Tuntas &{" "}
               <span className="bg-neo-yellow text-black px-2 py-0.5 rounded-lg border-2 border-black shadow-neo inline-block rotate-[-1deg]">
-                TPA Resmi
+                Terpercaya
               </span>
             </motion.h1>
 
@@ -87,7 +87,7 @@ export const Hero: React.FC = () => {
             >
               <div className="flex items-center gap-2 bg-emerald-50/90 px-3 py-2.5 rounded-xl border-2 border-black shadow-neo-sm text-xs font-black text-emerald-950 hover:-translate-y-0.5 transition-all">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 stroke-[2.5]" />
-                <span>Izin Resmi TPA Pemerintah</span>
+                <span>Garansi Bersih Tuntas</span>
               </div>
               <div className="flex items-center gap-2 bg-amber-50/90 px-3 py-2.5 rounded-xl border-2 border-black shadow-neo-sm text-xs font-black text-amber-950 hover:-translate-y-0.5 transition-all">
                 <CheckCircle2 className="w-4 h-4 text-amber-600 shrink-0 stroke-[2.5]" />
@@ -139,7 +139,7 @@ export const Hero: React.FC = () => {
                 <div className="text-lg sm:text-2xl font-black text-emerald-600 font-mono">
                   <AnimatedCounter to={100} suffix="%" />
                 </div>
-                <div className="text-[9px] sm:text-xs font-black text-slate-700">TPA Legal</div>
+                <div className="text-[9px] sm:text-xs font-black text-slate-700">Garansi Bersih</div>
               </div>
               <div className="bg-white p-2.5 sm:p-3.5 rounded-2xl border-2 border-black shadow-neo-sm text-center">
                 <div className="text-lg sm:text-2xl font-black text-blue-600 font-mono">

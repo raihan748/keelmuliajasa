@@ -7,7 +7,7 @@ import { Truck, ShieldCheck, Zap, Sparkles, MapPin } from "lucide-react";
 export const NeoMarquee: React.FC = () => {
   const tickerItems = [
     { text: "ARMADA DUMP TRUCK & PICK UP SIAGA 24/7", icon: Truck, color: "text-neo-yellow" },
-    { text: "PEMBUANGAN 100% LEGAL KE TPA RESMI", icon: ShieldCheck, color: "text-neo-emerald" },
+    { text: "PENGANGKUTAN SAMPAH & PUING BERSIH TUNTAS", icon: Sparkles, color: "text-neo-emerald" },
     { text: "MELAYANI MAKASSAR, GOWA & MAROS", icon: MapPin, color: "text-neo-cyan" },
     { text: "RESPON KILAT WHATSAPP 0823-9619-3473", icon: Zap, color: "text-neo-yellow" },
     { text: "TERSEDIA TIM LOADER LENGKAP & APD K3", icon: Sparkles, color: "text-neo-red" },

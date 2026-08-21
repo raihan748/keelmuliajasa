@@ -15,8 +15,8 @@ export const WhyChooseUs: React.FC = () => {
   const reasons = [
     {
       icon: ShieldCheck,
-      title: "100% Pembuangan Legal ke TPA",
-      desc: "Tidak pernah membuang sampah di pinggir jalan atau lahan liar. Semua dibuang ke TPA resmi pemerintah.",
+      title: "Pembuangan Langsung ke TPA",
+      desc: "Tidak pernah membuang sampah di pinggir jalan atau lahan liar. Semua muatan diangkut tuntas ke TPA.",
       color: "bg-neo-emerald text-black",
     },
     {
@@ -28,7 +28,7 @@ export const WhyChooseUs: React.FC = () => {
     {
       icon: Coins,
       title: "Tarif Transparan Tanpa Biaya Tersembunyi",
-      desc: "Harga sudah mencakup unit armada, bahan bakar (BBM), supir, tenaga loader, dan retribusi resmi TPA.",
+      desc: "Harga sudah mencakup unit armada, bahan bakar (BBM), supir, tenaga loader, dan retribusi TPA.",
       color: "bg-neo-cyan text-black",
     },
     {

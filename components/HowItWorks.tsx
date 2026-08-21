@@ -31,7 +31,7 @@ export const HowItWorks: React.FC = () => {
       num: "04",
       icon: CheckCircle2,
       title: "Pembuangan ke TPA & Invoice",
-      desc: "Sampah dibuang ke TPA resmi pemerintah. Kami menerbitkan bukti timbangan TPA, kwitansi, atau invoice resmi.",
+      desc: "Sampah dibuang langsung ke TPA. Kami siap menerbitkan kwitansi resmi atau invoice untuk pembukuan Anda.",
       tag: "Langkah 4",
       color: "bg-neo-purple text-white",
     },

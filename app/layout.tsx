@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://keelmuliajasa.com"),
   title: "CV. Keel Mulia Jasa - Jasa Angkutan Sampah, Puing & Kebersihan Lingkungan",
   description:
-    "CV. Keel Mulia Jasa adalah penyedia resmi jasa angkutan sampah rumah tangga, komersial, puing proyek konstruksi, penebangan pohon, dan pembersihan lahan dengan armada dump truck lengkap berizin resmi ke TPA.",
+    "CV. Keel Mulia Jasa adalah penyedia resmi jasa angkutan sampah rumah tangga, komersial, puing proyek konstruksi, penebangan pohon, dan pembersihan lahan dengan armada dump truck lengkap di Makassar, Gowa, dan Maros.",
   keywords: [
     "keel mulia jasa",
     "cv keel mulia jasa",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "CV. Keel Mulia Jasa - Jasa Angkutan Sampah & Kebersihan Terpadu",
-    description: "Solusi terpercaya pengangkutan sampah, puing proyek, dan pembersihan area dengan armada dump truck lengkap berizin resmi.",
+    description: "Solusi terpercaya pengangkutan sampah, puing proyek, dan pembersihan area dengan armada dump truck lengkap dan profesional.",
     url: "https://keelmuliajasa.com",
     siteName: "CV. Keel Mulia Jasa",
     images: [

@@ -49,8 +49,8 @@ export const FleetSection: React.FC = () => {
 
   const commitments = [
     {
-      title: "Izin Resmi TPA Pemerintah",
-      desc: "100% pembuangan legal berizin ke TPA resmi pemerintah daerah, bukan lahan liar.",
+      title: "Pembuangan Langsung ke TPA",
+      desc: "Seluruh muatan sampah diangkut dan dibuang langsung ke TPA, bukan dibuang di pinggir jalan atau lahan liar.",
       icon: ShieldCheck,
       color: "bg-neo-emerald text-black",
     },
@@ -61,8 +61,8 @@ export const FleetSection: React.FC = () => {
       color: "bg-neo-yellow text-black",
     },
     {
-      title: "Transparansi Ritase & Timbangan",
-      desc: "Perhitungan kapasitas akurat tanpa manipulasi, siap sertakan bukti struk timbangan resmi TPA.",
+      title: "Transparansi Ritase & Muatan",
+      desc: "Perhitungan kapasitas akurat tanpa manipulasi, transparan dan terpercaya.",
       icon: Scale,
       color: "bg-neo-cyan text-black",
     },

@@ -25,7 +25,7 @@ export const AboutCompany: React.FC = () => {
             </p>
 
             <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
-              Didukung oleh armada dump truck dan pick up mandiri, tenaga loader terlatih dengan standar keselamatan K3, serta perjanjian resmi dengan Tempat Pembuangan Akhir (TPA) pemerintah, kami memastikan seluruh material diangkut secara bertanggung jawab, bersih, dan sesuai regulasi lingkungan hidup.
+              Didukung oleh armada dump truck dan pick up mandiri, tenaga loader terlatih dengan standar keselamatan K3, serta kesiapan operasional setiap hari, kami memastikan seluruh material diangkut secara bertanggung jawab, rapi, dan bersih tuntas.
             </p>
 
             {/* Core Pillars */}
@@ -33,8 +33,8 @@ export const AboutCompany: React.FC = () => {
               <div className="flex items-start gap-3 bg-white p-3.5 rounded-2xl border-2 border-black shadow-neo-sm">
                 <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5 stroke-[2.5]" />
                 <div>
-                  <h4 className="font-black text-sm text-slate-900">Legalitas & Izin Lengkap</h4>
-                  <p className="text-xs text-slate-600 font-medium">Memiliki NIB, NPWP, dan izin operasional resmi</p>
+                  <h4 className="font-black text-sm text-slate-900">Legalitas CV Resmi</h4>
+                  <p className="text-xs text-slate-600 font-medium">Memiliki NIB, NPWP, dan legalitas badan usaha</p>
                 </div>
               </div>
 
@@ -57,7 +57,7 @@ export const AboutCompany: React.FC = () => {
               <div className="flex items-start gap-3 bg-white p-3.5 rounded-2xl border-2 border-black shadow-neo-sm">
                 <CheckCircle2 className="w-5 h-5 text-purple-600 shrink-0 mt-0.5 stroke-[2.5]" />
                 <div>
-                  <h4 className="font-black text-sm text-slate-900">Layanan Darurat / Same Day</h4>
+                  <h4 className="font-black text-sm text-slate-900">Layanan Cepat / Same Day</h4>
                   <p className="text-xs text-slate-600 font-medium">Armada siaga cepat tiba dalam hitungan jam</p>
                 </div>
               </div>
@@ -108,8 +108,8 @@ export const AboutCompany: React.FC = () => {
                   <span className="font-black text-slate-900">Pengangkutan Sampah & Puing</span>
                 </div>
                 <div className="flex items-center justify-between py-2 border-b border-slate-200">
-                  <span className="font-bold text-slate-500">Izin Pembuangan:</span>
-                  <span className="font-black text-emerald-600">TPA Resmi Pemerintah</span>
+                  <span className="font-bold text-slate-500">Tujuan Pembuangan:</span>
+                  <span className="font-black text-emerald-600">Tempat Pembuangan Akhir (TPA)</span>
                 </div>
                 <div className="flex items-center justify-between py-2">
                   <span className="font-bold text-slate-500">Cakupan Wilayah:</span>
