@@ -7,7 +7,7 @@ export const FloatingWhatsApp: React.FC = () => {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex items-center">
+    <div className="fixed bottom-6 right-6 z-30 hidden sm:flex items-center">
       {/* Neo Tooltip */}
       <div
         className={`mr-3 bg-neo-yellow text-black px-3.5 py-2 rounded-xl text-xs font-black shadow-neo border-2 border-black pointer-events-none transition-all duration-200 uppercase tracking-wide ${
@@ -28,7 +28,7 @@ export const FloatingWhatsApp: React.FC = () => {
         aria-label="Chat WhatsApp CV Keel Mulia Jasa"
       >
         {/* Active Badge */}
-        <span className="absolute -top-1.5 -right-1.5 w-6 h-6 bg-neo-yellow text-black rounded-full text-[11px] font-black flex items-center justify-center border-2 border-black shadow-neo-sm animate-pulse-badge">
+        <span className="absolute -top-1.5 -right-1.5 w-6 h-6 bg-neo-yellow text-black rounded-full text-[11px] font-black flex items-center justify-center border-2 border-black shadow-neo-sm">
           1
         </span>
         <MessageCircle className="w-7 h-7 sm:w-8 sm:h-8 fill-current" />
