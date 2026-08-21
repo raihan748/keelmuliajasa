@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { DevToolsCredits } from "@/components/DevToolsCredits";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://keelmuliajasa.com"),
@@ -16,7 +17,9 @@ export const metadata: Metadata = {
     "pembersihan lahan sampah",
     "waste management sulawesi",
   ],
-  authors: [{ name: "CV. Keel Mulia Jasa" }],
+  authors: [{ name: "Raihan Muh Ikhsan", url: "https://keelmuliajasa.com" }, { name: "CV. Keel Mulia Jasa" }],
+  creator: "Raihan Muh Ikhsan",
+  publisher: "CV. Keel Mulia Jasa",
   icons: {
     icon: "/images/favicon.png",
     shortcut: "/favicon.ico",
@@ -56,8 +59,16 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
+        {/*
+        ======================================================================
+        *  CV. KEEL MULIA JASA — Official Website
+        *  Designed & Developed with Passion
+        *  Made by Raihan Muh Ikhsan
+        ======================================================================
+        */}
       </head>
-      <body className="min-h-screen flex flex-col bg-slate-50 font-sans text-slate-900 selection:bg-emerald-100 selection:text-emerald-900">
+      <body className="min-h-screen flex flex-col bg-slate-50 font-sans text-slate-900 selection:bg-neo-yellow selection:text-black">
+        <DevToolsCredits />
         {children}
       </body>
     </html>
