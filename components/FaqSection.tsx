@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { ChevronDown, HelpCircle } from "lucide-react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const FaqSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -13,7 +14,7 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: "Ke mana sampah dan puing tersebut akan dibuang?",
-      a: "Seluruh muatan sampah dan puing dibuang langsung ke Tempat Pembuangan Akhir (TPA). Kami tidak pernah membuang sampah sembarangan di pinggir jalan atau lahan liar.",
+      a: "Seluruh muatan sampah dan puing dibuang langsung ke Tempat Pembuangan Akhir (TPA) resmi. Kami tidak pernah membuang sampah sembarangan di pinggir jalan atau lahan liar.",
     },
     {
       q: "Apakah tarif sewa armada sudah termasuk supir dan tenaga kuli angkut (loader)?",
@@ -38,21 +39,23 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-neo-bg bg-neo-grid border-b-2 border-black" id="faq">
+    <section className="py-20 sm:py-28 bg-slate-50/50 border-b border-slate-100" id="faq">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div className="text-center mb-16">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-cyan text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
-            <HelpCircle className="w-3.5 h-3.5 stroke-[2.5]" />
-            Tanya Jawab (FAQ)
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
-            Pertanyaan yang Sering Diajukan
-          </h2>
-          <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
-            Informasi lengkap seputar mekanisme layanan pengangkutan dan pengelolaan sampah kami.
-          </p>
-        </div>
+        <ScrollReveal direction="down">
+          <div className="text-center mb-16">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold">
+              <HelpCircle className="w-3.5 h-3.5 text-brand-600" />
+              <span>Tanya Jawab (FAQ)</span>
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4">
+              Pertanyaan yang Sering Diajukan
+            </h2>
+            <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
+              Informasi lengkap seputar mekanisme layanan pengangkutan dan pengelolaan sampah kami.
+            </p>
+          </div>
+        </ScrollReveal>
 
         <div className="space-y-4">
           {faqs.map((item, idx) => {
@@ -60,8 +63,10 @@ export const FaqSection: React.FC = () => {
             return (
               <div
                 key={idx}
-                className={`border-2 border-black rounded-2xl transition-all duration-200 overflow-hidden shadow-neo ${
-                  isOpen ? "bg-white ring-2 ring-neo-yellow" : "bg-white hover:bg-slate-50"
+                className={`border rounded-2xl transition-all duration-200 overflow-hidden shadow-soft-xs ${
+                  isOpen
+                    ? "bg-white border-brand-300 ring-2 ring-brand-500/10 shadow-soft-sm"
+                    : "bg-white border-slate-200/80 hover:border-slate-300"
                 }`}
               >
                 <button
@@ -69,18 +74,18 @@ export const FaqSection: React.FC = () => {
                   onClick={() => toggleFaq(idx)}
                   className="w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer focus:outline-none"
                 >
-                  <span className="font-black text-base sm:text-lg text-slate-900">{item.q}</span>
+                  <span className="font-bold text-base sm:text-lg text-slate-900">{item.q}</span>
                   <div
-                    className={`w-9 h-9 rounded-xl border-2 border-black flex items-center justify-center shrink-0 shadow-neo-sm transition-transform duration-200 ${
-                      isOpen ? "rotate-180 bg-neo-yellow text-black" : "bg-slate-100 text-slate-800"
+                    className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${
+                      isOpen ? "rotate-180 bg-brand-50 text-brand-600" : "bg-slate-100 text-slate-500"
                     }`}
                   >
-                    <ChevronDown className="w-5 h-5 stroke-[2.5]" />
+                    <ChevronDown className="w-4 h-4" />
                   </div>
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-5 pt-1 text-sm text-slate-700 font-medium leading-relaxed border-t-2 border-black">
+                  <div className="px-6 pb-5 pt-1 text-sm text-slate-600 font-normal leading-relaxed border-t border-slate-100">
                     {item.a}
                   </div>
                 )}
@@ -93,3 +98,4 @@ export const FaqSection: React.FC = () => {
     </section>
   );
 };
+

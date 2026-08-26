@@ -1,13 +1,11 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence, useScroll } from "framer-motion";
 import {
   Compass,
   FileText,
   Truck,
   Calculator,
-  MessageCircle,
   HelpCircle,
   Camera,
   Layers,
@@ -18,15 +16,15 @@ export const ScrollHUD: React.FC = () => {
   const [scrollPercentage, setScrollPercentage] = useState(0);
 
   const sections = [
-    { id: "hero", label: "Utama", icon: Layers },
-    { id: "tentang-kami", label: "Profil", icon: FileText },
-    { id: "poster-resmi", label: "Poster", icon: Compass },
-    { id: "klien-kami", label: "Klien", icon: Compass },
-    { id: "layanan", label: "Layanan", icon: Layers },
-    { id: "portofolio", label: "Portofolio", icon: Camera },
-    { id: "armada", label: "Armada", icon: Truck },
-    { id: "kalkulator", label: "Kalkulator", icon: Calculator },
-    { id: "faq", label: "FAQ", icon: HelpCircle },
+    { id: "hero", label: "Utama" },
+    { id: "tentang-kami", label: "Profil" },
+    { id: "poster-resmi", label: "Poster" },
+    { id: "klien-kami", label: "Klien" },
+    { id: "layanan", label: "Layanan" },
+    { id: "portofolio", label: "Portofolio" },
+    { id: "armada", label: "Armada" },
+    { id: "kalkulator", label: "Kalkulator" },
+    { id: "faq", label: "FAQ" },
   ];
 
   useEffect(() => {
@@ -60,44 +58,42 @@ export const ScrollHUD: React.FC = () => {
   };
 
   return (
-    <>
-      {/* Right-Side Scroll Navigator HUD (Desktop) */}
-      <div className="fixed right-5 top-1/2 -translate-y-1/2 z-40 hidden xl:flex flex-col gap-2 pointer-events-auto">
-        <div className="bg-white/95 backdrop-blur-md p-2 rounded-2xl border-2 border-black shadow-neo-lg flex flex-col gap-1.5 items-center">
-          
-          {/* Scroll % Badge */}
-          <div className="bg-slate-100 px-2 py-1 rounded-lg border-2 border-black text-[10px] font-black text-slate-900 mb-1 font-mono shadow-neo-sm">
-            {scrollPercentage}%
-          </div>
-
-          {/* Section Dots */}
-          {sections.map((sec) => {
-            const isActive = activeSection === sec.id;
-            return (
-              <button
-                key={sec.id}
-                onClick={() => scrollToSection(sec.id)}
-                className="group relative flex items-center justify-center w-8 h-8 rounded-xl transition-all cursor-pointer"
-                aria-label={`Scroll to ${sec.label}`}
-              >
-                {/* Active indicator dot/icon */}
-                <div
-                  className={`w-3.5 h-3.5 rounded-md border-2 border-black transition-all ${
-                    isActive
-                      ? "bg-neo-yellow scale-125 shadow-neo-sm"
-                      : "bg-slate-200 hover:bg-slate-400"
-                  }`}
-                />
-
-                {/* Tooltip on hover */}
-                <div className="absolute right-10 bg-neo-yellow text-black text-xs font-black px-2.5 py-1 rounded-md border-2 border-black shadow-neo-sm whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity">
-                  {sec.label}
-                </div>
-              </button>
-            );
-          })}
+    <div className="fixed right-6 top-1/2 -translate-y-1/2 z-40 hidden 2xl:flex flex-col gap-2 pointer-events-auto">
+      <div className="bg-white/90 backdrop-blur-md p-2 rounded-full border border-slate-200/80 shadow-soft-md flex flex-col gap-2 items-center">
+        
+        {/* Scroll % Badge */}
+        <div className="text-[10px] font-bold text-slate-500 font-mono py-1 px-0.5">
+          {scrollPercentage}%
         </div>
+
+        {/* Section Dots */}
+        {sections.map((sec) => {
+          const isActive = activeSection === sec.id;
+          return (
+            <button
+              key={sec.id}
+              onClick={() => scrollToSection(sec.id)}
+              className="group relative flex items-center justify-center w-6 h-6 rounded-full transition-all cursor-pointer"
+              aria-label={`Scroll to ${sec.label}`}
+            >
+              {/* Active indicator dot */}
+              <div
+                className={`transition-all duration-300 rounded-full ${
+                  isActive
+                    ? "w-3 h-3 bg-brand-600 ring-4 ring-brand-100"
+                    : "w-2 h-2 bg-slate-300 hover:bg-slate-400"
+                }`}
+              />
+
+              {/* Tooltip on hover */}
+              <div className="absolute right-9 bg-slate-900 text-white text-xs font-medium px-2.5 py-1 rounded-lg shadow-soft-md whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-200 translate-x-1 group-hover:translate-x-0">
+                {sec.label}
+              </div>
+            </button>
+          );
+        })}
       </div>
-    </>
+    </div>
   );
 };
+

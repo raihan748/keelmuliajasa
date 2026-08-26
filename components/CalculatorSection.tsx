@@ -39,19 +39,19 @@ export const CalculatorSection: React.FC = () => {
   };
 
   return (
-    <section className="py-14 sm:py-24 bg-neo-bg bg-neo-grid text-slate-900 relative border-b-2 border-black" id="kalkulator">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 sm:space-y-12">
+    <section className="py-20 sm:py-28 bg-slate-50/50 text-slate-900 relative border-b border-slate-100" id="kalkulator">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
         
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-yellow text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
-            <Calculator className="w-3.5 h-3.5 stroke-[2.5]" />
-            Estimator & Simulasi Cepat
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold">
+            <Calculator className="w-3.5 h-3.5 text-brand-600" />
+            <span>Estimator & Simulasi Cepat</span>
           </span>
-          <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight mb-3 sm:mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4">
             Simulasi Kebutuhan Unit & Permintaan Penawaran
           </h2>
-          <p className="text-xs sm:text-base text-slate-600 font-medium leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
             Gunakan simulator visual di bawah untuk menentukan jenis armada yang cocok, lalu kirimkan detail pesanan Anda langsung ke WhatsApp tim operasional.
           </p>
         </div>
@@ -62,20 +62,22 @@ export const CalculatorSection: React.FC = () => {
         </div>
 
         {/* Feature 2: Official Form */}
-        <div className="max-w-3xl mx-auto bg-white border-2 border-black rounded-3xl p-5 sm:p-10 shadow-neo-xl">
-          <div className="flex items-center gap-2 mb-5 pb-3.5 border-b-2 border-black">
-            <span className="bg-neo-cyan text-black text-[10px] font-black uppercase px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm">
-              Formulir Pemesanan Resmi
-            </span>
-            <span className="text-[11px] sm:text-xs text-slate-500 font-bold">Respon Kilat 24/7</span>
+        <div className="max-w-3xl mx-auto bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-10 shadow-soft-md">
+          <div className="flex items-center justify-between pb-4 mb-6 border-b border-slate-100">
+            <div className="flex items-center gap-2.5">
+              <span className="bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full border border-brand-200/60">
+                Formulir Pemesanan Resmi
+              </span>
+            </div>
+            <span className="text-xs text-slate-500 font-medium">Respon Kilat Setiap Hari</span>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+          <form onSubmit={handleSubmit} className="space-y-5">
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               
               <div>
-                <label className="block text-[11px] sm:text-xs font-black text-slate-800 mb-1.5 uppercase tracking-wide">
+                <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                   Nama Pemesan / PIC *
                 </label>
                 <input
@@ -84,12 +86,12 @@ export const CalculatorSection: React.FC = () => {
                   onChange={(e) => setClientName(e.target.value)}
                   placeholder="Contoh: Bpk. Rahmat / Ibu Sinta"
                   required
-                  className="w-full px-3.5 py-3 rounded-xl bg-slate-50 border-2 border-black text-slate-900 placeholder-slate-400 text-sm font-semibold focus:outline-none focus:border-neo-yellow focus:shadow-neo-sm transition-all"
+                  className="w-full px-4 py-3 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-sm font-medium focus:outline-none focus:border-brand-500 focus:bg-white focus:ring-2 focus:ring-brand-500/20 transition-all"
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] sm:text-xs font-black text-slate-800 mb-1.5 uppercase tracking-wide">
+                <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                   Nama Perusahaan / Cluster (Opsional)
                 </label>
                 <input
@@ -97,18 +99,18 @@ export const CalculatorSection: React.FC = () => {
                   value={company}
                   onChange={(e) => setCompany(e.target.value)}
                   placeholder="Contoh: PT. Adhi Konstruksi / Cluster Anggrek"
-                  className="w-full px-3.5 py-3 rounded-xl bg-slate-50 border-2 border-black text-slate-900 placeholder-slate-400 text-sm font-semibold focus:outline-none focus:border-neo-yellow focus:shadow-neo-sm transition-all"
+                  className="w-full px-4 py-3 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-sm font-medium focus:outline-none focus:border-brand-500 focus:bg-white focus:ring-2 focus:ring-brand-500/20 transition-all"
                 />
               </div>
 
               <div>
-                <label className="block text-[11px] sm:text-xs font-black text-slate-800 mb-1.5 uppercase tracking-wide">
+                <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                   Jenis Sampah / Muatan *
                 </label>
                 <select
                   value={wasteType}
                   onChange={(e) => setWasteType(e.target.value)}
-                  className="w-full px-3.5 py-3 rounded-xl bg-slate-50 border-2 border-black text-slate-900 text-sm font-semibold focus:outline-none focus:border-neo-yellow focus:shadow-neo-sm transition-all"
+                  className="w-full px-4 py-3 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 text-sm font-medium focus:outline-none focus:border-brand-500 focus:bg-white focus:ring-2 focus:ring-brand-500/20 transition-all"
                 >
                   <option value="Puing Sisa Bangunan & Semen">Puing Sisa Bangunan, Semen & Keramik</option>
                   <option value="Sampah Komersial Kantor / Ruko / Restoran">Sampah Komersial Kantor / Ruko / Restoran</option>
@@ -120,13 +122,13 @@ export const CalculatorSection: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-[11px] sm:text-xs font-black text-slate-800 mb-1.5 uppercase tracking-wide">
+                <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                   Estimasi Kebutuhan Unit Armada *
                 </label>
                 <select
                   value={truckUnit}
                   onChange={(e) => setTruckUnit(e.target.value)}
-                  className="w-full px-3.5 py-3 rounded-xl bg-slate-50 border-2 border-black text-slate-900 text-sm font-semibold focus:outline-none focus:border-neo-yellow focus:shadow-neo-sm transition-all"
+                  className="w-full px-4 py-3 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 text-sm font-medium focus:outline-none focus:border-brand-500 focus:bg-white focus:ring-2 focus:ring-brand-500/20 transition-all"
                 >
                   <option value="Dump Truck Merah (1 Ritase / 4-6 m³)">Dump Truck Merah (1 Ritase / 4-6 m³)</option>
                   <option value="Pick Up L300 Bak Rangka Tinggi (3-4 m³)">Pick Up L300 Bak Rangka Tinggi (3-4 m³)</option>
@@ -139,7 +141,7 @@ export const CalculatorSection: React.FC = () => {
             </div>
 
             <div>
-              <label className="block text-[11px] sm:text-xs font-black text-slate-800 mb-1.5 uppercase tracking-wide">
+              <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                 Alamat / Lokasi Titik Muat Sampah *
               </label>
               <input
@@ -148,12 +150,12 @@ export const CalculatorSection: React.FC = () => {
                 onChange={(e) => setLocation(e.target.value)}
                 placeholder="Contoh: Jl. Perintis Kemerdekaan KM 10, Makassar"
                 required
-                className="w-full px-3.5 py-3 rounded-xl bg-slate-50 border-2 border-black text-slate-900 placeholder-slate-400 text-sm font-semibold focus:outline-none focus:border-neo-yellow focus:shadow-neo-sm transition-all"
+                className="w-full px-4 py-3 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-sm font-medium focus:outline-none focus:border-brand-500 focus:bg-white focus:ring-2 focus:ring-brand-500/20 transition-all"
               />
             </div>
 
             <div>
-              <label className="block text-[11px] sm:text-xs font-black text-slate-800 mb-1.5 uppercase tracking-wide">
+              <label className="block text-xs font-semibold text-slate-700 mb-1.5">
                 Keterangan Tambahan / Akses Jalan (Opsional)
               </label>
               <input
@@ -161,16 +163,16 @@ export const CalculatorSection: React.FC = () => {
                 value={note}
                 onChange={(e) => setNote(e.target.value)}
                 placeholder="Contoh: Lokasi masuk gang lebar 3 meter, butuh loader untuk angkat puing"
-                className="w-full px-3.5 py-3 rounded-xl bg-slate-50 border-2 border-black text-slate-900 placeholder-slate-400 text-sm font-semibold focus:outline-none focus:border-neo-yellow focus:shadow-neo-sm transition-all"
+                className="w-full px-4 py-3 rounded-2xl bg-slate-50 border border-slate-200 text-slate-900 placeholder-slate-400 text-sm font-medium focus:outline-none focus:border-brand-500 focus:bg-white focus:ring-2 focus:ring-brand-500/20 transition-all"
               />
             </div>
 
             <div className="pt-2 text-center">
               <button
                 type="submit"
-                className="min-h-[48px] w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 sm:py-4 rounded-xl bg-neo-yellow hover:bg-neo-yellow-hover text-black font-black text-sm sm:text-base border-2 border-black shadow-neo hover:shadow-neo-lg transition-all cursor-pointer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm sm:text-base shadow-soft-sm hover:shadow-glow-brand transition-all cursor-pointer"
               >
-                <MessageCircle className="w-5 h-5 fill-current" />
+                <MessageCircle className="w-4 h-4 fill-current" />
                 <span>Kirim Permintaan ke WhatsApp Admin</span>
                 <Send className="w-4 h-4 ml-1" />
               </button>
@@ -183,3 +185,4 @@ export const CalculatorSection: React.FC = () => {
     </section>
   );
 };
+

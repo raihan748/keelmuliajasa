@@ -20,39 +20,39 @@ export const PosterSection: React.FC = () => {
   const posterServices = [
     "Pengangkutan sampah rumah tangga rutin",
     "Pembersihan sampah sisa renovasi (puing)",
-    "Layanan kebersihan insidental (kerja bakti)",
+    "Layanan kebersihan insidental (kerja bakti / event)",
   ];
 
   const posterTargets = [
-    "PERUMAHAN / KOS-KOSAN",
-    "PERUSAHAAN / PABRIK",
-    "PERKANTORAN",
-    "SEKOLAH",
-    "ORDERAN SAMPAH LAIN-LAIN",
+    "Perumahan / Kos-Kosan",
+    "Perusahaan / Pabrik",
+    "Perkantoran & Ruko",
+    "Sekolah & Institusi",
+    "Layanan Sampah Lain-Lain",
   ];
 
   return (
-    <section className="py-24 bg-white border-b-2 border-black relative overflow-hidden" id="poster-resmi">
+    <section className="py-20 sm:py-28 bg-white border-b border-slate-100 relative overflow-hidden" id="poster-resmi">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-yellow text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
-            <FileImage className="w-3.5 h-3.5 stroke-[2.5]" />
-            Brosur & Publikasi Resmi
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold">
+            <FileImage className="w-3.5 h-3.5 text-brand-600" />
+            <span>Brosur & Publikasi Resmi</span>
           </span>
-          <h2 className="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4">
             Poster Layanan Resmi CV. Keel Mulia Jasa
           </h2>
-          <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
             Solusi praktis dan profesional untuk masalah sampah di rumah, kantor, sekolah, dan pabrik di area Makassar, Gowa, dan Maros.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
           {/* Left: Poster Image Frame with Zoom Overlay */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
+            initial={{ opacity: 0, scale: 0.96 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
@@ -60,18 +60,18 @@ export const PosterSection: React.FC = () => {
           >
             <div className="relative group cursor-pointer" onClick={() => setModalOpen(true)}>
               
-              <div className="bg-slate-50 p-3 rounded-3xl border-2 border-black shadow-neo-xl group-hover:shadow-neo-yellow group-hover:-translate-y-1 transition-all duration-300">
+              <div className="bg-slate-50 p-3 rounded-3xl border border-slate-200/80 shadow-soft-md group-hover:shadow-soft-xl group-hover:-translate-y-1 transition-all duration-300">
                 <img
                   src="/images/poster-keelmuliajasa.png"
                   alt="Poster Resmi CV. Keel Mulia Jasa"
-                  className="rounded-2xl w-full max-w-sm h-auto object-cover border-2 border-black"
+                  className="rounded-2xl w-full max-w-sm h-auto object-cover border border-slate-100"
                 />
               </div>
 
               {/* Hover Badge */}
-              <div className="absolute inset-0 rounded-3xl bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
-                <div className="bg-neo-yellow text-black px-4 py-2 rounded-xl font-black text-xs border-2 border-black shadow-neo flex items-center gap-2">
-                  <Maximize2 className="w-4 h-4" />
+              <div className="absolute inset-0 rounded-3xl bg-slate-900/30 backdrop-blur-xs opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+                <div className="bg-white text-slate-900 px-4 py-2 rounded-full font-semibold text-xs shadow-soft-lg flex items-center gap-2">
+                  <Maximize2 className="w-3.5 h-3.5 text-brand-600" />
                   <span>Klik untuk Perbesar Poster</span>
                 </div>
               </div>
@@ -88,32 +88,34 @@ export const PosterSection: React.FC = () => {
             className="lg:col-span-7"
           >
             
-            <div className="bg-slate-50 border-2 border-black rounded-3xl p-7 sm:p-9 shadow-neo-lg text-slate-900">
+            <div className="bg-slate-50/70 border border-slate-200/80 rounded-3xl p-6 sm:p-9 shadow-soft-sm text-slate-900">
               
-              <div className="flex items-center gap-2 mb-3">
-                <span className="bg-neo-emerald text-black font-black text-xs px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm uppercase">
-                  Tentang Kami
+              <div className="flex items-center gap-2.5 mb-3">
+                <span className="bg-brand-50 text-brand-700 font-semibold text-xs px-3 py-1 rounded-full border border-brand-200/60">
+                  Tentang Layanan Kami
                 </span>
-                <span className="text-xs text-slate-500 font-bold">Makassar • Gowa • Maros</span>
+                <span className="text-xs text-slate-500 font-medium">Makassar • Gowa • Maros</span>
               </div>
 
-              <h3 className="text-2xl font-black mb-3 text-slate-900">
-                Solusi Praktis Masalah Sampah Anda
+              <h3 className="text-2xl font-bold mb-3 text-slate-900">
+                Solusi Praktis Pengelolaan & Angkutan Sampah
               </h3>
 
-              <p className="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed mb-6">
-                <strong>Keel MuliaJasa</strong> adalah solusi praktis untuk masalah sampah di rumah Anda. Kami adalah perusahaan jasa pengangkutan sampah profesional yang melayani area <strong>Makassar, Gowa, dan Maros</strong>.
+              <p className="text-sm text-slate-600 font-normal leading-relaxed mb-6">
+                <strong className="text-slate-900 font-semibold">CV. Keel Mulia Jasa</strong> hadir sebagai mitra terpercaya untuk mengatasi masalah tumpukan sampah perumahan, puing sisa pembongkaran gedung, hingga penataan lingkungan industri secara bertanggung jawab ke TPA resmi.
               </p>
 
               {/* Services List from Poster */}
               <div className="mb-6">
-                <div className="text-xs font-black uppercase text-amber-600 mb-2.5 tracking-wider">
-                  Layanan Kami Meliputi:
+                <div className="text-xs font-semibold uppercase text-brand-700 mb-3 tracking-wider">
+                  Cakupan Layanan:
                 </div>
-                <div className="space-y-2">
+                <div className="space-y-2.5">
                   {posterServices.map((srv, idx) => (
-                    <div key={idx} className="flex items-center gap-2.5 text-xs sm:text-sm font-bold text-slate-800">
-                      <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 stroke-[2.5]" />
+                    <div key={idx} className="flex items-center gap-3 text-xs sm:text-sm font-medium text-slate-800">
+                      <div className="w-5 h-5 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center shrink-0">
+                        <CheckCircle2 className="w-3.5 h-3.5" />
+                      </div>
                       <span>{srv}</span>
                     </div>
                   ))}
@@ -121,29 +123,29 @@ export const PosterSection: React.FC = () => {
               </div>
 
               {/* Target Clients from Poster */}
-              <div className="mb-8 pt-5 border-t-2 border-black">
-                <div className="text-xs font-black uppercase text-blue-600 mb-3 tracking-wider">
-                  Kami Melayani:
+              <div className="mb-8 pt-5 border-t border-slate-200/80">
+                <div className="text-xs font-semibold uppercase text-slate-500 mb-3 tracking-wider">
+                  Segmen Pengguna:
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {posterTargets.map((tgt, tIdx) => (
                     <span
                       key={tIdx}
-                      className="bg-white text-slate-900 text-xs font-black px-3 py-1.5 rounded-lg border-2 border-black shadow-neo-sm"
+                      className="bg-white text-slate-700 text-xs font-medium px-3.5 py-1.5 rounded-full border border-slate-200 shadow-soft-xs"
                     >
-                      ☑ {tgt}
+                      {tgt}
                     </span>
                   ))}
                 </div>
               </div>
 
               {/* Official Contact Badges from Poster */}
-              <div className="pt-6 border-t-2 border-black grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div className="pt-6 border-t border-slate-200/80 grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <a
                   href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20melihat%20poster%20layanan%20angkutan%20sampah"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-neo-yellow hover:bg-neo-yellow-hover text-black p-3 rounded-xl border-2 border-black shadow-neo-sm font-black text-xs flex items-center justify-center gap-2 transition-transform hover:-translate-y-0.5"
+                  className="bg-brand-600 hover:bg-brand-700 text-white p-3 rounded-full font-semibold text-xs flex items-center justify-center gap-2 shadow-soft-sm hover:shadow-glow-brand transition-all"
                 >
                   <MessageCircle className="w-4 h-4 fill-current" />
                   <span>0823-9619-3473</span>
@@ -153,7 +155,7 @@ export const PosterSection: React.FC = () => {
                   href="https://instagram.com/cv.keelmuliajasa"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white hover:bg-slate-100 text-slate-900 p-3 rounded-xl border-2 border-black shadow-neo-sm font-black text-xs flex items-center justify-center gap-2 transition-transform hover:-translate-y-0.5"
+                  className="bg-white hover:bg-slate-100 text-slate-800 p-3 rounded-full border border-slate-200 font-semibold text-xs flex items-center justify-center gap-2 transition-all shadow-soft-xs"
                 >
                   <Instagram className="w-4 h-4 text-pink-600" />
                   <span>@cv.keelmuliajasa</span>
@@ -161,9 +163,9 @@ export const PosterSection: React.FC = () => {
 
                 <a
                   href="mailto:cvkeel.muliajasa@gmail.com"
-                  className="bg-white hover:bg-slate-100 text-slate-900 p-3 rounded-xl border-2 border-black shadow-neo-sm font-black text-xs flex items-center justify-center gap-2 transition-transform hover:-translate-y-0.5 truncate"
+                  className="bg-white hover:bg-slate-100 text-slate-800 p-3 rounded-full border border-slate-200 font-semibold text-xs flex items-center justify-center gap-2 transition-all shadow-soft-xs truncate"
                 >
-                  <Mail className="w-4 h-4 text-emerald-600 shrink-0" />
+                  <Mail className="w-4 h-4 text-brand-600 shrink-0" />
                   <span className="truncate">Email Resmi</span>
                 </a>
               </div>
@@ -183,29 +185,29 @@ export const PosterSection: React.FC = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md p-4 flex items-center justify-center"
+            className="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-md p-4 flex items-center justify-center"
             onClick={() => setModalOpen(false)}
           >
-            <div className="relative max-w-lg w-full bg-white p-3 rounded-3xl border-2 border-black shadow-2xl" onClick={(e) => e.stopPropagation()}>
+            <div className="relative max-w-lg w-full bg-white p-4 rounded-3xl shadow-soft-xl" onClick={(e) => e.stopPropagation()}>
               <button
                 onClick={() => setModalOpen(false)}
-                className="absolute -top-4 -right-4 w-10 h-10 rounded-full bg-neo-yellow text-black font-black border-2 border-black shadow-neo flex items-center justify-center hover:scale-110 transition-transform cursor-pointer"
+                className="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center hover:bg-slate-200 transition-all cursor-pointer"
                 aria-label="Tutup"
               >
-                <X className="w-5 h-5 stroke-[3]" />
+                <X className="w-5 h-5" />
               </button>
 
               <img
                 src="/images/poster-keelmuliajasa.png"
                 alt="Poster Resmi CV. Keel Mulia Jasa"
-                className="w-full h-auto rounded-2xl border-2 border-black"
+                className="w-full h-auto rounded-2xl border border-slate-100 mt-6"
               />
 
               <div className="mt-4 flex items-center justify-between gap-3">
                 <a
                   href="/images/poster-keelmuliajasa.png"
                   download="Poster-CV-Keel-Mulia-Jasa.png"
-                  className="flex-1 text-center bg-slate-100 text-slate-900 font-black text-xs py-2.5 rounded-xl border-2 border-black shadow-neo-sm hover:bg-slate-200"
+                  className="flex-1 text-center bg-slate-100 text-slate-800 font-semibold text-xs py-2.5 rounded-full hover:bg-slate-200 transition-all"
                 >
                   Unduh Gambar Poster
                 </a>
@@ -213,7 +215,7 @@ export const PosterSection: React.FC = () => {
                   href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20mau%20order%20sesuai%20poster"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 text-center bg-neo-emerald text-black font-black text-xs py-2.5 rounded-xl border-2 border-black shadow-neo-sm hover:bg-neo-emerald-dark"
+                  className="flex-1 text-center bg-brand-600 text-white font-semibold text-xs py-2.5 rounded-full hover:bg-brand-700 transition-all shadow-soft-sm"
                 >
                   Chat WhatsApp
                 </a>
@@ -225,3 +227,4 @@ export const PosterSection: React.FC = () => {
     </section>
   );
 };
+

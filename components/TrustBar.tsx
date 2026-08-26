@@ -6,35 +6,35 @@ export const TrustBar: React.FC = () => {
     {
       icon: ShieldCheck,
       title: "Badan Usaha CV Resmi",
-      desc: "Legalitas lengkap (NIB & NPWP) siap menerbitkan invoice dan SPH",
+      desc: "Legalitas lengkap (NIB & NPWP) siap menerbitkan invoice dan SPH resmi",
       tag: "100% Legal",
-      color: "bg-neo-emerald text-black",
+      color: "bg-brand-50 text-brand-700",
     },
     {
       icon: Truck,
-      title: "Pengangkutan Sampah Tuntas",
-      desc: "Sampah dan puing langsung diangkut dan dibuang ke TPA tanpa ceceran",
+      title: "Pengangkutan Tuntas",
+      desc: "Sampah dan puing langsung diangkut dan dibuang ke TPA resmi tanpa ceceran",
       tag: "Bersih Tuntas",
-      color: "bg-neo-yellow text-black",
+      color: "bg-emerald-50 text-emerald-700",
     },
     {
       icon: Scale,
-      title: "Transparansi Ritase & Muatan",
-      desc: "Kapasitas muatan akurat sesuai kesepakatan dan kebutuhan di lapangan",
+      title: "Transparansi Ritase",
+      desc: "Kapasitas muatan akurat sesuai kesepakatan dan kebutuhan riil di lapangan",
       tag: "Akurat",
-      color: "bg-neo-cyan text-black",
+      color: "bg-cyan-50 text-cyan-700",
     },
     {
       icon: FileText,
       title: "Faktur & Kwitansi Resmi",
-      desc: "Mendukung pembayaran termin untuk instansi, kantor, dan proyek",
+      desc: "Mendukung pembayaran termin untuk instansi, cluster kantor, dan proyek",
       tag: "B2B Ready",
-      color: "bg-neo-blue text-white",
+      color: "bg-sky-50 text-sky-700",
     },
   ];
 
   return (
-    <section className="py-14 bg-white border-b-2 border-black">
+    <section className="py-12 sm:py-16 bg-white border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {stats.map((item, idx) => {
@@ -42,21 +42,21 @@ export const TrustBar: React.FC = () => {
             return (
               <div
                 key={idx}
-                className="bg-slate-50 border-2 border-black rounded-2xl p-5 shadow-neo hover:shadow-neo-lg hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between"
+                className="bg-white border border-slate-200/80 rounded-2xl p-5 shadow-soft-xs hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
               >
                 <div>
-                  <div className="flex items-center justify-between mb-3.5">
-                    <div className="w-12 h-12 rounded-xl bg-white border-2 border-black flex items-center justify-center text-slate-900 shadow-neo-sm">
-                      <Icon className="w-6 h-6 stroke-[2.5]" />
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="w-11 h-11 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center">
+                      <Icon className="w-5 h-5" />
                     </div>
-                    <span className={`text-[10px] font-black uppercase px-2.5 py-0.5 rounded-md border-2 border-black shadow-neo-sm ${item.color}`}>
+                    <span className={`text-[11px] font-semibold px-2.5 py-0.5 rounded-full ${item.color}`}>
                       {item.tag}
                     </span>
                   </div>
-                  <h3 className="font-black text-slate-900 text-base mb-1.5 leading-snug">
+                  <h3 className="font-bold text-slate-900 text-base mb-1.5 leading-snug">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-slate-600 font-medium leading-relaxed">
+                  <p className="text-xs text-slate-600 font-normal leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -68,3 +68,4 @@ export const TrustBar: React.FC = () => {
     </section>
   );
 };
+

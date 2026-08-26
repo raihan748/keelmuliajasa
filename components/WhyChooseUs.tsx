@@ -6,83 +6,83 @@ export const WhyChooseUs: React.FC = () => {
   const reasons = [
     {
       icon: ShieldCheck,
-      title: "Pembuangan Langsung ke TPA",
-      desc: "Tidak pernah membuang sampah di pinggir jalan atau lahan liar. Semua muatan diangkut tuntas ke TPA.",
-      color: "bg-neo-emerald text-black",
+      title: "Pembuangan Resmi ke TPA",
+      desc: "Tidak pernah membuang sampah di pinggir jalan atau lahan liar. Seluruh muatan diangkut tuntas ke TPA resmi.",
+      color: "bg-emerald-50 text-emerald-600",
       dir: "left" as const,
     },
     {
       icon: Clock,
-      title: "Respon Kilat & Siaga 24 Jam",
-      desc: "Armada kami siap meluncur dalam waktu 1-3 jam untuk panggilan urgent di Makassar, Gowa, dan Maros.",
-      color: "bg-neo-yellow text-black",
+      title: "Respon Kilat & Jadwal Tepat Waktu",
+      desc: "Armada kami siap meluncur dengan cepat untuk panggilan mendesak di Makassar, Gowa, dan Maros.",
+      color: "bg-brand-50 text-brand-600",
       dir: "right" as const,
     },
     {
       icon: Coins,
-      title: "Tarif Transparan Tanpa Biaya Tersembunyi",
+      title: "Tarif Transparan & Kompetitif",
       desc: "Harga sudah mencakup unit armada, bahan bakar (BBM), supir, tenaga loader, dan retribusi TPA.",
-      color: "bg-neo-cyan text-black",
+      color: "bg-sky-50 text-sky-600",
       dir: "left" as const,
     },
     {
       icon: Users,
-      title: "Tenaga Angkut Berpengalaman & APD K3",
-      desc: "Kuli angkut cekatan, sopan, dan dilengkapi peralatan keselamatan (helm, rompi, sarung tangan, sepatu safety).",
-      color: "bg-neo-blue text-white",
+      title: "Tenaga Angkut Berstandar K3",
+      desc: "Kru angkut cekatan, sopan, dan dilengkapi peralatan APD keselamatan (helm, rompi scotlight, sarung tangan, boots).",
+      color: "bg-amber-50 text-amber-600",
       dir: "right" as const,
     },
     {
       icon: Truck,
-      title: "Armada Sendiri & Terawat Prima",
-      desc: "Unit dump truck hidrolik dan pick up rangka tinggi milik sendiri tanpa pihak perantara.",
-      color: "bg-neo-purple text-white",
+      title: "Armada Mandiri & Terawat Prima",
+      desc: "Unit dump truck hidrolik dan pick up rangka tinggi milik sendiri tanpa calo atau perantara pihak ketiga.",
+      color: "bg-purple-50 text-purple-600",
       dir: "left" as const,
     },
     {
       icon: Sparkles,
-      title: "Garansi Area Bersih Rapi Tuntas",
-      desc: "Area pemuatan puing atau sampah disapu dan dibersihkan dari ceceran sebelum tim meninggalkan lokasi.",
-      color: "bg-neo-red text-white",
+      title: "Garansi Area Bersih Tuntas",
+      desc: "Area pemuatan puing atau sampah disapu dan dibersihkan dari sisa debu/ceceran sebelum tim beranjak.",
+      color: "bg-emerald-50 text-emerald-600",
       dir: "right" as const,
     },
   ];
 
   return (
-    <section className="py-24 bg-neo-bg bg-neo-grid border-b-2 border-black" id="keunggulan">
+    <section className="py-20 sm:py-28 bg-slate-50/50 border-b border-slate-100" id="keunggulan">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <ScrollReveal direction="down">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-md bg-neo-yellow text-black text-xs font-black uppercase tracking-wider mb-3.5 border-2 border-black shadow-neo-sm">
-              <Sparkles className="w-3.5 h-3.5 stroke-[2.5]" />
-              Mengapa Memilih Kami
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold">
+              <Sparkles className="w-3.5 h-3.5 text-brand-600" />
+              <span>Mengapa Memilih Kami</span>
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4">
               Standar Tertinggi untuk Kebersihan Properti Anda
             </h2>
-            <p className="text-base sm:text-lg text-slate-600 font-medium leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
               Kami tidak sekadar mengangkut sampah, kami memberikan kepastian ketertiban lingkungan dan kenyamanan tanpa repot.
             </p>
           </div>
         </ScrollReveal>
 
-        {/* 6 Grid Cards with Alternating Left/Right Lateral Transitions */}
+        {/* 6 Grid Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {reasons.map((r, idx) => {
             const Icon = r.icon;
             return (
               <ScrollReveal key={idx} direction={r.dir} delay={(idx % 3) * 0.1} className="h-full">
-                <div className="h-full bg-white border-2 border-black rounded-3xl p-6 shadow-neo hover:shadow-neo-lg hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between">
+                <div className="h-full bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-7 shadow-soft-xs hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
                   <div>
-                    <div className={`w-12 h-12 rounded-2xl border-2 border-black flex items-center justify-center mb-4 shadow-neo-sm ${r.color}`}>
-                      <Icon className="w-6 h-6 stroke-[2.5]" />
+                    <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-5 ${r.color}`}>
+                      <Icon className="w-6 h-6" />
                     </div>
-                    <h3 className="font-black text-slate-900 text-lg mb-2 leading-snug">
+                    <h3 className="font-bold text-slate-900 text-lg mb-2 leading-snug">
                       {r.title}
                     </h3>
-                    <p className="text-xs text-slate-600 font-medium leading-relaxed">
+                    <p className="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">
                       {r.desc}
                     </p>
                   </div>
@@ -96,3 +96,4 @@ export const WhyChooseUs: React.FC = () => {
     </section>
   );
 };
+

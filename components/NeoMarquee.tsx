@@ -2,38 +2,39 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Truck, ShieldCheck, Zap, Sparkles, MapPin } from "lucide-react";
+import { Truck, ShieldCheck, Zap, Sparkles, MapPin, CheckCircle2 } from "lucide-react";
 
 export const NeoMarquee: React.FC = () => {
   const tickerItems = [
-    { text: "ARMADA DUMP TRUCK & PICK UP SIAGA 24/7", icon: Truck, color: "text-neo-yellow" },
-    { text: "PENGANGKUTAN SAMPAH & PUING BERSIH TUNTAS", icon: Sparkles, color: "text-neo-emerald" },
-    { text: "MELAYANI MAKASSAR, GOWA & MAROS", icon: MapPin, color: "text-neo-cyan" },
-    { text: "RESPON KILAT WHATSAPP 0823-9619-3473", icon: Zap, color: "text-neo-yellow" },
-    { text: "TERSEDIA TIM LOADER LENGKAP & APD K3", icon: Sparkles, color: "text-neo-red" },
+    { text: "Armada Dump Truck & Pick Up Siaga 24/7", icon: Truck },
+    { text: "Pengangkutan Sampah & Puing Bersih Tuntas", icon: Sparkles },
+    { text: "Wilayah Makassar, Gowa & Maros", icon: MapPin },
+    { text: "Respon Kilat WhatsApp 0823-9619-3473", icon: Zap },
+    { text: "Tim Loader Profesional & Standar K3", icon: ShieldCheck },
+    { text: "Legalitas CV Resmi & Invoice B2B", icon: CheckCircle2 },
   ];
 
   return (
-    <div className="bg-neo-yellow text-black border-y-2 border-black py-3 overflow-hidden select-none relative z-20 shadow-neo">
+    <div className="bg-slate-50/80 border-y border-slate-200/80 py-3 overflow-hidden select-none relative z-20">
       <motion.div
         animate={{ x: ["0%", "-50%"] }}
         transition={{
-          duration: 22,
+          duration: 28,
           repeat: Infinity,
           ease: "linear",
         }}
-        className="flex whitespace-nowrap gap-8 items-center font-black text-xs sm:text-sm uppercase tracking-wider"
+        className="flex whitespace-nowrap gap-10 items-center font-medium text-xs sm:text-sm text-slate-700"
       >
-        {/* Render twice for seamless infinite looping */}
-        {[...tickerItems, ...tickerItems, ...tickerItems, ...tickerItems].map((item, idx) => {
+        {/* Render multiple times for smooth infinite loop */}
+        {[...tickerItems, ...tickerItems, ...tickerItems].map((item, idx) => {
           const Icon = item.icon;
           return (
-            <div key={idx} className="flex items-center gap-2 shrink-0">
-              <span className="w-6 h-6 rounded-md bg-black text-neo-yellow flex items-center justify-center border border-black shadow-neo-sm">
-                <Icon className="w-3.5 h-3.5 stroke-[2.5]" />
+            <div key={idx} className="flex items-center gap-2.5 shrink-0">
+              <span className="w-6 h-6 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center">
+                <Icon className="w-3.5 h-3.5" />
               </span>
-              <span>{item.text}</span>
-              <span className="text-black font-black text-base ml-4">★</span>
+              <span className="font-semibold text-slate-800">{item.text}</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-slate-300 ml-6" />
             </div>
           );
         })}
@@ -41,3 +42,4 @@ export const NeoMarquee: React.FC = () => {
     </div>
   );
 };
+
