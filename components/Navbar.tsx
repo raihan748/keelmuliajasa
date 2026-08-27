@@ -43,8 +43,8 @@ export const Navbar: React.FC = () => {
       <header
         className={`sticky top-0 z-40 transition-all duration-300 ${
           scrolled
-            ? "bg-white/95 backdrop-blur-md shadow-soft-sm border-b border-slate-100"
-            : "bg-white/80 backdrop-blur-sm border-b border-slate-100"
+            ? "bg-[#C5A059]/95 backdrop-blur-md shadow-soft-md border-b border-[#B38E46]/60"
+            : "bg-[#C5A059] backdrop-blur-sm border-b border-[#B38E46]/60 shadow-soft-sm"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +52,7 @@ export const Navbar: React.FC = () => {
             
             {/* Brand Logo */}
             <a href="#" className="flex items-center gap-3 group">
-              <div className="bg-white p-1 rounded-xl border border-slate-100 shadow-soft-xs transition-transform group-hover:scale-105">
+              <div className="bg-white p-1.5 rounded-2xl border border-white/40 shadow-soft-xs transition-transform group-hover:scale-105">
                 <img
                   src="/images/logo-clean.png"
                   alt="Logo CV. Keel Mulia Jasa"
@@ -67,7 +67,7 @@ export const Navbar: React.FC = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-xs xl:text-sm font-medium text-slate-600 hover:text-brand-700 hover:bg-brand-50/80 px-3 py-1.5 rounded-full transition-all duration-200"
+                  className="text-xs xl:text-sm font-bold text-slate-900 hover:text-slate-950 hover:bg-black/10 px-3.5 py-1.5 rounded-full transition-all duration-200"
                 >
                   {link.name}
                 </a>
@@ -78,9 +78,9 @@ export const Navbar: React.FC = () => {
             <div className="flex items-center gap-2.5 sm:gap-3">
               <a
                 href="#kalkulator"
-                className="hidden xl:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-semibold border border-slate-200 transition-all"
+                className="hidden xl:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/90 hover:bg-white text-slate-900 text-xs font-bold border border-white/40 shadow-soft-xs transition-all"
               >
-                <FileText className="w-3.5 h-3.5 text-brand-600" />
+                <FileText className="w-3.5 h-3.5 text-[#A67C1E]" />
                 <span>Minta Penawaran</span>
               </a>
 
@@ -88,16 +88,16 @@ export const Navbar: React.FC = () => {
                 href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20booking%20armada%20angkutan%20sampah"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="min-h-[40px] inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-brand-600 hover:bg-brand-700 text-white text-xs sm:text-sm font-semibold shadow-soft-sm hover:shadow-glow-brand transition-all duration-200"
+                className="min-h-[40px] inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-xs sm:text-sm font-bold shadow-soft-sm hover:shadow-soft-md transition-all duration-200"
               >
-                <MessageCircle className="w-4 h-4 fill-current shrink-0" />
+                <MessageCircle className="w-4 h-4 fill-current shrink-0 text-brand-400" />
                 <span>Pesan Armada</span>
               </a>
 
               {/* Mobile Hamburger */}
               <button
                 onClick={() => setMobileMenuOpen(true)}
-                className="lg:hidden min-h-[40px] min-w-[40px] p-2 rounded-xl bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-700 flex items-center justify-center transition-all cursor-pointer"
+                className="lg:hidden min-h-[40px] min-w-[40px] p-2 rounded-xl bg-white/90 hover:bg-white border border-white/40 text-slate-900 flex items-center justify-center transition-all cursor-pointer shadow-soft-xs"
                 aria-label="Buka Menu Navigasi"
               >
                 <Menu className="w-5 h-5 stroke-[2.2]" />
@@ -125,11 +125,13 @@ export const Navbar: React.FC = () => {
         <div>
           <div className="flex items-center justify-between pb-4 border-b border-slate-100">
             <div className="flex items-center gap-2">
-              <img
-                src="/images/logo-clean.png"
-                alt="Logo CV. Keel Mulia Jasa"
-                className="h-8 w-auto object-contain"
-              />
+              <div className="bg-[#C5A059] p-1.5 rounded-xl">
+                <img
+                  src="/images/logo-clean.png"
+                  alt="Logo CV. Keel Mulia Jasa"
+                  className="h-8 w-auto object-contain bg-white rounded-lg p-0.5"
+                />
+              </div>
             </div>
             <button
               onClick={() => setMobileMenuOpen(false)}
