@@ -29,7 +29,7 @@ export const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: "Tentang Kami", href: "#tentang-kami" },
-    { name: "Poster & Profil", href: "#poster-resmi" },
+    { name: "Publikasi", href: "#poster-resmi" },
     { name: "Klien", href: "#klien-kami" },
     { name: "Layanan", href: "#layanan" },
     { name: "Portofolio", href: "#portofolio" },

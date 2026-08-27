@@ -18,7 +18,7 @@ export const ScrollHUD: React.FC = () => {
   const sections = [
     { id: "hero", label: "Utama" },
     { id: "tentang-kami", label: "Profil" },
-    { id: "poster-resmi", label: "Poster" },
+    { id: "poster-resmi", label: "Publikasi" },
     { id: "klien-kami", label: "Klien" },
     { id: "layanan", label: "Layanan" },
     { id: "portofolio", label: "Portofolio" },

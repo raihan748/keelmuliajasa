@@ -38,10 +38,10 @@ export const PosterSection: React.FC = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold">
             <FileImage className="w-3.5 h-3.5 text-brand-600" />
-            <span>Brosur & Publikasi Resmi</span>
+            <span>Publikasi & Brosur Layanan</span>
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4">
-            Poster Layanan Resmi CV. Keel Mulia Jasa
+            Layanan Pengangkutan Resmi CV. Keel Mulia Jasa
           </h2>
           <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
             Solusi praktis dan profesional untuk masalah sampah di rumah, kantor, sekolah, dan pabrik di area Makassar, Gowa, dan Maros.
@@ -50,7 +50,7 @@ export const PosterSection: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
-          {/* Left: Poster Image Frame with Zoom Overlay */}
+          {/* Left: Brosur Image Frame with Zoom Overlay */}
           <motion.div
             initial={{ opacity: 0, scale: 0.96 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -63,7 +63,7 @@ export const PosterSection: React.FC = () => {
               <div className="bg-slate-50 p-3 rounded-3xl border border-slate-200/80 shadow-soft-md group-hover:shadow-soft-xl group-hover:-translate-y-1 transition-all duration-300">
                 <img
                   src="/images/poster-keelmuliajasa.png"
-                  alt="Poster Resmi CV. Keel Mulia Jasa"
+                  alt="Brosur Resmi Layanan CV. Keel Mulia Jasa"
                   className="rounded-2xl w-full max-w-sm h-auto object-cover border border-slate-100"
                 />
               </div>
@@ -72,14 +72,14 @@ export const PosterSection: React.FC = () => {
               <div className="absolute inset-0 rounded-3xl bg-slate-900/30 backdrop-blur-xs opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
                 <div className="bg-white text-slate-900 px-4 py-2 rounded-full font-semibold text-xs shadow-soft-lg flex items-center gap-2">
                   <Maximize2 className="w-3.5 h-3.5 text-brand-600" />
-                  <span>Klik untuk Perbesar Poster</span>
+                  <span>Klik untuk Perbesar Brosur</span>
                 </div>
               </div>
 
             </div>
           </motion.div>
 
-          {/* Right: Content Breakdown directly from Poster */}
+          {/* Right: Content Breakdown */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -105,7 +105,7 @@ export const PosterSection: React.FC = () => {
                 <strong className="text-slate-900 font-semibold">CV. Keel Mulia Jasa</strong> hadir sebagai mitra terpercaya untuk mengatasi masalah tumpukan sampah perumahan, puing sisa pembongkaran gedung, hingga penataan lingkungan industri secara bertanggung jawab ke TPA resmi.
               </p>
 
-              {/* Services List from Poster */}
+              {/* Services List */}
               <div className="mb-6">
                 <div className="text-xs font-semibold uppercase text-brand-700 mb-3 tracking-wider">
                   Cakupan Layanan:
@@ -122,7 +122,7 @@ export const PosterSection: React.FC = () => {
                 </div>
               </div>
 
-              {/* Target Clients from Poster */}
+              {/* Target Clients */}
               <div className="mb-8 pt-5 border-t border-slate-200/80">
                 <div className="text-xs font-semibold uppercase text-slate-500 mb-3 tracking-wider">
                   Segmen Pengguna:
@@ -139,10 +139,10 @@ export const PosterSection: React.FC = () => {
                 </div>
               </div>
 
-              {/* Official Contact Badges from Poster */}
+              {/* Official Contact Badges */}
               <div className="pt-6 border-t border-slate-200/80 grid grid-cols-1 sm:grid-cols-3 gap-3">
                 <a
-                  href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20melihat%20poster%20layanan%20angkutan%20sampah"
+                  href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20ingin%20konsultasi%20layanan%20angkutan%20sampah"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-brand-600 hover:bg-brand-700 text-white p-3 rounded-full font-semibold text-xs flex items-center justify-center gap-2 shadow-soft-sm hover:shadow-glow-brand transition-all"
@@ -199,20 +199,20 @@ export const PosterSection: React.FC = () => {
 
               <img
                 src="/images/poster-keelmuliajasa.png"
-                alt="Poster Resmi CV. Keel Mulia Jasa"
+                alt="Brosur Resmi Layanan CV. Keel Mulia Jasa"
                 className="w-full h-auto rounded-2xl border border-slate-100 mt-6"
               />
 
               <div className="mt-4 flex items-center justify-between gap-3">
                 <a
                   href="/images/poster-keelmuliajasa.png"
-                  download="Poster-CV-Keel-Mulia-Jasa.png"
+                  download="Brosur-CV-Keel-Mulia-Jasa.png"
                   className="flex-1 text-center bg-slate-100 text-slate-800 font-semibold text-xs py-2.5 rounded-full hover:bg-slate-200 transition-all"
                 >
-                  Unduh Gambar Poster
+                  Unduh Brosur Layanan
                 </a>
                 <a
-                  href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20mau%20order%20sesuai%20poster"
+                  href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20mau%20order%20layanan%20angkutan%20sampah"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 text-center bg-brand-600 text-white font-semibold text-xs py-2.5 rounded-full hover:bg-brand-700 transition-all shadow-soft-sm"
