@@ -10,19 +10,19 @@ export const ClientsSection: React.FC = () => {
   const verifiedClients = [
     {
       name: "Al-Fityan School Gowa",
-      category: "Institusi Pendidikan Terpadu",
+      category: "Institusi Pendidikan Terpadu (TKIT - SMAIT)",
       desc: "Pengelolaan kebersihan & retribusi sampah rutin area sekolah dan asrama.",
       badge: "Pendidikan",
       badgeColor: "bg-sky-50 text-sky-700 border border-sky-200/60",
       dir: "left" as const,
     },
     {
-      name: "Rumah Sakit Islam Az Zahra",
-      category: "Fasilitas Layanan Kesehatan",
-      desc: "Penanganan sampah umum non-medis & pembersihan berkala area rumah sakit.",
-      badge: "Kesehatan",
+      name: "Rumah Kost Islami Az Zahra",
+      category: "Fasilitas Hunian & Residensial",
+      desc: "Penanganan sampah umum rutin & pembersihan berkala lingkungan hunian.",
+      badge: "Hunian",
       badgeColor: "bg-emerald-50 text-emerald-700 border border-emerald-200/60",
-      dir: "right" as const,
+      dir: "up" as const,
     },
     {
       name: "Yayasan Tahfidz Sulaimaniyah",
@@ -30,15 +30,23 @@ export const ClientsSection: React.FC = () => {
       desc: "Pengangkutan sampah pemukiman santri dan pemeliharaan lingkungan bersih.",
       badge: "Pesantren",
       badgeColor: "bg-amber-50 text-amber-700 border border-amber-200/60",
+      dir: "right" as const,
+    },
+    {
+      name: "PT. Mitra Kirana Karkasindo (RAKAKA)",
+      category: "Sektor Industri & Manufaktur",
+      desc: "Evakuasi sisa limbah operasional, potongan material, dan kebersihan pabrik.",
+      badge: "Industri",
+      badgeColor: "bg-purple-50 text-purple-700 border border-purple-200/60",
       dir: "left" as const,
     },
     {
-      name: "PT. Mitra Sidang Kareasingo (RAKAKA)",
-      category: "Sektor Industri & Logistik Kayu",
-      desc: "Evakuasi sisa limbah potongan kayu, serbuk, dan material konstruksi pabrik.",
-      badge: "Industri",
-      badgeColor: "bg-purple-50 text-purple-700 border border-purple-200/60",
-      dir: "right" as const,
+      name: "Sari Roti (Rotinya Indonesia)",
+      category: "Industri & Manufaktur Makanan",
+      desc: "Penanganan pengangkutan sampah logistik dan sisa operasional industri.",
+      badge: "F&B Manufaktur",
+      badgeColor: "bg-orange-50 text-orange-700 border border-orange-200/60",
+      dir: "up" as const,
     },
     {
       name: "Bumi Kayana",
@@ -46,7 +54,31 @@ export const ClientsSection: React.FC = () => {
       desc: "Pembersihan lahan berkala, penebangan pohon, dan angkutan dahan volume besar.",
       badge: "Komersial",
       badgeColor: "bg-cyan-50 text-cyan-700 border border-cyan-200/60",
+      dir: "right" as const,
+    },
+    {
+      name: "Griya Kenari",
+      category: "Pengembang Perumahan & Properti",
+      desc: "Pembersihan puing sisa konstruksi unit rumah baru dan sampah lingkungan.",
+      badge: "Properti",
+      badgeColor: "bg-rose-50 text-rose-700 border border-rose-200/60",
       dir: "left" as const,
+    },
+    {
+      name: "Hertasning Madani & Green Dumais Villa",
+      category: "Cluster Perumahan & Villa",
+      desc: "Pengangkutan retribusi sampah pemukiman warga secara terjadwal dan tertib.",
+      badge: "Perumahan",
+      badgeColor: "bg-emerald-50 text-emerald-700 border border-emerald-200/60",
+      dir: "up" as const,
+    },
+    {
+      name: "Perumahan Bukit Ketapang",
+      category: "Kompleks Perumahan Residensial",
+      desc: "Layanan angkut sampah berkala untuk menjaga kebersihan dan kenyamanan hunian.",
+      badge: "Residensial",
+      badgeColor: "bg-indigo-50 text-indigo-700 border border-indigo-200/60",
+      dir: "right" as const,
     },
   ];
 
@@ -71,25 +103,25 @@ export const ClientsSection: React.FC = () => {
         </ScrollReveal>
 
         {/* Official Client Logos Showcase Banner */}
-        <ScrollReveal direction="up" className="mb-12">
+        <ScrollReveal direction="up" className="mb-14">
           <div className="bg-white border border-slate-200/80 rounded-3xl p-5 sm:p-7 shadow-soft-md">
             <div className="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
-              <span className="text-xs font-bold text-slate-900 uppercase tracking-wide">Banner Rekanan Klien Resmi</span>
+              <span className="text-xs font-bold text-slate-900 uppercase tracking-wide">Customer & Rekanan Klien Resmi</span>
               <span className="text-xs text-slate-400 font-medium">Klik untuk memperbesar</span>
             </div>
             <div
               onClick={() => setSelectedBanner("/images/klien-customers-banner.png")}
-              className="relative rounded-2xl overflow-hidden border border-slate-100 bg-slate-50 cursor-pointer group"
+              className="relative rounded-2xl overflow-hidden border border-slate-100 bg-slate-50 cursor-pointer group flex items-center justify-center py-4"
             >
               <img
                 src="/images/klien-customers-banner.png"
-                alt="Banner Terima Kasih Pelanggan CV Keel Mulia Jasa"
-                className="w-full h-auto object-contain group-hover:scale-101 transition-transform duration-300"
+                alt="Daftar Customer dan Rekanan Resmi CV. Keel Mulia Jasa"
+                className="w-full max-w-2xl max-h-[550px] h-auto object-contain rounded-xl shadow-soft-xs group-hover:scale-101 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <span className="bg-white text-slate-900 text-xs font-semibold px-4 py-2 rounded-full shadow-soft-lg flex items-center gap-1.5">
                   <ZoomIn className="w-4 h-4 text-brand-600" />
-                  Perbesar Banner Klien
+                  Perbesar Poster Customer
                 </span>
               </div>
             </div>
