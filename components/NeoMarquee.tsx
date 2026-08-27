@@ -15,7 +15,7 @@ export const NeoMarquee: React.FC = () => {
   ];
 
   return (
-    <div className="bg-slate-50/80 border-y border-slate-200/80 py-3 overflow-hidden select-none relative z-20">
+    <div className="bg-blue-600 text-white border-y border-blue-500 py-3.5 overflow-hidden select-none relative z-20 shadow-soft-xs">
       <motion.div
         animate={{ x: ["0%", "-50%"] }}
         transition={{
@@ -23,18 +23,18 @@ export const NeoMarquee: React.FC = () => {
           repeat: Infinity,
           ease: "linear",
         }}
-        className="flex whitespace-nowrap gap-10 items-center font-medium text-xs sm:text-sm text-slate-700"
+        className="flex whitespace-nowrap gap-10 items-center font-medium text-xs sm:text-sm text-white"
       >
         {/* Render multiple times for smooth infinite loop */}
         {[...tickerItems, ...tickerItems, ...tickerItems].map((item, idx) => {
           const Icon = item.icon;
           return (
             <div key={idx} className="flex items-center gap-2.5 shrink-0">
-              <span className="w-6 h-6 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center">
+              <span className="w-6 h-6 rounded-full bg-white text-blue-600 flex items-center justify-center shadow-soft-xs">
                 <Icon className="w-3.5 h-3.5" />
               </span>
-              <span className="font-semibold text-slate-800">{item.text}</span>
-              <span className="w-1.5 h-1.5 rounded-full bg-slate-300 ml-6" />
+              <span className="font-bold text-white tracking-wide">{item.text}</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-white/50 ml-6" />
             </div>
           );
         })}
