@@ -17,12 +17,12 @@ export const FaqSection: React.FC = () => {
       a: "Seluruh muatan sampah dan puing dibuang langsung ke Tempat Pembuangan Akhir (TPA) resmi. Kami tidak pernah membuang sampah sembarangan di pinggir jalan atau lahan liar.",
     },
     {
-      q: "Apakah tarif sewa armada sudah termasuk supir dan tenaga kuli angkut (loader)?",
-      a: "Ya! Kami menyediakan opsi paket lengkap 'All-In' yang sudah mencakup unit dump truck/pick-up, BBM, supir berpengalaman, serta tenaga loader yang bertugas menaikkan sampah ke bak dan menyapu bersih area pemuatan.",
+      q: "Apakah tarif sewa armada sudah termasuk pengemudi dan tenaga loader?",
+      a: "Ya. Kami menyediakan opsi paket lengkap (All-In) yang sudah mencakup unit dump truck/pick-up, bahan bakar (BBM), pengemudi berpengalaman, serta tenaga loader yang bertugas menaikkan sampah ke bak dan menyapu bersih area pemuatan.",
     },
     {
       q: "Berapa lama armada bisa tiba di lokasi setelah pemesanan dikonfirmasi?",
-      a: "Untuk pemesanan mendesak (same day service), armada kami dapat tiba di lokasi dalam waktu 1–3 jam tergantung jarak dan kondisi lalu lintas. Kami juga melayani penjadwalan H-1 untuk kepastian waktu yang lebih presisi.",
+      a: "Untuk pemesanan mendesak (layanan di hari yang sama), armada kami dapat tiba di lokasi dalam waktu 1–3 jam tergantung jarak dan kondisi lalu lintas. Kami juga melayani pemesanan terjadwal (H-1) untuk kepastian waktu yang lebih terencana.",
     },
     {
       q: "Apakah CV. Keel Mulia Jasa dapat menerbitkan invoice dan faktur resmi untuk perusahaan?",

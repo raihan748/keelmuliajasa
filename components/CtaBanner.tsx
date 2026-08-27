@@ -19,12 +19,12 @@ export const CtaBanner: React.FC = () => {
               Butuh Pengangkutan Sampah atau Puing Hari Ini?
             </h2>
             <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed mb-9 max-w-2xl mx-auto">
-              Hubungi tim operasional <strong className="text-slate-900 font-semibold">CV. Keel Mulia Jasa</strong> sekarang juga untuk konsultasi gratis, cek estimasi tarif, dan pengiriman armada langsung ke lokasi Anda!
+              Hubungi tim operasional <strong className="text-slate-900 font-semibold">CV. Keel Mulia Jasa</strong> sekarang untuk konsultasi gratis, memperoleh estimasi tarif yang transparan, dan pengiriman armada langsung ke lokasi Anda.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">
               <a
-                href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20butuh%20pengangkutan%20sampah%2Fpuing%20segera"
+                href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20membutuhkan%20layanan%20pengangkutan%20sampah%20dan%20puing%20segera"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm sm:text-base shadow-soft-sm hover:shadow-glow-brand transition-all"

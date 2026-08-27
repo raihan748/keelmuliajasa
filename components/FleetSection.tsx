@@ -30,8 +30,8 @@ export const FleetSection: React.FC = () => {
       features: [
         "Rangka besi tinggi memuat sampah volume besar",
         "Akses mudah ke jalan lingkungan & gang sempit",
-        "Waktu respon cepat untuk pesanan mendesak",
-        "Ideal untuk sampah harian cafe & perumahan",
+        "Waktu respons cepat untuk pesanan mendesak",
+        "Ideal untuk sampah harian kafe & perumahan",
       ],
     },
     {
@@ -75,7 +75,7 @@ export const FleetSection: React.FC = () => {
     },
     {
       title: "Dokumen & Faktur B2B Resmi",
-      desc: "Kelengkapan invoice resmi CV, kwitansi, SPH, dan surat jalan bermaterai untuk instansi/perusahaan.",
+      desc: "Kelengkapan invoice resmi CV, kwitansi, SPH, dan surat jalan berstempel resmi untuk instansi/perusahaan.",
       icon: ShieldCheck,
       color: "bg-purple-50 text-purple-700",
       dir: "right" as const,

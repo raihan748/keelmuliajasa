@@ -32,7 +32,7 @@ export const CalculatorSection: React.FC = () => {
       message += `📝 *Catatan Khusus:* ${note.trim()}\n`;
     }
 
-    message += `\nMohon info ketersediaan jadwal armada, estimasi tarif, dan dokumen penawaran resminya. Terima kasih!`;
+    message += `\nMohon bantuan informasi ketersediaan jadwal armada, estimasi tarif, dan dokumen penawaran resminya. Terima kasih.`;
 
     const url = `https://wa.me/6282396193473?text=${encodeURIComponent(message)}`;
     window.open(url, "_blank");
@@ -52,7 +52,7 @@ export const CalculatorSection: React.FC = () => {
             Simulasi Kebutuhan Unit & Permintaan Penawaran
           </h2>
           <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-            Gunakan simulator visual di bawah untuk menentukan jenis armada yang cocok, lalu kirimkan detail pesanan Anda langsung ke WhatsApp tim operasional.
+            Gunakan simulator visual di bawah untuk menentukan jenis armada yang sesuai dengan volume muatan Anda, lalu kirimkan detail pesanan langsung ke tim operasional kami.
           </p>
         </div>
 
@@ -69,7 +69,7 @@ export const CalculatorSection: React.FC = () => {
                 Formulir Pemesanan Resmi
               </span>
             </div>
-            <span className="text-xs text-slate-500 font-medium">Respon Kilat Setiap Hari</span>
+            <span className="text-xs text-slate-500 font-medium">Respons Cepat Setiap Hari</span>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-5">

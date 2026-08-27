@@ -24,7 +24,7 @@ export const Testimonials: React.FC = () => {
     },
     {
       name: "Andi Fauzan",
-      role: "Owner Cafe & Restoran",
+      role: "Pemilik Kafe & Restoran",
       location: "Tamalanrea, Makassar",
       text: "Sampah harian sisa restoran dan kardus logistik selalu diangkut tepat waktu setiap pagi. Area belakang dapur jadi selalu steril dan higienis. Sangat direkomendasikan!",
       tag: "Sampah Komersial",
