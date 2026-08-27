@@ -50,10 +50,10 @@ export const ClientsSection: React.FC = () => {
     },
     {
       name: "Bumi Kayana",
-      category: "Perkebunan & Kawasan Hijau",
-      desc: "Pembersihan lahan berkala, penebangan pohon, dan angkutan dahan volume besar.",
-      badge: "Komersial",
-      badgeColor: "bg-cyan-50 text-cyan-700 border border-cyan-200/60",
+      category: "Kawasan Perumahan & Residensial",
+      desc: "Pengangkutan retribusi sampah rutin warga dan pemeliharaan kebersihan lingkungan perumahan.",
+      badge: "Perumahan",
+      badgeColor: "bg-emerald-50 text-emerald-700 border border-emerald-200/60",
       dir: "right" as const,
     },
     {
