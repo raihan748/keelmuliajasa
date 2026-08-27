@@ -130,25 +130,30 @@ export const Hero: React.FC = () => {
               </motion.a>
             </motion.div>
 
-            {/* Counters Stat Bar */}
-            <div className="grid grid-cols-3 gap-3 pt-4 border-t border-slate-100">
-              <div className="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-soft-xs text-center">
-                <div className="text-xl sm:text-2xl font-bold text-slate-900 font-mono">
+            {/* Counters Stat Bar - Ditegaskan Ulang */}
+            <div className="grid grid-cols-3 gap-3.5 sm:gap-4 pt-6 border-t border-slate-200/90">
+              <div className="bg-slate-50/90 hover:bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-soft-xs hover:shadow-soft-sm text-center transition-all duration-300">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-sans tracking-tight">
                   <AnimatedCounter to={5000} suffix="+" />
                 </div>
-                <div className="text-[11px] sm:text-xs font-medium text-slate-500 mt-0.5">Ritase Terangkut</div>
+                <div className="text-xs sm:text-sm font-bold text-slate-800 mt-1">Ritase Terangkut</div>
+                <div className="text-[10px] sm:text-[11px] font-medium text-slate-500 hidden sm:block">Puing & Sampah</div>
               </div>
-              <div className="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-soft-xs text-center">
-                <div className="text-xl sm:text-2xl font-bold text-brand-600 font-mono">
+
+              <div className="bg-brand-50/90 hover:bg-brand-50 p-4 sm:p-5 rounded-2xl border border-brand-200 shadow-soft-xs hover:shadow-soft-sm text-center transition-all duration-300 ring-2 ring-brand-500/10">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-700 font-sans tracking-tight">
                   <AnimatedCounter to={100} suffix="%" />
                 </div>
-                <div className="text-[11px] sm:text-xs font-medium text-slate-500 mt-0.5">Garansi Bersih</div>
+                <div className="text-xs sm:text-sm font-bold text-brand-900 mt-1">Garansi Bersih</div>
+                <div className="text-[10px] sm:text-[11px] font-medium text-brand-600 hidden sm:block">Tuntas & Disapu</div>
               </div>
-              <div className="bg-white p-3.5 rounded-2xl border border-slate-100 shadow-soft-xs text-center">
-                <div className="text-xl sm:text-2xl font-bold text-slate-900 font-mono">
+
+              <div className="bg-slate-50/90 hover:bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-soft-xs hover:shadow-soft-sm text-center transition-all duration-300">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-sans tracking-tight">
                   <AnimatedCounter to={24} suffix="/7" />
                 </div>
-                <div className="text-[11px] sm:text-xs font-medium text-slate-500 mt-0.5">Siaga Pelayanan</div>
+                <div className="text-xs sm:text-sm font-bold text-slate-800 mt-1">Siaga Pelayanan</div>
+                <div className="text-[10px] sm:text-[11px] font-medium text-slate-500 hidden sm:block">Respon Cepat</div>
               </div>
             </div>
 
