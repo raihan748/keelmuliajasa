@@ -38,10 +38,10 @@ export const PosterSection: React.FC = () => {
         <div className="max-w-3xl mx-auto text-center mb-16">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold">
             <FileImage className="w-3.5 h-3.5 text-brand-600" />
-            <span>Publikasi & Brosur Layanan</span>
+            <span>Informasi & Brosur Layanan</span>
           </span>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4">
-            Layanan Pengangkutan Resmi CV. Keel Mulia Jasa
+            Jasa Angkut Sampah Perumahan & Komersial
           </h2>
           <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
             Solusi praktis dan profesional untuk masalah sampah di rumah, kantor, sekolah, dan pabrik di area Makassar, Gowa, dan Maros.
