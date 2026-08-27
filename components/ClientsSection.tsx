@@ -18,9 +18,9 @@ export const ClientsSection: React.FC = () => {
     },
     {
       name: "Rumah Kost Islami Az Zahra",
-      category: "Fasilitas Hunian & Residensial",
-      desc: "Penanganan sampah umum rutin & pembersihan berkala lingkungan hunian.",
-      badge: "Hunian",
+      category: "Fasilitas Kost-Kosan & Hunian",
+      desc: "Penanganan sampah umum rutin & pembersihan berkala lingkungan kos-kosan.",
+      badge: "Kos-Kosan",
       badgeColor: "bg-emerald-50 text-emerald-700 border border-emerald-200/60",
       dir: "up" as const,
     },
@@ -94,7 +94,7 @@ export const ClientsSection: React.FC = () => {
               <span>Mitra & Klien Terverifikasi</span>
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4">
-              Dipercaya Sekolah, Rumah Sakit, Pesantren & Industri
+              Dipercaya Sekolah, Kos-Kosan, Perumahan & Industri
             </h2>
             <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
               Bukti nyata kepercayaan berbagai institusi ternama di Sulawesi Selatan terhadap kualitas dan integritas layanan CV. Keel Mulia Jasa.
