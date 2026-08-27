@@ -124,7 +124,7 @@ export const PortfolioSection: React.FC = () => {
                 <div className="px-6 pb-6 sm:px-7 sm:pb-7">
                   <div className="p-3.5 rounded-2xl bg-emerald-50/60 border border-emerald-100 flex items-center gap-2 text-xs font-semibold text-emerald-800">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                    <span>Muatan Langsung Dibawa ke TPA Resmi</span>
+                    <span>Muatan Langsung Dibawa ke TPA</span>
                   </div>
                 </div>
               </div>

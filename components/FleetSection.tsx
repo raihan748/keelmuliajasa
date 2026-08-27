@@ -53,8 +53,8 @@ export const FleetSection: React.FC = () => {
 
   const commitments = [
     {
-      title: "Pembuangan Langsung ke TPA",
-      desc: "Seluruh muatan sampah diangkut dan dibuang langsung ke TPA resmi, bukan dibuang di pinggir jalan atau lahan liar.",
+      title: "Pengelolaan Berizin & Ramah Lingkungan",
+      desc: "Seluruh muatan material diangkut secara aman dan bertanggung jawab langsung ke Tempat Pemrosesan Akhir (TPA) resmi.",
       icon: ShieldCheck,
       color: "bg-emerald-50 text-emerald-700",
       dir: "left" as const,

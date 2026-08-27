@@ -32,7 +32,7 @@ export const HowItWorks: React.FC = () => {
       num: "04",
       icon: CheckCircle2,
       title: "Pembuangan ke TPA & Invoice",
-      desc: "Sampah dibuang langsung ke TPA resmi. Kami siap menerbitkan kwitansi resmi atau invoice untuk pembukuan Anda.",
+      desc: "Sampah dibuang langsung ke Tempat Pemrosesan Akhir (TPA). Kami siap menerbitkan kwitansi resmi atau invoice untuk pembukuan Anda.",
       tag: "Langkah 4",
       color: "bg-purple-50 text-purple-700 border border-purple-200/60",
     },

@@ -26,7 +26,7 @@ export const Footer: React.FC = () => {
 
             <div className="flex items-center gap-2.5 text-white text-xs bg-slate-800/80 p-3.5 rounded-2xl border border-slate-700/60">
               <ShieldCheck className="w-4 h-4 text-brand-400 shrink-0" />
-              <span>Badan Hukum CV Resmi & Berizin TPA</span>
+              <span>Badan Usaha CV Resmi & Berbadan Hukum</span>
             </div>
           </div>
 

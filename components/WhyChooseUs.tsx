@@ -6,8 +6,8 @@ export const WhyChooseUs: React.FC = () => {
   const reasons = [
     {
       icon: ShieldCheck,
-      title: "Pembuangan Resmi ke TPA",
-      desc: "Tidak pernah membuang sampah di pinggir jalan atau lahan liar. Seluruh muatan diangkut tuntas ke TPA resmi.",
+      title: "Pengangkutan Tertib & Bertanggung Jawab",
+      desc: "Seluruh muatan sampah dan puing diangkut secara rapi, aman, dan langsung diproses ke Tempat Pemrosesan Akhir (TPA).",
       color: "bg-emerald-50 text-emerald-600",
       dir: "left" as const,
     },

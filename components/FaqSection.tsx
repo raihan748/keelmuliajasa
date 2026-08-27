@@ -14,7 +14,7 @@ export const FaqSection: React.FC = () => {
     },
     {
       q: "Ke mana sampah dan puing tersebut akan dibuang?",
-      a: "Seluruh muatan sampah dan puing dibuang langsung ke Tempat Pembuangan Akhir (TPA) resmi. Kami tidak pernah membuang sampah sembarangan di pinggir jalan atau lahan liar.",
+      a: "Seluruh muatan sampah dan puing didistribusikan secara bertanggung jawab langsung ke Tempat Pemrosesan Akhir (TPA) sesuai regulasi kelestarian lingkungan hidup.",
     },
     {
       q: "Apakah tarif sewa armada sudah termasuk pengemudi dan tenaga loader?",

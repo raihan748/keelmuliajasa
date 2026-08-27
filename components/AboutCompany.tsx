@@ -18,12 +18,8 @@ export const AboutCompany: React.FC = () => {
                   <span>Profil Resmi Perusahaan</span>
                 </div>
 
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                  CV. Keel Mulia Jasa — Solusi Pengangkutan Sampah & Puing Terpercaya
-                </h2>
-
-                <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-                  <strong className="text-slate-900 font-semibold">CV. Keel Mulia Jasa</strong> adalah badan usaha resmi berbadan hukum yang bergerak di bidang layanan kebersihan, pengelolaan, dan pengangkutan berbagai jenis muatan sampah serta material sisa konstruksi di kawasan metropolitan Sulawesi Selatan.
+                <p className="text-lg sm:text-xl text-slate-700 font-medium leading-relaxed">
+                  <strong className="text-slate-900 font-extrabold">CV. Keel Mulia Jasa</strong> adalah badan usaha resmi berbadan hukum yang bergerak di bidang layanan kebersihan, pengelolaan, dan pengangkutan berbagai jenis muatan sampah serta material sisa konstruksi di kawasan metropolitan Sulawesi Selatan.
                 </p>
 
                 <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
@@ -121,7 +117,7 @@ export const AboutCompany: React.FC = () => {
                   </div>
                   <div className="flex items-center justify-between py-2 border-b border-slate-100">
                     <span className="text-slate-500 font-normal">Tujuan Pembuangan:</span>
-                    <span className="font-semibold text-brand-600">Tempat Pembuangan Akhir (TPA) Resmi</span>
+                    <span className="font-semibold text-brand-600">Tempat Pemrosesan Akhir (TPA)</span>
                   </div>
                   <div className="flex items-center justify-between py-2">
                     <span className="text-slate-500 font-normal">Cakupan Wilayah:</span>

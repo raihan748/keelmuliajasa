@@ -46,7 +46,7 @@ export const LeftTaskbar: React.FC = () => {
             <ShieldCheck className="w-5 h-5" />
           </div>
           <div className="absolute left-12 bg-slate-900 text-white text-xs font-semibold px-3 py-1.5 rounded-xl shadow-soft-md whitespace-nowrap opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-200 -translate-x-2 group-hover:translate-x-0 z-50">
-            CV. Keel Mulia Jasa (Resmi & Berizin TPA)
+            CV. Keel Mulia Jasa (Badan Usaha CV Resmi)
           </div>
         </div>
 

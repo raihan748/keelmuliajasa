@@ -102,7 +102,7 @@ export const PosterSection: React.FC = () => {
               </h3>
 
               <p className="text-sm text-slate-600 font-normal leading-relaxed mb-6">
-                <strong className="text-slate-900 font-semibold">CV. Keel Mulia Jasa</strong> hadir sebagai mitra terpercaya untuk mengatasi masalah tumpukan sampah perumahan, puing sisa pembongkaran gedung, hingga penataan lingkungan industri secara bertanggung jawab ke TPA resmi.
+                <strong className="text-slate-900 font-semibold">CV. Keel Mulia Jasa</strong> hadir sebagai mitra terpercaya untuk mengatasi masalah tumpukan sampah perumahan, puing sisa pembongkaran gedung, hingga penataan lingkungan industri secara bertanggung jawab ke Tempat Pemrosesan Akhir (TPA).
               </p>
 
               {/* Services List */}

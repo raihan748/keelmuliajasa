@@ -1,6 +1,5 @@
 import React from "react";
 import { ScrollProgress } from "@/components/ScrollProgress";
-import { LeftTaskbar } from "@/components/LeftTaskbar";
 import { ScrollHUD } from "@/components/ScrollHUD";
 import { StickyBottomAction } from "@/components/StickyBottomAction";
 import { NeoMarquee } from "@/components/NeoMarquee";
@@ -30,9 +29,6 @@ export default function HomePage() {
       {/* Scroll Progress Bar at very top */}
       <ScrollProgress />
       
-      {/* Left Floating Action Dock / Taskbar */}
-      <LeftTaskbar />
-
       {/* Right Floating Scroll-Spy Navigator Taskbar */}
       <ScrollHUD />
 

@@ -13,7 +13,7 @@ export const TrustBar: React.FC = () => {
     {
       icon: Truck,
       title: "Pengangkutan Tuntas",
-      desc: "Sampah dan puing langsung diangkut dan dibuang ke TPA resmi tanpa ceceran",
+      desc: "Sampah dan puing langsung diangkut dan dibuang ke TPA tanpa ceceran",
       tag: "Bersih Tuntas",
       color: "bg-emerald-50 text-emerald-700",
     },

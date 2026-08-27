@@ -130,7 +130,7 @@ export const ServicesSection: React.FC = () => {
               Solusi Pengangkutan Sampah & Kebersihan Terpadu
             </h2>
             <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
-              Pilihan layanan lengkap dengan armada mandiri, tenaga loader terlatih, dan jaminan pembuangan langsung ke TPA resmi.
+              Pilihan layanan lengkap dengan armada mandiri, tenaga loader terlatih, dan jaminan pembuangan langsung ke Tempat Pemrosesan Akhir (TPA).
             </p>
           </div>
         </ScrollReveal>
