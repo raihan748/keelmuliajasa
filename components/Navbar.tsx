@@ -70,7 +70,7 @@ export const Navbar: React.FC = () => {
       </AnimatePresence>
 
       {/* Main Navbar - Non-sticky (Scrolls away naturally) */}
-      <header className="relative z-30 bg-[#EEBA2B] border-b border-[#D9A51B]/70 shadow-soft-sm">
+      <header className="relative z-30 bg-[#38B6FF] border-b border-[#209BE3]/70 shadow-soft-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-18 sm:h-20">
             
@@ -104,7 +104,7 @@ export const Navbar: React.FC = () => {
                 href="#kalkulator"
                 className="hidden xl:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/95 hover:bg-white text-slate-900 text-xs font-bold border border-white/60 shadow-soft-xs transition-all"
               >
-                <FileText className="w-3.5 h-3.5 text-[#A8790E]" />
+                <FileText className="w-3.5 h-3.5 text-[#0284C7]" />
                 <span>Minta Penawaran</span>
               </a>
 
@@ -149,7 +149,7 @@ export const Navbar: React.FC = () => {
         <div>
           <div className="flex items-center justify-between pb-4 border-b border-slate-100">
             <div className="flex items-center gap-2">
-              <div className="bg-[#EEBA2B] p-1.5 rounded-xl">
+              <div className="bg-[#38B6FF] p-1.5 rounded-xl">
                 <img
                   src="/images/logo-clean.png"
                   alt="Logo CV. Keel Mulia Jasa"

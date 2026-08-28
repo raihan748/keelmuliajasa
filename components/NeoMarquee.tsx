@@ -15,7 +15,7 @@ export const NeoMarquee: React.FC = () => {
   ];
 
   return (
-    <div className="bg-blue-600 text-white border-y border-blue-500 py-3.5 overflow-hidden select-none relative z-20 shadow-soft-xs">
+    <div className="bg-[#38B6FF] text-white border-y border-[#209BE3] py-3.5 overflow-hidden select-none relative z-20 shadow-soft-xs">
       <motion.div
         animate={{ x: ["0%", "-50%"] }}
         transition={{
