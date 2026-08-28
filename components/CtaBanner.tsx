@@ -4,22 +4,22 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const CtaBanner: React.FC = () => {
   return (
-    <section className="py-20 sm:py-28 bg-white text-center relative overflow-hidden border-b border-slate-100">
+    <section className="py-20 sm:py-28 bg-[#38B6FF] text-center relative overflow-hidden border-b border-white/20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <ScrollReveal direction="zoom">
-          <div className="bg-slate-50/70 border border-slate-200/80 rounded-3xl p-8 sm:p-14 shadow-soft-sm relative">
+          <div className="bg-white border border-white/80 rounded-3xl p-8 sm:p-14 shadow-soft-md relative">
             
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold mb-6">
-              <ShieldCheck className="w-3.5 h-3.5 text-brand-600" />
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 text-blue-900 border border-blue-200/60 shadow-soft-xs text-xs font-bold mb-6">
+              <ShieldCheck className="w-3.5 h-3.5 text-blue-600" />
               <span>Layanan Cepat & Bergaransi Bersih</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mb-5 leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight mb-5 leading-tight">
               Butuh Pengangkutan Sampah atau Puing Hari Ini?
             </h2>
             <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed mb-9 max-w-2xl mx-auto">
-              Hubungi tim operasional <strong className="text-slate-900 font-semibold">CV. Keel Mulia Jasa</strong> sekarang untuk konsultasi gratis, memperoleh estimasi tarif yang transparan, dan pengiriman armada langsung ke lokasi Anda.
+              Hubungi tim operasional <strong className="text-slate-900 font-bold">CV. Keel Mulia Jasa</strong> sekarang untuk konsultasi gratis, memperoleh estimasi tarif yang transparan, dan pengiriman armada langsung ke lokasi Anda.
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4">

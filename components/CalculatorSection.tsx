@@ -39,19 +39,19 @@ export const CalculatorSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 sm:py-28 bg-slate-50/50 text-slate-900 relative border-b border-slate-100" id="kalkulator">
+    <section className="py-20 sm:py-28 bg-[#38B6FF] text-slate-900 relative border-b border-white/20" id="kalkulator">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
         
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center">
-          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold">
-            <Calculator className="w-3.5 h-3.5 text-brand-600" />
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+            <Calculator className="w-3.5 h-3.5 text-blue-600" />
             <span>Estimator & Simulasi Cepat</span>
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight mt-3 mb-4">
             Simulasi Kebutuhan Unit & Permintaan Penawaran
           </h2>
-          <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
+          <p className="text-base sm:text-lg text-slate-950 font-medium leading-relaxed">
             Gunakan simulator visual di bawah untuk menentukan jenis armada yang sesuai dengan volume muatan Anda, lalu kirimkan detail pesanan langsung ke tim operasional kami.
           </p>
         </div>

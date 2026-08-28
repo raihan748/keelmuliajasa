@@ -9,13 +9,13 @@ export const NeoMarquee: React.FC = () => {
     { text: "Armada Dump Truck & Pick Up Siaga 24/7", icon: Truck },
     { text: "Pengangkutan Sampah & Puing Bersih Tuntas", icon: Sparkles },
     { text: "Wilayah Makassar, Gowa & Maros", icon: MapPin },
-    { text: "Respon Kilat WhatsApp 0823-9619-3473", icon: Zap },
+    { text: "Respons Cepat WhatsApp 0823-9619-3473", icon: Zap },
     { text: "Tim Loader Profesional & Standar K3", icon: ShieldCheck },
     { text: "Legalitas CV Resmi & Invoice B2B", icon: CheckCircle2 },
   ];
 
   return (
-    <div className="bg-[#38B6FF] text-white border-y border-[#209BE3] py-3.5 overflow-hidden select-none relative z-20 shadow-soft-xs">
+    <div className="bg-slate-950 text-white border-y border-white/20 py-3.5 overflow-hidden select-none relative z-20 shadow-soft-sm">
       <motion.div
         animate={{ x: ["0%", "-50%"] }}
         transition={{

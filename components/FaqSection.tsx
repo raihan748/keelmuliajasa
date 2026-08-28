@@ -39,19 +39,19 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 sm:py-28 bg-slate-50/50 border-b border-slate-100" id="faq">
+    <section className="py-20 sm:py-28 bg-[#38B6FF] border-b border-white/20" id="faq">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <ScrollReveal direction="down">
           <div className="text-center mb-16">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold">
-              <HelpCircle className="w-3.5 h-3.5 text-brand-600" />
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+              <HelpCircle className="w-3.5 h-3.5 text-blue-600" />
               <span>Tanya Jawab (FAQ)</span>
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight mt-3 mb-4">
               Pertanyaan yang Sering Diajukan
             </h2>
-            <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-950 font-medium leading-relaxed">
               Informasi lengkap seputar mekanisme layanan pengangkutan dan pengelolaan sampah kami.
             </p>
           </div>

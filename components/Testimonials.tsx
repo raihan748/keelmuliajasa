@@ -34,20 +34,20 @@ export const Testimonials: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-white border-b border-slate-100" id="testimoni">
+    <section className="py-20 sm:py-28 bg-[#38B6FF] border-b border-white/20" id="testimoni">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <ScrollReveal direction="down">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold">
-              <Star className="w-3.5 h-3.5 text-brand-600" />
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+              <Star className="w-3.5 h-3.5 text-blue-600" />
               <span>Pengalaman Pelanggan</span>
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight mt-3 mb-4">
               Kepercayaan Klien Residensial & Bisnis
             </h2>
-            <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-950 font-medium leading-relaxed">
               Komitmen kami adalah memberikan hasil kerja yang rapi, tuntas, dan tepat waktu untuk setiap mitra dan pelanggan.
             </p>
           </div>
@@ -57,7 +57,7 @@ export const Testimonials: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((rev, idx) => (
             <ScrollReveal key={idx} direction={rev.dir} delay={idx * 0.12} className="h-full">
-              <div className="h-full bg-slate-50/70 border border-slate-200/80 rounded-3xl p-7 sm:p-8 shadow-soft-xs hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+              <div className="h-full bg-white border border-white/90 rounded-3xl p-7 sm:p-8 shadow-soft-sm hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-5">
                     <div className="flex gap-1 text-amber-400">

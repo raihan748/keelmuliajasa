@@ -49,20 +49,20 @@ export const WhyChooseUs: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-slate-50/50 border-b border-slate-100" id="keunggulan">
+    <section className="py-20 sm:py-28 bg-[#38B6FF] border-b border-white/20" id="keunggulan">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <ScrollReveal direction="down">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold">
-              <Sparkles className="w-3.5 h-3.5 text-brand-600" />
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+              <Sparkles className="w-3.5 h-3.5 text-blue-600" />
               <span>Mengapa Memilih Kami</span>
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight mt-3 mb-4">
               Standar Tertinggi untuk Kebersihan Properti Anda
             </h2>
-            <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-950 font-medium leading-relaxed">
               Kami tidak sekadar mengangkut sampah, kami memberikan kepastian ketertiban lingkungan dan kenyamanan tanpa repot.
             </p>
           </div>

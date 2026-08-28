@@ -116,20 +116,20 @@ export const ServicesSection: React.FC = () => {
       : services.filter((s) => s.category === activeCategory);
 
   return (
-    <section className="py-20 sm:py-28 bg-white border-b border-slate-100 relative" id="layanan">
+    <section className="py-20 sm:py-28 bg-[#38B6FF] border-b border-white/20 relative" id="layanan">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
         <ScrollReveal direction="down">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold">
-              <Sparkles className="w-3.5 h-3.5 text-brand-600" />
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+              <Sparkles className="w-3.5 h-3.5 text-blue-600" />
               <span>Layanan Komprehensif</span>
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight mt-3 mb-4">
               Solusi Pengangkutan Sampah & Kebersihan Terpadu
             </h2>
-            <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-950 font-medium leading-relaxed">
               Pilihan layanan lengkap dengan armada mandiri, tenaga loader terlatih, dan jaminan pembuangan langsung ke Tempat Pemrosesan Akhir (TPA).
             </p>
           </div>
@@ -142,10 +142,10 @@ export const ServicesSection: React.FC = () => {
               <button
                 key={cat.id}
                 onClick={() => setActiveCategory(cat.id)}
-                className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 cursor-pointer ${
+                className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
                   activeCategory === cat.id
-                    ? "bg-brand-600 text-white shadow-soft-sm"
-                    : "bg-slate-100 text-slate-600 hover:bg-slate-200/80 hover:text-slate-900"
+                    ? "bg-slate-950 text-white shadow-soft-md scale-105"
+                    : "bg-white text-slate-800 hover:bg-slate-50 border border-white shadow-soft-xs"
                 }`}
               >
                 {cat.label}

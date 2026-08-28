@@ -39,19 +39,19 @@ export const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-white border-b border-slate-100" id="alur-kerja">
+    <section className="py-20 sm:py-28 bg-[#38B6FF] border-b border-white/20" id="alur-kerja">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <ScrollReveal direction="down">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold">
-              <CheckCircle2 className="w-3.5 h-3.5 text-brand-600" />
+            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+              <CheckCircle2 className="w-3.5 h-3.5 text-blue-600" />
               <span>SOP & Alur Pelayanan</span>
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mt-3 mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight mt-3 mb-4">
               4 Langkah Mudah Menggunakan Jasa Kami
             </h2>
-            <p className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed">
+            <p className="text-base sm:text-lg text-slate-950 font-medium leading-relaxed">
               Proses cepat, transparan, dan Anda tidak perlu repot mengangkat material berat sendiri.
             </p>
           </div>

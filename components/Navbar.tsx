@@ -70,17 +70,19 @@ export const Navbar: React.FC = () => {
       </AnimatePresence>
 
       {/* Main Navbar - Non-sticky (Scrolls away naturally) */}
-      <header className="relative z-30 bg-[#38B6FF] border-b border-[#209BE3]/70 shadow-soft-sm">
+      <header className="relative z-30 bg-[#EEBA2B] border-b border-[#D9A51B]/70 shadow-soft-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-18 sm:h-20">
             
-            {/* Brand Logo in Navbar - Transparent Background */}
-            <a href="#" className="flex items-center gap-3 group shrink-0 transition-transform duration-200 hover:scale-105">
-              <img
-                src="/images/logo-clean.png"
-                alt="Logo CV. Keel Mulia Jasa"
-                className="h-10 sm:h-12 w-auto object-contain"
-              />
+            {/* Brand Logo in Navbar */}
+            <a href="#" className="flex items-center gap-3 group shrink-0">
+              <div className="bg-white p-1.5 sm:p-2 rounded-2xl border border-white/60 shadow-soft-sm transition-all duration-300 group-hover:scale-105 group-hover:shadow-soft-md">
+                <img
+                  src="/images/logo-clean.png"
+                  alt="Logo CV. Keel Mulia Jasa"
+                  className="h-9 sm:h-11 w-auto object-contain"
+                />
+              </div>
             </a>
 
             {/* Desktop Navigation */}
@@ -102,7 +104,7 @@ export const Navbar: React.FC = () => {
                 href="#kalkulator"
                 className="hidden xl:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/95 hover:bg-white text-slate-900 text-xs font-bold border border-white/60 shadow-soft-xs transition-all"
               >
-                <FileText className="w-3.5 h-3.5 text-[#0284C7]" />
+                <FileText className="w-3.5 h-3.5 text-[#A8790E]" />
                 <span>Minta Penawaran</span>
               </a>
 
@@ -147,11 +149,13 @@ export const Navbar: React.FC = () => {
         <div>
           <div className="flex items-center justify-between pb-4 border-b border-slate-100">
             <div className="flex items-center gap-2">
-              <img
-                src="/images/logo-clean.png"
-                alt="Logo CV. Keel Mulia Jasa"
-                className="h-8 w-auto object-contain"
-              />
+              <div className="bg-[#EEBA2B] p-1.5 rounded-xl">
+                <img
+                  src="/images/logo-clean.png"
+                  alt="Logo CV. Keel Mulia Jasa"
+                  className="h-8 w-auto object-contain bg-white rounded-lg p-0.5"
+                />
+              </div>
             </div>
             <button
               onClick={() => setMobileMenuOpen(false)}

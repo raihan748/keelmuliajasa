@@ -33,10 +33,10 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative pt-8 pb-16 sm:pt-16 sm:pb-24 lg:pt-20 lg:pb-32 overflow-hidden bg-gradient-to-b from-brand-50/40 via-surface to-surface" id="hero">
+    <section className="relative pt-8 pb-16 sm:pt-16 sm:pb-24 lg:pt-20 lg:pb-32 overflow-hidden bg-[#38B6FF] text-slate-900" id="hero">
       
       {/* Soft Ambient Light Glows */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[450px] bg-gradient-to-r from-brand-200/20 via-cyan-100/30 to-brand-100/20 blur-3xl pointer-events-none -z-10" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[450px] bg-white/20 blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -49,9 +49,9 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold"
+              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold"
             >
-              <Sparkles className="w-3.5 h-3.5 text-brand-600" />
+              <Sparkles className="w-3.5 h-3.5 text-blue-600" />
               <span>Jasa Angkutan Sampah, Puing & Kebersihan Resmi di Sulsel</span>
             </motion.div>
 
@@ -60,10 +60,10 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15] sm:leading-[1.1]"
+              className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-950 tracking-tight leading-[1.15] sm:leading-[1.1]"
             >
               Solusi Bersih & Cepat untuk Angkutan{" "}
-              <span className="text-brand-600 relative inline-block">
+              <span className="text-white drop-shadow-sm relative inline-block">
                 Sampah & Puing
               </span>
             </motion.h1>
@@ -73,10 +73,10 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-600 font-normal leading-relaxed max-w-2xl"
+              className="text-base sm:text-lg text-slate-950 font-medium leading-relaxed max-w-2xl"
             >
               Layanan profesional pengangkutan sisa renovasi bangunan, sampah komersial ruko/restoran, residensial perumahan, penebangan pohon, hingga pembersihan lahan kosong di{" "}
-              <strong className="text-slate-900 font-semibold">Makassar, Gowa, dan Maros</strong>.
+              <strong className="text-slate-950 font-bold underline decoration-white/60">Makassar, Gowa, dan Maros</strong>.
             </motion.p>
 
             {/* Trust Checklist Badges */}
@@ -86,16 +86,16 @@ export const Hero: React.FC = () => {
               transition={{ duration: 0.5, delay: 0.25 }}
               className="grid grid-cols-1 xs:grid-cols-3 gap-3 pt-1"
             >
-              <div className="flex items-center gap-2.5 bg-white p-3 rounded-2xl border border-slate-200/80 shadow-soft-xs text-xs font-medium text-slate-800 hover:border-brand-200 transition-all">
-                <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0" />
+              <div className="flex items-center gap-2.5 bg-white p-3.5 rounded-2xl border border-white/80 shadow-soft-sm text-xs font-bold text-slate-900 hover:scale-[1.02] transition-all">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                 <span>Garansi Bersih Tuntas</span>
               </div>
-              <div className="flex items-center gap-2.5 bg-white p-3 rounded-2xl border border-slate-200/80 shadow-soft-xs text-xs font-medium text-slate-800 hover:border-brand-200 transition-all">
-                <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0" />
+              <div className="flex items-center gap-2.5 bg-white p-3.5 rounded-2xl border border-white/80 shadow-soft-sm text-xs font-bold text-slate-900 hover:scale-[1.02] transition-all">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                 <span>Tenaga Loader K3</span>
               </div>
-              <div className="flex items-center gap-2.5 bg-white p-3 rounded-2xl border border-slate-200/80 shadow-soft-xs text-xs font-medium text-slate-800 hover:border-brand-200 transition-all">
-                <CheckCircle2 className="w-4 h-4 text-brand-600 shrink-0" />
+              <div className="flex items-center gap-2.5 bg-white p-3.5 rounded-2xl border border-white/80 shadow-soft-sm text-xs font-bold text-slate-900 hover:scale-[1.02] transition-all">
+                <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                 <span>Invoice & Legalitas CV</span>
               </div>
             </motion.div>
@@ -113,9 +113,9 @@ export const Hero: React.FC = () => {
                 href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20mau%20konsultasi%20pengangkutan%20sampah%20dan%20pembersihan"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="min-h-[48px] inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm sm:text-base shadow-soft-md hover:shadow-glow-brand transition-all"
+                className="min-h-[48px] inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-slate-950 hover:bg-slate-900 text-white font-bold text-sm sm:text-base shadow-soft-md hover:shadow-soft-lg transition-all"
               >
-                <MessageCircle className="w-5 h-5 fill-current" />
+                <MessageCircle className="w-5 h-5 fill-current text-emerald-400" />
                 <span>Pesan Armada via WhatsApp</span>
               </motion.a>
 
@@ -123,37 +123,37 @@ export const Hero: React.FC = () => {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 href="#armada"
-                className="min-h-[48px] inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-slate-50 text-slate-700 font-semibold text-sm sm:text-base border border-slate-200 shadow-soft-xs transition-all"
+                className="min-h-[48px] inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-slate-50 text-slate-900 font-bold text-sm sm:text-base border border-white shadow-soft-sm transition-all"
               >
-                <Truck className="w-4 h-4 text-slate-500" />
+                <Truck className="w-4 h-4 text-blue-600" />
                 <span>Pilihan Armada</span>
               </motion.a>
             </motion.div>
 
             {/* Counters Stat Bar - Ditegaskan Ulang */}
-            <div className="grid grid-cols-3 gap-3.5 sm:gap-4 pt-6 border-t border-slate-200/90">
-              <div className="bg-slate-50/90 hover:bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-soft-xs hover:shadow-soft-sm text-center transition-all duration-300">
+            <div className="grid grid-cols-3 gap-3.5 sm:gap-4 pt-6 border-t border-white/40">
+              <div className="bg-white p-4 sm:p-5 rounded-2xl border border-white shadow-soft-sm hover:shadow-soft-md text-center transition-all duration-300">
                 <div className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-sans tracking-tight">
                   <AnimatedCounter to={5000} suffix="+" />
                 </div>
                 <div className="text-xs sm:text-sm font-bold text-slate-800 mt-1">Ritase Terangkut</div>
-                <div className="text-[10px] sm:text-[11px] font-medium text-slate-500 hidden sm:block">Puing & Sampah</div>
+                <div className="text-[10px] sm:text-[11px] font-semibold text-slate-500 hidden sm:block">Puing & Sampah</div>
               </div>
 
-              <div className="bg-brand-50/90 hover:bg-brand-50 p-4 sm:p-5 rounded-2xl border border-brand-200 shadow-soft-xs hover:shadow-soft-sm text-center transition-all duration-300 ring-2 ring-brand-500/10">
-                <div className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-700 font-sans tracking-tight">
+              <div className="bg-white p-4 sm:p-5 rounded-2xl border border-white shadow-soft-sm hover:shadow-soft-md text-center transition-all duration-300 ring-2 ring-blue-500/20">
+                <div className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-blue-600 font-sans tracking-tight">
                   <AnimatedCounter to={100} suffix="%" />
                 </div>
-                <div className="text-xs sm:text-sm font-bold text-brand-900 mt-1">Garansi Bersih</div>
-                <div className="text-[10px] sm:text-[11px] font-medium text-brand-600 hidden sm:block">Tuntas & Disapu</div>
+                <div className="text-xs sm:text-sm font-bold text-slate-900 mt-1">Garansi Bersih</div>
+                <div className="text-[10px] sm:text-[11px] font-semibold text-blue-600 hidden sm:block">Tuntas & Disapu</div>
               </div>
 
-              <div className="bg-slate-50/90 hover:bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-soft-xs hover:shadow-soft-sm text-center transition-all duration-300">
+              <div className="bg-white p-4 sm:p-5 rounded-2xl border border-white shadow-soft-sm hover:shadow-soft-md text-center transition-all duration-300">
                 <div className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-sans tracking-tight">
                   <AnimatedCounter to={24} suffix="/7" />
                 </div>
                 <div className="text-xs sm:text-sm font-bold text-slate-800 mt-1">Siaga Pelayanan</div>
-                <div className="text-[10px] sm:text-[11px] font-medium text-slate-500 hidden sm:block">Respon Cepat</div>
+                <div className="text-[10px] sm:text-[11px] font-semibold text-slate-500 hidden sm:block">Respons Cepat</div>
               </div>
             </div>
 

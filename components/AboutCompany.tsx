@@ -4,7 +4,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const AboutCompany: React.FC = () => {
   return (
-    <section className="py-20 sm:py-28 bg-slate-50/60 border-b border-slate-100" id="tentang-kami">
+    <section className="py-20 sm:py-28 bg-[#38B6FF] border-b border-white/20" id="tentang-kami">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">
@@ -13,16 +13,16 @@ export const AboutCompany: React.FC = () => {
           <div className="lg:col-span-7">
             <ScrollReveal direction="left" distance={40}>
               <div className="space-y-6">
-                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200/60 shadow-soft-xs text-xs font-semibold">
-                  <Building className="w-3.5 h-3.5 text-brand-600" />
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+                  <Building className="w-3.5 h-3.5 text-blue-600" />
                   <span>Profil Resmi Perusahaan</span>
                 </div>
 
-                <p className="text-lg sm:text-xl text-slate-700 font-medium leading-relaxed">
-                  <strong className="text-slate-900 font-extrabold">CV. Keel Mulia Jasa</strong> adalah badan usaha resmi berbadan hukum yang bergerak di bidang layanan kebersihan, pengelolaan, dan pengangkutan berbagai jenis muatan sampah serta material sisa konstruksi di kawasan metropolitan Sulawesi Selatan.
+                <p className="text-lg sm:text-xl text-slate-950 font-medium leading-relaxed">
+                  <strong className="text-slate-950 font-extrabold underline decoration-white/60">CV. Keel Mulia Jasa</strong> adalah badan usaha resmi berbadan hukum yang bergerak di bidang layanan kebersihan, pengelolaan, dan pengangkutan berbagai jenis muatan sampah serta material sisa konstruksi di kawasan metropolitan Sulawesi Selatan.
                 </p>
 
-                <p className="text-sm sm:text-base text-slate-600 font-normal leading-relaxed">
+                <p className="text-sm sm:text-base text-slate-950 font-medium leading-relaxed">
                   Didukung oleh armada dump truck dan pick up mandiri, tenaga loader terlatih dengan standar keselamatan K3, serta kesiapan operasional setiap hari, kami memastikan seluruh material diangkut secara bertanggung jawab, rapi, dan bersih tuntas.
                 </p>
 
