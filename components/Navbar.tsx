@@ -41,22 +41,22 @@ export const Navbar: React.FC = () => {
   return (
     <>
       <header
-        className={`sticky top-0 z-40 transition-all duration-300 ${
+        className={`sticky top-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-[#C5A059]/95 backdrop-blur-md shadow-soft-md border-b border-[#B38E46]/60"
-            : "bg-[#C5A059] backdrop-blur-sm border-b border-[#B38E46]/60 shadow-soft-sm"
+            ? "bg-[#C5A059]/95 backdrop-blur-md shadow-soft-lg border-b border-[#B38E46]/90 py-1"
+            : "bg-[#C5A059] backdrop-blur-sm border-b border-[#B38E46]/60 shadow-soft-sm py-0"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-18 sm:h-20">
+          <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? "h-16 sm:h-17" : "h-18 sm:h-20"}`}>
             
-            {/* Brand Logo */}
-            <a href="#" className="flex items-center gap-3 group">
-              <div className="bg-white p-1.5 rounded-2xl border border-white/40 shadow-soft-xs transition-transform group-hover:scale-105">
+            {/* Brand Logo - Sticky Always Follows */}
+            <a href="#" className="flex items-center gap-3 group shrink-0">
+              <div className="bg-white p-1.5 sm:p-2 rounded-2xl border border-white/60 shadow-soft-sm transition-all duration-300 group-hover:scale-105 group-hover:shadow-soft-md">
                 <img
                   src="/images/logo-clean.png"
                   alt="Logo CV. Keel Mulia Jasa"
-                  className="h-9 sm:h-11 w-auto object-contain"
+                  className={`w-auto object-contain transition-all duration-300 ${scrolled ? "h-8 sm:h-9" : "h-9 sm:h-11"}`}
                 />
               </div>
             </a>
