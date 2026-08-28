@@ -63,7 +63,7 @@ export const Navbar: React.FC = () => {
             <img
               src="/images/logo-clean.png"
               alt="Logo CV. Keel Mulia Jasa"
-              className="h-14 sm:h-16 lg:h-18 w-auto object-contain transition-transform duration-200 group-hover:scale-105 filter drop-shadow-[0_4px_14px_rgba(0,0,0,0.45)] drop-shadow-[0_0_2px_rgba(255,255,255,0.9)]"
+              className="h-20 sm:h-24 lg:h-28 w-auto object-contain transition-transform duration-200 group-hover:scale-105 filter drop-shadow-[0_6px_20px_rgba(0,0,0,0.55)] drop-shadow-[0_0_3px_rgba(255,255,255,0.95)]"
             />
           </motion.a>
         )}
