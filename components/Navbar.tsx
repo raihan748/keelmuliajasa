@@ -74,15 +74,13 @@ export const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-18 sm:h-20">
             
-            {/* Brand Logo in Navbar */}
-            <a href="#" className="flex items-center gap-3 group shrink-0">
-              <div className="bg-white p-1.5 sm:p-2 rounded-2xl border border-white/60 shadow-soft-sm transition-all duration-300 group-hover:scale-105 group-hover:shadow-soft-md">
-                <img
-                  src="/images/logo-clean.png"
-                  alt="Logo CV. Keel Mulia Jasa"
-                  className="h-9 sm:h-11 w-auto object-contain"
-                />
-              </div>
+            {/* Brand Logo in Navbar - Transparent Background */}
+            <a href="#" className="flex items-center gap-3 group shrink-0 transition-transform duration-200 hover:scale-105">
+              <img
+                src="/images/logo-clean.png"
+                alt="Logo CV. Keel Mulia Jasa"
+                className="h-10 sm:h-12 w-auto object-contain"
+              />
             </a>
 
             {/* Desktop Navigation */}
@@ -149,13 +147,11 @@ export const Navbar: React.FC = () => {
         <div>
           <div className="flex items-center justify-between pb-4 border-b border-slate-100">
             <div className="flex items-center gap-2">
-              <div className="bg-[#38B6FF] p-1.5 rounded-xl">
-                <img
-                  src="/images/logo-clean.png"
-                  alt="Logo CV. Keel Mulia Jasa"
-                  className="h-8 w-auto object-contain bg-white rounded-lg p-0.5"
-                />
-              </div>
+              <img
+                src="/images/logo-clean.png"
+                alt="Logo CV. Keel Mulia Jasa"
+                className="h-8 w-auto object-contain"
+              />
             </div>
             <button
               onClick={() => setMobileMenuOpen(false)}
