@@ -56,14 +56,14 @@ export const Navbar: React.FC = () => {
             transition={{ duration: 0.25, ease: "easeOut" }}
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
-            className="fixed top-3.5 left-3.5 sm:top-4 sm:left-6 z-50 bg-transparent p-0 border-0 shadow-none flex items-center group cursor-pointer drop-shadow-lg"
+            className="fixed top-3 left-3 sm:top-5 sm:left-6 z-50 bg-transparent p-0 border-0 shadow-none flex items-center group cursor-pointer select-none"
             aria-label="CV. Keel Mulia Jasa - Kembali ke Atas"
             title="Klik untuk kembali ke atas"
           >
             <img
               src="/images/logo-clean.png"
               alt="Logo CV. Keel Mulia Jasa"
-              className="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
+              className="h-14 sm:h-16 lg:h-18 w-auto object-contain transition-transform duration-200 group-hover:scale-105 filter drop-shadow-[0_4px_14px_rgba(0,0,0,0.45)] drop-shadow-[0_0_2px_rgba(255,255,255,0.9)]"
             />
           </motion.a>
         )}
