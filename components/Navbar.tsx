@@ -54,16 +54,16 @@ export const Navbar: React.FC = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -25, scale: 0.85 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
-            className="fixed top-3.5 left-3.5 sm:top-4 sm:left-6 z-50 bg-white/95 backdrop-blur-md p-1.5 sm:p-2 rounded-2xl border border-slate-200/90 shadow-soft-xl flex items-center gap-2 group cursor-pointer"
+            className="fixed top-3.5 left-3.5 sm:top-4 sm:left-6 z-50 bg-transparent p-0 border-0 shadow-none flex items-center group cursor-pointer drop-shadow-lg"
             aria-label="CV. Keel Mulia Jasa - Kembali ke Atas"
             title="Klik untuk kembali ke atas"
           >
             <img
               src="/images/logo-clean.png"
               alt="Logo CV. Keel Mulia Jasa"
-              className="h-8 sm:h-9 w-auto object-contain"
+              className="h-10 sm:h-12 w-auto object-contain transition-transform duration-200 group-hover:scale-105"
             />
           </motion.a>
         )}
@@ -76,11 +76,11 @@ export const Navbar: React.FC = () => {
             
             {/* Brand Logo in Navbar */}
             <a href="#" className="flex items-center gap-3 group shrink-0">
-              <div className="bg-white p-1.5 sm:p-2 rounded-2xl border border-white/60 shadow-soft-sm transition-all duration-300 group-hover:scale-105 group-hover:shadow-soft-md">
+              <div className="bg-transparent p-0 border-0 shadow-none transition-all duration-300 group-hover:scale-105">
                 <img
                   src="/images/logo-clean.png"
                   alt="Logo CV. Keel Mulia Jasa"
-                  className="h-9 sm:h-11 w-auto object-contain"
+                  className="h-11 sm:h-13 w-auto object-contain drop-shadow-sm"
                 />
               </div>
             </a>
@@ -149,11 +149,11 @@ export const Navbar: React.FC = () => {
         <div>
           <div className="flex items-center justify-between pb-4 border-b border-slate-100">
             <div className="flex items-center gap-2">
-              <div className="bg-[#EEBA2B] p-1.5 rounded-xl">
+              <div className="bg-transparent p-0">
                 <img
                   src="/images/logo-clean.png"
                   alt="Logo CV. Keel Mulia Jasa"
-                  className="h-8 w-auto object-contain bg-white rounded-lg p-0.5"
+                  className="h-9 w-auto object-contain"
                 />
               </div>
             </div>
