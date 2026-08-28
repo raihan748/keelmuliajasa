@@ -43,8 +43,8 @@ export const Navbar: React.FC = () => {
       <header
         className={`sticky top-0 z-50 transition-all duration-300 ${
           scrolled
-            ? "bg-[#C5A059]/95 backdrop-blur-md shadow-soft-lg border-b border-[#B38E46]/90 py-1"
-            : "bg-[#C5A059] backdrop-blur-sm border-b border-[#B38E46]/60 shadow-soft-sm py-0"
+            ? "bg-[#EEBA2B]/95 backdrop-blur-md shadow-soft-lg border-b border-[#D9A51B]/90 py-1"
+            : "bg-[#EEBA2B] backdrop-blur-sm border-b border-[#D9A51B]/60 shadow-soft-sm py-0"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,7 +67,7 @@ export const Navbar: React.FC = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-xs xl:text-sm font-bold text-slate-900 hover:text-slate-950 hover:bg-black/10 px-3.5 py-1.5 rounded-full transition-all duration-200"
+                  className="text-xs xl:text-sm font-bold text-slate-950 hover:text-black hover:bg-black/10 px-3.5 py-1.5 rounded-full transition-all duration-200"
                 >
                   {link.name}
                 </a>
@@ -78,9 +78,9 @@ export const Navbar: React.FC = () => {
             <div className="flex items-center gap-2.5 sm:gap-3">
               <a
                 href="#kalkulator"
-                className="hidden xl:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/90 hover:bg-white text-slate-900 text-xs font-bold border border-white/40 shadow-soft-xs transition-all"
+                className="hidden xl:inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-white/95 hover:bg-white text-slate-900 text-xs font-bold border border-white/60 shadow-soft-xs transition-all"
               >
-                <FileText className="w-3.5 h-3.5 text-[#A67C1E]" />
+                <FileText className="w-3.5 h-3.5 text-[#A8790E]" />
                 <span>Minta Penawaran</span>
               </a>
 
@@ -125,7 +125,7 @@ export const Navbar: React.FC = () => {
         <div>
           <div className="flex items-center justify-between pb-4 border-b border-slate-100">
             <div className="flex items-center gap-2">
-              <div className="bg-[#C5A059] p-1.5 rounded-xl">
+              <div className="bg-[#EEBA2B] p-1.5 rounded-xl">
                 <img
                   src="/images/logo-clean.png"
                   alt="Logo CV. Keel Mulia Jasa"
