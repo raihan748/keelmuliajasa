@@ -52,7 +52,7 @@ export const Hero: React.FC = () => {
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold"
             >
               <Sparkles className="w-3.5 h-3.5 text-blue-600" />
-              <span>Jasa Angkutan Sampah, Puing & Kebersihan Resmi di Sulsel</span>
+              <span>Jasa Angkutan Sampah, Puing & Kebersihan</span>
             </motion.div>
 
             {/* Main Headline */}
