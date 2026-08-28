@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, MessageCircle, FileText, PhoneCall, ShieldCheck, ChevronRight } from "lucide-react";
 
 export const Navbar: React.FC = () => {
@@ -9,9 +10,9 @@ export const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 90);
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -40,23 +41,46 @@ export const Navbar: React.FC = () => {
 
   return (
     <>
-      <header
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? "bg-[#EEBA2B]/95 backdrop-blur-md shadow-soft-lg border-b border-[#D9A51B]/90 py-1"
-            : "bg-[#EEBA2B] backdrop-blur-sm border-b border-[#D9A51B]/60 shadow-soft-sm py-0"
-        }`}
-      >
+      {/* Floating Logo Only - Follows when user scrolls down */}
+      <AnimatePresence>
+        {scrolled && (
+          <motion.a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            initial={{ opacity: 0, y: -25, scale: 0.85 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -25, scale: 0.85 }}
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="fixed top-3.5 left-3.5 sm:top-4 sm:left-6 z-50 bg-white/95 backdrop-blur-md p-1.5 sm:p-2 rounded-2xl border border-slate-200/90 shadow-soft-xl flex items-center gap-2 group cursor-pointer"
+            aria-label="CV. Keel Mulia Jasa - Kembali ke Atas"
+            title="Klik untuk kembali ke atas"
+          >
+            <img
+              src="/images/logo-clean.png"
+              alt="Logo CV. Keel Mulia Jasa"
+              className="h-8 sm:h-9 w-auto object-contain"
+            />
+          </motion.a>
+        )}
+      </AnimatePresence>
+
+      {/* Main Navbar - Non-sticky (Scrolls away naturally) */}
+      <header className="relative z-30 bg-[#EEBA2B] border-b border-[#D9A51B]/70 shadow-soft-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? "h-16 sm:h-17" : "h-18 sm:h-20"}`}>
+          <div className="flex items-center justify-between h-18 sm:h-20">
             
-            {/* Brand Logo - Sticky Always Follows */}
+            {/* Brand Logo in Navbar */}
             <a href="#" className="flex items-center gap-3 group shrink-0">
               <div className="bg-white p-1.5 sm:p-2 rounded-2xl border border-white/60 shadow-soft-sm transition-all duration-300 group-hover:scale-105 group-hover:shadow-soft-md">
                 <img
                   src="/images/logo-clean.png"
                   alt="Logo CV. Keel Mulia Jasa"
-                  className={`w-auto object-contain transition-all duration-300 ${scrolled ? "h-8 sm:h-9" : "h-9 sm:h-11"}`}
+                  className="h-9 sm:h-11 w-auto object-contain"
                 />
               </div>
             </a>
