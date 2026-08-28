@@ -50,20 +50,20 @@ export const Navbar: React.FC = () => {
               e.preventDefault();
               window.scrollTo({ top: 0, behavior: "smooth" });
             }}
-            initial={{ opacity: 0, y: -25, scale: 0.85 }}
+            initial={{ opacity: 0, y: -20, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -25, scale: 0.85 }}
-            transition={{ duration: 0.25, ease: "easeOut" }}
-            whileHover={{ scale: 1.08 }}
+            exit={{ opacity: 0, y: -20, scale: 0.9 }}
+            transition={{ duration: 0.22, ease: "easeOut" }}
+            whileHover={{ scale: 1.06 }}
             whileTap={{ scale: 0.95 }}
-            className="fixed top-3 left-3 sm:top-5 sm:left-6 z-50 bg-transparent p-0 border-0 shadow-none flex items-center group cursor-pointer select-none"
+            className="fixed top-2.5 left-2.5 sm:top-4 sm:left-5 md:top-5 md:left-6 z-50 bg-transparent p-0 border-0 shadow-none flex items-center group cursor-pointer select-none"
             aria-label="CV. Keel Mulia Jasa - Kembali ke Atas"
             title="Klik untuk kembali ke atas"
           >
             <img
               src="/images/logo-clean.png"
               alt="Logo CV. Keel Mulia Jasa"
-              className="h-20 sm:h-24 lg:h-28 w-auto object-contain transition-transform duration-200 group-hover:scale-105 filter drop-shadow-[0_6px_20px_rgba(0,0,0,0.55)] drop-shadow-[0_0_3px_rgba(255,255,255,0.95)]"
+              className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto max-w-[125px] sm:max-w-[160px] md:max-w-[190px] lg:max-w-[220px] object-contain transition-transform duration-200 group-hover:scale-105 filter drop-shadow-[0_3px_10px_rgba(0,0,0,0.45)] drop-shadow-[0_0_2px_rgba(255,255,255,0.9)]"
             />
           </motion.a>
         )}
@@ -72,7 +72,7 @@ export const Navbar: React.FC = () => {
       {/* Main Navbar - Non-sticky (Scrolls away naturally) */}
       <header className="relative z-30 bg-[#EEBA2B] border-b border-[#D9A51B]/70 shadow-soft-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-18 sm:h-20">
+          <div className="flex items-center justify-between h-16 sm:h-20">
             
             {/* Brand Logo in Navbar */}
             <a href="#" className="flex items-center gap-3 group shrink-0">
@@ -80,7 +80,7 @@ export const Navbar: React.FC = () => {
                 <img
                   src="/images/logo-clean.png"
                   alt="Logo CV. Keel Mulia Jasa"
-                  className="h-11 sm:h-13 w-auto object-contain drop-shadow-sm"
+                  className="h-9 sm:h-11 md:h-12 w-auto object-contain drop-shadow-sm"
                 />
               </div>
             </a>
