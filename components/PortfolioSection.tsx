@@ -30,7 +30,7 @@ export const PortfolioSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-[#38B6FF] border-b border-white/20" id="portofolio">
+    <section className="py-20 sm:py-28 bg-transparent border-b border-white/20" id="portofolio">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

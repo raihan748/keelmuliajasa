@@ -4,7 +4,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const CtaBanner: React.FC = () => {
   return (
-    <section className="py-20 sm:py-28 bg-[#38B6FF] text-center relative overflow-hidden border-b border-white/20">
+    <section className="py-20 sm:py-28 bg-transparent text-center relative overflow-hidden border-b border-white/20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <ScrollReveal direction="zoom">

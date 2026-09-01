@@ -4,7 +4,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const AboutCompany: React.FC = () => {
   return (
-    <section className="py-20 sm:py-28 bg-[#38B6FF] border-b border-white/20" id="tentang-kami">
+    <section className="py-20 sm:py-28 bg-transparent border-b border-white/20" id="tentang-kami">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-14 items-center">

@@ -39,7 +39,7 @@ export const CalculatorSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 sm:py-28 bg-[#38B6FF] text-slate-900 relative border-b border-white/20" id="kalkulator">
+    <section className="py-20 sm:py-28 bg-transparent text-slate-900 relative border-b border-white/20" id="kalkulator">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-16">
         
         {/* Header */}

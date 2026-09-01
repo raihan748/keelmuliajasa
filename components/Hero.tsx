@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative pt-8 pb-16 sm:pt-16 sm:pb-24 lg:pt-20 lg:pb-32 overflow-hidden bg-[#38B6FF] text-slate-900" id="hero">
+    <section className="relative pt-8 pb-16 sm:pt-16 sm:pb-24 lg:pt-20 lg:pb-32 overflow-hidden bg-transparent text-slate-900" id="hero">
       
       {/* Soft Ambient Light Glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[450px] bg-white/20 blur-3xl pointer-events-none -z-10" />

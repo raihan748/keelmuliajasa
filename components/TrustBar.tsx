@@ -34,7 +34,7 @@ export const TrustBar: React.FC = () => {
   ];
 
   return (
-    <section className="py-14 sm:py-18 bg-[#38B6FF] border-b border-white/20 relative overflow-hidden">
+    <section className="py-14 sm:py-18 bg-transparent border-b border-white/20 relative overflow-hidden">
       {/* Ambient background silhouette accent */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-7xl h-48 bg-white/20 blur-3xl pointer-events-none -z-10" />
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { FluidWavyBackground } from "@/components/FluidWavyBackground";
 import { ScrollProgress } from "@/components/ScrollProgress";
 import { ScrollHUD } from "@/components/ScrollHUD";
 import { StickyBottomAction } from "@/components/StickyBottomAction";
@@ -26,6 +27,9 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 export default function HomePage() {
   return (
     <main className="min-h-screen flex flex-col bg-[#38B6FF] text-slate-900 selection:bg-brand-100 selection:text-brand-900 relative overflow-x-clip">
+      {/* Dynamic Fluid Wavy Layered Background with Halftone Accents */}
+      <FluidWavyBackground />
+
       {/* Scroll Progress Bar at very top */}
       <ScrollProgress />
       

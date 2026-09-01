@@ -32,7 +32,7 @@ export const PosterSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-[#38B6FF] border-b border-white/20 relative overflow-hidden" id="poster-resmi">
+    <section className="py-20 sm:py-28 bg-transparent border-b border-white/20 relative overflow-hidden" id="poster-resmi">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="max-w-3xl mx-auto text-center mb-16">

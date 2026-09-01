@@ -39,7 +39,7 @@ export const FaqSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20 sm:py-28 bg-[#38B6FF] border-b border-white/20" id="faq">
+    <section className="py-20 sm:py-28 bg-transparent border-b border-white/20" id="faq">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <ScrollReveal direction="down">

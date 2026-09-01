@@ -83,7 +83,7 @@ export const ClientsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 sm:py-28 bg-[#38B6FF] border-b border-white/20" id="klien-kami">
+    <section className="py-20 sm:py-28 bg-transparent border-b border-white/20" id="klien-kami">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
