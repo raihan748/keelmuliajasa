@@ -48,10 +48,10 @@ export const CalculatorSection: React.FC = () => {
             <Calculator className="w-3.5 h-3.5 text-blue-600" />
             <span>Estimator & Simulasi Cepat</span>
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight mt-3 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
             Simulasi Kebutuhan Unit & Permintaan Penawaran
           </h2>
-          <p className="text-base sm:text-lg text-slate-950 font-medium leading-relaxed">
+          <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
             Gunakan simulator visual di bawah untuk menentukan jenis armada yang sesuai dengan volume muatan Anda, lalu kirimkan detail pesanan langsung ke tim operasional kami.
           </p>
         </div>

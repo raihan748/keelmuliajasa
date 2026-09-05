@@ -40,10 +40,10 @@ export const PosterSection: React.FC = () => {
             <FileImage className="w-3.5 h-3.5 text-blue-600" />
             <span>Informasi & Brosur Layanan</span>
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-950 tracking-tight mt-3 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
             Jasa Angkut Sampah Perumahan & Komersial
           </h2>
-          <p className="text-base sm:text-lg text-slate-950 font-medium leading-relaxed">
+          <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
             Solusi praktis dan profesional untuk masalah sampah di rumah, kantor, sekolah, dan pabrik di area Makassar, Gowa, dan Maros.
           </p>
         </div>

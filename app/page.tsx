@@ -26,7 +26,7 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen flex flex-col bg-[#38B6FF] text-slate-900 selection:bg-brand-100 selection:text-brand-900 relative overflow-x-clip">
+    <main className="min-h-screen flex flex-col bg-transparent text-slate-900 selection:bg-brand-100 selection:text-brand-900 relative overflow-x-clip">
       {/* Dynamic Fluid Wavy Layered Background with Halftone Accents */}
       <FluidWavyBackground />
 

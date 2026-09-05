@@ -93,10 +93,10 @@ export const ClientsSection: React.FC = () => {
               <Star className="w-3.5 h-3.5 text-blue-600" />
               <span>Mitra & Klien Terverifikasi</span>
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-950 tracking-tight mt-3 mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
               Dipercaya Sekolah, Hunian, Perumahan & Industri
             </h2>
-            <p className="text-base sm:text-lg text-slate-950 font-medium leading-relaxed">
+            <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
               Bukti nyata kepercayaan berbagai institusi ternama di Sulawesi Selatan terhadap kualitas dan integritas layanan CV. Keel Mulia Jasa.
             </p>
           </div>

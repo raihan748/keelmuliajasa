@@ -60,10 +60,10 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-950 tracking-tight leading-[1.15] sm:leading-[1.1]"
+              className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-md tracking-tight leading-[1.15] sm:leading-[1.1]"
             >
               Solusi Bersih & Cepat untuk Angkutan{" "}
-              <span className="text-white drop-shadow-sm relative inline-block">
+              <span className="text-[#EEBA2B] drop-shadow-sm relative inline-block">
                 Sampah & Puing
               </span>
             </motion.h1>
@@ -73,10 +73,10 @@ export const Hero: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-base sm:text-lg text-slate-950 font-medium leading-relaxed max-w-2xl"
+              className="text-base sm:text-lg text-white/90 font-medium leading-relaxed max-w-2xl drop-shadow-sm"
             >
               Layanan profesional pengangkutan sisa renovasi bangunan, sampah komersial ruko/restoran, residensial perumahan, penebangan pohon, hingga pembersihan lahan kosong di{" "}
-              <strong className="text-slate-950 font-bold underline decoration-white/60">Makassar, Gowa, dan Maros</strong>.
+              <strong className="text-white font-bold underline decoration-[#EEBA2B]">Makassar, Gowa, dan Maros</strong>.
             </motion.p>
 
             {/* Trust Checklist Badges */}
