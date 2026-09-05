@@ -41,46 +41,35 @@ export const Navbar: React.FC = () => {
 
   return (
     <>
-      {/* Floating Logo Only - Follows when user scrolls down */}
-      <AnimatePresence>
-        {scrolled && (
-          <motion.a
-            href="#"
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
-            initial={{ opacity: 0, y: -20, scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -20, scale: 0.9 }}
-            transition={{ duration: 0.22, ease: "easeOut" }}
-            whileHover={{ scale: 1.06 }}
-            whileTap={{ scale: 0.95 }}
-            className="fixed top-2.5 left-2.5 sm:top-4 sm:left-5 md:top-5 md:left-6 z-50 bg-transparent p-0 border-0 shadow-none flex items-center group cursor-pointer select-none"
-            aria-label="CV. Keel Mulia Jasa - Kembali ke Atas"
-            title="Klik untuk kembali ke atas"
-          >
-            <img
-              src="/images/logo-clean.png"
-              alt="Logo CV. Keel Mulia Jasa"
-              className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto max-w-[125px] sm:max-w-[160px] md:max-w-[190px] lg:max-w-[220px] object-contain transition-transform duration-200 group-hover:scale-105 filter drop-shadow-[0_3px_10px_rgba(0,0,0,0.45)] drop-shadow-[0_0_2px_rgba(255,255,255,0.9)]"
-            />
-          </motion.a>
-        )}
-      </AnimatePresence>
-
-      {/* Main Navbar - Non-sticky (Scrolls away naturally) */}
-      <header className="relative z-30 bg-[#EEBA2B] border-b border-[#D9A51B]/70 shadow-soft-sm">
+      {/* Sticky Golden Navbar */}
+      <header
+        className={`sticky top-0 z-40 bg-[#EEBA2B] border-b border-[#D9A51B]/80 transition-all duration-200 ${
+          scrolled ? "shadow-md py-1" : "shadow-soft-sm py-2"
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 sm:h-20">
+          <div className="flex items-center justify-between h-16 sm:h-18">
             
             {/* Brand Logo in Navbar */}
-            <a href="#" className="flex items-center gap-3 group shrink-0">
+            <a
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }}
+              className="flex items-center gap-3 group shrink-0"
+              aria-label="CV. Keel Mulia Jasa - Kembali ke Atas"
+              title="CV. Keel Mulia Jasa"
+            >
               <div className="bg-transparent p-0 border-0 shadow-none transition-all duration-300 group-hover:scale-105">
                 <img
                   src="/images/logo-clean.png"
                   alt="Logo CV. Keel Mulia Jasa"
-                  className="h-9 sm:h-11 md:h-12 w-auto object-contain drop-shadow-sm"
+                  className={`${
+                    scrolled
+                      ? "h-11 sm:h-12 md:h-14 max-w-[155px] sm:max-w-[195px] md:max-w-[235px]"
+                      : "h-10 sm:h-11 md:h-12 max-w-[140px] sm:max-w-[180px] md:max-w-[210px]"
+                  } w-auto object-contain transition-all duration-200 drop-shadow-sm`}
                 />
               </div>
             </a>

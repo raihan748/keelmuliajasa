@@ -46,7 +46,7 @@ export const Hero: React.FC = () => {
             
             {/* Top Pill Badge */}
             <motion.div
-              initial={{ opacity: 0, y: -10 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4 }}
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold"
@@ -57,7 +57,7 @@ export const Hero: React.FC = () => {
 
             {/* Main Headline */}
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-md tracking-tight leading-[1.15] sm:leading-[1.1]"
@@ -70,7 +70,7 @@ export const Hero: React.FC = () => {
 
             {/* Description */}
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-base sm:text-lg text-white/90 font-medium leading-relaxed max-w-2xl drop-shadow-sm"
@@ -81,7 +81,7 @@ export const Hero: React.FC = () => {
 
             {/* Trust Checklist Badges */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.25 }}
               className="grid grid-cols-1 xs:grid-cols-3 gap-3 pt-1"
@@ -102,7 +102,7 @@ export const Hero: React.FC = () => {
 
             {/* CTA Buttons */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={false}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-3 pt-2"
@@ -162,7 +162,7 @@ export const Hero: React.FC = () => {
           {/* Right Column: Clean Booking Card */}
           <div className="lg:col-span-5">
             <motion.div
-              initial={{ opacity: 0, scale: 0.96 }}
+              initial={false}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
               className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 shadow-soft-lg relative"

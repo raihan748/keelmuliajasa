@@ -51,13 +51,7 @@ export const PosterSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           
           {/* Left: Brosur Image Frame with Zoom Overlay */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="lg:col-span-5 flex justify-center"
-          >
+          <div className="lg:col-span-5 flex justify-center">
             <div className="relative group cursor-pointer" onClick={() => setModalOpen(true)}>
               
               <div className="bg-white p-3 rounded-3xl border border-slate-200/80 shadow-soft-lg group-hover:shadow-soft-xl group-hover:-translate-y-1 transition-all duration-300">
@@ -77,16 +71,10 @@ export const PosterSection: React.FC = () => {
               </div>
 
             </div>
-          </motion.div>
+          </div>
 
           {/* Right: Content Breakdown */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="lg:col-span-7"
-          >
+          <div className="lg:col-span-7">
             
             <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-9 shadow-soft-lg text-slate-900">
               
@@ -172,7 +160,7 @@ export const PosterSection: React.FC = () => {
 
             </div>
 
-          </motion.div>
+          </div>
 
         </div>
 
