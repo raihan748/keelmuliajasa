@@ -120,49 +120,43 @@ export const ServicesSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <ScrollReveal direction="down">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
-              <Sparkles className="w-3.5 h-3.5 text-blue-600" />
-              <span>Layanan Komprehensif</span>
-            </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
-              Solusi Pengangkutan Sampah & Kebersihan Terpadu
-            </h2>
-            <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
-              Pilihan layanan lengkap dengan armada mandiri, tenaga loader terlatih, dan jaminan pembuangan langsung ke Tempat Pemrosesan Akhir (TPA).
-            </p>
-          </div>
-        </ScrollReveal>
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+            <Sparkles className="w-3.5 h-3.5 text-blue-600" />
+            <span>Layanan Komprehensif</span>
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
+            Solusi Pengangkutan Sampah & Kebersihan Terpadu
+          </h2>
+          <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
+            Pilihan layanan lengkap dengan armada mandiri, tenaga loader terlatih, dan jaminan pembuangan langsung ke Tempat Pemrosesan Akhir (TPA).
+          </p>
+        </div>
 
         {/* Filter Pills */}
-        <ScrollReveal direction="zoom" delay={0.1}>
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-14">
-            {categories.map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => setActiveCategory(cat.id)}
-                className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
-                  activeCategory === cat.id
-                    ? "bg-slate-950 text-white shadow-soft-md scale-105"
-                    : "bg-white text-slate-800 hover:bg-slate-50 border border-white shadow-soft-xs"
-                }`}
-              >
-                {cat.label}
-              </button>
-            ))}
-          </div>
-        </ScrollReveal>
+        <div className="flex flex-wrap items-center justify-center gap-2 mb-14">
+          {categories.map((cat) => (
+            <button
+              key={cat.id}
+              onClick={() => setActiveCategory(cat.id)}
+              className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold transition-all duration-200 cursor-pointer ${
+                activeCategory === cat.id
+                  ? "bg-slate-950 text-white shadow-soft-md scale-105"
+                  : "bg-white text-slate-800 hover:bg-slate-50 border border-white shadow-soft-xs"
+              }`}
+            >
+              {cat.label}
+            </button>
+          ))}
+        </div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {filteredServices.map((item, idx) => {
             const Icon = item.icon;
-            const direction = idx % 2 === 0 ? "left" : "right";
-            const delay = (idx % 4) * 0.1;
 
             return (
-              <ScrollReveal key={idx} direction={direction} delay={delay} className="h-full">
+              <div key={idx} className="h-full">
                 <div className="h-full bg-white border border-slate-200/80 rounded-3xl p-6 shadow-soft-xs hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
                   <div>
                     <div className="flex items-center justify-between mb-4">
@@ -203,13 +197,13 @@ export const ServicesSection: React.FC = () => {
                     </a>
                   </div>
                 </div>
-              </ScrollReveal>
+              </div>
             );
           })}
         </div>
 
         {/* Bottom Banner Note */}
-        <ScrollReveal direction="up" delay={0.2} className="mt-14">
+        <div className="mt-14">
           <div className="p-6 sm:p-8 rounded-3xl bg-slate-50 border border-slate-200/80 shadow-soft-xs flex flex-col sm:flex-row items-center justify-between gap-6">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 border border-brand-100">
@@ -231,7 +225,7 @@ export const ServicesSection: React.FC = () => {
               <ArrowRight className="w-4 h-4" />
             </a>
           </div>
-        </ScrollReveal>
+        </div>
 
       </div>
     </section>

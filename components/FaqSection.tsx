@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { ChevronDown, HelpCircle } from "lucide-react";
-import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const FaqSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -42,20 +41,19 @@ export const FaqSection: React.FC = () => {
     <section className="py-20 sm:py-28 bg-transparent border-b border-white/20" id="faq">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <ScrollReveal direction="down">
-          <div className="text-center mb-16">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
-              <HelpCircle className="w-3.5 h-3.5 text-blue-600" />
-              <span>Tanya Jawab (FAQ)</span>
-            </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
-              Pertanyaan yang Sering Diajukan
-            </h2>
-            <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
-              Informasi lengkap seputar mekanisme layanan pengangkutan dan pengelolaan sampah kami.
-            </p>
-          </div>
-        </ScrollReveal>
+        {/* Header */}
+        <div className="text-center mb-16">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+            <HelpCircle className="w-3.5 h-3.5 text-blue-600" />
+            <span>Tanya Jawab (FAQ)</span>
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
+            Pertanyaan yang Sering Diajukan
+          </h2>
+          <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
+            Informasi lengkap seputar mekanisme layanan pengangkutan dan pengelolaan sampah kami.
+          </p>
+        </div>
 
         <div className="space-y-4">
           {faqs.map((item, idx) => {

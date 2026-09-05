@@ -1,6 +1,5 @@
 import React from "react";
 import { CheckCircle2, ShieldCheck, Clock, Coins, Users, Truck, Sparkles } from "lucide-react";
-import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const WhyChooseUs: React.FC = () => {
   const reasons = [
@@ -53,27 +52,25 @@ export const WhyChooseUs: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <ScrollReveal direction="down">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
-              <Sparkles className="w-3.5 h-3.5 text-blue-600" />
-              <span>Mengapa Memilih Kami</span>
-            </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
-              Standar Tertinggi untuk Kebersihan Properti Anda
-            </h2>
-            <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
-              Kami tidak sekadar mengangkut sampah, kami memberikan kepastian ketertiban lingkungan dan kenyamanan tanpa repot.
-            </p>
-          </div>
-        </ScrollReveal>
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+            <Sparkles className="w-3.5 h-3.5 text-blue-600" />
+            <span>Mengapa Memilih Kami</span>
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
+            Standar Tertinggi untuk Kebersihan Properti Anda
+          </h2>
+          <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
+            Kami tidak sekadar mengangkut sampah, kami memberikan kepastian ketertiban lingkungan dan kenyamanan tanpa repot.
+          </p>
+        </div>
 
         {/* 6 Grid Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {reasons.map((r, idx) => {
             const Icon = r.icon;
             return (
-              <ScrollReveal key={idx} direction={r.dir} delay={(idx % 3) * 0.1} className="h-full">
+              <div key={idx} className="h-full">
                 <div className="h-full bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-7 shadow-soft-xs hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
                   <div>
                     <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-5 ${r.color}`}>
@@ -87,7 +84,7 @@ export const WhyChooseUs: React.FC = () => {
                     </p>
                   </div>
                 </div>
-              </ScrollReveal>
+              </div>
             );
           })}
         </div>

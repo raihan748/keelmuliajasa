@@ -1,6 +1,5 @@
 import React from "react";
 import { MessageSquareText, FileText, Truck, CheckCircle2 } from "lucide-react";
-import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const HowItWorks: React.FC = () => {
   const steps = [
@@ -42,26 +41,25 @@ export const HowItWorks: React.FC = () => {
     <section className="py-20 sm:py-28 bg-transparent border-b border-white/20" id="alur-kerja">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <ScrollReveal direction="down">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
-              <CheckCircle2 className="w-3.5 h-3.5 text-blue-600" />
-              <span>SOP & Alur Pelayanan</span>
-            </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
-              4 Langkah Mudah Menggunakan Jasa Kami
-            </h2>
-            <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
-              Proses cepat, transparan, dan Anda tidak perlu repot mengangkat material berat sendiri.
-            </p>
-          </div>
-        </ScrollReveal>
+        {/* Header */}
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+            <CheckCircle2 className="w-3.5 h-3.5 text-blue-600" />
+            <span>SOP & Alur Pelayanan</span>
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
+            4 Langkah Mudah Menggunakan Jasa Kami
+          </h2>
+          <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
+            Proses cepat, transparan, dan Anda tidak perlu repot mengangkat material berat sendiri.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, idx) => {
             const Icon = step.icon;
             return (
-              <ScrollReveal key={idx} direction="up" delay={idx * 0.1} className="h-full">
+              <div key={idx} className="h-full">
                 <div
                   className="h-full bg-white border border-slate-200/80 rounded-3xl p-7 text-center relative hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center justify-between shadow-soft-xs"
                 >
@@ -87,7 +85,7 @@ export const HowItWorks: React.FC = () => {
                     </p>
                   </div>
                 </div>
-              </ScrollReveal>
+              </div>
             );
           })}
         </div>

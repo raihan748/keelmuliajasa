@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { Building2, CheckCircle2, ShieldCheck, Star, ZoomIn, X } from "lucide-react";
-import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const ClientsSection: React.FC = () => {
   const [selectedBanner, setSelectedBanner] = useState<string | null>(null);
@@ -87,23 +86,21 @@ export const ClientsSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <ScrollReveal direction="down">
-          <div className="max-w-3xl mx-auto text-center mb-14">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
-              <Star className="w-3.5 h-3.5 text-blue-600" />
-              <span>Mitra & Klien Terverifikasi</span>
-            </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
-              Dipercaya Sekolah, Hunian, Perumahan & Industri
-            </h2>
-            <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
-              Bukti nyata kepercayaan berbagai institusi ternama di Sulawesi Selatan terhadap kualitas dan integritas layanan CV. Keel Mulia Jasa.
-            </p>
-          </div>
-        </ScrollReveal>
+        <div className="max-w-3xl mx-auto text-center mb-14">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+            <Star className="w-3.5 h-3.5 text-blue-600" />
+            <span>Mitra & Klien Terverifikasi</span>
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
+            Dipercaya Sekolah, Hunian, Perumahan & Industri
+          </h2>
+          <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
+            Bukti nyata kepercayaan berbagai institusi ternama di Sulawesi Selatan terhadap kualitas dan integritas layanan CV. Keel Mulia Jasa.
+          </p>
+        </div>
 
         {/* Official Client Logos Showcase Banner */}
-        <ScrollReveal direction="up" className="mb-14">
+        <div className="mb-14">
           <div className="bg-white border border-slate-200/80 rounded-3xl p-5 sm:p-7 shadow-soft-md">
             <div className="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
               <span className="text-xs font-bold text-slate-900 uppercase tracking-wide">Customer & Rekanan Klien Resmi</span>
@@ -126,12 +123,12 @@ export const ClientsSection: React.FC = () => {
               </div>
             </div>
           </div>
-        </ScrollReveal>
+        </div>
 
         {/* Client Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {verifiedClients.map((client, idx) => (
-            <ScrollReveal key={idx} direction={client.dir} delay={(idx % 3) * 0.1} className="h-full">
+            <div key={idx} className="h-full">
               <div className="h-full bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-7 shadow-soft-xs hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
                 <div>
                   <div className="flex items-center justify-between mb-4">
@@ -160,7 +157,7 @@ export const ClientsSection: React.FC = () => {
                   <span>Klien Terverifikasi & Rekanan Aktif</span>
                 </div>
               </div>
-            </ScrollReveal>
+            </div>
           ))}
         </div>
 

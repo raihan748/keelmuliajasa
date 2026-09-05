@@ -1,6 +1,5 @@
 import React from "react";
 import { MapPin, Building, Landmark, Factory, Compass } from "lucide-react";
-import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const CoverageSection: React.FC = () => {
   const areas = [
@@ -44,27 +43,25 @@ export const CoverageSection: React.FC = () => {
   return (
     <section className="py-20 sm:py-28 bg-transparent border-b border-white/20" id="area-layanan">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <ScrollReveal direction="down">
-          <div className="max-w-3xl mx-auto text-center mb-16">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
-              <MapPin className="w-3.5 h-3.5 text-blue-600" />
-              <span>Jangkauan Operasional</span>
-            </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
-              Wilayah Jangkauan Armada CV. Keel Mulia Jasa
-            </h2>
-            <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
-              Armada kami tersebar strategis di titik-titik utama untuk memastikan waktu tempuh tercepat menuju lokasi Anda.
-            </p>
-          </div>
-        </ScrollReveal>
+        {/* Header */}
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+            <MapPin className="w-3.5 h-3.5 text-blue-600" />
+            <span>Jangkauan Operasional</span>
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
+            Wilayah Jangkauan Armada CV. Keel Mulia Jasa
+          </h2>
+          <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
+            Armada kami tersebar strategis di titik-titik utama untuk memastikan waktu tempuh tercepat menuju lokasi Anda.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5">
           {areas.map((area, idx) => {
             const Icon = area.icon;
             return (
-              <ScrollReveal key={idx} direction="up" delay={idx * 0.08} className="h-full">
+              <div key={idx} className="h-full">
                 <div
                   className="h-full bg-white border border-slate-200/80 rounded-3xl p-6 text-center shadow-soft-xs hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
                 >
@@ -82,7 +79,7 @@ export const CoverageSection: React.FC = () => {
                     <p className="text-xs text-slate-600 font-normal leading-relaxed">{area.coverage}</p>
                   </div>
                 </div>
-              </ScrollReveal>
+              </div>
             );
           })}
         </div>

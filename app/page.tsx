@@ -24,6 +24,9 @@ import { CtaBanner } from "@/components/CtaBanner";
 import { Footer } from "@/components/Footer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 export default function HomePage() {
   return (
     <main className="min-h-screen flex flex-col bg-transparent text-slate-900 selection:bg-brand-100 selection:text-brand-900 relative overflow-x-clip">

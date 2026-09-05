@@ -73,21 +73,15 @@ export const InteractiveBeforeAfter: React.FC<InteractiveBeforeAfterProps> = ({
           </span>
         </div>
 
-        {/* BEFORE Image (Clipped Overlay) */}
+        {/* BEFORE Image (Clipped with native GPU clip-path) */}
         <div
-          className="absolute inset-0 overflow-hidden pointer-events-none"
-          style={{ width: `${sliderPosition}%` }}
+          className="absolute inset-0 pointer-events-none"
+          style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
         >
           <img
             src={beforeImage}
             alt="Sebelum Pengerjaan"
-            className="absolute inset-0 w-full h-full object-cover max-w-none pointer-events-none"
-            style={{
-              width: containerRef.current
-                ? `${containerRef.current.clientWidth}px`
-                : "100%",
-              height: "100%",
-            }}
+            className="absolute inset-0 w-full h-full object-cover pointer-events-none"
           />
 
           {/* BEFORE Label Sticker */}

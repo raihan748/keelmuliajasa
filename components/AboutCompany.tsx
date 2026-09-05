@@ -1,6 +1,5 @@
 import React from "react";
 import { CheckCircle2, Building, ShieldCheck, Truck, Sparkles } from "lucide-react";
-import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const AboutCompany: React.FC = () => {
   return (
@@ -8,26 +7,24 @@ export const AboutCompany: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <ScrollReveal direction="down">
-          <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-14">
-            <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
-              <Building className="w-3.5 h-3.5 text-blue-600" />
-              <span>Profil Resmi Perusahaan</span>
-            </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
-              Mengenal CV. Keel Mulia Jasa
-            </h2>
-            <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
-              Mitra resmi pengelolaan dan pengangkutan sampah terpadu dengan armada mandiri, tenaga terlatih K3, dan legalitas berizin di Sulawesi Selatan.
-            </p>
-          </div>
-        </ScrollReveal>
+        <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-14">
+          <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
+            <Building className="w-3.5 h-3.5 text-blue-600" />
+            <span>Profil Resmi Perusahaan</span>
+          </span>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white drop-shadow-sm tracking-tight mt-3 mb-4">
+            Mengenal CV. Keel Mulia Jasa
+          </h2>
+          <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed">
+            Mitra resmi pengelolaan dan pengangkutan sampah terpadu dengan armada mandiri, tenaga terlatih K3, dan legalitas berizin di Sulawesi Selatan.
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
           
           {/* Left Column: Story & Official Company Profile */}
           <div className="lg:col-span-7 flex flex-col">
-            <ScrollReveal direction="up" distance={20} className="h-full">
+            <div className="h-full">
               <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 shadow-soft-lg h-full flex flex-col justify-between space-y-6">
                 
                 <div>
@@ -93,12 +90,12 @@ export const AboutCompany: React.FC = () => {
                 </div>
 
               </div>
-            </ScrollReveal>
+            </div>
           </div>
 
           {/* Right Column: Visual Badges & Operation Photo */}
           <div className="lg:col-span-5 flex flex-col">
-            <ScrollReveal direction="up" distance={20} delay={0.1} className="h-full">
+            <div className="h-full">
               <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 shadow-soft-lg h-full flex flex-col justify-between relative">
                 
                 <div>
@@ -152,7 +149,7 @@ export const AboutCompany: React.FC = () => {
                 </div>
 
               </div>
-            </ScrollReveal>
+            </div>
           </div>
 
         </div>
