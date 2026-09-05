@@ -1,5 +1,5 @@
 import React from "react";
-import { Truck, CheckCircle2, ShieldCheck, MessageCircle } from "lucide-react";
+import { Truck, CheckCircle2, ShieldCheck, MessageCircle, Scale } from "lucide-react";
 
 export const FleetSection: React.FC = () => {
   const fleetData = [
@@ -112,7 +112,7 @@ export const FleetSection: React.FC = () => {
                       alt={fleet.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <span className={`absolute top-4 right-4 text-xs font-semibold px-3 py-1 rounded-full shadow-soft-xs ${fleet.tagColor}`}>
+                    <span className={`absolute top-4 right-4 text-xs font-semibold px-3 py-1 rounded-full shadow-soft-xs ${fleet.badgeColor}`}>
                       {fleet.tag}
                     </span>
                   </div>
@@ -126,12 +126,12 @@ export const FleetSection: React.FC = () => {
                     </div>
 
                     <div className="inline-block bg-slate-50 border border-slate-200/80 text-brand-700 text-xs font-bold px-3 py-1 rounded-xl mb-4">
-                      {fleet.capacity}
+                      {fleet.specs}
                     </div>
 
                     <p className="text-xs text-slate-600 font-normal mb-5 leading-relaxed">
                       <strong className="text-slate-800 font-semibold">Muatan: </strong>
-                      {fleet.suitable}
+                      {fleet.loadType}
                     </p>
 
                     <div className="space-y-2.5 pt-4 border-t border-slate-100">
@@ -147,7 +147,7 @@ export const FleetSection: React.FC = () => {
 
                 <div className="p-6 sm:p-7 pt-0">
                   <a
-                    href={`https://wa.me/6282396193473?text=${encodeURIComponent(fleet.waText)}`}
+                    href={`https://wa.me/6282396193473?text=${encodeURIComponent(`Halo CV Keel Mulia Jasa, saya ingin booking unit ${fleet.name}`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs transition-all shadow-soft-xs hover:shadow-soft-sm"
