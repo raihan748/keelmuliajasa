@@ -60,7 +60,7 @@ export const PosterSection: React.FC = () => {
           >
             <div className="relative group cursor-pointer" onClick={() => setModalOpen(true)}>
               
-              <div className="bg-slate-50 p-3 rounded-3xl border border-slate-200/80 shadow-soft-md group-hover:shadow-soft-xl group-hover:-translate-y-1 transition-all duration-300">
+              <div className="bg-white p-3 rounded-3xl border border-slate-200/80 shadow-soft-lg group-hover:shadow-soft-xl group-hover:-translate-y-1 transition-all duration-300">
                 <img
                   src="/images/poster-keelmuliajasa.png"
                   alt="Brosur Resmi Layanan CV. Keel Mulia Jasa"
@@ -88,7 +88,7 @@ export const PosterSection: React.FC = () => {
             className="lg:col-span-7"
           >
             
-            <div className="bg-slate-50/70 border border-slate-200/80 rounded-3xl p-6 sm:p-9 shadow-soft-sm text-slate-900">
+            <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-9 shadow-soft-lg text-slate-900">
               
               <div className="flex items-center gap-2.5 mb-3">
                 <span className="bg-brand-50 text-brand-700 font-semibold text-xs px-3 py-1 rounded-full border border-brand-200/60">

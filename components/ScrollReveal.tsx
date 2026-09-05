@@ -17,22 +17,22 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
   children,
   direction = "up",
   delay = 0,
-  duration = 0.5,
+  duration = 0.45,
   className = "",
-  distance = 50,
+  distance = 25,
   once = true,
 }) => {
   const getVariants = () => {
     switch (direction) {
       case "left":
         return {
-          hidden: { opacity: 0, x: -distance, rotate: -1.5 },
-          visible: { opacity: 1, x: 0, rotate: 0 },
+          hidden: { opacity: 0, x: -distance },
+          visible: { opacity: 1, x: 0 },
         };
       case "right":
         return {
-          hidden: { opacity: 0, x: distance, rotate: 1.5 },
-          visible: { opacity: 1, x: 0, rotate: 0 },
+          hidden: { opacity: 0, x: distance },
+          visible: { opacity: 1, x: 0 },
         };
       case "down":
         return {
@@ -41,18 +41,18 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
         };
       case "zoom":
         return {
-          hidden: { opacity: 0, scale: 0.88, rotate: -1 },
-          visible: { opacity: 1, scale: 1, rotate: 0 },
+          hidden: { opacity: 0, scale: 0.95 },
+          visible: { opacity: 1, scale: 1 },
         };
       case "diagonal-left":
         return {
-          hidden: { opacity: 0, x: -distance, y: distance * 0.6, rotate: -2 },
-          visible: { opacity: 1, x: 0, y: 0, rotate: 0 },
+          hidden: { opacity: 0, x: -distance, y: distance * 0.5 },
+          visible: { opacity: 1, x: 0, y: 0 },
         };
       case "diagonal-right":
         return {
-          hidden: { opacity: 0, x: distance, y: distance * 0.6, rotate: 2 },
-          visible: { opacity: 1, x: 0, y: 0, rotate: 0 },
+          hidden: { opacity: 0, x: distance, y: distance * 0.5 },
+          visible: { opacity: 1, x: 0, y: 0 },
         };
       case "up":
       default:
@@ -68,13 +68,11 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
       variants={getVariants()}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once, margin: "-60px" }}
+      viewport={{ once, margin: "40px 0px -20px 0px", amount: 0.05 }}
       transition={{
         duration,
         delay,
-        type: "spring",
-        stiffness: 180,
-        damping: 18,
+        ease: [0.25, 0.1, 0.25, 1],
       }}
       className={className}
     >
