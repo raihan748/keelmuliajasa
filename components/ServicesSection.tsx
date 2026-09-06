@@ -14,7 +14,6 @@ import {
   CalendarCheck,
   MessageCircle,
 } from "lucide-react";
-import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const ServicesSection: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>("all");

@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import {
   MessageCircle,
   Truck,
@@ -45,47 +44,27 @@ export const Hero: React.FC = () => {
           <div className="lg:col-span-7 space-y-6 text-left">
             
             {/* Top Pill Badge */}
-            <motion.div
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold"
-            >
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-blue-900 border border-white/80 shadow-soft-sm text-xs font-bold">
               <Sparkles className="w-3.5 h-3.5 text-blue-600" />
               <span>Jasa Angkutan Sampah, Puing & Kebersihan</span>
-            </motion.div>
+            </div>
 
             {/* Main Headline */}
-            <motion.h1
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-md tracking-tight leading-[1.15] sm:leading-[1.1]"
-            >
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white drop-shadow-md tracking-tight leading-[1.15] sm:leading-[1.1]">
               Solusi Bersih & Cepat untuk Angkutan{" "}
               <span className="text-[#EEBA2B] drop-shadow-sm relative inline-block">
                 Sampah & Puing
               </span>
-            </motion.h1>
+            </h1>
 
             {/* Description */}
-            <motion.p
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-base sm:text-lg text-white/90 font-medium leading-relaxed max-w-2xl drop-shadow-sm"
-            >
+            <p className="text-base sm:text-lg text-white/90 font-medium leading-relaxed max-w-2xl drop-shadow-sm">
               Layanan profesional pengangkutan sisa renovasi bangunan, sampah komersial ruko/restoran, residensial perumahan, penebangan pohon, hingga pembersihan lahan kosong di{" "}
               <strong className="text-white font-bold underline decoration-[#EEBA2B]">Makassar, Gowa, dan Maros</strong>.
-            </motion.p>
+            </p>
 
             {/* Trust Checklist Badges */}
-            <motion.div
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.25 }}
-              className="grid grid-cols-1 xs:grid-cols-3 gap-3 pt-1"
-            >
+            <div className="grid grid-cols-1 xs:grid-cols-3 gap-3 pt-1">
               <div className="flex items-center gap-2.5 bg-white p-3.5 rounded-2xl border border-white/80 shadow-soft-sm text-xs font-bold text-slate-900 hover:scale-[1.02] transition-all">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                 <span>Garansi Bersih Tuntas</span>
@@ -98,18 +77,11 @@ export const Hero: React.FC = () => {
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                 <span>Invoice & Legalitas CV</span>
               </div>
-            </motion.div>
+            </div>
 
             {/* CTA Buttons */}
-            <motion.div
-              initial={false}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-3 pt-2"
-            >
-              <motion.a
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+            <div className="flex flex-col sm:flex-row gap-3 pt-2">
+              <a
                 href="https://wa.me/6282396193473?text=Halo%20CV%20Keel%20Mulia%20Jasa%2C%20saya%20mau%20konsultasi%20pengangkutan%20sampah%20dan%20pembersihan"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -117,18 +89,16 @@ export const Hero: React.FC = () => {
               >
                 <MessageCircle className="w-5 h-5 fill-current text-emerald-400" />
                 <span>Pesan Armada via WhatsApp</span>
-              </motion.a>
+              </a>
 
-              <motion.a
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+              <a
                 href="#armada"
                 className="min-h-[48px] inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-slate-50 text-slate-900 font-bold text-sm sm:text-base border border-white shadow-soft-sm transition-all"
               >
                 <Truck className="w-4 h-4 text-blue-600" />
                 <span>Pilihan Armada</span>
-              </motion.a>
-            </motion.div>
+              </a>
+            </div>
 
             {/* Counters Stat Bar - Ditegaskan Ulang */}
             <div className="grid grid-cols-3 gap-3.5 sm:gap-4 pt-6 border-t border-white/40">
@@ -161,12 +131,7 @@ export const Hero: React.FC = () => {
 
           {/* Right Column: Clean Booking Card */}
           <div className="lg:col-span-5">
-            <motion.div
-              initial={false}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 shadow-soft-lg relative"
-            >
+            <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 shadow-soft-lg relative">
               {/* Card Header */}
               <div className="flex items-center justify-between pb-4 mb-5 border-b border-slate-100">
                 <div className="flex items-center gap-3">
@@ -256,20 +221,18 @@ export const Hero: React.FC = () => {
                 </div>
 
                 <div className="pt-2">
-                  <motion.button
-                    whileHover={{ scale: 1.01 }}
-                    whileTap={{ scale: 0.98 }}
+                  <button
                     type="submit"
                     className="min-h-[46px] w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-full bg-brand-600 hover:bg-brand-700 text-white font-semibold text-sm shadow-soft-sm hover:shadow-glow-brand cursor-pointer transition-all"
                   >
                     <MessageCircle className="w-4 h-4 fill-current" />
                     <span>Cek Estimasi Biaya & Jadwal (WhatsApp)</span>
-                  </motion.button>
+                  </button>
                 </div>
 
               </form>
 
-            </motion.div>
+            </div>
           </div>
 
         </div>
