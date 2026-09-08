@@ -91,7 +91,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-white font-sans text-slate-900 antialiased selection:bg-brand-100 selection:text-brand-900">
+      <body className="min-h-screen flex flex-col bg-[#312E81] font-sans text-slate-900 antialiased selection:bg-brand-100 selection:text-brand-900">
         <DevToolsCredits />
         {children}
       </body>

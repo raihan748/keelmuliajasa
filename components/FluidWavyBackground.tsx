@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export const FluidWavyBackground: React.FC = () => {
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10 select-none">
+    <div className="fixed inset-0 pointer-events-none overflow-hidden z-0 select-none">
       {/* 1. Base Gradient Foundation (Purple/Violet to Deep Royal to Sky-Blue Palette like in reference image) */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#4338CA] via-[#3B82F6] to-[#0284C7]" />
 
