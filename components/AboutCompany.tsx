@@ -48,42 +48,42 @@ export const AboutCompany: React.FC = () => {
 
                 {/* Core Pillars Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
-                  <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:bg-slate-100/80 transition-colors">
-                    <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+                  <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:border-brand-300 hover:ring-2 hover:ring-brand-500/10 card-transition group">
+                    <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ease-out">
                       <CheckCircle2 className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-slate-900">Legalitas CV Resmi</h4>
+                      <h4 className="font-bold text-sm text-slate-900 group-hover:text-brand-900 transition-colors">Legalitas CV Resmi</h4>
                       <p className="text-xs text-slate-500 font-normal mt-0.5">Memiliki NIB, NPWP, dan izin operasional badan usaha</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:bg-slate-100/80 transition-colors">
-                    <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+                  <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:border-brand-300 hover:ring-2 hover:ring-brand-500/10 card-transition group">
+                    <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ease-out">
                       <CheckCircle2 className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-slate-900">Garansi Bebas Ceceran</h4>
+                      <h4 className="font-bold text-sm text-slate-900 group-hover:text-brand-900 transition-colors">Garansi Bebas Ceceran</h4>
                       <p className="text-xs text-slate-500 font-normal mt-0.5">Bak tertutup terpal & area loading disapu bersih</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:bg-slate-100/80 transition-colors">
-                    <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+                  <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:border-brand-300 hover:ring-2 hover:ring-brand-500/10 card-transition group">
+                    <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ease-out">
                       <CheckCircle2 className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-slate-900">Residensial & B2B</h4>
+                      <h4 className="font-bold text-sm text-slate-900 group-hover:text-brand-900 transition-colors">Residensial & B2B</h4>
                       <p className="text-xs text-slate-500 font-normal mt-0.5">Kontrak rutin perumahan, ruko, kantor & proyek</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:bg-slate-100/80 transition-colors">
-                    <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0">
+                  <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:border-brand-300 hover:ring-2 hover:ring-brand-500/10 card-transition group">
+                    <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ease-out">
                       <CheckCircle2 className="w-4 h-4" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-slate-900">Layanan Cepat / Same Day</h4>
+                      <h4 className="font-bold text-sm text-slate-900 group-hover:text-brand-900 transition-colors">Layanan Cepat / Same Day</h4>
                       <p className="text-xs text-slate-500 font-normal mt-0.5">Armada siaga cepat tiba sesuai jadwal pemesanan</p>
                     </div>
                   </div>

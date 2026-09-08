@@ -63,7 +63,7 @@ export const CoverageSection: React.FC = () => {
             return (
               <div key={idx} className="h-full">
                 <div
-                  className="h-full bg-white border border-slate-200/80 rounded-3xl p-6 text-center shadow-soft-xs hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                  className="h-full bg-white border border-slate-200/80 rounded-3xl p-6 text-center shadow-soft-xs hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col justify-between group"
                 >
                   <div>
                     <div className="flex justify-center mb-3.5">
@@ -72,10 +72,10 @@ export const CoverageSection: React.FC = () => {
                       </span>
                     </div>
 
-                    <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mx-auto mb-4">
+                    <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-3 group-hover:shadow-soft-xs transition-all duration-300 ease-out">
                       <Icon className="w-6 h-6" />
                     </div>
-                    <h3 className="font-bold text-base text-slate-900 mb-2">{area.name}</h3>
+                    <h3 className="font-bold text-base text-slate-900 mb-2 group-hover:text-brand-900 transition-colors">{area.name}</h3>
                     <p className="text-xs text-slate-600 font-normal leading-relaxed">{area.coverage}</p>
                   </div>
                 </div>

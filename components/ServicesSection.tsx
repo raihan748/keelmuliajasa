@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   Truck,
   Building2,
@@ -149,57 +150,66 @@ export const ServicesSection: React.FC = () => {
           ))}
         </div>
 
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {filteredServices.map((item, idx) => {
-            const Icon = item.icon;
+        {/* Services Grid with Smooth Category Transition */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={activeCategory}
+            initial={{ opacity: 0.85, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0.85, y: -10 }}
+            transition={{ duration: 0.22, ease: "easeOut" }}
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+          >
+            {filteredServices.map((item, idx) => {
+              const Icon = item.icon;
 
-            return (
-              <div key={idx} className="h-full">
-                <div className="h-full bg-white border border-slate-200/80 rounded-3xl p-6 shadow-soft-xs hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
-                  <div>
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center group-hover:bg-brand-100 group-hover:scale-105 transition-all">
-                        <Icon className="w-6 h-6" />
-                      </div>
-                      <span className={`text-[11px] font-semibold px-3 py-1 rounded-full ${item.tagColor}`}>
-                        {item.tag}
-                      </span>
-                    </div>
-
-                    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-2 leading-snug">
-                      {item.title}
-                    </h3>
-                    <p className="text-xs text-slate-600 font-normal leading-relaxed mb-5">
-                      {item.shortDesc}
-                    </p>
-
-                    <div className="space-y-2 mb-6 pt-4 border-t border-slate-100">
-                      {item.specs.map((spec, sIdx) => (
-                        <div key={sIdx} className="flex items-center gap-2 text-xs font-medium text-slate-700">
-                          <CheckCircle2 className="w-3.5 h-3.5 text-brand-600 shrink-0" />
-                          <span>{spec}</span>
+              return (
+                <div key={idx} className="h-full">
+                  <div className="h-full bg-white border border-slate-200/80 rounded-3xl p-6 shadow-soft-xs hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col justify-between group">
+                    <div>
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center group-hover:bg-brand-100 group-hover:scale-110 group-hover:rotate-2 group-hover:shadow-soft-xs transition-all duration-300 ease-out">
+                          <Icon className="w-6 h-6" />
                         </div>
-                      ))}
-                    </div>
-                  </div>
+                        <span className={`text-[11px] font-semibold px-3 py-1 rounded-full ${item.tagColor}`}>
+                          {item.tag}
+                        </span>
+                      </div>
 
-                  <div>
-                    <a
-                      href={`https://wa.me/6282396193473?text=${encodeURIComponent(item.waText)}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-50 hover:bg-brand-600 text-slate-700 hover:text-white border border-slate-200 hover:border-brand-600 text-xs font-semibold transition-all duration-200 shadow-soft-xs hover:shadow-soft-sm"
-                    >
-                      <MessageCircle className="w-3.5 h-3.5 fill-current" />
-                      <span>Pesan Layanan</span>
-                    </a>
+                      <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-2 leading-snug group-hover:text-brand-900 transition-colors">
+                        {item.title}
+                      </h3>
+                      <p className="text-xs text-slate-600 font-normal leading-relaxed mb-5">
+                        {item.shortDesc}
+                      </p>
+
+                      <div className="space-y-2 mb-6 pt-4 border-t border-slate-100">
+                        {item.specs.map((spec, sIdx) => (
+                          <div key={sIdx} className="flex items-center gap-2 text-xs font-medium text-slate-700">
+                            <CheckCircle2 className="w-3.5 h-3.5 text-brand-600 shrink-0" />
+                            <span>{spec}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div>
+                      <a
+                        href={`https://wa.me/6282396193473?text=${encodeURIComponent(item.waText)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-50 group-hover:bg-brand-600 text-slate-700 group-hover:text-white border border-slate-200 group-hover:border-brand-600 text-xs font-semibold transition-all duration-300 shadow-soft-xs group-hover:shadow-soft-sm"
+                      >
+                        <MessageCircle className="w-3.5 h-3.5 fill-current" />
+                        <span>Pesan Layanan</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </motion.div>
+        </AnimatePresence>
 
         {/* Bottom Banner Note */}
         <div className="mt-14">

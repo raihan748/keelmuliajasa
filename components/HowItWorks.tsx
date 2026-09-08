@@ -61,23 +61,23 @@ export const HowItWorks: React.FC = () => {
             return (
               <div key={idx} className="h-full">
                 <div
-                  className="h-full bg-white border border-slate-200/80 rounded-3xl p-7 text-center relative hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1.5 transition-all duration-300 flex flex-col items-center justify-between shadow-soft-xs"
+                  className="h-full bg-white border border-slate-200/80 rounded-3xl p-7 text-center relative hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col items-center justify-between shadow-soft-xs group"
                 >
                   <div>
                     <div className="flex items-center justify-between w-full mb-5">
                       <span className={`text-[11px] font-semibold px-3 py-1 rounded-full ${step.color}`}>
                         {step.tag}
                       </span>
-                      <span className="text-xl font-bold text-slate-300 font-mono">
+                      <span className="text-xl font-bold text-slate-300 group-hover:text-brand-500 font-mono transition-colors">
                         {step.num}
                       </span>
                     </div>
 
-                    <div className="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 mx-auto">
+                    <div className="w-14 h-14 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-5 mx-auto group-hover:scale-110 group-hover:rotate-3 group-hover:shadow-soft-xs transition-all duration-300 ease-out">
                       <Icon className="w-7 h-7" />
                     </div>
 
-                    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-2.5 leading-snug">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-2.5 leading-snug group-hover:text-brand-900 transition-colors">
                       {step.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed">

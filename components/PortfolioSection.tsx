@@ -74,7 +74,7 @@ export const PortfolioSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {realProjects.map((proj, idx) => (
             <div key={idx} className="h-full">
-              <div className="h-full bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-soft-xs hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between group">
+              <div className="h-full bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-soft-xs hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col justify-between group">
                 <div>
                   <div
                     onClick={() => setSelectedImage(proj.image)}
@@ -83,7 +83,7 @@ export const PortfolioSection: React.FC = () => {
                     <img
                       src={proj.image}
                       alt={proj.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
                     />
                     <div className="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                       <span className="bg-white text-slate-900 text-xs font-semibold px-4 py-2 rounded-full shadow-soft-lg flex items-center gap-1.5">

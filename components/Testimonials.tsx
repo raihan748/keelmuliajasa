@@ -51,10 +51,10 @@ export const Testimonials: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((rev, idx) => (
             <div key={idx} className="h-full">
-              <div className="h-full bg-white border border-white/90 rounded-3xl p-7 sm:p-8 shadow-soft-sm hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+              <div className="h-full bg-white border border-white/90 rounded-3xl p-7 sm:p-8 shadow-soft-sm hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col justify-between group">
                 <div>
                   <div className="flex items-center justify-between mb-5">
-                    <div className="flex gap-1 text-amber-400">
+                    <div className="flex gap-1 text-amber-400 group-hover:scale-105 transition-transform duration-300">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-4 h-4 fill-current" />
                       ))}
@@ -70,11 +70,11 @@ export const Testimonials: React.FC = () => {
                 </div>
 
                 <div className="pt-5 border-t border-slate-200/80 flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-sm">
+                  <div className="w-10 h-10 rounded-full bg-brand-100 text-brand-800 flex items-center justify-center font-bold text-sm group-hover:scale-110 group-hover:bg-brand-200 transition-all duration-300">
                     {rev.name.charAt(0)}
                   </div>
                   <div>
-                    <h4 className="font-bold text-sm text-slate-900">{rev.name}</h4>
+                    <h4 className="font-bold text-sm text-slate-900 group-hover:text-brand-900 transition-colors">{rev.name}</h4>
                     <p className="text-xs text-slate-500 font-medium">{rev.role} • <span className="text-slate-700">{rev.location}</span></p>
                   </div>
                 </div>

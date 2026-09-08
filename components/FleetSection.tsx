@@ -103,14 +103,14 @@ export const FleetSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {fleetData.map((fleet, idx) => (
             <div key={idx} className="h-full">
-              <div className="h-full bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-soft-xs hover:shadow-soft-md hover:border-brand-200 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between group">
+              <div className="h-full bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-soft-xs hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col justify-between group">
                 <div>
                   {/* Photo Frame */}
                   <div className="relative h-60 w-full overflow-hidden bg-slate-100 border-b border-slate-100">
                     <img
                       src={fleet.image}
                       alt={fleet.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
                     />
                     <span className={`absolute top-4 right-4 text-xs font-semibold px-3 py-1 rounded-full shadow-soft-xs ${fleet.badgeColor}`}>
                       {fleet.tag}
@@ -181,12 +181,12 @@ export const FleetSection: React.FC = () => {
               const Icon = com.icon;
               return (
                 <div key={cIdx} className="h-full">
-                  <div className="h-full bg-white border border-slate-200/80 rounded-2xl p-6 shadow-soft-xs hover:shadow-soft-md transition-all flex flex-col justify-between">
+                  <div className="h-full bg-white border border-slate-200/80 rounded-2xl p-6 shadow-soft-xs hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col justify-between group">
                     <div>
-                      <div className="w-11 h-11 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-4">
+                      <div className="w-11 h-11 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 group-hover:shadow-soft-xs transition-all duration-300 ease-out">
                         <Icon className="w-5 h-5" />
                       </div>
-                      <h4 className="font-bold text-slate-900 text-sm mb-2">{com.title}</h4>
+                      <h4 className="font-bold text-slate-900 text-sm mb-2 group-hover:text-brand-900 transition-colors">{com.title}</h4>
                       <p className="text-xs text-slate-600 font-normal leading-relaxed">{com.desc}</p>
                     </div>
                   </div>
