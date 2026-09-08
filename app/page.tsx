@@ -39,63 +39,66 @@ export default function HomePage() {
       {/* Right Floating Scroll-Spy Navigator Taskbar */}
       <ScrollHUD />
 
-      {/* Top Banner & Navigation */}
-      <TopBanner />
-      <Navbar />
+      {/* Main Content Flow - strictly elevated above background */}
+      <div className="relative z-10 flex flex-col">
+        {/* Top Banner & Navigation */}
+        <TopBanner />
+        <Navbar />
 
-      {/* Hero with Animated Counters & Quick Calculator */}
-      <Hero />
+        {/* Hero with Animated Counters & Quick Calculator */}
+        <Hero />
 
-      {/* Running Marquee Ticker 1 */}
-      <NeoMarquee />
+        {/* Running Marquee Ticker 1 */}
+        <NeoMarquee />
 
-      {/* Stats & Trust Bar */}
-      <TrustBar />
+        {/* Stats & Trust Bar */}
+        <TrustBar />
 
-      {/* Company Profile & Mission */}
-      <AboutCompany />
+        {/* Company Profile & Mission */}
+        <AboutCompany />
 
-      {/* Official Poster with Lightbox */}
-      <PosterSection />
+        {/* Official Poster with Lightbox */}
+        <PosterSection />
 
-      {/* Real Customer Logos & B2B Partners */}
-      <ClientsSection />
+        {/* Real Customer Logos & B2B Partners */}
+        <ClientsSection />
 
-      {/* 8 Core Services Grid */}
-      <ServicesSection />
+        {/* 8 Core Services Grid */}
+        <ServicesSection />
 
-      {/* Interactive Draggable Before & After + K3 Field Portfolio */}
-      <PortfolioSection />
+        {/* Interactive Draggable Before & After + K3 Field Portfolio */}
+        <PortfolioSection />
 
-      {/* Real Fleet Photos & 4 Company Profile Commitments */}
-      <FleetSection />
+        {/* Real Fleet Photos & 4 Company Profile Commitments */}
+        <FleetSection />
 
-      {/* Advantages & Client Matrix */}
-      <WhyChooseUs />
+        {/* Advantages & Client Matrix */}
+        <WhyChooseUs />
 
-      {/* Interactive Volume Simulator & Booking Form */}
-      <CalculatorSection />
+        {/* Interactive Volume Simulator & Booking Form */}
+        <CalculatorSection />
 
-      {/* SOP 4 Steps */}
-      <HowItWorks />
+        {/* SOP 4 Steps */}
+        <HowItWorks />
 
-      {/* Operational Coverage */}
-      <CoverageSection />
+        {/* Operational Coverage */}
+        <CoverageSection />
 
-      {/* Testimonials */}
-      <Testimonials />
+        {/* Testimonials */}
+        <Testimonials />
 
-      {/* Running Marquee Ticker 2 */}
-      <NeoMarquee />
+        {/* Running Marquee Ticker 2 */}
+        <NeoMarquee />
 
-      {/* FAQ */}
-      <FaqSection />
+        {/* FAQ */}
+        <FaqSection />
 
-      {/* High Impact Final CTA Banner */}
-      <CtaBanner />
+        {/* High Impact Final CTA Banner */}
+        <CtaBanner />
 
-      {/* Footer */}
-      <Footer />
+        {/* Footer */}
+        <Footer />
+      </div>
 
       {/* Scroll-Triggered Sticky Action Bottom Bar */}
       <StickyBottomAction />

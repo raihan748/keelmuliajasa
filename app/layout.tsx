@@ -66,6 +66,30 @@ export default function RootLayout({
         *  Made by Raihan Muh Ikhsan
         ======================================================================
         */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var BUILD_KEY = "kmj_v20260908_elevated";
+                try {
+                  if (localStorage.getItem("kmj_build_ver") !== BUILD_KEY) {
+                    localStorage.setItem("kmj_build_ver", BUILD_KEY);
+                    if ('serviceWorker' in navigator) {
+                      navigator.serviceWorker.getRegistrations().then(function(regs) {
+                        for (var r of regs) { r.unregister(); }
+                      });
+                    }
+                    if ('caches' in window) {
+                      caches.keys().then(function(keys) {
+                        for (var k of keys) { caches.delete(k); }
+                      });
+                    }
+                  }
+                } catch(e) {}
+              })();
+            `,
+          }}
+        />
       </head>
       <body className="min-h-screen flex flex-col bg-white font-sans text-slate-900 antialiased selection:bg-brand-100 selection:text-brand-900">
         <DevToolsCredits />

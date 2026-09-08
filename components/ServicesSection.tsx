@@ -115,7 +115,7 @@ export const ServicesSection: React.FC = () => {
       : services.filter((s) => s.category === activeCategory);
 
   return (
-    <section className="py-20 sm:py-28 bg-transparent border-b border-white/20 relative" id="layanan">
+    <section className="py-20 sm:py-28 bg-transparent border-b border-white/20 relative z-10 scroll-mt-20" id="layanan">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

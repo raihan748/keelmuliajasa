@@ -3,7 +3,7 @@ import { MessageCircle, PhoneCall, ShieldCheck } from "lucide-react";
 
 export const CtaBanner: React.FC = () => {
   return (
-    <section className="py-20 sm:py-28 bg-transparent text-center relative overflow-hidden border-b border-white/20">
+    <section className="py-20 sm:py-28 bg-transparent text-center relative z-10 overflow-hidden border-b border-white/20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="bg-white border border-white/80 rounded-3xl p-8 sm:p-14 shadow-soft-md relative">
             

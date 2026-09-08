@@ -3,7 +3,7 @@ import { PhoneCall, Instagram, Sparkles, Clock } from "lucide-react";
 
 export const TopBanner: React.FC = () => {
   return (
-    <div className="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div className="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800 relative z-30">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4 flex-wrap">
         <div className="flex items-center gap-2.5 flex-wrap">
           <span className="inline-flex items-center gap-1.5 bg-brand-500/20 text-brand-300 px-2.5 py-0.5 rounded-full text-[11px] font-semibold tracking-wide border border-brand-500/30">
