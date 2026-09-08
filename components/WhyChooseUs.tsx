@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckCircle2, ShieldCheck, Clock, Coins, Users, Truck, Sparkles } from "lucide-react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const WhyChooseUs: React.FC = () => {
   const reasons = [
@@ -70,7 +71,7 @@ export const WhyChooseUs: React.FC = () => {
           {reasons.map((r, idx) => {
             const Icon = r.icon;
             return (
-              <div key={idx} className="h-full">
+              <ScrollReveal key={idx} delay={idx * 0.08} className="h-full">
                 <div className="h-full bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-7 shadow-soft-xs hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col justify-between group">
                   <div>
                     <div className={`w-12 h-12 rounded-2xl flex items-center justify-center mb-5 ${r.color} group-hover:scale-110 group-hover:rotate-3 group-hover:shadow-soft-xs transition-all duration-300 ease-out`}>
@@ -84,7 +85,7 @@ export const WhyChooseUs: React.FC = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </ScrollReveal>
             );
           })}
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { MapPin, Building, Landmark, Factory, Compass } from "lucide-react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const CoverageSection: React.FC = () => {
   const areas = [
@@ -61,7 +62,7 @@ export const CoverageSection: React.FC = () => {
           {areas.map((area, idx) => {
             const Icon = area.icon;
             return (
-              <div key={idx} className="h-full">
+              <ScrollReveal key={idx} delay={idx * 0.08} className="h-full">
                 <div
                   className="h-full bg-white border border-slate-200/80 rounded-3xl p-6 text-center shadow-soft-xs hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col justify-between group"
                 >
@@ -79,7 +80,7 @@ export const CoverageSection: React.FC = () => {
                     <p className="text-xs text-slate-600 font-normal leading-relaxed">{area.coverage}</p>
                   </div>
                 </div>
-              </div>
+              </ScrollReveal>
             );
           })}
         </div>

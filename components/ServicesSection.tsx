@@ -15,6 +15,7 @@ import {
   CalendarCheck,
   MessageCircle,
 } from "lucide-react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const ServicesSection: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>("all");
@@ -164,7 +165,7 @@ export const ServicesSection: React.FC = () => {
               const Icon = item.icon;
 
               return (
-                <div key={idx} className="h-full">
+                <ScrollReveal key={idx} delay={(idx % 4) * 0.08} className="h-full">
                   <div className="h-full bg-white border border-slate-200/80 rounded-3xl p-6 shadow-soft-xs hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col justify-between group">
                     <div>
                       <div className="flex items-center justify-between mb-4">
@@ -205,7 +206,7 @@ export const ServicesSection: React.FC = () => {
                       </a>
                     </div>
                   </div>
-                </div>
+                </ScrollReveal>
               );
             })}
           </motion.div>

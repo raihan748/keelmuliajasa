@@ -1,5 +1,6 @@
 import React from "react";
 import { MessageSquareText, FileText, Truck, CheckCircle2 } from "lucide-react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const HowItWorks: React.FC = () => {
   const steps = [
@@ -59,7 +60,7 @@ export const HowItWorks: React.FC = () => {
           {steps.map((step, idx) => {
             const Icon = step.icon;
             return (
-              <div key={idx} className="h-full">
+              <ScrollReveal key={idx} delay={idx * 0.1} className="h-full">
                 <div
                   className="h-full bg-white border border-slate-200/80 rounded-3xl p-7 text-center relative hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col items-center justify-between shadow-soft-xs group"
                 >
@@ -85,7 +86,7 @@ export const HowItWorks: React.FC = () => {
                     </p>
                   </div>
                 </div>
-              </div>
+              </ScrollReveal>
             );
           })}
         </div>

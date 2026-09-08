@@ -1,5 +1,6 @@
 import React from "react";
 import { Star, Quote, Building2, UserCheck, ShieldCheck } from "lucide-react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const Testimonials: React.FC = () => {
   const reviews = [
@@ -50,7 +51,7 @@ export const Testimonials: React.FC = () => {
         {/* Review Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((rev, idx) => (
-            <div key={idx} className="h-full">
+            <ScrollReveal key={idx} delay={idx * 0.1} className="h-full">
               <div className="h-full bg-white border border-white/90 rounded-3xl p-7 sm:p-8 shadow-soft-sm hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col justify-between group">
                 <div>
                   <div className="flex items-center justify-between mb-5">
@@ -79,7 +80,7 @@ export const Testimonials: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
 

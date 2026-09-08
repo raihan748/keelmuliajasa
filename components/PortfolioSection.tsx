@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Camera, CheckCircle2, ShieldCheck, MapPin, Calendar, ZoomIn, X, Sparkles } from "lucide-react";
 import { InteractiveBeforeAfter } from "@/components/InteractiveBeforeAfter";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const PortfolioSection: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -47,7 +48,8 @@ export const PortfolioSection: React.FC = () => {
         </div>
 
         {/* Feature 1: Interactive Draggable Before-After Slider */}
-        <div className="mb-14 sm:mb-16">
+        {/* Feature 1: Interactive Before-After Slider Card */}
+        <ScrollReveal delay={0.05} className="mb-14 sm:mb-16">
           <div className="max-w-4xl mx-auto bg-white p-5 sm:p-7 rounded-3xl border border-slate-200/80 shadow-soft-md">
             <div className="flex flex-col sm:flex-row items-center justify-between gap-3 mb-4 pb-4 border-b border-slate-100">
               <div className="flex items-center gap-2.5">
@@ -68,12 +70,12 @@ export const PortfolioSection: React.FC = () => {
               afterLabel="SESUDAH: BERSIH TUNTAS"
             />
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* Feature 2: 2 Real Field Operations Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {realProjects.map((proj, idx) => (
-            <div key={idx} className="h-full">
+            <ScrollReveal key={idx} delay={idx * 0.12} className="h-full">
               <div className="h-full bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-soft-xs hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col justify-between group">
                 <div>
                   <div
@@ -125,7 +127,7 @@ export const PortfolioSection: React.FC = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
 

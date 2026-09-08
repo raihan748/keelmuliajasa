@@ -1,5 +1,6 @@
 import React from "react";
 import { Truck, CheckCircle2, ShieldCheck, MessageCircle, Scale } from "lucide-react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const FleetSection: React.FC = () => {
   const fleetData = [
@@ -102,7 +103,7 @@ export const FleetSection: React.FC = () => {
         {/* Fleet Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {fleetData.map((fleet, idx) => (
-            <div key={idx} className="h-full">
+            <ScrollReveal key={idx} delay={idx * 0.1} className="h-full">
               <div className="h-full bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-soft-xs hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col justify-between group">
                 <div>
                   {/* Photo Frame */}
@@ -157,7 +158,7 @@ export const FleetSection: React.FC = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
 
@@ -180,7 +181,7 @@ export const FleetSection: React.FC = () => {
             {commitments.map((com, cIdx) => {
               const Icon = com.icon;
               return (
-                <div key={cIdx} className="h-full">
+                <ScrollReveal key={cIdx} delay={cIdx * 0.08} className="h-full">
                   <div className="h-full bg-white border border-slate-200/80 rounded-2xl p-6 shadow-soft-xs hover:border-brand-300 hover:ring-4 hover:ring-brand-500/10 card-transition flex flex-col justify-between group">
                     <div>
                       <div className="w-11 h-11 rounded-2xl bg-brand-50 text-brand-600 flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-3 group-hover:shadow-soft-xs transition-all duration-300 ease-out">
@@ -190,7 +191,7 @@ export const FleetSection: React.FC = () => {
                       <p className="text-xs text-slate-600 font-normal leading-relaxed">{com.desc}</p>
                     </div>
                   </div>
-                </div>
+                </ScrollReveal>
               );
             })}
           </div>
