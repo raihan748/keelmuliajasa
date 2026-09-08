@@ -10,12 +10,12 @@ export const Footer: React.FC = () => {
           
           {/* Col 1: Brand Info & Legalitas */}
           <div className="lg:col-span-4">
-            <a href="#" className="flex items-center gap-3 mb-5 group">
-              <div className="bg-white/10 p-2 rounded-2xl border border-white/10">
+            <a href="#" className="inline-flex items-center gap-3 mb-6 group" aria-label="CV. Keel Mulia Jasa">
+              <div className="bg-white px-4 py-2.5 rounded-2xl shadow-soft-sm group-hover:shadow-soft-md transition-all duration-200">
                 <img
                   src="/images/logo-clean.png"
                   alt="Logo CV. Keel Mulia Jasa"
-                  className="h-10 w-auto object-contain brightness-0 invert"
+                  className="h-11 sm:h-12 w-auto object-contain group-hover:scale-105 transition-transform duration-200"
                 />
               </div>
             </a>
