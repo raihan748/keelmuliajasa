@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { ChevronDown, HelpCircle } from "lucide-react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const FaqSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -59,35 +60,36 @@ export const FaqSection: React.FC = () => {
           {faqs.map((item, idx) => {
             const isOpen = openIndex === idx;
             return (
-              <div
-                key={idx}
-                className={`border rounded-2xl transition-all duration-200 overflow-hidden shadow-soft-xs ${
-                  isOpen
-                    ? "bg-white border-brand-300 ring-2 ring-brand-500/10 shadow-soft-sm"
-                    : "bg-white border-slate-200/80 hover:border-slate-300"
-                }`}
-              >
-                <button
-                  type="button"
-                  onClick={() => toggleFaq(idx)}
-                  className="w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer focus:outline-none"
+              <ScrollReveal key={idx} delay={idx * 0.06}>
+                <div
+                  className={`border rounded-2xl transition-all duration-200 overflow-hidden shadow-soft-xs ${
+                    isOpen
+                      ? "bg-white border-brand-300 ring-2 ring-brand-500/10 shadow-soft-sm"
+                      : "bg-white border-slate-200/80 hover:border-slate-300"
+                  }`}
                 >
-                  <span className="font-bold text-base sm:text-lg text-slate-900">{item.q}</span>
-                  <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${
-                      isOpen ? "rotate-180 bg-brand-50 text-brand-600" : "bg-slate-100 text-slate-500"
-                    }`}
+                  <button
+                    type="button"
+                    onClick={() => toggleFaq(idx)}
+                    className="w-full px-6 py-5 flex items-center justify-between text-left gap-4 cursor-pointer focus:outline-none"
                   >
-                    <ChevronDown className="w-4 h-4" />
-                  </div>
-                </button>
+                    <span className="font-bold text-base sm:text-lg text-slate-900">{item.q}</span>
+                    <div
+                      className={`w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-transform duration-200 ${
+                        isOpen ? "rotate-180 bg-brand-50 text-brand-600" : "bg-slate-100 text-slate-500"
+                      }`}
+                    >
+                      <ChevronDown className="w-4 h-4" />
+                    </div>
+                  </button>
 
-                {isOpen && (
-                  <div className="px-6 pb-5 pt-1 text-sm text-slate-600 font-normal leading-relaxed border-t border-slate-100">
-                    {item.a}
-                  </div>
-                )}
-              </div>
+                  {isOpen && (
+                    <div className="px-6 pb-5 pt-1 text-sm text-slate-600 font-normal leading-relaxed border-t border-slate-100">
+                      {item.a}
+                    </div>
+                  )}
+                </div>
+              </ScrollReveal>
             );
           })}
         </div>

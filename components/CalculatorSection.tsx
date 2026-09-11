@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Calculator, MessageCircle, Send } from "lucide-react";
 import { InteractiveFleetVisualizer } from "@/components/InteractiveFleetVisualizer";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const CalculatorSection: React.FC = () => {
   const [clientName, setClientName] = useState("");
@@ -57,12 +58,13 @@ export const CalculatorSection: React.FC = () => {
         </div>
 
         {/* Feature 1: Interactive Volume & Fleet Simulator */}
-        <div className="max-w-4xl mx-auto">
+        <ScrollReveal delay={0.08} className="max-w-4xl mx-auto">
           <InteractiveFleetVisualizer />
-        </div>
+        </ScrollReveal>
 
         {/* Feature 2: Official Form */}
-        <div className="max-w-3xl mx-auto bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-10 shadow-soft-md">
+        <ScrollReveal delay={0.15} className="max-w-3xl mx-auto">
+          <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-10 shadow-soft-md">
           <div className="flex items-center justify-between pb-4 mb-6 border-b border-slate-100">
             <div className="flex items-center gap-2.5">
               <span className="bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full border border-brand-200/60">
@@ -179,10 +181,10 @@ export const CalculatorSection: React.FC = () => {
             </div>
 
           </form>
-        </div>
+          </div>
+        </ScrollReveal>
 
       </div>
     </section>
   );
 };
-

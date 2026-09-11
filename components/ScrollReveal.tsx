@@ -15,66 +15,77 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
   delay = 0,
   direction = "up",
   className = "",
-  distance = 28,
+  distance = 44,
 }) => {
   const [isRevealed, setIsRevealed] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
     // Check if element is already in viewport on mount (e.g. above fold or on page reload)
-    const checkVisibleImmediately = () => {
-      if (!ref.current) return false;
-      const rect = ref.current.getBoundingClientRect();
+    const checkVisible = () => {
+      if (!el) return false;
+      const rect = el.getBoundingClientRect();
       const windowHeight = window.innerHeight || document.documentElement.clientHeight;
-      return rect.top < windowHeight - 20 && rect.bottom > 0;
+      return rect.top < windowHeight - 30 && rect.bottom > 0;
     };
 
-    if (checkVisibleImmediately()) {
+    if (checkVisible()) {
       setIsRevealed(true);
       return;
     }
 
-    // Safety fallback: guarantee content is NEVER permanently hidden under any circumstances
-    const safetyTimer = setTimeout(() => {
-      setIsRevealed(true);
-    }, 1200 + delay * 1000);
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsRevealed(true);
-          observer.disconnect();
-          clearTimeout(safetyTimer);
+    // Modern IntersectionObserver (triggers the moment user scrolls it into view)
+    let observer: IntersectionObserver | null = null;
+    if (typeof IntersectionObserver !== "undefined") {
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setIsRevealed(true);
+              if (observer && entry.target) {
+                observer.unobserve(entry.target);
+              }
+            }
+          });
+        },
+        {
+          threshold: 0.05,
+          rootMargin: "0px 0px -40px 0px",
         }
-      },
-      {
-        threshold: 0.08,
-        rootMargin: "0px 0px -40px 0px",
-      }
-    );
-
-    if (ref.current) {
-      observer.observe(ref.current);
+      );
+      observer.observe(el);
     }
 
-    return () => {
-      observer.disconnect();
-      clearTimeout(safetyTimer);
+    // Scroll event fallback (triggers on user action-to-scroll even if observer is unavailable)
+    const handleScroll = () => {
+      if (checkVisible()) {
+        setIsRevealed(true);
+        window.removeEventListener("scroll", handleScroll);
+      }
     };
-  }, [delay]);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      if (observer) observer.disconnect();
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const getTransform = () => {
-    if (isRevealed) return "none";
+    if (isRevealed) return "translate3d(0, 0, 0) scale(1)";
     switch (direction) {
       case "down":
-        return `translateY(-${distance}px)`;
+        return `translate3d(0, -${distance}px, 0) scale(0.96)`;
       case "left":
-        return `translateX(-${distance}px)`;
+        return `translate3d(-${distance}px, 0, 0) scale(0.96)`;
       case "right":
-        return `translateX(${distance}px)`;
+        return `translate3d(${distance}px, 0, 0) scale(0.96)`;
       case "up":
       default:
-        return `translateY(${distance}px)`;
+        return `translate3d(0, ${distance}px, 0) scale(0.96)`;
     }
   };
 
@@ -84,7 +95,7 @@ export const ScrollReveal: React.FC<ScrollRevealProps> = ({
       style={{
         opacity: isRevealed ? 1 : 0,
         transform: getTransform(),
-        transition: `opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
+        transition: `opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s, transform 0.65s cubic-bezier(0.16, 1, 0.3, 1) ${delay}s`,
         willChange: isRevealed ? "auto" : "opacity, transform",
       }}
       className={className}

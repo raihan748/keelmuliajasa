@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckCircle2, Building, ShieldCheck, Truck, Sparkles } from "lucide-react";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export const AboutCompany: React.FC = () => {
   return (
@@ -48,45 +49,53 @@ export const AboutCompany: React.FC = () => {
 
                 {/* Core Pillars Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
-                  <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:border-brand-300 hover:ring-2 hover:ring-brand-500/10 card-transition group">
-                    <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ease-out">
-                      <CheckCircle2 className="w-4 h-4" />
+                  <ScrollReveal delay={0.05}>
+                    <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:border-brand-300 hover:ring-2 hover:ring-brand-500/10 card-transition group h-full">
+                      <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ease-out">
+                        <CheckCircle2 className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-sm text-slate-900 group-hover:text-brand-900 transition-colors">Legalitas CV Resmi</h4>
+                        <p className="text-xs text-slate-500 font-normal mt-0.5">Memiliki NIB, NPWP, dan izin operasional badan usaha</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-bold text-sm text-slate-900 group-hover:text-brand-900 transition-colors">Legalitas CV Resmi</h4>
-                      <p className="text-xs text-slate-500 font-normal mt-0.5">Memiliki NIB, NPWP, dan izin operasional badan usaha</p>
-                    </div>
-                  </div>
+                  </ScrollReveal>
 
-                  <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:border-brand-300 hover:ring-2 hover:ring-brand-500/10 card-transition group">
-                    <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ease-out">
-                      <CheckCircle2 className="w-4 h-4" />
+                  <ScrollReveal delay={0.12}>
+                    <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:border-brand-300 hover:ring-2 hover:ring-brand-500/10 card-transition group h-full">
+                      <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ease-out">
+                        <CheckCircle2 className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-sm text-slate-900 group-hover:text-brand-900 transition-colors">Garansi Bebas Ceceran</h4>
+                        <p className="text-xs text-slate-500 font-normal mt-0.5">Bak tertutup terpal & area loading disapu bersih</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-bold text-sm text-slate-900 group-hover:text-brand-900 transition-colors">Garansi Bebas Ceceran</h4>
-                      <p className="text-xs text-slate-500 font-normal mt-0.5">Bak tertutup terpal & area loading disapu bersih</p>
-                    </div>
-                  </div>
+                  </ScrollReveal>
 
-                  <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:border-brand-300 hover:ring-2 hover:ring-brand-500/10 card-transition group">
-                    <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ease-out">
-                      <CheckCircle2 className="w-4 h-4" />
+                  <ScrollReveal delay={0.18}>
+                    <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:border-brand-300 hover:ring-2 hover:ring-brand-500/10 card-transition group h-full">
+                      <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ease-out">
+                        <CheckCircle2 className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-sm text-slate-900 group-hover:text-brand-900 transition-colors">Residensial & B2B</h4>
+                        <p className="text-xs text-slate-500 font-normal mt-0.5">Kontrak rutin perumahan, ruko, kantor & proyek</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-bold text-sm text-slate-900 group-hover:text-brand-900 transition-colors">Residensial & B2B</h4>
-                      <p className="text-xs text-slate-500 font-normal mt-0.5">Kontrak rutin perumahan, ruko, kantor & proyek</p>
-                    </div>
-                  </div>
+                  </ScrollReveal>
 
-                  <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:border-brand-300 hover:ring-2 hover:ring-brand-500/10 card-transition group">
-                    <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ease-out">
-                      <CheckCircle2 className="w-4 h-4" />
+                  <ScrollReveal delay={0.24}>
+                    <div className="flex items-start gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200/70 shadow-soft-xs hover:border-brand-300 hover:ring-2 hover:ring-brand-500/10 card-transition group h-full">
+                      <div className="w-8 h-8 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 ease-out">
+                        <CheckCircle2 className="w-4 h-4" />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-sm text-slate-900 group-hover:text-brand-900 transition-colors">Layanan Cepat / Same Day</h4>
+                        <p className="text-xs text-slate-500 font-normal mt-0.5">Armada siaga cepat tiba sesuai jadwal pemesanan</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-bold text-sm text-slate-900 group-hover:text-brand-900 transition-colors">Layanan Cepat / Same Day</h4>
-                      <p className="text-xs text-slate-500 font-normal mt-0.5">Armada siaga cepat tiba sesuai jadwal pemesanan</p>
-                    </div>
-                  </div>
+                  </ScrollReveal>
                 </div>
 
               </div>
@@ -95,8 +104,8 @@ export const AboutCompany: React.FC = () => {
 
           {/* Right Column: Visual Badges & Operation Photo */}
           <div className="lg:col-span-5 flex flex-col">
-            <div className="h-full">
-              <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 shadow-soft-lg h-full flex flex-col justify-between relative">
+            <ScrollReveal delay={0.15} className="h-full">
+              <div className="bg-white border border-slate-200/80 rounded-3xl p-6 sm:p-8 shadow-soft-lg h-full flex flex-col justify-between relative card-transition hover:border-brand-300">
                 
                 <div>
                   <div className="flex items-center justify-between pb-4 mb-5 border-b border-slate-100">
@@ -114,25 +123,35 @@ export const AboutCompany: React.FC = () => {
                       </div>
                     </div>
 
-                    <span className="bg-brand-50 text-brand-700 text-xs font-semibold px-3 py-1 rounded-full border border-brand-200/60">
-                      Resmi & Berizin
+                    <span className="bg-emerald-50 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full border border-emerald-200/60">
+                      Aktif Operasional
                     </span>
                   </div>
 
-                  {/* Photo of Operation */}
-                  <div className="rounded-2xl overflow-hidden mb-5 shadow-soft-sm border border-slate-100">
+                  {/* Operational Photo Preview */}
+                  <div className="relative h-48 w-full rounded-2xl overflow-hidden mb-5 bg-slate-100 border border-slate-100">
                     <img
-                      src="/images/fleet/operasional-loading-sampah.jpg"
-                      alt="Operasional Pengangkutan Sampah CV Keel Mulia Jasa"
-                      className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
+                      src="/images/operasional-profil.jpg"
+                      alt="Operasional CV. Keel Mulia Jasa"
+                      className="w-full h-full object-cover"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent flex items-end p-4">
+                      <p className="text-white text-xs font-medium">
+                        Unit Dump Truck Standar Operasional Bersih & Aman
+                      </p>
+                    </div>
                   </div>
+
+                  <p className="text-xs sm:text-sm text-slate-600 font-normal leading-relaxed mb-6">
+                    Kami hadir menjawab kebutuhan pengelolaan sampah perkotaan yang modern dan terpercaya dengan SOP penanganan yang higienis.
+                  </p>
                 </div>
 
-                <div className="space-y-2.5 text-xs text-slate-600 font-medium bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                {/* Micro Meta Table */}
+                <div className="bg-slate-50 p-4 rounded-2xl border border-slate-200/70 text-xs space-y-2">
                   <div className="flex items-center justify-between py-1.5 border-b border-slate-200/60">
-                    <span className="text-slate-500 font-normal">Nama Usaha:</span>
-                    <span className="font-bold text-slate-900">CV. KEEL MULIA JASA</span>
+                    <span className="text-slate-500 font-normal">Bentuk Usaha:</span>
+                    <span className="font-semibold text-slate-900">CV (Persekutuan Komanditer)</span>
                   </div>
                   <div className="flex items-center justify-between py-1.5 border-b border-slate-200/60">
                     <span className="text-slate-500 font-normal">Bidang Jasa:</span>
@@ -149,7 +168,7 @@ export const AboutCompany: React.FC = () => {
                 </div>
 
               </div>
-            </div>
+            </ScrollReveal>
           </div>
 
         </div>
