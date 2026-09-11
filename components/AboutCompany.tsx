@@ -131,13 +131,13 @@ export const AboutCompany: React.FC = () => {
                   {/* Operational Photo Preview */}
                   <div className="relative h-48 w-full rounded-2xl overflow-hidden mb-5 bg-slate-100 border border-slate-100">
                     <img
-                      src="/images/operasional-profil.jpg"
+                      src="/images/fleet/operasional-loading-sampah.jpg"
                       alt="Operasional CV. Keel Mulia Jasa"
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent flex items-end p-4">
                       <p className="text-white text-xs font-medium">
-                        Unit Dump Truck Standar Operasional Bersih & Aman
+                        Unit Armada Standar Operasional Bersih & Aman
                       </p>
                     </div>
                   </div>
